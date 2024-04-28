@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar w-[100%]">
   <div class="container mx-auto px-4 py-4">
     <div class="flex justify-between items-center w-[1200px] m-auto">
       <div class="nav-logo">
@@ -26,7 +26,7 @@
         <li class="hover:border border-gray-500 px-2 py-1 rounded-md"><nuxt-link to="#">Blog</nuxt-link></li>
       </ul>
 
-      <div class="flex items-center bg-[#ff4f00] text-white rounded-full px-4 py-2">
+      <div class="flex items-center bg-[#ff4f00] text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2">
         <nuxt-link to="/" aria-label="Try For Free" title="Try For Free" class="flex items-center">
           <span>Try For Free</span>
           <img
