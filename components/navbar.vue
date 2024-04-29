@@ -19,11 +19,11 @@
       </div>
 
       <ul class="flex space-x-6 text-gray-800 text-md font-semibold">
-        <li class="hover:border border-gray-500 px-2 py-1 rounded-md"><nuxt-link to="#">Use Cases</nuxt-link></li>
-        <li class="hover:border border-gray-500 px-2 py-1 rounded-md"><nuxt-link to="#">Features</nuxt-link></li>
-        <li class="hover:border border-gray-500 px-2 py-1 rounded-md"><nuxt-link to="#">Pricing</nuxt-link></li>
-        <li class="hover:border border-gray-500 px-2 py-1 rounded-md"><nuxt-link to="#">Affiliates</nuxt-link></li>
-        <li class="hover:border border-gray-500 px-2 py-1 rounded-md"><nuxt-link to="#">Blog</nuxt-link></li>
+        <li class="hover:bg-zinc-200 px-2 py-2 rounded-md"><nuxt-link to="#">Use Cases</nuxt-link></li>
+        <li class="hover:bg-zinc-200 px-2 py-2 rounded-md"><nuxt-link to="#">Features</nuxt-link></li>
+        <li class="hover:bg-zinc-200 px-2 py-2 rounded-md"><nuxt-link to="#">Pricing</nuxt-link></li>
+        <li class="hover:bg-zinc-200 px-2 py-2 rounded-md"><nuxt-link to="#">Affiliates</nuxt-link></li>
+        <li class="hover:bg-zinc-200 px-2 py-2 rounded-md"><nuxt-link to="#">Blog</nuxt-link></li>
       </ul>
 
       <div class="flex items-center bg-[#ff4f00] text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2">
