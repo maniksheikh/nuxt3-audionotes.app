@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar w-[100%]">
   <div class="container mx-auto px-4 py-4">
-    <div class="flex justify-between items-center w-[1200px] m-auto">
+    <div class="flex justify-between items-center w-[1100px] m-auto">
       <div class="nav-logo">
         <nuxt-link to="/" class="logo-link">
           <img
