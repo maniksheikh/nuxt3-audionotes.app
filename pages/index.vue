@@ -181,10 +181,14 @@
     <!-- Brand section  -->
     <section>
       <div class="mt-20 text-center justify-center">
-        <h4 class="sans-serif text-[#262626] w-[1050px] m-auto text-[2.5rem] font-bold">
+        <h4
+          class="sans-serif text-[#262626] w-[1050px] m-auto text-[2.5rem] font-bold"
+        >
           In the <span class="text-[#ff4f00] font-bold">Spotlight</span>
         </h4>
-        <ul class="flex items-center justify-center p-3 mt-20  w-[1050px] m-auto">
+        <ul
+          class="flex items-center justify-center p-3 mt-20 w-[1050px] m-auto"
+        >
           <li>
             <a href="#">
               <img
@@ -257,8 +261,8 @@
             /></a>
           </li>
           <li class="ml-3">
-            <a href="#"
-              ><img
+            <a href="#">
+              <img
                 decoding="async"
                 src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
                 alt=""
@@ -274,6 +278,344 @@
             /></a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="mt-28">
+        <div
+          class="text-center sans-serif w-[1200px] items-center justify-center m-auto"
+        >
+          <h4 class="text-[3rem] font-semibold">
+            <span class="text-[#ff4f00] font-bold">Audionotes</span> is for
+            everyone
+          </h4>
+          <p class="mt-5 text-[19px] leading-8 text-gray-500">
+            Audionotes is loved by 7000+ users! <br />
+            Select a persona below to find out how Audionotes can help you boost
+            productivity!
+          </p>
+        </div>
+        <div>
+          <ul class="flex gap-5 mt-10">
+            <li
+              class="items-center justify-center border border-gray-300 rounded-xl m-auto relative"
+            >
+              <a href="#">
+                <img
+                  class="relative"
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 370px;
+                    height: 350px;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >productivity enthusiasts</span
+                >
+              </a>
+            </li>
+            <li
+              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            >
+              <a href="#">
+                <img
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 370px;
+                    height: 350px;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >Lawer</span
+                >
+              </a>
+            </li>
+            <li
+              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            >
+              <a href="#">
+                <img
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 370px;
+                    height: 350px;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >Marketeer</span
+                >
+              </a>
+            </li>
+            <li
+              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            >
+              <a href="#">
+                <img
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 370px;
+                    height: 350px;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >Students</span
+                >
+              </a>
+            </li>
+            <li
+              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            >
+              <a href="#">
+                <img
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 370px;
+                    height: 350px;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >Entrepreneur</span
+                >
+              </a>
+            </li>
+            <li
+              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            >
+              <a href="#">
+                <img
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 370px;
+                    height: 350px;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >Doctor</span
+                >
+              </a>
+            </li>
+            <li
+              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            >
+              <a href="#">
+                <a
+                  name="Profession card 5"
+                  class="framer-4V2tu framer-jbFiF framer-59frf4 framer-v-59frf4 framer-1kkxf2j"
+                  data-border="true"
+                  data-framer-name="Profession Card"
+                  data-highlight="true"
+                  href="./doctors"
+                  tabindex="0"
+                  style="
+                    --border-bottom-width: 1px;
+                    --border-color: var(
+                      --token-19c4737c-eef7-4396-b22a-028772ac270e,
+                      rgba(0, 0, 0, 0.1)
+                    );
+                    --border-left-width: 1px;
+                    --border-right-width: 1px;
+                    --border-style: solid;
+                    --border-top-width: 1px;
+                    background-color: var(
+                      --token-67c1333b-4249-4ff1-a333-3581964020b4,
+                      rgb(255, 255, 255)
+                    );
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 32px;
+                    box-shadow: none;
+                    opacity: 1;
+                  "
+                  ><div
+                    class="framer-1w426a2"
+                    data-framer-name="Feature Image"
+                    style="opacity: 1"
+                  >
+                    <div
+                      data-framer-background-image-wrapper="true"
+                      style="
+                        position: absolute;
+                        border-radius: inherit;
+                        inset: 0px;
+                      "
+                    >
+                      <img
+                        decoding="async"
+                        sizes="337px"
+                        srcset="
+                          https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=512   512w,
+                          https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=1024 1024w,
+                          https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png                    1348w
+                        "
+                        src="https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png"
+                        alt=""
+                        style="
+                          display: block;
+                          width: 100%;
+                          height: 100%;
+                          border-radius: inherit;
+                          object-position: center center;
+                          object-fit: cover;
+                          image-rendering: auto;
+                        "
+                      />
+                    </div>
+                    <div
+                      class="framer-jigrht"
+                      style="
+                        background: linear-gradient(
+                          rgba(255, 255, 255, 0) 0%,
+                          rgb(255, 255, 255) 100%
+                        );
+                        opacity: 1;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    class="framer-13q34ch"
+                    data-framer-name="Feature Content"
+                    style="transform: translateX(-50%); opacity: 1"
+                  >
+                    <div
+                      class="framer-1m46vnz"
+                      data-framer-name="Text"
+                      style="opacity: 1"
+                    >
+                      <div
+                        class="framer-e4q9ba"
+                        data-framer-component-type="RichTextContainer"
+                        style="
+                          outline: none;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: flex-start;
+                          flex-shrink: 0;
+                          --extracted-r6o4lv: var(
+                            --token-c97db126-8e49-4dfa-8a8a-566d4fa3e425,
+                            rgb(0, 0, 0)
+                          );
+                          transform: none;
+                          opacity: 1;
+                        "
+                      >
+                        <p
+                          class="framer-text framer-styles-preset-2o43k3"
+                          data-styles-preset="doG0Bk1lQ"
+                          style="
+                            --framer-text-alignment: center;
+                            --framer-text-color: var(
+                              --extracted-r6o4lv,
+                              var(
+                                --token-c97db126-8e49-4dfa-8a8a-566d4fa3e425,
+                                rgb(0, 0, 0)
+                              )
+                            );
+                          "
+                        >
+                          Doctor
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="framer-4rtav8"
+                    data-framer-name="Blocker"
+                    style="background-color: rgba(255, 255, 255, 0); opacity: 1"
+                  ></div
+                ></a>
+                <span
+                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  >Founder</span
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
