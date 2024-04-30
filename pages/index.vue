@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sans-serif">
     <div
       class="flex justify-center items-center h-[700px] overflow-hidden m-auto relative"
     >
@@ -36,14 +36,14 @@
               <span class="text-5xl text-[#5c5b5b] font-md ml-2 italic"
                 >cluttered</span
               >
-              <span class="text-5xl text-[#ff4f00] ml-2 font-semibold"
+              <span class="text-5xl text-[#FF4F00] ml-2 font-semibold"
                 >Thoughts</span
               >
               <span class="ml-2">into</span>
               <br />
               <br />
               <span class="text-5xl text-[#464444] font-md italic">clear</span>
-              <span class="text-5xl text-[#ff4f00] ml-2 font-semibold"
+              <span class="text-5xl text-[#FF4F00] ml-2 font-semibold"
                 >Text Notes</span
               >
               <span class="ml-2">using AI</span>
@@ -56,7 +56,7 @@
         </section>
 
         <div
-          class="flex items-center bg-[#ff4f00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
+          class="flex items-center bg-[#FF4F00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
         >
           <nuxt-link
             to="/"
@@ -184,7 +184,7 @@
         <h4
           class="sans-serif text-[#262626] w-[1050px] m-auto text-[3.2rem] font-bold"
         >
-          In the <span class="text-[#ff4f00] font-bold">Spotlight</span>
+          In the <span class="text-[#FF4F00] font-bold">Spotlight</span>
         </h4>
         <ul
           class="flex items-center justify-center p-3 mt-20 w-[1050px] m-auto"
@@ -287,10 +287,10 @@
           class="text-center sans-serif w-[1200px] items-center justify-center m-auto"
         >
           <h4 class="text-[3.2rem] text-[#262626] font-bold">
-            <span class="text-[#ff4f00] font-bold">Audionotes</span> is for
+            <span class="text-[#FF4F00] font-bold">Audionotes</span> is for
             everyone!
           </h4>
-          <p class="mt-5 text-[19px] leading-8 text-gray-500">
+          <p class="mt-5 text-[17.5px] leading-8 text-gray-500">
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
             productivity!
@@ -516,92 +516,130 @@
 
     <section>
       <div>
-        <div class="mt-32 items-center w-[1200px] m-auto text-center">
+        <div class="mt-40 items-center w-[1200px] m-auto text-center">
           <div>
             <h4 class="text-[3.1rem] text-[#262626] font-bold">
               What do I use
-              <span class="text-[#ff4f00] font-bold">Audionotes for?</span>
+              <span class="text-[#FF4F00] font-bold">Audionotes for?</span>
             </h4>
           </div>
           <div class="mt-5">
-            <p class="text-[19px] text-gray-500">
+            <p class="text-[17.5px] text-gray-500">
               Audionotes is perfect for a variety of use-cases, 100x your
               productivity with Audionotes today!
             </p>
           </div>
         </div>
         <div
-          class="flex flex-wrap justify-between mt-14 leading-7 max-w-[1100px] mx-auto"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 w-[1100px] mx-auto"
         >
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.5rem] text-[#262626] font-semibold">Journaling</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Just talk anywhere and Audionotes <br>
-               will create a well structured
-              journal <br> entry for you.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">Journaling</h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Just talk anywhere and Audionotes<br />will create a
+              well-structured journal<br />entry for you.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.5rem] text-[#262626] font-semibold">To-do & Task Lists</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Create to-do and task lists using <br>
-               voice and text notes on the go.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              To-do & Task Lists
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Create to-do and task lists using<br />voice and text notes on the
+              go.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.5rem] text-[#262626] font-semibold">To-do & Task Lists</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Create to-do and task lists using <br>
-               voice and text notes on the go.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">Writing</h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Ideas can strike you anywhere, just<br />record with Audionotes
+              and use the<br />summaries later.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.7rem] text-[#262626] font-semibold">Writing</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Ideas can strike you anywhere, just <br>
-               record with Audionotes and use
-              the <br> summaries later.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              Message Assistant
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Dictate your messages to Audionotes<br />and it'll just structure
+              them for you.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.7rem] text-[#262626] font-semibold">Message Assistant</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Dictate your messages to Audionotes <br>
-               and it'll just structure them
-              for you.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              To-do & Task Lists
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Create to-do and task lists using<br />voice and text notes on the
+              go.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.7rem] text-[#262626] font-semibold">Content Creation</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Generate amazing social media <br>
-               content for Linkedin, Twitter, Blogs <br>
-              using voice notes.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              Content Creation
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Generate amazing social media<br />content for Linkedin, Twitter,
+              Blogs<br />using voice notes.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.5rem] text-[#262626] font-semibold">Professional Assistant</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              Professional Assistant
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
               Generate Contracts, Marketing Plans.
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.5rem] text-[#262626] font-semibold">Email Buddy</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Don't write emails, just speak and <br>
-               Audionotes will do the rest!
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              Email Buddy
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Don't write emails, just speak and<br />Audionotes will do the
+              rest!
             </p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-8">
-            <h3 class="text-[1.5rem] text-[#262626] font-semibold">Summarize Meetings</h3>
-            <p class="mt-4 text-[17px] text-gray-500">
-              Record your meetings and summarize <br>
-               them.
+          <div class="w-full mb-8">
+            <h3 class="text-[24px] text-[#262626] font-semibold">
+              Summarize Meetings
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-500">
+              Record your meetings and summarize<br />them.
             </p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Features -->
+    <div class="mt-28 text-center">
+      <div>
+        <h2 class="text-[46px] font-bold text-[#FF4F00] w-[1200px] m-auto">
+          Features
+        </h2>
+      </div>
+      <div class="flex mt-20 items-center justify-between w-[1200px] m-auto">
+        <h1 class="text-[48px] text-left w-[460px] font-[700]">
+          <span>Record,</span> <br />
+          <span>Upload or</span> <br />
+          <span> Write</span>
+        </h1>
+        <p class="text-[32px] font-[600] text-gray-700">
+          Weather you are <span class="text-[#FF4F00]">capturing </span> voice
+          notes, <br />
+          <span class="text-[#FF4F00]">uploading</span> audio files or
+          <span class="text-[#FF4F00]">creating</span> text <br />
+          Audionotes will turn your notes into <br />
+          neatly summarized &
+          <span class="text-[#FF4F00]"
+            >structured text <br />
+            notes
+          </span>
+          tailored to your preferences
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
