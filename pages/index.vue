@@ -615,17 +615,17 @@
     <!-- Features -->
     <div class="mt-28 text-center">
       <div>
-        <h2 class="text-[46px] font-bold text-[#FF4F00] w-[1200px] m-auto">
+        <h2 class="text-[3.1rem] font-bold text-[#FF4F00] w-[1100px] m-auto">
           Features
         </h2>
       </div>
-      <div class="flex mt-20 items-center justify-between w-[1200px] m-auto">
-        <h1 class="text-[48px] text-left w-[460px] font-[700]">
+      <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
+        <h1 class="text-[51px] text-left w-[400px] font-[500]">
           <span>Record,</span> <br />
           <span>Upload or</span> <br />
           <span> Write</span>
         </h1>
-        <p class="text-[32px] font-[600] text-gray-700">
+        <p class="text-[34px] text-left font-[600] text-gray-700">
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <br />
           <span class="text-[#FF4F00]">uploading</span> audio files or
