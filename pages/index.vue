@@ -654,19 +654,21 @@
             data-twe-ripple-init
             data-twe-ripple-color="light"
           >
-            <img
-              :src="card.image"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 250px;
-                border-radius: inherit;
-                object-position: center center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
+            <nuxt-link to="#">
+              <img
+                :src="card.image"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 250px;
+                  border-radius: inherit;
+                  object-position: center center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </nuxt-link>
           </div>
           <div class="p-6 text-surface dark:text-white">
             <div>
@@ -680,6 +682,25 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mt-28 text-center">
+      <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
+        <h1 class="text-[50px] opacity-80 text-left w-[400px] font-[500]">
+          <span>Generate</span> <br />
+          <span>Awesome</span> <br />
+          <span class="text-[#FF4F00]"> Content</span>
+        </h1>
+        <p class="text-[32px] text-left font-[600] text-gray-800">
+          Generate Emails, Social Media Content, <br />
+          Minutes of the Meeting, Action items <br />
+          and even <span class="text-[#705BE1]">use custom prompts</span> to
+          <br />
+          generate high quality content with a <br />
+          single click directly from your notes.
+        </p>
       </div>
     </div>
   </div>
