@@ -688,9 +688,9 @@
     <!-- Features -->
     <div class="mt-28 text-center">
       <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
-        <h1 class="text-[50px] opacity-80 text-left w-[400px] font-[500]">
-          <span>Generate</span> <br />
-          <span>Awesome</span> <br />
+        <h1 class="text-[50px] text-left w-[400px] font-[500]">
+          <span class="opacity-80">Generate</span> <br />
+          <span class="opacity-80">Awesome</span> <br />
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p class="text-[32px] text-left font-[600] text-gray-800">
@@ -700,6 +700,205 @@
           <br />
           generate high quality content with a <br />
           single click directly from your notes.
+        </p>
+      </div>
+    </div>
+
+    <!--Another Card system -->
+    <div class="mt-28 w-[1100px] m-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+        >
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <nuxt-link to="#">
+              <img
+                decoding="async"
+                sizes="336.6667px"
+                srcset="
+                  https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=512   512w,
+                  https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=1024 1024w,
+                  https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png                    1348w
+                "
+                src="https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 250px;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </nuxt-link>
+          </div>
+          <div class="p-6 text-surface dark:text-white">
+            <div>
+              <img
+                class="mb-3 w-[24px] h-[24px]"
+                decoding="async"
+                sizes="24px"
+                src="https://framerusercontent.com/images/gzwYnQuJwdOj2UjqTatq7sPj8.png"
+                alt=""
+                style="
+                  display: block;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+              Unlimited Content
+            </h5>
+            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+              Generate Social Media Posts, MoMs, <br />
+              Emails & much more
+            </p>
+          </div>
+        </div>
+        <div
+          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+        >
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <nuxt-link to="#">
+              <img
+                decoding="async"
+                sizes="336.6667px"
+                srcset="
+                  https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=512   512w,
+                  https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=1024 1024w,
+                  https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png                    1348w
+                "
+                src="https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 250px;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </nuxt-link>
+          </div>
+          <div class="p-6 text-surface dark:text-white">
+            <div>
+              <img
+                class="mb-3 w-[24px] h-[24px]"
+                decoding="async"
+                sizes="24px"
+                src="https://framerusercontent.com/images/pxBSrCS0TDVu5JdjUJWevqNeaME.png"
+                alt=""
+                style="
+                  display: block;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+              Custom Prompts
+            </h5>
+            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+              Use Custom promots to generate<br />
+              content for your use-cases
+            </p>
+          </div>
+        </div>
+        <div
+          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+        >
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <nuxt-link to="#">
+              <img
+                decoding="async"
+                sizes="336.6667px"
+                srcset="
+                  https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=512   512w,
+                  https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=1024 1024w,
+                  https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png                    1348w
+                "
+                src="https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 250px;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </nuxt-link>
+          </div>
+          <div class="p-6 text-surface dark:text-white">
+            <div>
+              <img
+                class="mb-3 w-[24px] h-[24px]"
+                decoding="async"
+                sizes="24px"
+                src="https://framerusercontent.com/images/u7F7Be5s5h5WbO3sqGtnVvBfKXo.png"
+                alt=""
+                style="
+                  display: block;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+              Set Content Language
+            </h5>
+            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+              Generate Content in 19+ languages <br />
+              seamlessly
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Another Features -->
+    <div class="mt-28 text-center">
+      <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
+        <h1 class="text-[56px] text-left w-[400px] font-[500]">
+          <span class="opacity-80">We</span> <br />
+          <span class="opacity-80">Have great</span> <br />
+          <span class="text-[#FF4F00]"> Integrations</span>
+        </h1>
+        <p class="text-[32px] text-left font-[600] text-gray-900">
+          Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
+          <br />
+          create custom automations and <br />
+          workflows, connect with <span class="text-[#705BE1]">Notion</span> to
+          <br />
+          transfer your notes or use
+          <span class="text-[#705BE1]">Whatsapp</span> <br />
+          for audionotes for easy transcription <br />
+          and summarization
         </p>
       </div>
     </div>
