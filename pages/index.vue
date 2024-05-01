@@ -640,11 +640,53 @@
         </p>
       </div>
     </div>
+
+    <!-- Card system -->
+    <div class="mt-28 w-[1100px] m-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          v-for="card in cartData"
+          :key="card"
+          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+        >
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <img
+              :src="card.image"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 250px;
+                border-radius: inherit;
+                object-position: center center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
+          </div>
+          <div class="p-6 text-surface dark:text-white">
+            <div>
+              <img class="mb-3 w-[24px] h-[24px]" :src="card.avatar" alt="" />
+            </div>
+            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+              {{ card.header }}
+            </h5>
+            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+              {{ card.content }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+import cart from "~/static/cart.json";
+const cartData = reactive(cart);
 </script>
 
-<style scoped>
-</style>

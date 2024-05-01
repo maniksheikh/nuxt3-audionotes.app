@@ -1,0 +1,38 @@
+[
+  {
+    "image": "https://framerusercontent.com/images/tk59nac3AKEj4V7Ev7XdXVA6IC4.png",
+    "avatar": "https://framerusercontent.com/images/DNM7LXVNcLKMpKntj62VJWQKxBM.png",
+    "header": "Record or Write",
+    "content": "Record audio notes or create or copy your existing text notes."
+  },
+  {
+    "image": "https://framerusercontent.com/images/Kiwzv4k11VQjljlDuv3UmpfpXE.png?scale-down-to=512",
+    "avatar": "https://framerusercontent.com/images/uOW67oCXCxGd6QEfxMFBzPhh3U.png",
+    "header": "Upload Files",
+    "content": "Upload,mp3/.wav.mp4/.webm files Upto 50 Mb each"
+  },
+  {
+    "image": "https://framerusercontent.com/images/fiNnJXrw4c28sfcpFQcJQn9nqgg.png?scale-down-to=512",
+    "avatar": "https://framerusercontent.com/images/Kl6PYNGBZ0P2IjB546BkCBCM5A.png",
+    "header": "Summary Preferences",
+    "content": "Set Language, Style & Length of Summary"
+  },
+  {
+    "image": "https://framerusercontent.com/images/1NB8g5rB3VY79H5g6Bs5ykjg.png?scale-down-to=512",
+    "avatar": "https://framerusercontent.com/images/0lSLGRa02NEEK3vUKa34V6IeiE.png",
+    "header": "Edit Everything",
+    "content": "Edit generated Transcript as well as the Summary"
+  },
+  {
+    "image": "https://framerusercontent.com/images/wAC9jGoVi0qFU2S4qYggpWF2s0.png?scale-down-to=512",
+    "avatar": "https://framerusercontent.com/images/ZPzozPw4v2fwaeGYnMJ08wbzE.png",
+    "header": "Smart Transcripts",
+    "content": "Get super cool speaker segregated transcripts"
+  },
+  {
+    "image": "https://framerusercontent.com/images/SJGexvGrrODLXWz83ARa98amiRQ.png?scale-down-to=512",
+    "avatar": "https://framerusercontent.com/images/TzD5aTsQ92fNSWTajJyaRtNw.png",
+    "header": "Clean Trancripts",
+    "content": "Add frewuently incorrect words to get cleaner transcripts"
+  }
+]
