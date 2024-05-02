@@ -614,12 +614,11 @@
 
     <!-- Features -->
     <div class="mt-28 text-center">
-      <div>
-        <h2 class="text-[3.1rem] font-bold text-[#FF4F00] w-[1100px] m-auto">
-          Features
-        </h2>
-      </div>
-      <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
+      <h2 class="text-[3.1rem] font-bold text-[#FF4F00] w-[1100px] m-auto">
+        Features
+      </h2>
+
+      <div class="flex py-28 items-center justify-between w-[1100px] m-auto">
         <h1 class="text-[51px] text-left w-[400px] font-[500]">
           <span>Record,</span> <br />
           <span>Upload or</span> <br />
@@ -882,8 +881,8 @@
     </div>
 
     <!--Another Features -->
-    <div class="mt-28 text-center">
-      <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
+    <div class="mt-28">
+      <div class="flex mt-28 justify-between w-[1100px] m-auto">
         <h1 class="text-[56px] text-left w-[400px] font-[500]">
           <span class="opacity-80">We</span> <br />
           <span class="opacity-80">Have great</span> <br />
@@ -938,6 +937,153 @@
                 {{ social.content }}
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Another Features -->
+    <div class="mt-28">
+      <div class="flex mt-28 justify-between w-[1100px] m-auto">
+        <h1 class="text-[57px] text-left w-[440px] font-[500]">
+          <span class="opacity-85">Your very own </span>
+          <span class="text-[#705BE1]">AI</span> <br />
+          <span class="text-[#705BE1]"> Assistant</span>
+        </h1>
+        <p class="text-[32px] text-left font-[500] text-gray-900">
+          With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
+          search <br />
+          and QnA to use Audionotes as an <br />
+          assistant to glance through all your <br />
+          notes at once. You can chat with your <br />
+          individual notes too.
+        </p>
+      </div>
+    </div>
+
+    <!-- Another chat cart  -->
+    <div class="mt-28 w-[1100px] m-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
+        <div
+          class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
+        >
+          <div class="pt-12 pl-11 text-surface dark:text-white">
+            <div>
+              <img
+                class="w-[48px] h-[48px]"
+                decoding="async"
+                sizes="48px"
+                src="https://framerusercontent.com/images/zlirRD4k7NGvkqeWr2JKc30Aw.png"
+                alt=""
+                style="
+                  display: block;
+
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <h5
+              class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
+            >
+              Chat with your Note
+            </h5>
+            <p class="mb-4 text-[18px] text-gray-200 font-[500]">
+              Contextual search and chat for all your <br />
+              notes. Ask questions, Fins references and <br />
+              do more!
+            </p>
+          </div>
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <nuxt-link to="#">
+              <img
+                class="pr-4"
+                decoding="async"
+                sizes="min(428px, 100vw)"
+                srcset="
+                  https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=512   512w,
+                  https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=1024 1024w,
+                  https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png                    1712w
+                "
+                src="https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </nuxt-link>
+          </div>
+        </div>
+
+        <div
+          class="block rounded-3xl bg-[#FF4F00] shadow-secondary-1 dark:bg-surface-dark"
+        >
+          <div class="pt-12 pl-11 text-surface dark:text-white">
+            <div>
+              <img
+                class="w-[48px] h-[48px]"
+                decoding="async"
+                src="https://framerusercontent.com/images/5s0eMlwJRe5Jwd88S6pdVuSEdpc.png"
+                alt=""
+                style="
+                  display: block;
+
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <h5
+              class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
+            >
+              Magic Chat & Search
+            </h5>
+            <p class="mb-4 text-[18px] text-gray-200 font-[500]">
+              Audionnotes becomes your AI Assistant with <br />
+              Magic Chat
+            </p>
+          </div>
+          <div
+            class="relative overflow-hidden bg-cover bg-no-repeat"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+          >
+            <nuxt-link to="#">
+              <img
+                decoding="async"
+                sizes="min(500px, 100vw)"
+                srcset="
+                  https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=512   512w,
+                  https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=1024 1024w,
+                  https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png                    1712w
+                "
+                src="https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </nuxt-link>
           </div>
         </div>
       </div>
