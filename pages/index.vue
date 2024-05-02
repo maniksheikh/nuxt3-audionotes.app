@@ -689,8 +689,8 @@
     <div class="mt-28 text-center">
       <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
         <h1 class="text-[50px] text-left w-[400px] font-[500]">
-          <span class="opacity-80">Generate</span> <br />
-          <span class="opacity-80">Awesome</span> <br />
+          <span class="opacity-90">Generate</span> <br />
+          <span class="opacity-90">Awesome</span> <br />
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p class="text-[32px] text-left font-[600] text-gray-800">
@@ -902,11 +902,53 @@
         </p>
       </div>
     </div>
+
+    <!--Social Card system -->
+    <div class="mt-28 w-[1100px] m-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+        <div v-for="(social, index) in socialData" :key="index" class="mb-4">
+          <div
+            class="block rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          >
+            <div
+              class="relative overflow-hidden bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
+            >
+              <nuxt-link to="#">
+                <img
+                  :src="social.image"
+                  alt=""
+                  class="block w-full h-64 object-cover rounded-t-3xl"
+                />
+              </nuxt-link>
+            </div>
+            <div class="p-6 text-surface dark:text-white">
+              <div>
+                <img
+                  class="mb-3 w-[24px] h-[24px]"
+                  :src="social.avatar"
+                  alt=""
+                />
+              </div>
+              <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+                {{ social.header }}
+              </h5>
+              <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+                {{ social.content }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import cart from "~/static/cart.json";
+import Socialcart from "~/static/socialCart.json";
 const cartData = reactive(cart);
+const socialData = reactive(Socialcart);
 </script>
 
