@@ -1,27 +1,28 @@
 <template>
-  <div class="grid grid-cols-4 sm:grid-cols-1 two-column-grid gap-4 mt-8">
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-32">
     <div
       v-for="plan in plans"
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
+      class="bg-white rounded-lg shadow-md overflow-hidden"
     >
-      <div>
+      <div class="p-6">
         <h2 :class="plan.titleCss">{{ plan.name }}</h2>
         <h2 class="text-base mb-5 text-[#343434] leading-8">
           {{ plan.description }}
         </h2>
-        <div class="flex">
-          <p class="text-[#48404E] font-extrabold text-5xl sm:text-4xl mb-3">
+        <div class="flex items-center mb-3">
+          <p class="text-[#48404E] font-extrabold text-5xl sm:text-4xl">
             <span>$</span>{{ plan.price }}
           </p>
-          <p class="text-base text-[#48404E] font-medium mt-6 sm:mt-4">
+          <p class="text-base text-[#48404E] font-medium ml-2">
             {{ plan.billingCycle }}
           </p>
         </div>
         <small class="text-[#7D6E7D]">{{ plan.billingType }}</small>
-        <div>
-          <p class="text-[#48404E] font-semibold text-lg py-4">
+        <div class="mt-4">
+          <p class="text-[#48404E] font-semibold text-lg pb-2">
             Package Includes:
           </p>
           <div>
@@ -50,7 +51,7 @@
         </div>
         <button
           :style="plan.buttonCss"
-          class="inline-block w-full mt-6 rounded-lg px-6 py-2 text-white text-base font-medium text-center"
+          class="inline-block w-full mt-6 rounded-lg px-6 py-2 text-white text-base font-medium text-center bg-blue-500 hover:bg-blue-600"
           @click="startPurchase(plan)"
           :aria-label="plan.buttonText"
           :title="plan.buttonText"
@@ -59,7 +60,6 @@
         </button>
       </div>
     </div>
-    <div></div>
   </div>
 </template>
   

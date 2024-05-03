@@ -1,24 +1,47 @@
 {
-  "monthly": [
+  "free": [
     {
-      "id": "starter-monthly",
-      "name": "Standard",
+      "id": "free",
+      "name": "Free",
       "description": "Perfect for getting started",
-      "price": 15,
+      "price": 0,
       "billingCycle": "/ month",
       "billingType": "Billed Monthly.",
       "features": [
-        "30 Speaking Session every month (15 minutes/session)",
-        "AI-Powered Feedback",
-        "Conversation History",
-        "Realtime Transcription",
-        "Realtime Translation into 100+ Languages",
-        "Basic Support Via Email"
+        "10 Mins of Voice Notes Free",
+        "Upto 5 Mins/Voice Note",
+        "Generate Content",
+        "Search Voice Notes, Tag Notes, Mark as Favourites",
+        "Set Summary Language, Style & Length"
       ],
       "class": "border-2 p-6 rounded-xl",
       "css": "background: #f2c4a336; border-color: #f2c4a3;",
       "titleCss": "text-[#FF6B00] font-bold text-2xl",
-      "buttonText": "Subscribe Now",
+      "buttonText": "Try Now!",
+      "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+      "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
+    }
+  ],
+
+  "monthly": [
+    {
+      "id": "starter-monthly",
+      "name": "AudioNotes Personal",
+      "description": "Perfect for getting started",
+      "price": 9,
+      "billingCycle": "/ month",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "Unlimited Voice Notes, File Uploads & Text Notes",
+        "15 Mins/Voice Note & 50 Mb/File",
+        "Generate Unlimited Content",
+        "Generate Super Summaries",
+        "Notion, Zapier & Webhook Integrations"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #f2c4a336; border-color: #f2c4a3;",
+      "titleCss": "text-[#FF6B00] font-bold text-2xl",
+      "buttonText": "Upgrade Now!",
       "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
@@ -26,72 +49,72 @@
       "id": "premium-monthly",
       "name": "Premium",
       "description": "Best choice for serious learner",
-      "price": 25,
+      "price": 19,
       "billingCycle": "/ month",
       "billingType": "Billed Monthly.",
       "features": [
-        "60 Speaking Session every month (15 minutes/session)",
-        "All Standard Tier Features",
-        "Multi Lingual Support (incoming)",
-        "Tailored Curriculum For User (incoming)",
-        "Priority Support Via Email & WhatsApp"
+        "Unlimited Voice Notes, File Uploads & Text Notes",
+        "15 Mins/Voice Note & 50 Mb/File",
+        "Generate Unlimited Content",
+        "Generate Super Summaries",
+        "Notion, Zapier & Webhook Integrations"
       ],
       "class": "border-2 p-6 rounded-xl",
       "css": "background: #dcbefa42; border-color: #DCBEFA;",
       "titleCss": "text-[#9030ED] font-bold text-2xl",
-      "buttonText": "Subscribe Now",
+      "buttonText": "Upgrade Now!",
       "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
       "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
-    },
-    {
-      "id": "starter-lifetime",
-      "name": "Standard Lifetime",
-      "description": "Best value for money",
-      "price": 250,
-      "billingCycle": "/ lifetime*",
-      "billingType": "Billed Once",
-      "features": [
-        "30 Speaking Session every month (15 minutes/session)",
-        "All Standard Tier Features",
-        "Lifetime Access of the Platform",
-        "Feature Request Opportunity",
-        "Basic Support Via Email, WhatsApp & Call",
-        "CEO's Personal Number Access"
-      ],
-      "class": "border-2 p-6 rounded-xl",
-      "css": "background: rgb(234 239 255); border-color: rgb(191 207 255);",
-      "titleCss": "text-[#4B587C] font-bold text-2xl",
-      "buttonText": "Get Lifetime Access",
-      "buttonCss": "background: linear-gradient(rgb(100 158 247) 0%, rgb(68 69 199) 100%)",
-      "link": "https://buy.stripe.com/aEUbMi6WS1GcbZecNe"
-    },
-    {
-      "id": "premium-lifetime",
-      "name": "Premium Lifetime",
-      "description": "Best package at discount",
-      "price": 450,
-      "billingCycle": "/ lifetime*",
-      "billingType": "Billed Once.",
-      "features": [
-        "60 Speaking Session every month (15 minute / session)",
-        "All Premium Tier Features",
-        "Lifetime Access of the Platform",
-        "Feature Request Priority",
-        "Basic Support Via Email, WhatsApp & Call",
-        "CEO's Personal Number Access"
-      ],
-      "class": "bg-[#faaed345] border-2 border-[#faaed3] p-6 rounded-xl",
-      "css": "background: #faaed345; border-color: #faaed3;",
-      "titleCss": "text-[#E71B7C] font-bold text-2xl",
-      "buttonText": "Get Lifetime Access",
-      "buttonCss": "background: linear-gradient(180deg,#fb52a4 0%,#E71B7C 100%)",
-      "link": "https://buy.stripe.com/cN25nUgxs98E4wM9B1"
     }
   ],
-  "yearly": [
+  "annual": [
     {
-      "id": "starter-yearly",
-      "name": "Standard",
+      "id": "annual",
+      "name": "AudioNotes Personal",
+      "description": "Perfect for getting started",
+      "price": 69,
+      "billingCycle": "/ month",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "Unlimited Voice Notes, File Uploads & Text Notes",
+        "15 Mins/Voice Note & 50 Mb/File",
+        "Generate Unlimited Content",
+        "Generate Super Summaries",
+        "Notion, Zapier & Webhook Integrations"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #f2c4a336; border-color: #f2c4a3;",
+      "titleCss": "text-[#FF6B00] font-bold text-2xl",
+      "buttonText": "Upgrade Now!",
+      "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+      "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
+    },
+    {
+      "id": "premium-monthly",
+      "name": "Premium",
+      "description": "Best choice for serious learner",
+      "price": 129,
+      "billingCycle": "/ month",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "Unlimited Voice Notes, File Uploads & Text Notes",
+        "15 Mins/Voice Note & 50 Mb/File",
+        "Generate Unlimited Content",
+        "Generate Super Summaries",
+        "Notion, Zapier & Webhook Integrations"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #dcbefa42; border-color: #DCBEFA;",
+      "titleCss": "text-[#9030ED] font-bold text-2xl",
+      "buttonText": "Upgrade Now!",
+      "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
+      "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
+    }
+  ],
+  "Lifetime": [
+    {
+      "id": "lifetime",
+      "name": "lifetime",
       "description": "Perfect for getting started",
       "price": 12,
       "billingCycle": "/ month",
@@ -131,50 +154,6 @@
       "buttonText": "Subscribe Now",
       "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
       "link": "https://buy.stripe.com/00g3fM6WSbgMe7m6oM"
-    },
-    {
-      "id": "starter-lifetime",
-      "name": "Standard Lifetime",
-      "description": "Best value for money",
-      "price": 250,
-      "billingCycle": "/ lifetime*",
-      "billingType": "Billed Once",
-      "features": [
-        "30 Speaking Session every month (15 minutes/session)",
-        "All Standard Tier Features",
-        "Lifetime Access of the Platform",
-        "Feature Request Opportunity",
-        "Basic Support Via Email, WhatsApp & Call",
-        "CEO's Personal Number Access"
-      ],
-      "class": "border-2 p-6 rounded-xl",
-      "css": "background: rgb(234 239 255); border-color: rgb(191 207 255);",
-      "titleCss": "text-[#4B587C] font-bold text-2xl",
-      "buttonText": "Get Lifetime Access",
-      "buttonCss": "background: linear-gradient(rgb(100 158 247) 0%, rgb(68 69 199) 100%)",
-      "link": "https://buy.stripe.com/aEUbMi6WS1GcbZecNe"
-    },
-    {
-      "id": "premium-lifetime",
-      "name": "Premium Lifetime",
-      "description": "Best package at discount",
-      "price": 450,
-      "billingCycle": "/ lifetime*",
-      "billingType": "Billed Once.",
-      "features": [
-        "60 Speaking Session every month (15 minute / session)",
-        "All Premium Tier Features",
-        "Lifetime Access of the Platform",
-        "Feature Request Priority",
-        "Basic Support Via Email, WhatsApp & Call",
-        "CEO's Personal Number Access"
-      ],
-      "class": "bg-[#faaed345] border-2 border-[#faaed3] p-6 rounded-xl",
-      "css": "background: #faaed345; border-color: #faaed3;",
-      "titleCss": "text-[#E71B7C] font-bold text-2xl",
-      "buttonText": "Get Lifetime Access",
-      "buttonCss": "background: linear-gradient(180deg,#fb52a4 0%,#E71B7C 100%)",
-      "link": "https://buy.stripe.com/cN25nUgxs98E4wM9B1"
     }
   ]
 }

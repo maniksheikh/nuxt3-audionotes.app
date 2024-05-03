@@ -1,18 +1,18 @@
 <template>
   <div class="bg-white py-24 xl:px-6 sm:py-12">
-    <div class="max-w-[1300px] mx-auto">
-      <div class="max-w-[600px] mx-auto text-center mb-20">
-        <h2
-          class="text-[#343434] text-5xl sm:text-[28px] font-bold leading-relaxed"
-        >
-          Simple <span class="boujee-text">Pricing.</span>
+    <div class="max-w-[1300px] flex mx-auto">
+      <div class="max-w-[600px] mx-auto">
+        <h2 class="text-[#343434] text-[46px] font-bold leading-relaxed">
+          Plans & Pricing
         </h2>
-        <p class="text-[#666666] text-lg font-medium leading-8 mt-4">
-          Choose the plan that fits your budget & learning style, with clear
-          benefits and no surprises.
+        <p class="text-[#9e9898] text-[18px] font-medium leading-6 mt-3">
+          Save Upto 50% with our Annual Plans:
         </p>
       </div>
-      <pricing-section></pricing-section>
+      <div>
+        <pricing-section></pricing-section>
+      </div>
+
       <div
         v-if="isBangladeshi"
         class="max-w-[100%] px-[4rem] sm:px-[0rem] xl:px-[0rem] mt-10"
@@ -26,16 +26,5 @@
   <script setup>
 import pricingData from "~/static/pricing.json";
 const isBangladeshi = ref(false);
-
-const fetchData = async () => {
-  try {
-    const { data } = await $axios.get("https://api.country.is");
-    isBangladeshi.value = data.country === "BD";
-  } catch (error) {
-    console.error("Error fetching country data:", error);
-  }
-};
-
-onMounted(fetchData);
 </script>
   

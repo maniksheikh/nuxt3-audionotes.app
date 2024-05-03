@@ -1,0 +1,26 @@
+[
+  {
+    "question": "How does Audionotes.app function?",
+    "answer": "Audionotes.app leverages advanced AI models, including OpenAI~s Whisper and other audio models, to transcribe, summarize, and process the text efficiently and accurately."
+  },
+  {
+    "question": "Can I record audio from two sources on my device simultaneously?",
+    "answer": "Our app captures audio input exvlusively from your devices microphone. We do not support recording audio from other sources, such as speakers."
+  },
+  {
+    "question": "What are the audio length limitations on the app?",
+    "answer": "Our free plan supports up to5 minutes per note, while our basic and premium plans support up to 15 minutes and 60 minutes per note, respectively. For longer notes/podcast-pls check out podnotes (www.podnotes.app)"
+  },
+  {
+    "question": "How can I reach out for support?",
+    "answer": "For any queries or assistance, please email us at vatsal@audionotes.app. We strive to respond within 24 hours."
+  },
+  {
+    "question": "Do you provide refunds?",
+    "answer": "We do not offer refunds. However, users can test the app for free before deciding to purchase one of our premium plans."
+  },
+  {
+    "question": "Do you support languages other than English?",
+    "answer": "Yes, we support 19 languages - Dutch, English (en, en-AU, en-US, en-GB, en-NZ, en-IN), French, Hindi, German, Indonesian, Italian, Japanese, Korean, Mandarin, Norwegian, Polish,Portugueese, Russian, Spanish, Swediesh, Turkish, Ukranian"
+  }
+]

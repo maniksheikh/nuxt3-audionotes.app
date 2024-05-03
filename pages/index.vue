@@ -1140,13 +1140,150 @@
         </div>
       </div>
     </section>
+
+    <!-- Pricing section  -->
+    <div id="pricing">
+      <div class="bg-white py-24">
+        <div class="w-[90%] max-w-[1300px] mx-auto">
+          <div class="max-w-[600px] mx-auto text-center mb-20">
+            <h2
+              class="text-[#343434] text-5xl sm:text-[28px] font-bold leading-relaxed"
+            >
+              Simple <span class="boujee-text">Pricing.</span>
+            </h2>
+            <p class="text-[#666666] text-lg font-medium leading-8 mt-4">
+              Choose the plan that fits your budget & learning style, with clear
+              benefits and no surprises.
+            </p>
+          </div>
+          <div v-if="isBangladeshi" class="w-[90%] max-w-6xl mx-auto mt-5">
+            <bkash :bkash="bkashData"></bkash>
+          </div>
+          <pricing-section v-else></pricing-section>
+
+          <div class="mx-auto text-center mt-16">
+            <nuxtLink
+              style="
+                background: linear-gradient(180deg, #a864f7 0%, #7244c7 100%);
+              "
+              to="/pricing"
+              class="inline-block rounded-lg px-6 py-2 text-white text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+              aria-label="See More Plans"
+              title="See More Plans"
+            >
+              See More Plans
+            </nuxtLink>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Faqs section  -->
+    <div id="faq" class="py-20">
+      <div class="mt-28 w-[1100px] flex justify-between m-auto">
+        <div>
+          <h2
+            class="text-[#343434] sm:text-[28px] font-bold leading-relaxed sm:leading-loose"
+          >
+            <span class="text-[56px] opacity-95">Need help?</span>
+          </h2>
+          <p class="text-[18px] opacity-50 font-medium leading-8 mt-3">
+            Don`t worry, we got you. Here are some answers <br />
+            for your questions.
+          </p>
+          <div
+            class="flex w-[180px] mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 px-7 py-3"
+          >
+            <a
+              href="/"
+              aria-label="Try For Free"
+              title="Try For Free"
+              class="flex items-center"
+            >
+              <span class="text-center text-[18px] font-[500] items-center"
+                >Help Center</span
+              >
+              <img
+                src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
+                alt=""
+                class="ml-1 w-4 h-4"
+                style="object-fit: cover; border-radius: inherit"
+              />
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col gap-4">
+            <div
+              v-for="(faq, index) in faqData"
+              :key="faq.id"
+              :class="{
+                'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded':
+                  selectedQuestion === index,
+                'p-4 bg-white rounded': selectedQuestion !== index,
+              }"
+            >
+              <div
+                @click="toggleQuestion(index)"
+                class="flex items-center justify-between cursor-pointer"
+              >
+                <h2 class="text-[19px] opacity-70 sm:text-base font-bold">
+                  {{ faq.question }}
+                </h2>
+                <button aria-label="faq question" title="faq question">
+                  <img
+                    v-if="selectedQuestion === index"
+                    decoding="async"
+                    src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
+                    alt=""
+                    style="
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: inherit;
+                      object-position: center;
+                      object-fit: cover;
+                      image-rendering: auto;
+                    "
+                  />
+                  <img
+                    v-else
+                    decoding="async"
+                    src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
+                    alt=""
+                    style="
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: inherit;
+                      object-position: center;
+                      object-fit: cover;
+                      image-rendering: auto;
+                    "
+                    sizes="16px"
+                  />
+                </button>
+              </div>
+              <p
+                v-if="selectedQuestion === index"
+                class="text-[#938383] text-base sm:text-sm sm:leading-7 mt-3 leading-7"
+              >
+                {{ faq.answer }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import cart from "~/static/cart.json";
 import Socialcart from "~/static/socialCart.json";
+import faq from "~/static/faqs.json";
 const cartData = reactive(cart);
 const socialData = reactive(Socialcart);
+const faqData = reactive(faq);
 </script>
 

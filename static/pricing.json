@@ -1,43 +1,57 @@
 [
   {
-    "id": "bd-standard",
-    "name": "Standard",
-    "description": "Discounted price for Bangladeshi",
-    "price": 750,
-    "billingCycle": "/ month",
+    "id": "bd-free",
+    "name": "Free",
+    "description": "free price for Bangladeshi",
+    "price": "000",
+    "billingCycle": "/ free",
     "billingType": "For 1 month access",
     "features": [
-      "30 Speaking Session",
-      "Upto 15 Minutes Per Session",
-      "All Available Free Tier Features",
-      "Enhanced AI Features",
-      "Multi Lingual Support (incoming)",
-      "Tailored Curriculum For User (incoming)",
-      "Priority Support Via Email"
+      "10 Mins of Voice Notes Free",
+      "Upto 5 Mins/Voice Note",
+      "Generate Content",
+      "Search Voice Notes, Tag Notes, Mark as Favourites",
+      "Set Summary Language, Style & Length"
     ],
     "titleCss": "text-[#9030ED] font-bold text-3xl",
-    "buttonText": "Get Started Now",
+    "buttonText": "Try Now!",
+    "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
+    "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt500/raBTZK"
+  },
+  {
+    "id": "bd-standard",
+    "name": "AudioNotes Personal",
+    "description": "Discounted price for Bangladeshi",
+    "price": 69,
+    "billingCycle": "/ year",
+    "billingType": "For 1 year access",
+    "features": [
+      "Unlimited Voice Notes, File Uploads & Text Notes",
+      "15 Mins/Voice Note & 50 Mb/File",
+      "Generate Unlimited Content",
+      "Generate Super Summaries",
+      "Notion, Zapier & Webhook Integrations"
+    ],
+    "titleCss": "text-[#9030ED] font-bold text-3xl",
+    "buttonText": "Upgrade Now!",
     "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
     "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt500/raBTZK"
   },
   {
     "id": "bd-standard-lifetime",
-    "name": "Standard Lifetime",
+    "name": "AudioNotes Pro",
     "description": "Discounted price for Bangladeshi",
-    "price": 7500,
+    "price": 249,
     "billingCycle": "/ One Time",
     "billingType": "For Lifetime Access",
     "features": [
-      "30 Speaking Session (per month)",
-      "Upto 15 Minutes Per Session",
-      "All Available Free Tier Features",
-      "Enhanced AI Features",
-      "Multi Lingual Support (incoming)",
-      "Tailored Curriculum For User (incoming)",
-      "Priority Support Via Email"
+      "Everything in Personal",
+      "900 Mins/month of Longer Voice Notes (50 mins/note)",
+      "Whatsapp Bot",
+      "Chat & Magic Chat with your notes"
     ],
     "titleCss": "text-[#FF6B00] font-bold text-3xl",
-    "buttonText": "Get Yearly Access",
+    "buttonText": "Upgrade Now!",
     "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
     "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt5000/kVkOMD"
   }
