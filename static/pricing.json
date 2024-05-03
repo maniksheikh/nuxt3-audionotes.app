@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bd-standard",
+    "name": "Standard",
+    "description": "Discounted price for Bangladeshi",
+    "price": 750,
+    "billingCycle": "/ month",
+    "billingType": "For 1 month access",
+    "features": [
+      "30 Speaking Session",
+      "Upto 15 Minutes Per Session",
+      "All Available Free Tier Features",
+      "Enhanced AI Features",
+      "Multi Lingual Support (incoming)",
+      "Tailored Curriculum For User (incoming)",
+      "Priority Support Via Email"
+    ],
+    "titleCss": "text-[#9030ED] font-bold text-3xl",
+    "buttonText": "Get Started Now",
+    "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
+    "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt500/raBTZK"
+  },
+  {
+    "id": "bd-standard-lifetime",
+    "name": "Standard Lifetime",
+    "description": "Discounted price for Bangladeshi",
+    "price": 7500,
+    "billingCycle": "/ One Time",
+    "billingType": "For Lifetime Access",
+    "features": [
+      "30 Speaking Session (per month)",
+      "Upto 15 Minutes Per Session",
+      "All Available Free Tier Features",
+      "Enhanced AI Features",
+      "Multi Lingual Support (incoming)",
+      "Tailored Curriculum For User (incoming)",
+      "Priority Support Via Email"
+    ],
+    "titleCss": "text-[#FF6B00] font-bold text-3xl",
+    "buttonText": "Get Yearly Access",
+    "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+    "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt5000/kVkOMD"
+  }
+]

@@ -32,7 +32,7 @@
           <li
             class="hover:border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"
           >
-            <a href="#">Pricing</a>
+            <a href="/pricing">Pricing</a>
           </li>
           <li
             class="hover:border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"

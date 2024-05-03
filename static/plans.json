@@ -1,0 +1,180 @@
+{
+  "monthly": [
+    {
+      "id": "starter-monthly",
+      "name": "Standard",
+      "description": "Perfect for getting started",
+      "price": 15,
+      "billingCycle": "/ month",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "30 Speaking Session every month (15 minutes/session)",
+        "AI-Powered Feedback",
+        "Conversation History",
+        "Realtime Transcription",
+        "Realtime Translation into 100+ Languages",
+        "Basic Support Via Email"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #f2c4a336; border-color: #f2c4a3;",
+      "titleCss": "text-[#FF6B00] font-bold text-2xl",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+      "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
+    },
+    {
+      "id": "premium-monthly",
+      "name": "Premium",
+      "description": "Best choice for serious learner",
+      "price": 25,
+      "billingCycle": "/ month",
+      "billingType": "Billed Monthly.",
+      "features": [
+        "60 Speaking Session every month (15 minutes/session)",
+        "All Standard Tier Features",
+        "Multi Lingual Support (incoming)",
+        "Tailored Curriculum For User (incoming)",
+        "Priority Support Via Email & WhatsApp"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #dcbefa42; border-color: #DCBEFA;",
+      "titleCss": "text-[#9030ED] font-bold text-2xl",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
+      "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
+    },
+    {
+      "id": "starter-lifetime",
+      "name": "Standard Lifetime",
+      "description": "Best value for money",
+      "price": 250,
+      "billingCycle": "/ lifetime*",
+      "billingType": "Billed Once",
+      "features": [
+        "30 Speaking Session every month (15 minutes/session)",
+        "All Standard Tier Features",
+        "Lifetime Access of the Platform",
+        "Feature Request Opportunity",
+        "Basic Support Via Email, WhatsApp & Call",
+        "CEO's Personal Number Access"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: rgb(234 239 255); border-color: rgb(191 207 255);",
+      "titleCss": "text-[#4B587C] font-bold text-2xl",
+      "buttonText": "Get Lifetime Access",
+      "buttonCss": "background: linear-gradient(rgb(100 158 247) 0%, rgb(68 69 199) 100%)",
+      "link": "https://buy.stripe.com/aEUbMi6WS1GcbZecNe"
+    },
+    {
+      "id": "premium-lifetime",
+      "name": "Premium Lifetime",
+      "description": "Best package at discount",
+      "price": 450,
+      "billingCycle": "/ lifetime*",
+      "billingType": "Billed Once.",
+      "features": [
+        "60 Speaking Session every month (15 minute / session)",
+        "All Premium Tier Features",
+        "Lifetime Access of the Platform",
+        "Feature Request Priority",
+        "Basic Support Via Email, WhatsApp & Call",
+        "CEO's Personal Number Access"
+      ],
+      "class": "bg-[#faaed345] border-2 border-[#faaed3] p-6 rounded-xl",
+      "css": "background: #faaed345; border-color: #faaed3;",
+      "titleCss": "text-[#E71B7C] font-bold text-2xl",
+      "buttonText": "Get Lifetime Access",
+      "buttonCss": "background: linear-gradient(180deg,#fb52a4 0%,#E71B7C 100%)",
+      "link": "https://buy.stripe.com/cN25nUgxs98E4wM9B1"
+    }
+  ],
+  "yearly": [
+    {
+      "id": "starter-yearly",
+      "name": "Standard",
+      "description": "Perfect for getting started",
+      "price": 12,
+      "billingCycle": "/ month",
+      "billingType": "$144 Billed Yearly",
+      "features": [
+        "30 Speaking Session every month (15 minutes/session)",
+        "AI-Powered Feedback",
+        "Conversation History",
+        "Realtime Transcription",
+        "Realtime Translation into 100+ Languages",
+        "Basic Support Via Email"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #f2c4a336; border-color: #f2c4a3;",
+      "titleCss": "text-[#FF6B00] font-bold text-2xl",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+      "link": "https://buy.stripe.com/14kg2y1Cy1GcbZe4gG"
+    },
+    {
+      "id": "premium-yearly",
+      "name": "Premium",
+      "description": "Best choice for serious learner",
+      "price": 20,
+      "billingCycle": "/ month",
+      "billingType": "$240 Billed Yearly",
+      "features": [
+        "60 Speaking Session every month (15 minutes/session)",
+        "All Standard Tier Features",
+        "Multi Lingual Support (incoming)",
+        "Tailored Curriculum For User (incoming)",
+        "Priority Support Via Email & WhatsApp"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: #dcbefa42; border-color: #DCBEFA;",
+      "titleCss": "text-[#9030ED] font-bold text-2xl",
+      "buttonText": "Subscribe Now",
+      "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
+      "link": "https://buy.stripe.com/00g3fM6WSbgMe7m6oM"
+    },
+    {
+      "id": "starter-lifetime",
+      "name": "Standard Lifetime",
+      "description": "Best value for money",
+      "price": 250,
+      "billingCycle": "/ lifetime*",
+      "billingType": "Billed Once",
+      "features": [
+        "30 Speaking Session every month (15 minutes/session)",
+        "All Standard Tier Features",
+        "Lifetime Access of the Platform",
+        "Feature Request Opportunity",
+        "Basic Support Via Email, WhatsApp & Call",
+        "CEO's Personal Number Access"
+      ],
+      "class": "border-2 p-6 rounded-xl",
+      "css": "background: rgb(234 239 255); border-color: rgb(191 207 255);",
+      "titleCss": "text-[#4B587C] font-bold text-2xl",
+      "buttonText": "Get Lifetime Access",
+      "buttonCss": "background: linear-gradient(rgb(100 158 247) 0%, rgb(68 69 199) 100%)",
+      "link": "https://buy.stripe.com/aEUbMi6WS1GcbZecNe"
+    },
+    {
+      "id": "premium-lifetime",
+      "name": "Premium Lifetime",
+      "description": "Best package at discount",
+      "price": 450,
+      "billingCycle": "/ lifetime*",
+      "billingType": "Billed Once.",
+      "features": [
+        "60 Speaking Session every month (15 minute / session)",
+        "All Premium Tier Features",
+        "Lifetime Access of the Platform",
+        "Feature Request Priority",
+        "Basic Support Via Email, WhatsApp & Call",
+        "CEO's Personal Number Access"
+      ],
+      "class": "bg-[#faaed345] border-2 border-[#faaed3] p-6 rounded-xl",
+      "css": "background: #faaed345; border-color: #faaed3;",
+      "titleCss": "text-[#E71B7C] font-bold text-2xl",
+      "buttonText": "Get Lifetime Access",
+      "buttonCss": "background: linear-gradient(180deg,#fb52a4 0%,#E71B7C 100%)",
+      "link": "https://buy.stripe.com/cN25nUgxs98E4wM9B1"
+    }
+  ]
+}
