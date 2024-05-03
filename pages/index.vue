@@ -1088,6 +1088,58 @@
         </div>
       </div>
     </div>
+
+    <!-- Mobile App section  -->
+    <section>
+      <div class="mt-32 w-[1100px] m-auto text-center">
+        <div>
+          <h4 class="text-[46px] font-[500]">
+            <span class="opacity-90">Get the Audionotes</span>
+            <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
+          </h4>
+          <div>
+            <p class="mt-5 text-[19px] opacity-50">
+              Access audiones on your android or iOS device by downloading our
+              lightweight progressive web app (PWA). Please note: <br />
+              As of now, Audionotes is not available on the app store or play
+              store.
+            </p>
+            <p class="mt-4 text-[19px] opacity-50">
+              Please open this link in Safari browser in case you using an
+              iPhone
+            </p>
+          </div>
+          <a href="#">
+            <p
+              class="mt-6 w-[375px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-3xl text-white"
+            >
+              Download our Lightweight Mobile App
+            </p>
+          </a>
+          <div></div>
+        </div>
+        <div class="mt-32 w-[1100px] m-auto">
+          <h4 class="text-[46px] font-[500]">
+            <span class="opacity-90">Pin our </span>
+            <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
+          </h4>
+          <div>
+            <p class="mt-5 text-[19px] opacity-50">
+              Access audiones on your desktop with Chrome Extension. Please open
+              this link in Safari browser in case you using an iPhone
+            </p>
+          </div>
+          <a href="#">
+            <p
+              class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+            >
+              Download Chrome extension
+            </p>
+          </a>
+          <div></div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
