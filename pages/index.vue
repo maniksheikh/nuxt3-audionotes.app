@@ -1192,7 +1192,7 @@
             for your questions.
           </p>
           <div
-            class="flex w-[180px] mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 px-7 py-3"
+            class="flex w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 px-5 py-4"
           >
             <a
               href="/"
@@ -1275,6 +1275,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer section  -->
+    <footer></footer>
   </div>
 </template>
 
