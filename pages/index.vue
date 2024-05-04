@@ -1093,8 +1093,8 @@
     <section>
       <div class="mt-32 w-[1100px] m-auto text-center">
         <div>
-          <h4 class="text-[46px] font-[500]">
-            <span class="opacity-90">Get the Audionotes</span>
+          <h4 class="text-[56px] font-[700]">
+            <span class="opacity-75">Get the Audionotes</span>
             <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
           </h4>
           <div>
@@ -1111,12 +1111,86 @@
           </div>
           <a href="#">
             <p
-              class="mt-6 w-[375px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-3xl text-white"
+              class="mt-7 w-[375px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-3xl text-white"
             >
               Download our Lightweight Mobile App
             </p>
           </a>
-          <div></div>
+          <div class="main-container">
+            <div
+              class="mt-32 h-[470px] m-auto flex justify-center items-center overflow-hidden"
+            >
+              <div
+                class="relative w-64 mt-36 h-[520px] border border-gray-400 rounded-xl transform -rotate-[24deg]"
+              >
+                <img
+                  decoding="async"
+                  loading="lazy"
+                  sizes="237px"
+                  srcset="
+                    https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png 475w
+                  "
+                  src="https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <div
+                class="relative border border-gray-400 w-72 mt-32 h-[480px] rounded-xl rotate-[35deg]"
+              >
+                <img
+                  decoding="async"
+                  loading="lazy"
+                  sizes="237px"
+                  srcset="
+                    https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png 475w
+                  "
+                  src="https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <div
+                class="absolute w-64 rounded-xl border border-gray-400 h-106 transform"
+              >
+                <img
+                  decoding="async"
+                  loading="lazy"
+                  sizes="263px"
+                  srcset="
+                    https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png 474w
+                  "
+                  src="https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+            </div>
+          </div>
         </div>
         <div class="mt-32 w-[1100px] m-auto">
           <h4 class="text-[46px] font-[500]">
