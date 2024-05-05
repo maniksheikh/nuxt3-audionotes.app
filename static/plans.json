@@ -5,7 +5,7 @@
       "name": "Free",
       "description": "Perfect for getting started",
       "price": 0,
-      "billingCycle": "/ month",
+      "billingCycle": "/",
       "billingType": "Billed Monthly.",
       "features": [
         "10 Mins of Voice Notes Free",
@@ -47,7 +47,7 @@
     },
     {
       "id": "premium-monthly",
-      "name": "Premium",
+      "name": "AudioNotes Pro",
       "description": "Best choice for serious learner",
       "price": 19,
       "billingCycle": "/ month",
@@ -73,7 +73,7 @@
       "name": "AudioNotes Personal",
       "description": "Perfect for getting started",
       "price": 69,
-      "billingCycle": "/ month",
+      "billingCycle": "/ year",
       "billingType": "Billed Monthly.",
       "features": [
         "Unlimited Voice Notes, File Uploads & Text Notes",
@@ -91,10 +91,10 @@
     },
     {
       "id": "premium-monthly",
-      "name": "Premium",
+      "name": "AudioNotes Pro",
       "description": "Best choice for serious learner",
       "price": 129,
-      "billingCycle": "/ month",
+      "billingCycle": "/ year",
       "billingType": "Billed Monthly.",
       "features": [
         "Unlimited Voice Notes, File Uploads & Text Notes",
@@ -114,10 +114,10 @@
   "Lifetime": [
     {
       "id": "lifetime",
-      "name": "lifetime",
+      "name": "AudioNotes Personal",
       "description": "Perfect for getting started",
-      "price": 12,
-      "billingCycle": "/ month",
+      "price": 129,
+      "billingCycle": "/",
       "billingType": "$144 Billed Yearly",
       "features": [
         "30 Speaking Session every month (15 minutes/session)",
@@ -135,8 +135,8 @@
       "link": "https://buy.stripe.com/14kg2y1Cy1GcbZe4gG"
     },
     {
-      "id": "premium-yearly",
-      "name": "Premium",
+      "id": "lifetime",
+      "name": "Lifetime",
       "description": "Best choice for serious learner",
       "price": 20,
       "billingCycle": "/ month",

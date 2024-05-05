@@ -1121,6 +1121,102 @@
               class="mt-32 h-[470px] m-auto flex justify-center items-center overflow-hidden"
             >
               <div
+                class="relative w-64 mt-36 h-[520px] rounded-xl transform -rotate-[24deg]"
+              >
+                <img
+                  decoding="async"
+                  loading="lazy"
+                  sizes="237px"
+                  srcset="
+                    https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png?scale-down-to=2048 1013w,
+                    https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png                    1209w
+                  "
+                  src="https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <div
+                class="relative w-72 mt-40 h-[570px] rounded-xl rotate-[30deg]"
+              >
+                <img
+                  decoding="async"
+                  loading="lazy"
+                  sizes="237px"
+                  srcset="
+                    https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png?scale-down-to=2048 1013w,
+                    https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png                    1209w
+                  "
+                  src="https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <div class="absolute w-64 rounded-xl h-[510px] transform">
+                <img
+                  decoding="async"
+                  loading="lazy"
+                  sizes="263px"
+                  srcset="
+                    https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png?scale-down-to=2048 1013w,
+                    https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png                    1208w
+                  "
+                  src="https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-32 w-[1100px] m-auto">
+          <h4 class="text-[56px] font-[700]">
+            <span class="opacity-85">Pin our </span>
+            <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
+          </h4>
+          <div>
+            <p class="mt-5 text-[19px] opacity-50">
+              Access audiones on your desktop with Chrome Extension. Please open
+              this link in Safari browser in case you using an <br />
+              iPhone
+            </p>
+          </div>
+          <a href="#">
+            <p
+              class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+            >
+              Download Chrome extension
+            </p>
+          </a>
+          <div class="main-container">
+            <div
+              class="mt-32 h-[470px] m-auto flex justify-center items-center overflow-hidden"
+            >
+              <div
                 class="relative w-64 mt-36 h-[520px] border border-gray-400 rounded-xl transform -rotate-[24deg]"
               >
                 <img
@@ -1192,62 +1288,30 @@
             </div>
           </div>
         </div>
-        <div class="mt-32 w-[1100px] m-auto">
-          <h4 class="text-[46px] font-[500]">
-            <span class="opacity-90">Pin our </span>
-            <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
-          </h4>
-          <div>
-            <p class="mt-5 text-[19px] opacity-50">
-              Access audiones on your desktop with Chrome Extension. Please open
-              this link in Safari browser in case you using an iPhone
-            </p>
-          </div>
-          <a href="#">
-            <p
-              class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
-            >
-              Download Chrome extension
-            </p>
-          </a>
-          <div></div>
-        </div>
       </div>
     </section>
-
     <!-- Pricing section  -->
-    <div id="pricing">
-      <div class="bg-white py-24">
-        <div class="w-[90%] max-w-[1300px] mx-auto">
-          <div class="max-w-[600px] mx-auto text-center mb-20">
-            <h2
-              class="text-[#343434] text-5xl sm:text-[28px] font-bold leading-relaxed"
-            >
-              Simple <span class="boujee-text">Pricing.</span>
-            </h2>
-            <p class="text-[#666666] text-lg font-medium leading-8 mt-4">
-              Choose the plan that fits your budget & learning style, with clear
-              benefits and no surprises.
-            </p>
-          </div>
-          <div v-if="isBangladeshi" class="w-[90%] max-w-6xl mx-auto mt-5">
-            <bkash :bkash="bkashData"></bkash>
-          </div>
-          <pricing-section v-else></pricing-section>
+    <div class="bg-white mt-32 py-28 xl:px-6 sm:py-12">
+      <div class="max-w-[1100px] flex m-auto">
+        <div class="w-[800px] mx-auto">
+          <h2
+            class="text-[#343434] opacity-90 text-[56px] font-bold leading-relaxed"
+          >
+            Plans & Pricing
+          </h2>
+          <p class="text-[#9e9898] text-[18px] font-medium leading-6 mt-3">
+            Save Upto 50% with our Annual Plans:
+          </p>
+        </div>
+        <div class="w-[100%]">
+          <pricing-section></pricing-section>
+        </div>
 
-          <div class="mx-auto text-center mt-16">
-            <nuxtLink
-              style="
-                background: linear-gradient(180deg, #a864f7 0%, #7244c7 100%);
-              "
-              to="/pricing"
-              class="inline-block rounded-lg px-6 py-2 text-white text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
-              aria-label="See More Plans"
-              title="See More Plans"
-            >
-              See More Plans
-            </nuxtLink>
-          </div>
+        <div
+          v-if="isBangladeshi"
+          class="w-[100%] px-[4rem] sm:px-[0rem] xl:px-[0rem] mt-10"
+        >
+          <bkash :pricing="pricingData"></bkash>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
-<template>
+ <template>
   <div class="bg-white py-24 xl:px-6 sm:py-12">
-    <div class="max-w-[1300px] flex mx-auto">
+    <div class="max-w-[1100px] flex mx-auto">
       <div class="max-w-[600px] mx-auto">
         <h2 class="text-[#343434] text-[46px] font-bold leading-relaxed">
           Plans & Pricing
@@ -9,13 +9,13 @@
           Save Upto 50% with our Annual Plans:
         </p>
       </div>
-      <div>
+      <div class="w-[100%]">
         <pricing-section></pricing-section>
       </div>
 
       <div
         v-if="isBangladeshi"
-        class="max-w-[100%] px-[4rem] sm:px-[0rem] xl:px-[0rem] mt-10"
+        class="w-[100%] px-[4rem] sm:px-[0rem] xl:px-[0rem] mt-10"
       >
         <bkash :pricing="pricingData"></bkash>
       </div>

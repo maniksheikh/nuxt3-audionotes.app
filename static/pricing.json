@@ -1,11 +1,11 @@
 [
   {
-    "id": "bd-free",
+    "id": "free",
     "name": "Free",
-    "description": "free price for Bangladeshi",
-    "price": "000",
-    "billingCycle": "/ free",
-    "billingType": "For 1 month access",
+    "description": "Perfect for getting started",
+    "price": 0,
+    "billingCycle": "/",
+    "billingType": "Billed Monthly.",
     "features": [
       "10 Mins of Voice Notes Free",
       "Upto 5 Mins/Voice Note",
@@ -13,13 +13,15 @@
       "Search Voice Notes, Tag Notes, Mark as Favourites",
       "Set Summary Language, Style & Length"
     ],
-    "titleCss": "text-[#9030ED] font-bold text-3xl",
+    "class": "border-2 p-6 rounded-xl",
+    "css": "background: #f2c4a336; border-color: #f2c4a3;",
+    "titleCss": "text-[#FF6B00] font-bold text-2xl",
     "buttonText": "Try Now!",
-    "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
-    "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt500/raBTZK"
+    "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+    "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
   },
   {
-    "id": "bd-standard",
+    "id": "bd-annual",
     "name": "AudioNotes Personal",
     "description": "Discounted price for Bangladeshi",
     "price": 69,
