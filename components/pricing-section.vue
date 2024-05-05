@@ -40,7 +40,7 @@
         </button>
       </div>
     </div>
-    <div class="mx-auto mt-12">
+    <div class="mx-auto w-[100%] mt-12">
       <pricing :plans="plansData" />
     </div>
   </div>

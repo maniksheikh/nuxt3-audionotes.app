@@ -56,7 +56,7 @@
         </section>
 
         <div
-          class="flex items-center bg-[#FF4F00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
+          class="flex items-center justify-center bg-[#FF4F00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
         >
           <nuxt-link
             to="/"
@@ -74,9 +74,8 @@
           </nuxt-link>
         </div>
         <br />
-
         <section>
-          <div>
+          <div class="mt-6">
             <div class="flex items-center justify-center w-[300px] m-auto">
               <span class="bg-black text-white p-2 rounded-md">4.9</span>
               <div class="ml-4 leading-6">
@@ -179,127 +178,64 @@
     </div>
 
     <!-- Brand section  -->
-    <section>
-      <div class="mt-20 text-center justify-center">
-        <h4
-          class="sans-serif text-[#262626] w-[1050px] m-auto text-[3.2rem] font-bold"
-        >
-          In the <span class="text-[#FF4F00] font-bold">Spotlight</span>
-        </h4>
-        <ul
-          class="flex items-center justify-center p-3 mt-20 w-[1050px] m-auto"
-        >
-          <li>
-            <a href="#">
-              <img
-                decoding="async"
-                src="https://framerusercontent.com/images/2pLbhVt1NvmAS3r95r3OkX71K4.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 180px;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </a>
-          </li>
-          <li class="ml-3">
-            <a href="#">
-              <img
-                decoding="async"
-                src="https://framerusercontent.com/images/Iiq0hGCkGt1rxiNL51FJvMYGbL4.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 180px;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </a>
-          </li>
-          <li class="ml-3">
-            <a href="#">
-              <img
-                decoding="async"
-                src="https://framerusercontent.com/images/0Zqaao5vS2FhWu0tg8U49GrIA.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 180px;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </a>
-          </li>
-          <li class="ml-3">
-            <a href="#">
-              <img
-                decoding="async"
-                src="https://framerusercontent.com/images/eiwyEenhZ9SOfO30P4U9OuHToSs.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 180px;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-            /></a>
-          </li>
-          <li class="ml-3">
-            <a href="#">
-              <img
-                decoding="async"
-                src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 180px;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-            /></a>
-          </li>
-        </ul>
-      </div>
+    <section class="mt-20 w-[1100px] m-auto text-center">
+      <h4 class="text-[#262626] w-[1100px] m-auto text-[56px] font-bold">
+        In the <span class="text-[#FF4F00] font-bold">Spotlight</span>
+      </h4>
+      <Vue3Marquee
+        class="marquee-container flex items-center justify-center p-3 mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
+      >
+        <img
+          class="marquee-item w-48 h-auto rounded object-cover"
+          decoding="async"
+          src="https://framerusercontent.com/images/2pLbhVt1NvmAS3r95r3OkX71K4.png"
+          alt=""
+        />
+        <img
+          class="marquee-item ml-3 w-48 h-auto rounded object-cover"
+          decoding="async"
+          src="https://framerusercontent.com/images/Iiq0hGCkGt1rxiNL51FJvMYGbL4.png"
+          alt=""
+        />
+        <img
+          class="marquee-item ml-3 w-48 h-auto rounded object-cover"
+          decoding="async"
+          src="https://framerusercontent.com/images/0Zqaao5vS2FhWu0tg8U49GrIA.png"
+          alt=""
+        />
+        <img
+          class="marquee-item ml-3 w-48 h-auto rounded object-cover"
+          decoding="async"
+          src="https://framerusercontent.com/images/eiwyEenhZ9SOfO30P4U9OuHToSs.png"
+          alt=""
+        />
+        <img
+          class="marquee-item ml-3 w-48 h-auto rounded object-cover"
+          decoding="async"
+          src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
+          alt=""
+        />
+      </Vue3Marquee>
     </section>
 
+    <!-- Foundeer section  -->
     <section>
-      <div class="mt-28">
-        <div
-          class="text-center sans-serif w-[1200px] items-center justify-center m-auto"
-        >
-          <h4 class="text-[3.2rem] text-[#262626] font-bold">
+      <div class="mt-28 sans-serif max-w-[1300px] mx-auto">
+        <div class="text-center pt-16">
+          <h4 class="text-[56px] text-[#262626] font-bold">
             <span class="text-[#FF4F00] font-bold">Audionotes</span> is for
             everyone!
           </h4>
-          <p class="mt-5 text-[17.5px] leading-8 text-gray-500">
+          <p class="mt-5 text-[19px] leading-8 font-[400] opacity-60">
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
             productivity!
           </p>
         </div>
-        <div>
-          <ul class="flex gap-5 mt-10">
-            <li
-              class="items-center justify-center border border-gray-300 rounded-xl m-auto relative"
+        <div class="flex gap-5 mt-10 w-[1200px] justify-center m-auto">
+          <Vue3Marquee>
+            <div
+              class="items-center ml-4 h-[380px] w-[360px] justify-center p-2 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
             >
               <a href="#">
                 <img
@@ -315,8 +251,8 @@
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center center;
                     object-fit: cover;
@@ -324,13 +260,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
-                  >productivity enthusiasts</span
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  >Productivity Enthusiasts</span
                 >
               </a>
-            </li>
-            <li
-              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            </div>
+            <div
+              class="items-center ml-4 h-[380px] w-[360px] p-2 justify-center border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -345,8 +281,8 @@
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center center;
                     object-fit: cover;
@@ -354,13 +290,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
-                  >Lawer</span
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  >Lawyer</span
                 >
               </a>
-            </li>
-            <li
-              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            </div>
+            <div
+              class="items-center ml-4 justify-center p-2 h-[380px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -375,8 +311,8 @@
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center center;
                     object-fit: cover;
@@ -384,13 +320,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
                   >Marketeer</span
                 >
               </a>
-            </li>
-            <li
-              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            </div>
+            <div
+              class="items-center ml-4 justify-center p-2 h-[380px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -405,8 +341,8 @@
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center center;
                     object-fit: cover;
@@ -414,13 +350,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
                   >Students</span
                 >
               </a>
-            </li>
-            <li
-              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            </div>
+            <div
+              class="items-center ml-4 justify-center p-2 border h-[380px] w-[360px] border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -435,8 +371,8 @@
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center center;
                     object-fit: cover;
@@ -444,13 +380,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
                   >Entrepreneur</span
                 >
               </a>
-            </li>
-            <li
-              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            </div>
+            <div
+              class="items-center ml-4 justify-center p-2 border h-[380px] w-[360px] border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -465,8 +401,8 @@
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center center;
                     object-fit: cover;
@@ -474,42 +410,72 @@
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 flex flex-col"
                   >Doctor</span
                 >
               </a>
-            </li>
-            <li
-              class="items-center justify-center border border-gray-300 rounded-lg m-auto relative"
+            </div>
+            <div
+              class="items-center ml-4 justify-center p-2 h-[380px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
                   decoding="async"
                   sizes="337px"
                   srcset="
-                    https://framerusercontent.com/images/OIBG0c8zps4fWUtIknvSTKKqEkY.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/OIBG0c8zps4fWUtIknvSTKKqEkY.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/OIBG0c8zps4fWUtIknvSTKKqEkY.png                    1348w
+                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png                    1348w
                   "
-                  src="https://framerusercontent.com/images/OIBG0c8zps4fWUtIknvSTKKqEkY.png"
+                  src="https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png"
                   alt=""
                   style="
                     display: block;
-                    width: 370px;
-                    height: 350px;
+                    width: 100%;
+                    height: 100%;
                     border-radius: inherit;
-                    object-position: center;
+                    object-position: center center;
                     object-fit: cover;
                     image-rendering: auto;
                   "
                 />
                 <span
-                  class="text-center text-[18px] font-semibold absolute top-50 left-0 right-0 bottom-0 flex flex-col"
+                  class="text-center text-[20px] font-[700] absolute opacity-90 top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
                   >Founder</span
                 >
               </a>
-            </li>
-          </ul>
+            </div>
+            <div
+              class="items-center ml-4 justify-center p-2 h-[380px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+            >
+              <a href="#">
+                <img
+                  decoding="async"
+                  sizes="337px"
+                  srcset="
+                    https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <span
+                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  >Writer</span
+                >
+              </a>
+            </div>
+          </Vue3Marquee>
         </div>
       </div>
     </section>
@@ -1292,7 +1258,7 @@
     </section>
     <!-- Pricing section  -->
     <div class="bg-white mt-32 py-28 xl:px-6 sm:py-12">
-      <div class="max-w-[1100px] flex m-auto">
+      <div class="max-w-[1100px] flex justify-between m-auto">
         <div class="w-[800px] mx-auto">
           <h2
             class="text-[#343434] opacity-90 text-[56px] font-bold leading-relaxed"
@@ -1303,16 +1269,12 @@
             Save Upto 50% with our Annual Plans:
           </p>
         </div>
-        <div class="w-[100%]">
+        <div>
           <pricing-section></pricing-section>
         </div>
-
-        <div
-          v-if="isBangladeshi"
-          class="w-[100%] px-[4rem] sm:px-[0rem] xl:px-[0rem] mt-10"
-        >
-          <bkash :pricing="pricingData"></bkash>
-        </div>
+      </div>
+      <div>
+        <pricing></pricing>
       </div>
     </div>
 
@@ -1420,9 +1382,12 @@
 </template>
 
 <script setup>
+import { Vue3Marquee } from "vue3-marquee";
+
 import cart from "~/static/cart.json";
 import Socialcart from "~/static/socialCart.json";
 import faq from "~/static/faqs.json";
+
 const cartData = reactive(cart);
 const socialData = reactive(Socialcart);
 const faqData = reactive(faq);

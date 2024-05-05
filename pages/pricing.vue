@@ -12,19 +12,10 @@
       <div class="w-[100%]">
         <pricing-section></pricing-section>
       </div>
-
-      <div
-        v-if="isBangladeshi"
-        class="w-[100%] px-[4rem] sm:px-[0rem] xl:px-[0rem] mt-10"
-      >
-        <bkash :pricing="pricingData"></bkash>
-      </div>
     </div>
   </div>
 </template>
   
   <script setup>
-import pricingData from "~/static/pricing.json";
-const isBangladeshi = ref(false);
 </script>
   
