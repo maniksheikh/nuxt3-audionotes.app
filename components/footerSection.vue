@@ -46,7 +46,7 @@
               <li
                 class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
               >
-                <NuxtLink to="#" class="nuxt-link"> Home </NuxtLink>
+                <NuxtLink to="/" class="nuxt-link"> Home </NuxtLink>
               </li>
               <li
                 class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"

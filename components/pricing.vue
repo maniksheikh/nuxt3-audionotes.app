@@ -5,7 +5,7 @@
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] border border-gray-200 w-[320px] h-[479px] px-4 py-4 rounded-3xl shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[340px] h-[479px] px-4 py-4 rounded-4xl shadow-md overflow-hidden"
     >
       <div class="p-4">
         <h2 :class="plan.titleCss">{{ plan.name }}</h2>

@@ -1,7 +1,7 @@
 <template>
   <div class="sans-serif">
     <div
-      class="flex justify-center items-center h-[700px] overflow-hidden m-auto relative"
+      class="flex justify-center items-center h-[560px] overflow-hidden m-auto relative"
     >
       <div>
         <img
@@ -31,22 +31,26 @@
       >
         <section>
           <div class="sans-serif">
-            <h1 class="leading-5 text-5xl text-[#262626] font-semibold">
+            <h1 class="leading-8 text-[50px] text-[#262626] font-[600]">
               <span>Your</span>
-              <span class="text-5xl text-[#5c5b5b] font-md ml-2 italic"
+              <span
+                class="text-[54px] font-italic opacity-95 font-[400] ml-3 italic"
                 >cluttered</span
               >
-              <span class="text-5xl text-[#FF4F00] ml-2 font-semibold"
+              <span class="text-[50px] text-[#FF4F00] ml-3 font-[600]"
                 >Thoughts</span
               >
               <span class="ml-2">into</span>
               <br />
               <br />
-              <span class="text-5xl text-[#464444] font-md italic">clear</span>
-              <span class="text-5xl text-[#FF4F00] ml-2 font-semibold"
+              <span
+                class="text-[48px] font-italic opacity-90 font-[500] ml-3 italic"
+                >clear</span
+              >
+              <span class="text-5xl text-[#FF4F00] ml-3 opacity-95 font-[600]"
                 >Text Notes</span
               >
-              <span class="ml-2">using AI</span>
+              <span class="ml-3 opacity-95">using AI</span>
             </h1>
             <p class="mt-10 leading-8 text-[#807780] text-[22px]">
               Speak or type, Audionotes will transform your notes into <br />
@@ -56,7 +60,7 @@
         </section>
 
         <div
-          class="flex items-center justify-center bg-[#FF4F00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
+          class="flex items-center justify-center bg-[#FF4F00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-2 py-2"
         >
           <nuxt-link
             to="/"
@@ -178,65 +182,68 @@
     </div>
 
     <!-- Brand section  -->
-    <section class="mt-20 w-[1100px] m-auto text-center">
-      <h4 class="text-[#262626] w-[1100px] m-auto text-[56px] font-bold">
-        In the <span class="text-[#FF4F00] font-bold">Spotlight</span>
-      </h4>
+    <section class="mt-32 w-[1100px] m-auto text-center">
+      <h3 class="w-[1100px] m-auto text-[#FF4F00] text-[54px] font-[650]">
+        <span class="text-[52px] text-black opacity-80 font-[700]">In the</span>
+        Spotlight
+      </h3>
+    </section>
+    <div>
       <Vue3Marquee
         direction="20"
         class="marquee-container flex items-center justify-center p-3 mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
       >
         <img
-          class="marquee-item w-44 h-auto rounded object-cover"
+          class="marquee-item w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
           decoding="async"
           src="https://framerusercontent.com/images/2pLbhVt1NvmAS3r95r3OkX71K4.png"
           alt=""
         />
         <img
-          class="marquee-item ml-5 w-48 h-auto rounded object-cover"
+          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
           decoding="async"
           src="https://framerusercontent.com/images/Iiq0hGCkGt1rxiNL51FJvMYGbL4.png"
           alt=""
         />
         <img
-          class="marquee-item ml-5 w-48 h-auto rounded object-cover"
+          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
           decoding="async"
           src="https://framerusercontent.com/images/0Zqaao5vS2FhWu0tg8U49GrIA.png"
           alt=""
         />
         <img
-          class="marquee-item ml-5 w-48 h-auto rounded object-cover"
+          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
           decoding="async"
           src="https://framerusercontent.com/images/eiwyEenhZ9SOfO30P4U9OuHToSs.png"
           alt=""
         />
         <img
-          class="marquee-item ml-5 w-48 h-auto rounded object-cover"
+          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
           decoding="async"
           src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
           alt=""
         />
       </Vue3Marquee>
-    </section>
+    </div>
 
     <!-- Foundeer section  -->
     <section>
-      <div class="mt-28 sans-serif max-w-[1300px] mx-auto">
+      <div class="mt-32 sans-serif max-w-[1300px] mx-auto">
         <div class="text-center pt-16">
-          <h4 class="text-[56px] text-[#262626] font-bold">
-            <span class="text-[#FF4F00] font-bold">Audionotes</span> is for
+          <h4 class="text-[56px] text-[#262626] opacity-95 font-bold">
+            <span class="text-[#FF4F00] font-[700]">Audionotes</span> is for
             everyone!
           </h4>
-          <p class="mt-5 text-[19px] leading-8 font-[400] opacity-60">
+          <p class="mt-5 text-[19px] leading-8 font-[400] opacity-70">
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
             productivity!
           </p>
         </div>
-        <div class="flex gap-5 mt-16 w-[1200px] justify-center m-auto">
-          <Vue3Marquee duration="60">
+        <div class="flex gap-5 mt-16 p-10 w-[1200px] justify-center m-auto">
+          <Vue3Marquee duration="70">
             <div
-              class="items-center ml-4 h-[405px] w-[360px] justify-center p-2 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
+              class="items-center h-[415px] w-[330px] justify-center ml-5 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
             >
               <a href="#">
                 <img
@@ -261,13 +268,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Productivity Enthusiasts</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 h-[405px] w-[360px] p-2 justify-center border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center h-[415px] w-[330px] ml-5 p-2 justify-center border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -291,13 +298,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Lawyer</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 justify-center p-2 h-[405px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -321,13 +328,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Marketeer</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 justify-center p-2 h-[405px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center justify-center p-2 h-[415px] w-[330px] ml-5 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -351,13 +358,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Students</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 justify-center p-2 border h-[405px] w-[360px] border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -381,13 +388,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Entrepreneur</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 justify-center p-2 border h-[405px] w-[360px] border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -411,13 +418,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Doctor</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 justify-center p-2 h-[405px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -441,13 +448,13 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] absolute opacity-90 top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Founder</span
                 >
               </a>
             </div>
             <div
-              class="items-center ml-4 justify-center p-2 h-[405px] w-[360px] border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
+              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
             >
               <a href="#">
                 <img
@@ -471,7 +478,7 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[700] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-3 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >Writer</span
                 >
               </a>
@@ -484,15 +491,17 @@
     <!-- Audionotes use  -->
     <section>
       <div>
-        <div class="mt-40 items-center w-[1200px] m-auto text-center">
+        <div class="mt-48 items-center w-[1200px] m-auto text-center">
           <div>
-            <h4 class="text-[3.1rem] text-[#262626] font-bold">
-              What do I use
-              <span class="text-[#FF4F00] font-bold">Audionotes for?</span>
+            <h4 class="text-[56px] text-[#FF4F00] font-[650] opacity-95">
+              <span class="text-[56px] text-black font-[650] opacity-95"
+                >What do I use</span
+              >
+              Audionotes for?
             </h4>
           </div>
           <div class="mt-5">
-            <p class="text-[17.5px] text-gray-500">
+            <p class="text-[18px] text-gray-500">
               Audionotes is perfect for a variety of use-cases, 100x your
               productivity with Audionotes today!
             </p>
@@ -502,77 +511,81 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 w-[1100px] mx-auto"
         >
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">Journaling</h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
+              Journaling
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Just talk anywhere and Audionotes<br />will create a
               well-structured journal<br />entry for you.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
               To-do & Task Lists
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Create to-do and task lists using<br />voice and text notes on the
               go.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">Writing</h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
+              Writing
+            </h3>
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Ideas can strike you anywhere, just<br />record with Audionotes
               and use the<br />summaries later.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
               Message Assistant
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Dictate your messages to Audionotes<br />and it'll just structure
               them for you.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
               To-do & Task Lists
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Create to-do and task lists using<br />voice and text notes on the
               go.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
               Content Creation
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Generate amazing social media<br />content for Linkedin, Twitter,
               Blogs<br />using voice notes.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
               Professional Assistant
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Generate Contracts, Marketing Plans.
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
               Email Buddy
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Don't write emails, just speak and<br />Audionotes will do the
               rest!
             </p>
           </div>
           <div class="w-full mb-8">
-            <h3 class="text-[24px] text-[#262626] font-semibold">
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[600]">
               Summarize Meetings
             </h3>
-            <p class="mt-4 text-[17.5px] text-gray-500">
+            <p class="mt-4 text-[17.5px] text-gray-600">
               Record your meetings and summarize<br />them.
             </p>
           </div>
@@ -584,8 +597,8 @@
     <section>
       <div>
         <div class="mt-32">
-          <h1 class="text-center text-[56px] w-[1600px] m-auto font-semibold">
-            <span class="text-[#FF4F00]">Loved by</span>
+          <h1 class="text-center text-[56px] w-[1700px] m-auto font-semibold">
+            <span class="text-[#FF4F00] font-[700]">Loved by</span>
             <span class="ml-4 opacity-90">7000+ Happy Users ❤️</span>
           </h1>
 
@@ -738,18 +751,19 @@
     </section>
 
     <!-- Features -->
-    <div class="mt-28 text-center">
-      <h2 class="text-[3.1rem] font-bold text-[#FF4F00] w-[1100px] m-auto">
-        Features
-      </h2>
+    <div class="mt-28 text-center w-[1100px] m-auto">
+      <h2 class="text-[60px] font-[600] text-[#FF4F00]">Features</h2>
+    </div>
+    <br />
 
-      <div class="flex py-28 items-center justify-between w-[1100px] m-auto">
-        <h1 class="text-[51px] text-left w-[400px] font-[500]">
+    <div class="w-[1100px] m-auto">
+      <div class="flex items-center justify-between mt-20">
+        <h1 class="text-[52px] text-left w-[400px] opacity-90 font-[500]">
           <span>Record,</span> <br />
           <span>Upload or</span> <br />
           <span> Write</span>
         </h1>
-        <p class="text-[34px] text-left font-[600] text-gray-700">
+        <p class="text-[34px] text-left font-[600] opacity-95">
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <br />
           <span class="text-[#FF4F00]">uploading</span> audio files or
@@ -810,9 +824,9 @@
     </div>
 
     <!-- Features -->
-    <div class="mt-28 text-center">
+    <div class="mt-32 text-center">
       <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
-        <h1 class="text-[50px] text-left w-[400px] font-[500]">
+        <h1 class="text-[56px] text-left w-[400px] font-[500]">
           <span class="opacity-90">Generate</span> <br />
           <span class="opacity-90">Awesome</span> <br />
           <span class="text-[#FF4F00]"> Content</span>
@@ -1006,14 +1020,14 @@
     </div>
 
     <!--Another Features -->
-    <div class="mt-28">
+    <div class="mt-32 pb-16">
       <div class="flex mt-28 justify-between w-[1100px] m-auto">
         <h1 class="text-[56px] text-left w-[400px] font-[500]">
-          <span class="opacity-80">We</span> <br />
-          <span class="opacity-80">Have great</span> <br />
+          <span class="opacity-90">We</span> <br />
+          <span class="opacity-90">Have great</span> <br />
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
-        <p class="text-[32px] text-left font-[600] text-gray-900">
+        <p class="text-[33px] text-left font-[600] text-gray-900">
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           <br />
           create custom automations and <br />
@@ -1219,7 +1233,7 @@
       <div class="mt-32 w-[1100px] m-auto text-center">
         <div>
           <h4 class="text-[56px] font-[700]">
-            <span class="opacity-75">Get the Audionotes</span>
+            <span class="opacity-80">Get the Audionotes</span>
             <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
           </h4>
           <div>
@@ -1236,7 +1250,7 @@
           </div>
           <a href="#">
             <p
-              class="mt-7 w-[375px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-3xl text-white"
+              class="mt-7 flex w-[370px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
             >
               Download our Lightweight Mobile App
             </p>
@@ -1417,7 +1431,7 @@
     </section>
     <!-- Pricing section  -->
     <div class="w-[1100px] m-auto">
-      <div class="bg-white mt-32">
+      <div class="bg-white mt-36">
         <div>
           <pricing-section></pricing-section>
         </div>
@@ -1458,67 +1472,65 @@
             </a>
           </div>
         </div>
-        <div>
-          <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4">
+          <div
+            v-for="(faq, index) in faqData"
+            :key="faq.id"
+            :class="{
+              'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[600px]':
+                selectedQuestion === index,
+              'p-4 bg-white rounded': selectedQuestion !== index,
+            }"
+          >
             <div
-              v-for="(faq, index) in faqData"
-              :key="faq.id"
-              :class="{
-                'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded':
-                  selectedQuestion === index,
-                'p-4 bg-white rounded': selectedQuestion !== index,
-              }"
+              @click="toggleQuestion(index)"
+              class="flex items-center justify-between cursor-pointer"
             >
-              <div
-                @click="toggleQuestion(index)"
-                class="flex items-center justify-between cursor-pointer"
-              >
-                <h2 class="text-[18px] opacity-80 font-[400]">
-                  {{ faq.question }}
-                </h2>
-                <button aria-label="faq question" title="faq question">
-                  <img
-                    class="ml-2"
-                    v-if="selectedQuestion === index"
-                    decoding="async"
-                    src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
-                    alt=""
-                    style="
-                      display: block;
-                      width: 100%;
-                      height: 100%;
-                      border-radius: inherit;
-                      object-position: center;
-                      object-fit: cover;
-                      image-rendering: auto;
-                    "
-                  />
-                  <img
-                    class="ml-2"
-                    v-else
-                    decoding="async"
-                    src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
-                    alt=""
-                    style="
-                      display: block;
-                      width: 100%;
-                      height: 100%;
-                      border-radius: inherit;
-                      object-position: center;
-                      object-fit: cover;
-                      image-rendering: auto;
-                    "
-                    sizes="16px"
-                  />
-                </button>
-              </div>
-              <p
-                v-if="selectedQuestion === index"
-                class="text-[#938383] text-base sm:text-sm sm:leading-7 mt-3 leading-7"
-              >
-                {{ faq.answer }}
-              </p>
+              <h2 class="text-[18px] opacity-80 font-[400]">
+                {{ faq.question }}
+              </h2>
+              <button aria-label="faq question" title="faq question">
+                <img
+                  class="ml-2"
+                  v-if="selectedQuestion === index"
+                  decoding="async"
+                  src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+                <img
+                  class="ml-2"
+                  v-else
+                  decoding="async"
+                  src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                  sizes="16px"
+                />
+              </button>
             </div>
+            <p
+              v-if="selectedQuestion === index"
+              class="text-[15px] opacity-80 mt-3 leading-7"
+            >
+              {{ faq.answer }}
+            </p>
           </div>
         </div>
       </div>
@@ -1531,6 +1543,7 @@
 
 <script setup>
 import { Vue3Marquee } from "vue3-marquee";
+import { ref } from "vue";
 
 import cart from "~/static/cart.json";
 import users from "~/static/users.json";
@@ -1544,5 +1557,11 @@ const usersData = reactive(users);
 const userData = reactive(user);
 const socialData = reactive(Socialcart);
 const faqData = reactive(faq);
+
+const selectedQuestion = ref(null);
+
+const toggleQuestion = (index) => {
+  selectedQuestion.value = selectedQuestion.value === index ? null : index;
+};
 </script>
 
