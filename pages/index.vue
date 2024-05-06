@@ -1416,24 +1416,25 @@
       </div>
     </section>
     <!-- Pricing section  -->
-    <div class="bg-white mt-32 py-28 xl:px-6 sm:py-12">
-      <div class="max-w-[1100px] flex justify-between m-auto">
-        <div class="w-[800px] mx-auto">
-          <h2
-            class="text-[#343434] opacity-90 text-[56px] font-bold leading-relaxed"
-          >
-            Plans & Pricing
-          </h2>
-          <p class="text-[#9e9898] text-[18px] font-medium leading-6 mt-3">
-            Save Upto 50% with our Annual Plans:
-          </p>
+    <div>
+      <div class="bg-white mt-32 py-28 xl:px-6 sm:py-12">
+        <div class="flex justify-between w-[1100px] m-auto px-10 py-5">
+          <div>
+            <h2
+              class="text-[#343434] opacity-95 text-[56px] font-bold leading-relaxed"
+            >
+              Plans & Pricing
+            </h2>
+            <p
+              class="text-black opacity-70 text-[18px] font-[400] leading-6 mt-3"
+            >
+              Save Upto 50% with our Annual Plans:
+            </p>
+          </div>
+          <div class="flex mt-10">
+            <pricing-section></pricing-section>
+          </div>
         </div>
-        <div>
-          <pricing-section></pricing-section>
-        </div>
-      </div>
-      <div>
-        <pricing></pricing>
       </div>
     </div>
 

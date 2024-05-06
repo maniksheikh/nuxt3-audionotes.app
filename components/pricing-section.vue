@@ -1,12 +1,12 @@
 <template>
-  <div class="rounded-xl mx-auto">
-    <div class="flex items-center justify-end">
-      <div class="flex items-center gap-2 bg-[#F6EFEF] rounded-[50px] p-[5px]">
+  <div class="rounded-xl m-auto">
+    <div class="flex items-center justify-center m-auto">
+      <div class="flex items-center gap-2 bg-[#F0F0F0] rounded-[50px] p-[5px]">
         <button
           @click="viewMonthlyPayment"
-          class="text-base py-2 px-5 text-[#8b8686] rounded-[50px] font-bold"
+          class="text-base py-2 px-5 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
-            'bg-gradient-to-br to-[white] from-[white] text-[#464343]':
+            'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'monthly',
           }"
           aria-label="Monthly"
@@ -16,9 +16,9 @@
         </button>
         <button
           @click="viewAnnualPayment"
-          class="text-base py-2 px-5 text-[#8b8686] rounded-[50px] font-bold"
+          class="text-base py-2 px-5 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
-            'bg-gradient-to-br to-[white] from-[white] text-[#464343]':
+            'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'annual',
           }"
           aria-label="Annual"
@@ -28,9 +28,9 @@
         </button>
         <button
           @click="viewLifetimePayment"
-          class="text-base py-2 px-5 text-[#8b8686] rounded-[50px] font-bold"
+          class="text-base py-2 px-5 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
-            'bg-gradient-to-br to-[white] from-[white] text-[#464343]':
+            'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'lifetime',
           }"
           aria-label="Lifetime"
@@ -40,7 +40,8 @@
         </button>
       </div>
     </div>
-    <div class="mx-auto w-[100%] mt-12">
+
+    <div class="mt-12 w-[1100px] m-auto">
       <pricing :plans="plansData" />
     </div>
   </div>
@@ -50,7 +51,7 @@
 import { ref, computed } from "vue";
 import plans from "~/static/plans.json";
 
-const planType = ref("annual");
+const planType = ref("monthly");
 
 const viewMonthlyPayment = () => {
   planType.value = "monthly";
@@ -66,7 +67,7 @@ const plansData = computed(() => {
 
   if (planType.value === "lifetime" && !selectedPlan) {
     return {
-      name: "Lifetime",
+      name: "lifetime",
       price: "Your lifetime price",
       features: ["Feature 1", "Feature 2", "Feature 3"],
     };

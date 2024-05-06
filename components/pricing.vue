@@ -1,38 +1,31 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-32">
+  <div class="grid bg-white grid-cols-1 sm:grid-cols-3 p-1 gap-4 mt-32">
     <div
       v-for="plan in plans"
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-white rounded-lg shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] rounded-lg shadow-md overflow-hidden"
     >
-      <div class="p-6">
+      <div class="p-4">
         <h2 :class="plan.titleCss">{{ plan.name }}</h2>
-        <h2 class="text-base mb-5 text-[#343434] leading-8">
-          {{ plan.description }}
-        </h2>
+
         <div class="flex items-center mb-3">
-          <p class="text-[#48404E] font-extrabold text-5xl sm:text-4xl">
-            <span>$</span>{{ plan.price }}
-          </p>
-          <p class="text-base text-[#48404E] font-medium ml-2">
-            {{ plan.billingCycle }}
+          <p class="text-[#48404E] font-extrabold text-[54px]">
+            <span>$</span> {{ plan.price }}
           </p>
         </div>
-        <small class="text-[#7D6E7D]">{{ plan.billingType }}</small>
+
         <div class="mt-4">
-          <p class="text-[#48404E] font-semibold text-lg pb-2">
-            Package Includes:
-          </p>
           <div>
             <div
               v-for="(feature, index) in plan.features"
               :key="index"
-              class="flex gap-2 items-center text-[#666666] mb-2 text-sm"
+              class="flex gap-2 items-center text-[#666666] opacity-80 mb-2 text-[16px] font-[500]"
             >
               <span>
                 <svg
+                  class="bg-black rounded-full mr-1"
                   width="18"
                   height="18"
                   viewBox="0 0 18 18"
@@ -51,7 +44,7 @@
         </div>
         <button
           :style="plan.buttonCss"
-          class="inline-block w-full mt-6 rounded-lg px-6 py-2 text-white text-base font-medium text-center bg-blue-500 hover:bg-blue-600"
+          class="inline-block w- mt-6 rounded-3xl px-6 py-2 text-white text-base font-medium text-center bg-blue-500 hover:bg-blue-600"
           @click="startPurchase(plan)"
           :aria-label="plan.buttonText"
           :title="plan.buttonText"

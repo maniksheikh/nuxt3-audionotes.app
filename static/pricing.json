@@ -5,7 +5,7 @@
     "description": "Perfect for getting started",
     "price": 0,
     "billingCycle": "/",
-    "billingType": "Billed Monthly.",
+    "billingType": "Billed Free.",
     "features": [
       "10 Mins of Voice Notes Free",
       "Upto 5 Mins/Voice Note",
@@ -14,7 +14,7 @@
       "Set Summary Language, Style & Length"
     ],
     "class": "border-2 p-6 rounded-xl",
-    "css": "background: #f2c4a336; border-color: #f2c4a3;",
+    "css": "background: #ffffff; border-color: #f2c4a3;",
     "titleCss": "text-[#FF6B00] font-bold text-2xl",
     "buttonText": "Try Now!",
     "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
@@ -36,7 +36,7 @@
     ],
     "titleCss": "text-[#9030ED] font-bold text-3xl",
     "buttonText": "Upgrade Now!",
-    "buttonCss": "background: linear-gradient(180deg,#a864f7 0%,#7244c7 100%)",
+    "buttonCss": "background: #ffffff",
     "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt500/raBTZK"
   },
   {
@@ -54,7 +54,7 @@
     ],
     "titleCss": "text-[#FF6B00] font-bold text-3xl",
     "buttonText": "Upgrade Now!",
-    "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+    "buttonCss": "background: #ffffff",
     "link": "https://shop.bkash.com/connekt-studio01590068709/pay/bdt5000/kVkOMD"
   }
 ]
