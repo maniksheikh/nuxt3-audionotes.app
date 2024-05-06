@@ -1,17 +1,17 @@
 <template>
-  <div class="grid bg-white grid-cols-1 sm:grid-cols-3 p-1 gap-4 mt-32">
+  <div class="grid bg-white grid-cols-1 sm:grid-cols-3 gap-3 px-5 py-5 mt-14">
     <div
       v-for="plan in plans"
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] rounded-lg shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[320px] h-[479px] px-4 py-4 rounded-3xl shadow-md overflow-hidden"
     >
       <div class="p-4">
         <h2 :class="plan.titleCss">{{ plan.name }}</h2>
 
-        <div class="flex items-center mb-3">
-          <p class="text-[#48404E] font-extrabold text-[54px]">
+        <div class="flex items-center">
+          <p class="text-[#48404E] font-bold text-[54px]">
             <span>$</span> {{ plan.price }}
           </p>
         </div>
@@ -21,7 +21,7 @@
             <div
               v-for="(feature, index) in plan.features"
               :key="index"
-              class="flex gap-2 items-center text-[#666666] opacity-80 mb-2 text-[16px] font-[500]"
+              class="flex gap-2 items-center text-[#666666] mb-2 text-[16px] font-[500]"
             >
               <span>
                 <svg
@@ -38,13 +38,13 @@
                   />
                 </svg>
               </span>
-              {{ feature }}
+              <span class="opacity-90">{{ feature }}</span>
             </div>
           </div>
         </div>
         <button
           :style="plan.buttonCss"
-          class="inline-block w- mt-6 rounded-3xl px-6 py-2 text-white text-base font-medium text-center bg-blue-500 hover:bg-blue-600"
+          class="inline-block mt-6 rounded-3xl px-6 py-2 text-white text-base font-medium text-center bg-blue-500 hover:bg-blue-600"
           @click="startPurchase(plan)"
           :aria-label="plan.buttonText"
           :title="plan.buttonText"

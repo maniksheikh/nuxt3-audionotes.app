@@ -1416,24 +1416,10 @@
       </div>
     </section>
     <!-- Pricing section  -->
-    <div>
-      <div class="bg-white mt-32 py-28 xl:px-6 sm:py-12">
-        <div class="flex justify-between w-[1100px] m-auto px-10 py-5">
-          <div>
-            <h2
-              class="text-[#343434] opacity-95 text-[56px] font-bold leading-relaxed"
-            >
-              Plans & Pricing
-            </h2>
-            <p
-              class="text-black opacity-70 text-[18px] font-[400] leading-6 mt-3"
-            >
-              Save Upto 50% with our Annual Plans:
-            </p>
-          </div>
-          <div class="flex mt-10">
-            <pricing-section></pricing-section>
-          </div>
+    <div class="w-[1100px] m-auto">
+      <div class="bg-white mt-32">
+        <div>
+          <pricing-section></pricing-section>
         </div>
       </div>
     </div>
@@ -1443,11 +1429,11 @@
       <div class="mt-28 w-[1100px] flex justify-between m-auto">
         <div>
           <h2
-            class="text-[#343434] sm:text-[28px] font-bold leading-relaxed sm:leading-loose"
+            class="sm:text-[28px] font-[700] leading-relaxed sm:leading-loose"
           >
-            <span class="text-[56px] opacity-95">Need help?</span>
+            <span class="text-[56px] opacity-80">Need help?</span>
           </h2>
-          <p class="text-[18px] opacity-50 font-medium leading-8 mt-3">
+          <p class="text-[18px] opacity-60 font-medium leading-8 mt-3">
             Don`t worry, we got you. Here are some answers <br />
             for your questions.
           </p>
@@ -1487,11 +1473,12 @@
                 @click="toggleQuestion(index)"
                 class="flex items-center justify-between cursor-pointer"
               >
-                <h2 class="text-[19px] opacity-70 sm:text-base font-bold">
+                <h2 class="text-[18px] opacity-80 font-[400]">
                   {{ faq.question }}
                 </h2>
                 <button aria-label="faq question" title="faq question">
                   <img
+                    class="ml-2"
                     v-if="selectedQuestion === index"
                     decoding="async"
                     src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
@@ -1507,6 +1494,7 @@
                     "
                   />
                   <img
+                    class="ml-2"
                     v-else
                     decoding="async"
                     src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"

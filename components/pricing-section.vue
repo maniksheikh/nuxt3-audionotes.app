@@ -1,10 +1,24 @@
 <template>
-  <div class="rounded-xl m-auto">
-    <div class="flex items-center justify-center m-auto">
-      <div class="flex items-center gap-2 bg-[#F0F0F0] rounded-[50px] p-[5px]">
+  <div class="rounded-xl w-[1100px] m-auto">
+    <div class="flex items-center">
+      <div class="w-[600px] px-5 py-4">
+        <h2
+          class="text-[#343434] opacity-95 text-[56px] font-bold leading-relaxed"
+        >
+          Plans & Pricing
+        </h2>
+        <p
+          class="text-black text-left opacity-70 text-[18px] font-[400] leading-6 mt-3"
+        >
+          Save Upto 50% with our Annual Plans:
+        </p>
+      </div>
+      <div
+        class="flex items-center py-2 px-2 gap-2 bg-[#F0F0F0] rounded-[50px]"
+      >
         <button
           @click="viewMonthlyPayment"
-          class="text-base py-2 px-5 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base py-3 px-6 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'monthly',
@@ -16,7 +30,7 @@
         </button>
         <button
           @click="viewAnnualPayment"
-          class="text-base py-2 px-5 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base py-3 px-6 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'annual',
@@ -28,7 +42,7 @@
         </button>
         <button
           @click="viewLifetimePayment"
-          class="text-base py-2 px-5 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base py-3 px-6 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'lifetime',
@@ -41,7 +55,7 @@
       </div>
     </div>
 
-    <div class="mt-12 w-[1100px] m-auto">
+    <div>
       <pricing :plans="plansData" />
     </div>
   </div>
