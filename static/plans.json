@@ -13,9 +13,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF;",
-      "titleCss": "text-aqua font-semibold text-[20px] opacity-60",
+      "titleCss": "text font-semibold text-[20px] opacity-60",
       "buttonText": "Try Now!",
-      "buttonCss": "background: gray",
+      "buttonCss": "background: #F2F2F2; color: #595959;",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
 
@@ -33,9 +33,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "color: #355BE1 ",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: blue",
+      "buttonCss": "background: #355BE1",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
     {
@@ -52,9 +52,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "text-red ",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: red",
+      "buttonCss": "background: #FF4F00",
       "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
     }
   ],
@@ -74,7 +74,7 @@
       "css": "background: #FFFFFF",
       "titleCss": "text-gray font-semibold text-[23px] opacity-60",
       "buttonText": "Try Now!",
-      "buttonCss": "background: gray",
+      "buttonCss": "background: #F2F2F2; color: #595959;",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
     {
@@ -91,9 +91,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "text-blue",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: blue text-white",
+      "buttonCss": "background: #355BE1",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
     {
@@ -111,9 +111,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "text-red",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: red",
+      "buttonCss": "background: #FF4F00",
       "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
     }
   ],
@@ -133,7 +133,7 @@
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Try Now!",
-      "buttonCss": "background: gray",
+      "buttonCss": "background: #F2F2F2; color: #595959;",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
     {
@@ -150,9 +150,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "text-red",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: #FF4F00 text-white",
+      "buttonCss": "background: #355BE1",
       "link": "https://buy.stripe.com/14kg2y1Cy1GcbZe4gG"
     },
     {
@@ -169,9 +169,9 @@
       ],
       "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-blue font-semibold text-[23px] opacity-60",
+      "titleCss": "text-red ",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: red",
+      "buttonCss": "background: #FF4F00",
       "link": "https://buy.stripe.com/00g3fM6WSbgMe7m6oM"
     }
   ]

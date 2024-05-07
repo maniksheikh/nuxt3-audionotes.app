@@ -1,5 +1,5 @@
 <template>
-  <div class="sans-serif">
+  <div class="home-section">
     <div
       class="flex justify-center items-center h-[560px] overflow-hidden m-auto relative"
     >
@@ -30,29 +30,30 @@
         class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center mx-auto text-center"
       >
         <section>
-          <div class="sans-serif">
+          <div>
             <h1 class="leading-8 text-[50px] text-[#262626] font-[600]">
-              <span>Your</span>
+              <span class="font-semibold opacity-90">Your</span>
               <span
-                class="text-[54px] font-italic opacity-95 font-[400] ml-3 italic"
+                class="text-[50px] font-italic opacity-95 font-[400] ml-3 italic"
                 >cluttered</span
               >
-              <span class="text-[50px] text-[#FF4F00] ml-3 font-[600]"
+              <span class="text-[#FF4F00] ml-3 font-[600] opacity-90"
                 >Thoughts</span
               >
               <span class="ml-2">into</span>
               <br />
               <br />
-              <span
-                class="text-[48px] font-italic opacity-90 font-[500] ml-3 italic"
+              <span class="font-italic opacity-95 font-[500] ml-3 italic"
                 >clear</span
               >
-              <span class="text-5xl text-[#FF4F00] ml-3 opacity-95 font-[600]"
+              <span class="text-[#FF4F00] ml-3 opacity-90 font-[600]"
                 >Text Notes</span
               >
               <span class="ml-3 opacity-95">using AI</span>
             </h1>
-            <p class="mt-10 leading-8 text-[#807780] text-[22px]">
+            <p
+              class="mt-10 leading-8 text-[rgba(33, 33, 33, 0.55)] opacity-50 text-[20px]"
+            >
               Speak or type, Audionotes will transform your notes into <br />
               searchable clear actionable text notes using AI
             </p>
@@ -60,7 +61,7 @@
         </section>
 
         <div
-          class="flex items-center justify-center bg-[#FF4F00] w-[145px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-2 py-2"
+          class="flex items-center justify-center bg-[#FF4F00] w-[140px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-2 py-2"
         >
           <nuxt-link
             to="/"
@@ -182,12 +183,12 @@
     </div>
 
     <!-- Brand section  -->
-    <section class="mt-32 w-[1100px] m-auto text-center">
+    <div class="brand-section mt-32 w-[1100px] m-auto text-center">
       <h3 class="w-[1100px] m-auto text-[#FF4F00] text-[54px] font-[650]">
         <span class="text-[52px] text-black opacity-80 font-[700]">In the</span>
         Spotlight
       </h3>
-    </section>
+    </div>
     <div>
       <Vue3Marquee
         :clone="true"
@@ -229,14 +230,14 @@
     </div>
 
     <!-- Foundeer section  -->
-    <section>
+    <div class="founder-section">
       <div class="mt-32 sans-serif max-w-[1300px] mx-auto">
         <div class="text-center pt-16">
           <h4 class="text-[56px] text-[#262626] opacity-95 font-bold">
-            <span class="text-[#FF4F00] font-[700]">Audionotes</span> is for
+            <span class="text-[#FF4F00] font-[600]">Audionotes</span> is for
             everyone!
           </h4>
-          <p class="mt-5 text-[19px] leading-8 font-[400] opacity-70">
+          <p class="mt-5 text-[18px] leading-8 font-[400] opacity-60">
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
             productivity!
@@ -267,7 +268,7 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
+                  class="text-center text-[20px] font-[600] opacity-80 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >{{ founder.content }}</span
                 >
               </a>
@@ -275,297 +276,294 @@
           </Vue3Marquee>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Audionotes use  -->
-    <section>
-      <div>
-        <div class="mt-48 items-center w-[1200px] m-auto text-center">
-          <div>
-            <h4 class="text-[56px] text-[#FF4F00] font-[650] opacity-95">
-              <span class="text-[56px] text-black font-[650] opacity-95"
-                >What do I use</span
-              >
-              Audionotes for?
-            </h4>
-          </div>
-          <div class="mt-5">
-            <p class="text-[18px] text-gray-500">
-              Audionotes is perfect for a variety of use-cases, 100x your
-              productivity with Audionotes today!
-            </p>
-          </div>
+    <div class="audionotes-uses">
+      <div class="mt-48 items-center w-[1200px] m-auto text-center">
+        <div>
+          <h4 class="text-[56px] text-[#FF4F00] font-[650] opacity-95">
+            <span class="text-[56px] text-black font-[650] opacity-85"
+              >What do I use</span
+            >
+            Audionotes for?
+          </h4>
         </div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 w-[1100px] mx-auto"
-        >
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              Journaling
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Just talk anywhere and Audionotes<br />will create a
-              well-structured journal<br />entry for you.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              To-do & Task Lists
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Create to-do and task lists using<br />voice and text notes on the
-              go.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              Writing
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Ideas can strike you anywhere, just<br />record with Audionotes
-              and use the<br />summaries later.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              Message Assistant
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Dictate your messages to Audionotes<br />and it'll just structure
-              them for you.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              To-do & Task Lists
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Create to-do and task lists using<br />voice and text notes on the
-              go.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              Content Creation
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Generate amazing social media<br />content for Linkedin, Twitter,
-              Blogs<br />using voice notes.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              Professional Assistant
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Generate Contracts, Marketing Plans.
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[700]">
-              Email Buddy
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Don't write emails, just speak and<br />Audionotes will do the
-              rest!
-            </p>
-          </div>
-          <div class="w-full mb-8">
-            <h3 class="text-[20px] py-1 text-[#262626] opacity-90 font-[600]">
-              Summarize Meetings
-            </h3>
-            <p class="mt-4 text-[17.5px] text-gray-600">
-              Record your meetings and summarize<br />them.
-            </p>
-          </div>
+        <div class="mt-5">
+          <p class="text-[18px] text-gray-500">
+            Audionotes is perfect for a variety of use-cases, 100x your
+            productivity with Audionotes today!
+          </p>
         </div>
       </div>
-    </section>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 w-[1100px] mx-auto"
+      >
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Journaling
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Just talk anywhere and Audionotes<br />will create a well-structured
+            journal<br />entry for you.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            To-do & Task Lists
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Create to-do and task lists using<br />voice and text notes on the
+            go.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Writing
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Ideas can strike you anywhere, just<br />record with Audionotes and
+            use the<br />summaries later.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Message Assistant
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Dictate your messages to Audionotes<br />and it'll just structure
+            them for you.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            To-do & Task Lists
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Create to-do and task lists using<br />voice and text notes on the
+            go.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Content Creation
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Generate amazing social media<br />content for Linkedin, Twitter,
+            Blogs<br />using voice notes.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Professional Assistant
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Generate Contracts, Marketing Plans.
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Email Buddy
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Don't write emails, just speak and<br />Audionotes will do the rest!
+          </p>
+        </div>
+        <div class="w-full mb-8">
+          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+            Summarize Meetings
+          </h3>
+          <p class="mt-4 text-[17px] text-gray-600">
+            Record your meetings and summarize<br />them.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- Audionotes users section  -->
-    <section>
-      <div>
-        <div class="mt-32">
-          <h1 class="text-center text-[56px] w-[1700px] m-auto font-semibold">
-            <span class="text-[#FF4F00] font-[700]">Loved by</span>
-            <span class="ml-4 opacity-90">7000+ Happy Users ❤️</span>
-          </h1>
+    <div class="users-section">
+      <div class="mt-32">
+        <h1 class="text-center text-[56px] w-[1700px] m-auto font-semibold">
+          <span class="text-[#FF4F00] font-[700]">Loved by</span>
+          <span class="ml-4 opacity-80">7000+ Happy Users </span> ❤️
+        </h1>
 
-          <Vue3Marquee
-            :pause-on-hover="true"
-            @on-pause="playState = 'paused'"
-            @on-resume="playState = 'playing'"
-            :clone="true"
-            :duration="140"
+        <Vue3Marquee
+          :pause-on-hover="true"
+          @on-pause="playState = 'paused'"
+          @on-resume="playState = 'playing'"
+          :clone="true"
+          :duration="140"
+        >
+          <div
+            v-for="users in usersData"
+            :key="users.id"
+            class="mt-20 flex-none w-80 px-2"
           >
             <div
-              v-for="users in usersData"
-              :key="users.id"
-              class="mt-20 flex-none w-80 px-2"
+              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden"
             >
-              <div
-                class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden"
-              >
-                <div class="p-4">
-                  <div class="flex items-center">
-                    <div class="w-12 h-12">
-                      <img
-                        :src="users.image"
-                        alt="Malav Shah avatar"
-                        class="w-full h-full object-cover rounded-full"
-                      />
-                    </div>
-                    <div class="ml-3">
-                      <div class="text-lg font-semibold">{{ users.name }}</div>
-                      <div class="text-gray-600">{{ users.email }}</div>
-                    </div>
-                    <div class="flex-grow"></div>
-                    <div class="flex-none">
-                      <a
-                        target="_blank"
-                        rel="nofollow"
-                        href="https://www.producthunt.com/posts/audionotes-pro"
-                      >
-                        <img
-                          :src="users.avatar"
-                          alt="product_hunt"
-                          class="w-5 h-5 object-contain"
-                        />
-                      </a>
-                    </div>
+              <div class="p-4">
+                <div class="flex items-center">
+                  <div class="w-12 h-12">
+                    <img
+                      :src="users.image"
+                      alt="Malav Shah avatar"
+                      class="w-full h-full object-cover rounded-full"
+                    />
                   </div>
-                  <div class="mt-3 flex">
-                    <div
-                      v-for="(users, index) in users.svg"
-                      :key="index"
-                      class="flex items-center"
+                  <div class="ml-3">
+                    <div class="text-[16px] font-[500]">{{ users.name }}</div>
+                    <div class="text-gray-600">{{ users.email }}</div>
+                  </div>
+                  <div class="flex-grow"></div>
+                  <div class="flex-none">
+                    <a
+                      target="_blank"
+                      rel="nofollow"
+                      href="https://www.producthunt.com/posts/audionotes-pro"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="23px"
-                        height="23px"
-                        viewBox="0 0 128 128"
-                      >
-                        <path
-                          fill="#fdd835"
-                          d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01"
-                        />
-                        <path
-                          fill="#ffff8d"
-                          d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13"
-                        />
-                        <path
-                          fill="#f4b400"
-                          d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97"
-                        />
-                      </svg>
-                    </div>
+                      <img
+                        :src="users.avatar"
+                        alt="product_hunt"
+                        class="w-5 h-5 object-contain"
+                      />
+                    </a>
                   </div>
+                </div>
+                <div class="mt-3 flex">
+                  <div
+                    v-for="(users, index) in users.svg"
+                    :key="index"
+                    class="flex items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23px"
+                      height="23px"
+                      viewBox="0 0 128 128"
+                    >
+                      <path
+                        fill="#fdd835"
+                        d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01"
+                      />
+                      <path
+                        fill="#ffff8d"
+                        d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13"
+                      />
+                      <path
+                        fill="#f4b400"
+                        d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97"
+                      />
+                    </svg>
+                  </div>
+                </div>
 
-                  <div class="mt-2 text-gray-800 text-[16px] font-[400]">
-                    {{ users.description }}
-                  </div>
+                <div
+                  class="mt-2 text-gray-800 text-[16px] overflow-hidden font-[400]"
+                >
+                  {{ users.description }}
                 </div>
               </div>
             </div>
-          </Vue3Marquee>
-          <Vue3Marquee
-            :pause-on-hover="true"
-            @on-pause="playState = 'paused'"
-            @on-resume="playState = 'playing'"
-            :clone="true"
-            :duration="140"
-            :direction="'reverse'"
+          </div>
+        </Vue3Marquee>
+        <Vue3Marquee
+          :pause-on-hover="true"
+          @on-pause="playState = 'paused'"
+          @on-resume="playState = 'playing'"
+          :clone="true"
+          :duration="140"
+          :direction="'reverse'"
+        >
+          <div
+            v-for="user in userData"
+            :key="user.id"
+            class="mt-5 flex-none w-80 px-2"
           >
             <div
-              v-for="user in userData"
-              :key="user.id"
-              class="mt-5 flex-none w-80 px-2"
+              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden"
             >
-              <div
-                class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden"
-              >
-                <div class="p-4">
-                  <div class="flex items-center">
-                    <div class="w-12 h-12">
-                      <img
-                        :src="user.image"
-                        alt="Malav Shah avatar"
-                        class="w-full h-full object-cover rounded-full"
-                      />
-                    </div>
-                    <div class="ml-3">
-                      <div class="text-lg font-semibold">{{ user.name }}</div>
-                      <div class="text-gray-600">{{ user.email }}</div>
-                    </div>
-                    <div class="flex-grow"></div>
-                    <div class="flex-none">
-                      <a
-                        target="_blank"
-                        rel="nofollow"
-                        href="https://www.producthunt.com/posts/audionotes-pro"
-                      >
-                        <img
-                          :src="user.avatar"
-                          alt="product_hunt"
-                          class="w-5 h-5 object-contain"
-                        />
-                      </a>
-                    </div>
+              <div class="p-4">
+                <div class="flex items-center">
+                  <div class="w-12 h-12">
+                    <img
+                      :src="user.image"
+                      alt="Malav Shah avatar"
+                      class="w-full h-full object-cover rounded-full"
+                    />
                   </div>
-                  <div class="mt-3 flex">
-                    <div
-                      v-for="(user, index) in user.svg"
-                      :key="index"
-                      class="flex items-center"
+                  <div class="ml-3">
+                    <div class="text-[16px] font-500">{{ user.name }}</div>
+                    <div class="text-gray-600">{{ user.email }}</div>
+                  </div>
+                  <div class="flex-grow"></div>
+                  <div class="flex-none">
+                    <a
+                      target="_blank"
+                      rel="nofollow"
+                      href="https://www.producthunt.com/posts/audionotes-pro"
                     >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="23px"
-                        height="23px"
-                        viewBox="0 0 128 128"
-                      >
-                        <path
-                          fill="#fdd835"
-                          d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01"
-                        />
-                        <path
-                          fill="#ffff8d"
-                          d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13"
-                        />
-                        <path
-                          fill="#f4b400"
-                          d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97"
-                        />
-                      </svg>
-                    </div>
+                      <img
+                        :src="user.avatar"
+                        alt="product_hunt"
+                        class="w-5 h-5 object-contain"
+                      />
+                    </a>
                   </div>
+                </div>
+                <div class="mt-3 flex">
+                  <div
+                    v-for="(user, index) in user.svg"
+                    :key="index"
+                    class="flex items-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="23px"
+                      height="23px"
+                      viewBox="0 0 128 128"
+                    >
+                      <path
+                        fill="#fdd835"
+                        d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01"
+                      />
+                      <path
+                        fill="#ffff8d"
+                        d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13"
+                      />
+                      <path
+                        fill="#f4b400"
+                        d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97"
+                      />
+                    </svg>
+                  </div>
+                </div>
 
-                  <div class="mt-2 text-gray-800 text-[16px] font-[400]">
-                    {{ user.description }}
-                  </div>
+                <div class="mt-2 text-gray-800 text-[16px] font-[400]">
+                  {{ user.description }}
                 </div>
               </div>
             </div>
-          </Vue3Marquee>
-        </div>
+          </div>
+        </Vue3Marquee>
       </div>
-    </section>
+    </div>
 
     <!-- Features -->
     <div class="mt-28 text-center w-[1100px] m-auto">
-      <h2 class="text-[60px] font-[600] text-[#FF4F00]">Features</h2>
+      <h2 class="text-[56px] font-[600] text-[#FF4F00]">Features</h2>
     </div>
     <br />
 
     <div class="w-[1100px] m-auto">
       <div class="flex items-center justify-between mt-20">
-        <h1 class="text-[52px] text-left w-[400px] opacity-90 font-[500]">
+        <h1 class="text-[56px] text-left w-[400px] font-[500]">
           <span>Record,</span> <br />
           <span>Upload or</span> <br />
           <span> Write</span>
         </h1>
-        <p class="text-[34px] text-left font-[600] opacity-95">
+        <p class="text-[34px] text-left font-[500]">
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <br />
           <span class="text-[#FF4F00]">uploading</span> audio files or
@@ -629,11 +627,11 @@
     <div class="mt-32 text-center">
       <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
         <h1 class="text-[56px] text-left w-[400px] font-[500]">
-          <span class="opacity-90">Generate</span> <br />
-          <span class="opacity-90">Awesome</span> <br />
+          <span class="opacity-95">Generate</span> <br />
+          <span class="opacity-95">Awesome</span> <br />
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
-        <p class="text-[32px] text-left font-[600] text-gray-800">
+        <p class="text-[32px] text-left font-[500] text-gray">
           Generate Emails, Social Media Content, <br />
           Minutes of the Meeting, Action items <br />
           and even <span class="text-[#705BE1]">use custom prompts</span> to
@@ -824,12 +822,12 @@
     <!--Another Features -->
     <div class="mt-32 pb-16">
       <div class="flex mt-28 justify-between w-[1100px] m-auto">
-        <h1 class="text-[56px] text-left w-[400px] font-[500]">
+        <h1 class="text-[56px] text-left w-[400px] font-[550]">
           <span class="opacity-90">We</span> <br />
           <span class="opacity-90">Have great</span> <br />
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
-        <p class="text-[33px] text-left font-[600] text-gray-900">
+        <p class="text-[33px] text-left font-[500] text-gray">
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           <br />
           create custom automations and <br />
@@ -1029,6 +1027,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Unique Card  -->
 
     <!-- Mobile App section  -->
     <section>
@@ -1231,6 +1231,7 @@
         </div>
       </div>
     </section>
+
     <!-- Pricing section  -->
     <div class="w-[1100px] m-auto">
       <div class="bg-white mt-36">
@@ -1369,4 +1370,19 @@ const toggleQuestion = (index) => {
   selectedQuestion.value = selectedQuestion.value === index ? null : index;
 };
 </script>
+
+<style>
+.home-section {
+  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
+}
+.founder-section {
+  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
+}
+.audionotes-uses {
+  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
+}
+.users-section {
+  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
+}
+</style>
 

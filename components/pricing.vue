@@ -5,14 +5,19 @@
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] border border-gray-200 w-[340px] h-[479px] px-4 py-4 rounded-4xl shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[340px] h-auto px-4 py-4 rounded-4xl shadow-md overflow-hidden"
     >
       <div class="p-4">
-        <h2 :class="plan.titleCss">{{ plan.name }}</h2>
+        <h2 :style="plan.titleCss" class="text-[20px] font-bold opacity-80">
+          {{ plan.name }}
+        </h2>
 
         <div class="flex items-center">
           <p class="text-[#48404E] font-bold text-[54px]">
-            <span>$</span> {{ plan.price }}
+            <span :style="plan.titleCss">${{ plan.price }}</span>
+          </p>
+          <p class="text-[18px] opacity-90 mt-6 ml-2">
+            {{ plan.billingCycle }}
           </p>
         </div>
 
@@ -44,7 +49,7 @@
         </div>
         <button
           :style="plan.buttonCss"
-          class="inline-block mt-6 rounded-3xl px-6 py-2 text-white text-base font-medium text-center bg-blue-500 hover:bg-blue-600"
+          class="inline-block mt-6 rounded-3xl px-6 py-2 text-white text-[15px] font-semibold text-center bg-blue-500 hover:bg-blue-600"
           @click="startPurchase(plan)"
           :aria-label="plan.buttonText"
           :title="plan.buttonText"
