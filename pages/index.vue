@@ -190,7 +190,9 @@
     </section>
     <div>
       <Vue3Marquee
-        direction="20"
+        :clone="true"
+        :duration="20"
+        :direction="'reverse'"
         class="marquee-container flex items-center justify-center p-3 mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
       >
         <img
@@ -243,19 +245,16 @@
         <div class="flex gap-5 mt-16 p-10 w-[1200px] justify-center m-auto">
           <Vue3Marquee duration="70">
             <div
-              class="items-center h-[415px] w-[330px] justify-center ml-5 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
+              v-for="founder in founderData"
+              :key="founder.id"
+              class="items-center h-[415px] w-[330px] justify-center ml-3 p-2 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
             >
               <a href="#">
                 <img
                   class="relative"
                   decoding="async"
                   sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/XhjdyHe0xykyMfPzm5are44EU.png"
+                  :src="founder.image"
                   alt=""
                   style="
                     display: block;
@@ -269,217 +268,7 @@
                 />
                 <span
                   class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Productivity Enthusiasts</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center h-[415px] w-[330px] ml-5 p-2 justify-center border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/fUQQdi0wTUF2EFG30UrJbI53N8.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Lawyer</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/wkvJ6q38xV8Gkvj96wTuxCav7Gw.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Marketeer</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center justify-center p-2 h-[415px] w-[330px] ml-5 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/uO6qFWoFk7YAkW3ReJiFgYtznc.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Students</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/D4ye4hfeyFQlndMUTAOewQhzaZk.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Entrepreneur</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Doctor</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/6oxdJgMnBO4qJeKb7GjCrCE8.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Founder</span
-                >
-              </a>
-            </div>
-            <div
-              class="items-center justify-center h-[415px] w-[330px] ml-5 p-2 border border-gray-300 rounded-3xl m-auto relative hover:border-[#FF3600]"
-            >
-              <a href="#">
-                <img
-                  decoding="async"
-                  sizes="337px"
-                  srcset="
-                    https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/YuGvxMgiBgy8XAlnmJXXAkSEFSI.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center text-[20px] font-[600] opacity-90 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >Writer</span
+                  >{{ founder.content }}</span
                 >
               </a>
             </div>
@@ -602,7 +391,13 @@
             <span class="ml-4 opacity-90">7000+ Happy Users ❤️</span>
           </h1>
 
-          <Vue3Marquee duration="160">
+          <Vue3Marquee
+            :pause-on-hover="true"
+            @on-pause="playState = 'paused'"
+            @on-resume="playState = 'playing'"
+            :clone="true"
+            :duration="140"
+          >
             <div
               v-for="users in usersData"
               :key="users.id"
@@ -674,7 +469,14 @@
               </div>
             </div>
           </Vue3Marquee>
-          <Vue3Marquee direction="right" duration="160">
+          <Vue3Marquee
+            :pause-on-hover="true"
+            @on-pause="playState = 'paused'"
+            @on-resume="playState = 'playing'"
+            :clone="true"
+            :duration="140"
+            :direction="'reverse'"
+          >
             <div
               v-for="user in userData"
               :key="user.id"
@@ -1546,6 +1348,7 @@ import { Vue3Marquee } from "vue3-marquee";
 import { ref } from "vue";
 
 import cart from "~/static/cart.json";
+import founder from "~/static/founder.json";
 import users from "~/static/users.json";
 import user from "~/static/user.json";
 
@@ -1553,10 +1356,12 @@ import Socialcart from "~/static/socialCart.json";
 import faq from "~/static/faqs.json";
 
 const cartData = reactive(cart);
+const founderData = reactive(founder);
 const usersData = reactive(users);
 const userData = reactive(user);
 const socialData = reactive(Socialcart);
 const faqData = reactive(faq);
+const playState = ref("playing");
 
 const selectedQuestion = ref(null);
 

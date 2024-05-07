@@ -1,5 +1,5 @@
 <template>
-  <home-navbar></home-navbar>
+  <navbar></navbar>
   <div>
     <div id="faq" class="bg-[#F7F6FB] p-20 md:px-4 md:pt-6 md:pb-4">
       <div class="max-w-[600px] mx-auto text-center mb-20 sm:mb-8">
@@ -74,7 +74,6 @@
         </div>
       </div>
     </div>
-    <CallToAction></CallToAction>
   </div>
 </template>
   <script setup>

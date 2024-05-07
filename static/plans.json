@@ -3,7 +3,7 @@
     {
       "id": "free",
       "name": "Free",
-      "price": 0,
+      "price": "Free",
       "features": [
         "10 Mins of Voice Notes Free",
         "Upto 5 Mins/Voice Note",
@@ -11,11 +11,11 @@
         "Search Voice Notes, Tag Notes, Mark as Favourites",
         "Set Summary Language, Style & Length"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF;",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "text-aqua font-semibold text-[20px] opacity-60",
       "buttonText": "Try Now!",
-      "buttonCss": "background: linear-gradient(180deg,#EDB74D 0%,#FF6B00 100%)",
+      "buttonCss": "background: gray",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
 
@@ -31,7 +31,7 @@
         "Generate Super Summaries",
         "Notion, Zapier & Webhook Integrations"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Upgrade Now!",
@@ -50,11 +50,11 @@
         "Generate Super Summaries",
         "Notion, Zapier & Webhook Integrations"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: red text-white",
+      "buttonCss": "background: red",
       "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
     }
   ],
@@ -89,7 +89,7 @@
         "Generate Super Summaries",
         "Notion, Zapier & Webhook Integrations"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Upgrade Now!",
@@ -109,11 +109,11 @@
         "Generate Super Summaries",
         "Notion, Zapier & Webhook Integrations"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: red text-white",
+      "buttonCss": "background: red",
       "link": "https://buy.stripe.com/14kdUq4OKgB6e7m28t"
     }
   ],
@@ -129,11 +129,11 @@
         "Search Voice Notes, Tag Notes, Mark as Favourites",
         "Set Summary Language, Style & Length"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Try Now!",
-      "buttonCss": "background: bg-gray-400",
+      "buttonCss": "background: gray",
       "link": "https://buy.stripe.com/3cs6rYbd84SoaVa4gA"
     },
     {
@@ -148,7 +148,7 @@
         "Realtime Translation into 100+ Languages",
         "Basic Support Via Email"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
       "titleCss": "text-red font-semibold text-[23px] opacity-60",
       "buttonText": "Upgrade Now!",
@@ -167,11 +167,11 @@
         "Tailored Curriculum For User (incoming)",
         "Priority Support Via Email & WhatsApp"
       ],
-      "class": "border-3 rounded-xl",
+      "class": "border-3 rounded-2xl",
       "css": "background: #FFFFFF",
-      "titleCss": "text-red font-semibold text-[23px] opacity-60",
+      "titleCss": "text-blue font-semibold text-[23px] opacity-60",
       "buttonText": "Upgrade Now!",
-      "buttonCss": "background: #FF4F00 text-white",
+      "buttonCss": "background: red",
       "link": "https://buy.stripe.com/00g3fM6WSbgMe7m6oM"
     }
   ]
