@@ -1250,7 +1250,7 @@
           </div>
           <a href="#">
             <p
-              class="mt-7 flex w-[370px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+              class="mt-7 justify-center flex w-[370px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
             >
               Download our Lightweight Mobile App
             </p>
