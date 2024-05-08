@@ -1059,10 +1059,10 @@
           </a>
           <div class="main-container">
             <div
-              class="mt-32 h-[470px] m-auto flex justify-center items-center overflow-hidden"
+              class="mt-32 h-[480px] relative m-auto px-5 flex justify-center items-center overflow-hidden"
             >
               <div
-                class="relative w-64 mt-36 h-[520px] rounded-xl transform -rotate-[24deg]"
+                class="relative w-64 mt-52 h-[510px] rounded-xl transform -rotate-[21deg]"
               >
                 <img
                   decoding="async"
@@ -1086,7 +1086,7 @@
                 />
               </div>
               <div
-                class="relative w-72 mt-40 h-[570px] rounded-xl rotate-[30deg]"
+                class="relative w-64 mt-52 h-[510px] ml-5 rounded-xl transform rotate-[24deg]"
               >
                 <img
                   decoding="async"
@@ -1109,7 +1109,7 @@
                   "
                 />
               </div>
-              <div class="absolute w-64 rounded-xl h-[510px] transform">
+              <div class="absolute w-65 rounded-xl mt-20 h-[560px] transform">
                 <img
                   decoding="async"
                   loading="lazy"
@@ -1155,10 +1155,10 @@
           </a>
           <div class="main-container">
             <div
-              class="mt-32 h-[470px] m-auto flex justify-center items-center overflow-hidden"
+              class="mt-32 h-[480px] relative m-auto flex justify-center items-center overflow-hidden"
             >
               <div
-                class="relative w-64 mt-36 h-[520px] border border-gray-400 rounded-xl transform -rotate-[24deg]"
+                class="relative w-64 mt-40 h-[510px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
               >
                 <img
                   decoding="async"
@@ -1181,7 +1181,7 @@
                 />
               </div>
               <div
-                class="relative border border-gray-400 w-72 mt-32 h-[480px] rounded-xl rotate-[35deg]"
+                class="relative border border-gray-400 w-64 mt-52 h-[530px] ml-3 rounded-xl rotate-[24deg]"
               >
                 <img
                   decoding="async"
@@ -1204,7 +1204,7 @@
                 />
               </div>
               <div
-                class="absolute w-64 rounded-xl border border-gray-400 h-106 transform"
+                class="absolute w-66 rounded-xl border mt-20 border-gray-400 h-[560px] transform"
               >
                 <img
                   decoding="async"
