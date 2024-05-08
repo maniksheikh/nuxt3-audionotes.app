@@ -1,7 +1,7 @@
 <template>
   <div class="home-section">
     <div
-      class="flex justify-center items-center h-[560px] overflow-hidden m-auto relative"
+      class="justify-center items-center h-[500px] px-4 sm:h-[560px] flex overflow-hidden m-auto sm:auto relative"
     >
       <div>
         <img
@@ -17,8 +17,8 @@
           alt=""
           style="
             display: block;
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
             border-radius: inherit;
             object-position: center;
             object-fit: cover;
@@ -27,32 +27,31 @@
         />
       </div>
       <div
-        class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center mx-auto text-center"
+        class="absolute top-0 left-0 right-0 bottom-0 px-4 flex flex-col sm:mt-10 justify-center items-center mx-auto text-center"
       >
         <section>
           <div>
-            <h1 class="leading-8 text-[50px] text-[#262626] font-[600]">
-              <span class="font-semibold opacity-90">Your</span>
-              <span
-                class="text-[50px] font-italic opacity-95 font-[400] ml-3 italic"
+            <h1
+              class="sm:leading-9 leading-5 sm:py-5 text-[32px] sm:text-[54px] text-[#262626] font-semibold"
+            >
+              <span class="opacity-90">Your</span>
+              <span class="font-italic opacity-95 font-normal ml-3 italic"
                 >cluttered</span
               >
-              <span class="text-[#FF4F00] ml-3 font-[600] opacity-90"
+              <span class="text-[#FF4F00] ml-3 font-semibold opacity-90"
                 >Thoughts</span
               >
-              <span class="ml-2">into</span>
-              <br />
-              <br />
-              <span class="font-italic opacity-95 font-[500] ml-3 italic"
+              <span class="ml-2"><br /><br /></span>
+              <span class="font-italic opacity-95 font-medium ml-3 italic"
                 >clear</span
               >
-              <span class="text-[#FF4F00] ml-3 opacity-90 font-[600]"
+              <span class="text-[#FF4F00] ml-3 opacity-90 font-semibold"
                 >Text Notes</span
               >
               <span class="ml-3 opacity-95">using AI</span>
             </h1>
             <p
-              class="mt-10 leading-8 text-[rgba(33, 33, 33, 0.55)] opacity-50 text-[20px]"
+              class="sm:mt-10 mt-5 leading-6 sm:leading-8 text-[rgba(33, 33, 33, 0.55)] opacity-50 text-[15px] sm:text-[20px]"
             >
               Speak or type, Audionotes will transform your notes into <br />
               searchable clear actionable text notes using AI
@@ -61,7 +60,7 @@
         </section>
 
         <div
-          class="flex items-center justify-center bg-[#FF4F00] w-[140px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-2 py-2"
+          class="flex items-center justify-center bg-[#FF4F00] sm:max-w-[150px] w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
         >
           <nuxt-link
             to="/"
@@ -81,7 +80,7 @@
         <br />
         <section>
           <div class="mt-6">
-            <div class="flex items-center justify-center w-[300px] m-auto">
+            <div class="flex items-center justify-center max-w-[300px] mx-auto">
               <span class="bg-black text-white p-2 rounded-md">4.9</span>
               <div class="ml-4 leading-6">
                 <div class="flex">
@@ -154,7 +153,7 @@
     </div>
 
     <div
-      class="h-[670px] m-auto w-[1190px] overflow-hidden rounded-3xl object-cover"
+      class="mx-auto max-w-[1190px] max-h-[670px] overflow-hidden rounded-3xl object-cover"
     >
       <nuxt-link to="/">
         <img
@@ -183,9 +182,14 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section mt-32 w-[1100px] m-auto text-center">
-      <h3 class="w-[1100px] m-auto text-[#FF4F00] text-[54px] font-[650]">
-        <span class="text-[52px] text-black opacity-80 font-[700]">In the</span>
+    <div class="brand-section mt-32 max-w-[1100px] mx-auto text-center">
+      <h3
+        class="max-w-[1100px] mx-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[650]"
+      >
+        <span
+          class="sm:text-[56px] text-[36px] text-black opacity-80 font-[700]"
+          >In the</span
+        >
         Spotlight
       </h3>
     </div>
@@ -194,7 +198,7 @@
         :clone="true"
         :duration="20"
         :direction="'reverse'"
-        class="marquee-container flex items-center justify-center p-3 mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
+        class="marquee-container flex items-center justify-center p-3 mt-10 sm:mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
       >
         <img
           class="marquee-item w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
@@ -231,19 +235,23 @@
 
     <!-- Foundeer section  -->
     <div class="founder-section">
-      <div class="mt-32 sans-serif max-w-[1300px] mx-auto">
+      <div class="sm:mt-32 mt-20 sans-serif max-w-[1300px] mx-auto">
         <div class="text-center pt-16">
-          <h4 class="text-[56px] text-[#262626] opacity-95 font-bold">
+          <h4
+            class="sm:text-[56px] text-[36px] text-[#262626] opacity-95 font-bold"
+          >
             <span class="text-[#FF4F00] font-[600]">Audionotes</span> is for
             everyone!
           </h4>
-          <p class="mt-5 text-[18px] leading-8 font-[400] opacity-60">
+          <p
+            class="mt-5 text-[18px] sm:leading-8 leading-8 font-[400] sm:opacity-60 opacity-70"
+          >
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
             productivity!
           </p>
         </div>
-        <div class="flex gap-5 mt-16 p-10 w-[1200px] justify-center m-auto">
+        <div class="flex gap-5 mt-16 p-10 max-w-[1200px] justify-center m-auto">
           <Vue3Marquee duration="70">
             <div
               v-for="founder in founderData"
@@ -278,26 +286,31 @@
       </div>
     </div>
 
-    <!-- Audionotes use  -->
+    <!-- Audionotes use -->
     <div class="audionotes-uses">
-      <div class="mt-48 items-center w-[1200px] m-auto text-center">
+      <div
+        class="sm:mt-48 mt-40 items-center max-w-[1200px] m-auto text-center"
+      >
         <div>
-          <h4 class="text-[56px] text-[#FF4F00] font-[650] opacity-95">
-            <span class="text-[56px] text-black font-[650] opacity-85"
+          <h4
+            class="sm:text-[56px] text-[36px] text-[#FF4F00] font-[650] opacity-95"
+          >
+            <span
+              class="sm:text-[56px] text-[36px] text-black font-[650] opacity-85"
               >What do I use</span
             >
             Audionotes for?
           </h4>
         </div>
         <div class="mt-5">
-          <p class="text-[18px] text-gray-500">
+          <p class="text-[18px] px-3 opacity-70">
             Audionotes is perfect for a variety of use-cases, 100x your
             productivity with Audionotes today!
           </p>
         </div>
       </div>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 w-[1100px] mx-auto"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 max-w-[1100px] mx-auto"
       >
         <div class="w-full mb-8">
           <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
@@ -379,13 +392,14 @@
         </div>
       </div>
     </div>
-
     <!-- Audionotes users section  -->
     <div class="users-section">
       <div class="mt-32">
-        <h1 class="text-center text-[56px] w-[1700px] m-auto font-semibold">
+        <h1
+          class="text-center sm:text-[56px] text-[35px] max-w-[1700px] mx-auto sm:font-semibold font-[600]"
+        >
           <span class="text-[#FF4F00] font-[700]">Loved by</span>
-          <span class="ml-4 opacity-80">7000+ Happy Users </span> ❤️
+          <span class="ml-4 opacity-90">7000+ Happy Users </span> ❤️
         </h1>
 
         <Vue3Marquee
@@ -398,10 +412,10 @@
           <div
             v-for="users in usersData"
             :key="users.id"
-            class="mt-20 flex-none w-80 px-2"
+            class="mt-20 flex-none px-2"
           >
             <div
-              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden"
+              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -468,6 +482,7 @@
             </div>
           </div>
         </Vue3Marquee>
+
         <Vue3Marquee
           :pause-on-hover="true"
           @on-pause="playState = 'paused'"
@@ -479,10 +494,10 @@
           <div
             v-for="user in userData"
             :key="user.id"
-            class="mt-5 flex-none w-80 px-2"
+            class="mt-5 flex-none px-2"
           >
             <div
-              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden"
+              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -549,43 +564,44 @@
         </Vue3Marquee>
       </div>
     </div>
-
     <!-- Features -->
-    <div class="mt-28 text-center w-[1100px] m-auto">
-      <h2 class="text-[56px] font-[600] text-[#FF4F00]">Features</h2>
+    <div class="mt-28 text-center max-w-[1100px] mx-auto">
+      <h2 class="sm:text-[56px] text-[36px] font-[600] text-[#FF4F00]">
+        Features
+      </h2>
     </div>
     <br />
 
-    <div class="w-[1100px] m-auto">
-      <div class="flex items-center justify-between mt-20">
-        <h1 class="text-[56px] text-left w-[400px] font-[500]">
-          <span>Record,</span> <br />
-          <span>Upload or</span> <br />
+    <div class="max-w-[1100px] mx-auto">
+      <div class="sm:flex items-center justify-between px-5 sm:mt-20 mt-10">
+        <h1
+          class="sm:text-[56px] text-[36px] sm:text-left sm:max-w-[400px] max-w-[200px] sm:font-[500] font-[600]"
+        >
+          <span>Record,</span>
+          <span>Upload or</span>
           <span> Write</span>
         </h1>
-        <p class="text-[34px] text-left font-[500]">
+        <p
+          class="sm:text-[34px] mt-5 text-[23px] text-left sm:font-[500] font-[600]"
+        >
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <br />
           <span class="text-[#FF4F00]">uploading</span> audio files or
-          <span class="text-[#FF4F00]">creating</span> text <br />
-          Audionotes will turn your notes into <br />
-          neatly summarized &
-          <span class="text-[#FF4F00]"
-            >structured text <br />
-            notes
-          </span>
+          <span class="text-[#FF4F00]">creating</span> text Audionotes will turn
+          your notes into neatly summarized &
+          <span class="text-[#FF4F00]">structured text notes </span>
           tailored to your preferences
         </p>
       </div>
     </div>
 
     <!-- Card system -->
-    <div class="mt-28 w-[1100px] m-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="mt-28 sm:max-w-[1100px] sm:mx-auto">
+      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <div
           v-for="card in cartData"
           :key="card"
-          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-3 w-[350px] h-[420px] m-auto rounded-3xl mb-3 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -625,17 +641,22 @@
 
     <!-- Features -->
     <div class="mt-32 text-center">
-      <div class="flex mt-28 items-center justify-between w-[1100px] m-auto">
-        <h1 class="text-[56px] text-left w-[400px] font-[500]">
-          <span class="opacity-95">Generate</span> <br />
-          <span class="opacity-95">Awesome</span> <br />
+      <div
+        class="sm:flex mt-28 items-center justify-between max-w-[1100px] px-5 mx-auto"
+      >
+        <h1
+          class="sm:text-[56px] text-[34px] text-left max-w-[400px] sm:font-[500] font-[600]"
+        >
+          <span class="opacity-95">Generate</span>
+          <span class="opacity-95 ml-3">Awesome</span>
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
-        <p class="text-[32px] text-left font-[500] text-gray">
+        <p
+          class="sm:text-[32px] text-[22px] mt-6 text-left font-[600] opacity-95"
+        >
           Generate Emails, Social Media Content, <br />
           Minutes of the Meeting, Action items <br />
           and even <span class="text-[#705BE1]">use custom prompts</span> to
-          <br />
           generate high quality content with a <br />
           single click directly from your notes.
         </p>
@@ -643,10 +664,10 @@
     </div>
 
     <!--Another Card system -->
-    <div class="mt-28 w-[1100px] m-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="sm:mt-28 mt-20 w-[1100px] m-auto">
+      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 gap-8">
         <div
-          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-[335px] h-[440px] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -703,7 +724,7 @@
           </div>
         </div>
         <div
-          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 sm:w-[335px] sm:h-[420px] w-[335px] h-[410px] rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -733,7 +754,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="p-6 text-surface dark:text-white">
+          <div class="px-6 text-surface dark:text-white">
             <div>
               <img
                 class="mb-3 w-[24px] h-[24px]"
@@ -753,14 +774,14 @@
             <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
               Custom Prompts
             </h5>
-            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+            <p class="sm:mb-4 text-[17px] text-gray-500 font-[400]">
               Use Custom promots to generate<br />
               content for your use-cases
             </p>
           </div>
         </div>
         <div
-          class="block p-2 rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 sm:w-[335px] sm:h-[440px] w-[335px] h-[415px] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -790,7 +811,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="p-6 text-surface dark:text-white">
+          <div class="px-6 text-surface dark:text-white">
             <div>
               <img
                 class="mb-3 w-[24px] h-[24px]"
@@ -810,7 +831,7 @@
             <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
               Set Content Language
             </h5>
-            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+            <p class="sm:mb-4 text-[17px] text-gray-500 font-[400]">
               Generate Content in 19+ languages <br />
               seamlessly
             </p>
@@ -820,33 +841,32 @@
     </div>
 
     <!--Another Features -->
-    <div class="mt-32 pb-16">
-      <div class="flex mt-28 justify-between w-[1100px] m-auto">
-        <h1 class="text-[56px] text-left w-[400px] font-[550]">
-          <span class="opacity-90">We</span> <br />
-          <span class="opacity-90">Have great</span> <br />
+    <div class="sm:mt-32 pb-10">
+      <div class="sm:flex mt-28 justify-between sm:w-[1100px] px-5 sm:m-auto">
+        <h1 class="sm:text-[56px] text-[36px] text-left w-[400px] font-[600]">
+          <span class="opacity-90">We</span>
+          <span class="opacity-90 ml-3">Have great</span> <br />
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
-        <p class="text-[33px] text-left font-[500] text-gray">
+        <p
+          class="sm:text-[33px] text-[24px] mt-3 p-1 text-left sm:font-[500] text-gray"
+        >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
-          <br />
-          create custom automations and <br />
-          workflows, connect with <span class="text-[#705BE1]">Notion</span> to
-          <br />
-          transfer your notes or use
-          <span class="text-[#705BE1]">Whatsapp</span> <br />
-          for audionotes for easy transcription <br />
-          and summarization
+          create custom automations and workflows, connect with
+          <span class="text-[#705BE1]">Notion</span> to transfer your notes or
+          use
+          <span class="text-[#705BE1]">Whatsapp</span>
+          for audionotes for easy transcription and summarization
         </p>
       </div>
     </div>
 
     <!--Social Card system -->
     <div class="mt-28 w-[1100px] m-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 px-3 gap-8">
         <div v-for="(social, index) in socialData" :key="index" class="mb-4">
           <div
-            class="block rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+            class="block w-[350px] h-[400px] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -861,7 +881,7 @@
                 />
               </nuxt-link>
             </div>
-            <div class="p-6 text-surface dark:text-white">
+            <div class="sm:p-6 px-5 pt-3 text-surface dark:text-white">
               <div>
                 <img
                   class="mb-3 w-[24px] h-[24px]"
@@ -882,26 +902,27 @@
     </div>
 
     <!--Another Features -->
-    <div class="mt-28">
-      <div class="flex mt-28 justify-between w-[1100px] m-auto">
-        <h1 class="text-[57px] text-left w-[440px] font-[500]">
-          <span class="opacity-85">Your very own </span>
+    <div class="sm:mt-28">
+      <div class="sm:flex mt-24 justify-between sm:w-[1100px] px-5 sm:m-auto">
+        <h1
+          class="sm:text-[56px] text-[38px] text-left sm:w-[440px] sm:m-auto sm:font-[500] font-[600]"
+        >
+          <span class="opacity-90">Your very own </span>
           <span class="text-[#705BE1]">AI</span> <br />
           <span class="text-[#705BE1]"> Assistant</span>
         </h1>
-        <p class="text-[32px] text-left font-[500] text-gray-900">
+        <p
+          class="sm:text-[32px] text-[24px] text-left mt-5 sm:font-[500] font-[500] text-gray-900"
+        >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
-          search <br />
-          and QnA to use Audionotes as an <br />
-          assistant to glance through all your <br />
-          notes at once. You can chat with your <br />
-          individual notes too.
+          search and QnA to use Audionotes as an assistant to glance through all
+          your notes at once. You can chat with your individual notes too.
         </p>
       </div>
     </div>
 
     <!-- Another chat cart  -->
-    <div class="mt-28 w-[1100px] m-auto">
+    <div class="sm:mt-28 sm:w-[1100px] sm:m-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
         <div
           class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
@@ -967,7 +988,7 @@
         </div>
 
         <div
-          class="block rounded-3xl bg-[#FF4F00] shadow-secondary-1 dark:bg-surface-dark"
+          class="block rounded-3xl bg-[#FF4F00] p-1 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div class="pt-12 pl-11 text-surface dark:text-white">
             <div>
@@ -997,7 +1018,7 @@
             </p>
           </div>
           <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
+            class="relative overflow-hidden mb-1 bg-cover bg-no-repeat"
             data-twe-ripple-init
             data-twe-ripple-color="light"
           >
@@ -1031,206 +1052,204 @@
     <!-- Unique Card  -->
 
     <!-- Mobile App section  -->
-    <section>
-      <div class="mt-32 w-[1100px] m-auto text-center">
+    <div class="mt-32 sm:w-[1100px] sm:m-auto text-center">
+      <div class="px-4">
+        <h4 class="sm:text-[56px] text-[36px] font-[700]">
+          <span class="text-[#262626]">Get the Audionotes </span>
+          <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
+        </h4>
         <div>
-          <h4 class="text-[56px] font-[700]">
-            <span class="opacity-80">Get the Audionotes</span>
-            <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
-          </h4>
-          <div>
-            <p class="mt-5 text-[19px] opacity-50">
-              Access audiones on your android or iOS device by downloading our
-              lightweight progressive web app (PWA). Please note: <br />
-              As of now, Audionotes is not available on the app store or play
-              store.
-            </p>
-            <p class="mt-4 text-[19px] opacity-50">
-              Please open this link in Safari browser in case you using an
-              iPhone
-            </p>
-          </div>
-          <a href="#">
-            <p
-              class="mt-7 justify-center flex w-[370px] m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
-            >
-              Download our Lightweight Mobile App
-            </p>
-          </a>
-          <div class="main-container">
-            <div
-              class="mt-32 h-[480px] relative m-auto px-5 flex justify-center items-center overflow-hidden"
-            >
-              <div
-                class="relative w-64 mt-52 h-[510px] rounded-xl transform -rotate-[21deg]"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="237px"
-                  srcset="
-                    https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png?scale-down-to=2048 1013w,
-                    https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png                    1209w
-                  "
-                  src="https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <div
-                class="relative w-64 mt-52 h-[510px] ml-5 rounded-xl transform rotate-[24deg]"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="237px"
-                  srcset="
-                    https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png?scale-down-to=2048 1013w,
-                    https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png                    1209w
-                  "
-                  src="https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <div class="absolute w-65 rounded-xl mt-20 h-[560px] transform">
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="263px"
-                  srcset="
-                    https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png?scale-down-to=2048 1013w,
-                    https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png                    1208w
-                  "
-                  src="https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-            </div>
-          </div>
+          <p class="mt-5 text-[19px] opacity-50">
+            Access audiones on your android or iOS device by downloading our
+            lightweight progressive web app (PWA). Please note: As of now,
+            Audionotes is not available on the app store or play store.
+          </p>
+          <p class="mt-4 text-[19px] opacity-50">
+            Please open this link in Safari browser in case you using an iPhone
+          </p>
         </div>
-        <div class="mt-32 w-[1100px] m-auto">
-          <h4 class="text-[56px] font-[700]">
-            <span class="opacity-85">Pin our </span>
-            <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
-          </h4>
-          <div>
-            <p class="mt-5 text-[19px] opacity-50">
-              Access audiones on your desktop with Chrome Extension. Please open
-              this link in Safari browser in case you using an <br />
-              iPhone
-            </p>
+        <a href="#">
+          <p
+            class="mt-7 justify-center flex sm:w-[370px] px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+          >
+            Download our Lightweight Mobile App
+          </p>
+        </a>
+      </div>
+      <div class="main-container">
+        <div
+          class="sm:mt-32 mt-20 sm:h-[480px] h-[341px] w-[392px] sm:w-auto relative sm:m-auto flex justify-center items-center overflow-hidden"
+        >
+          <div
+            class="relative w-64 sm:mt-52 mt-20 sm:h-[510px] h-[300px] rounded-xl transform -rotate-[21deg]"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              sizes="237px"
+              srcset="
+                https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png?scale-down-to=2048 1013w,
+                https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png                    1209w
+              "
+              src="https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
           </div>
-          <a href="#">
-            <p
-              class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
-            >
-              Download Chrome extension
-            </p>
-          </a>
-          <div class="main-container">
-            <div
-              class="mt-32 h-[480px] relative m-auto flex justify-center items-center overflow-hidden"
-            >
-              <div
-                class="relative w-64 mt-40 h-[510px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="237px"
-                  srcset="
-                    https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png 475w
-                  "
-                  src="https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <div
-                class="relative border border-gray-400 w-64 mt-52 h-[530px] ml-3 rounded-xl rotate-[24deg]"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="237px"
-                  srcset="
-                    https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png 475w
-                  "
-                  src="https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <div
-                class="absolute w-66 rounded-xl border mt-20 border-gray-400 h-[560px] transform"
-              >
-                <img
-                  decoding="async"
-                  loading="lazy"
-                  sizes="263px"
-                  srcset="
-                    https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png 474w
-                  "
-                  src="https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-            </div>
+          <div
+            class="relative w-64 sm:mt-52 mt-36 sm:h-[510px] h-[300px] rounded-xl transform rotate-[24deg]"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              sizes="237px"
+              srcset="
+                https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png?scale-down-to=2048 1013w,
+                https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png                    1209w
+              "
+              src="https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
+          </div>
+          <div
+            class="absolute sm:w-65 w-30 rounded-xl sm:mt-20 mt-14 sm:h-[560px] h-[400px] transform"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              sizes="263px"
+              srcset="
+                https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png?scale-down-to=2048 1013w,
+                https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png                    1208w
+              "
+              src="https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="mt-32 sm:w-[1100px] sm:m-auto px-4">
+        <h4 class="sm:text-[56px] text-[36px] font-[700]">
+          <span class="text-[#262626]">Pin our </span>
+          <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
+        </h4>
+        <div>
+          <p class="mt-5 p-1 text-[19px] opacity-50">
+            Access audiones on your desktop with Chrome Extension. Please open
+            this link in Safari browser in case you using an iPhone
+          </p>
+        </div>
+        <a href="#">
+          <p
+            class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+          >
+            Download Chrome extension
+          </p>
+        </a>
+      </div>
+      <div class="main-container">
+        <div
+          class="mt-32 h-[480px] relative m-auto flex justify-center items-center overflow-hidden"
+        >
+          <div
+            class="relative w-64 mt-40 h-[510px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              sizes="237px"
+              srcset="
+                https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png 475w
+              "
+              src="https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
+          </div>
+          <div
+            class="relative border border-gray-400 w-64 mt-52 h-[530px] ml-3 rounded-xl rotate-[24deg]"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              sizes="237px"
+              srcset="
+                https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png 475w
+              "
+              src="https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
+          </div>
+          <div
+            class="absolute w-66 rounded-xl border mt-20 border-gray-400 h-[560px] transform"
+          >
+            <img
+              decoding="async"
+              loading="lazy"
+              sizes="263px"
+              srcset="
+                https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png 474w
+              "
+              src="https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Pricing section  -->
     <div class="w-[1100px] m-auto">
@@ -1242,20 +1261,23 @@
     </div>
 
     <!-- Faqs section  -->
-    <div id="faq" class="py-20">
-      <div class="mt-28 w-[1100px] flex justify-between m-auto">
-        <div>
+    <div id="faq" class="sm:py-20">
+      <div class="mt-28 sm:w-[1100px] sm:flex justify-between sm:m-auto">
+        <div class="px-5">
           <h2
-            class="sm:text-[28px] font-[700] leading-relaxed sm:leading-loose"
+            class="sm:text-[56px] text-[30px] font-[700] leading-relaxed sm:leading-loose"
           >
-            <span class="text-[56px] opacity-80">Need help?</span>
+            <span class="sm:text-[56px] text-[36px] opacity-95"
+              >Need help?</span
+            >
           </h2>
-          <p class="text-[18px] opacity-60 font-medium leading-8 mt-3">
-            Don`t worry, we got you. Here are some answers <br />
-            for your questions.
+          <p
+            class="sm:text-[18px] text-[17px] opacity-70 font-medium leading-8 mt-3"
+          >
+            Don`t worry, we got you. Here are some answers for your questions.
           </p>
           <div
-            class="flex w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 px-5 py-4"
+            class="flex sm:w-[190px] w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 px-5 sm:py-4 py-3"
           >
             <a
               href="/"
@@ -1275,12 +1297,12 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 mt-10 p-2">
           <div
             v-for="(faq, index) in faqData"
             :key="faq.id"
             :class="{
-              'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[600px]':
+              'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[600px] w-[350px]':
                 selectedQuestion === index,
               'p-4 bg-white rounded': selectedQuestion !== index,
             }"
@@ -1289,7 +1311,9 @@
               @click="toggleQuestion(index)"
               class="flex items-center justify-between cursor-pointer"
             >
-              <h2 class="text-[18px] opacity-80 font-[400]">
+              <h2
+                class="sm:text-[18px] text-[17px] sm:opacity-80 opacity-95 sm:font-[400] font-[500]"
+              >
                 {{ faq.question }}
               </h2>
               <button aria-label="faq question" title="faq question">
@@ -1324,7 +1348,7 @@
                     object-fit: cover;
                     image-rendering: auto;
                   "
-                  sizes="16px"
+                  sizes="18px"
                 />
               </button>
             </div>

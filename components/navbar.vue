@@ -1,68 +1,85 @@
 <template>
-  <nav class="navbar w-full">
-    <div class="container mx-auto px-6 py-6">
-      <div class="flex justify-between items-center w-[1100px] m-auto">
+  <div>
+    <div class="flex w-[100%] mx-auto p-4 py-5">
+      <div class="flex justify-between items-center w-[1070px] m-auto">
         <div class="nav-logo">
-          <a href="/" class="logo-link">
+          <nuxt-link to="/" class="logo-link">
             <img
-              src="https://framerusercontent.com/images/xBz63gfbPpHJjmQFD32STgtCgfE.png"
+              decoding="async"
+              sizes="149px"
               srcset="
                 https://framerusercontent.com/images/xBz63gfbPpHJjmQFD32STgtCgfE.png?scale-down-to=512   512w,
                 https://framerusercontent.com/images/xBz63gfbPpHJjmQFD32STgtCgfE.png?scale-down-to=1024 1024w,
                 https://framerusercontent.com/images/xBz63gfbPpHJjmQFD32STgtCgfE.png                    1122w
               "
-              sizes="149px"
-              alt="Logo"
-              style="border-radius: inherit; object-fit: contain"
+              src="https://framerusercontent.com/images/xBz63gfbPpHJjmQFD32STgtCgfE.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: contain;
+                image-rendering: auto;
+              "
             />
-          </a>
+          </nuxt-link>
         </div>
-        <div class="lg:hidden">
-          <button
-            @click="toggleMenu"
-            class="text-gray-500 focus:outline-none focus:text-gray-700"
-          >
-            <svg viewBox="0 0 20 20" fill="currentColor" class="menu w-6 h-6">
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 100 2h12a1 1 0 100-2H3zm1 5a1 1 0 110-2h12a1 1 0 110 2H4z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+
+        <div class="hidden sm:block">
+          <ul class="flex space-x-3 text-[#535251] text-md font-semibold">
+            <li
+              class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
+            >
+              <nuxt-link to="#">Use Cases</nuxt-link>
+            </li>
+            <li
+              class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
+            >
+              <nuxt-link to="#">Features</nuxt-link>
+            </li>
+            <li
+              class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
+            >
+              <nuxt-link to="/pricing">Pricing</nuxt-link>
+            </li>
+            <li
+              class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
+            >
+              <nuxt-link to="#">Affiliates</nuxt-link>
+            </li>
+            <li
+              class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
+            >
+              <nuxt-link to="#">Blog</nuxt-link>
+            </li>
+          </ul>
         </div>
-        <ul class="lg:flex space-x-5 text-[15px] font-[500]">
-          <li
-            class="border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"
-          >
-            <a href="#">Use Cases</a>
-          </li>
-          <li
-            class="border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"
-          >
-            <a href="#">Features</a>
-          </li>
-          <li
-            class="border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"
-          >
-            <a href="/pricing">Pricing</a>
-          </li>
-          <li
-            class="border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"
-          >
-            <a href="#">Affiliates</a>
-          </li>
-          <li
-            class="border border-transparent hover:border-[#D9D2C5] hover:bg-[#F5F1EB] px-2 py-2 rounded-md"
-          >
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+
+        <div class="cursor-pointer sm:hidden">
+          <img
+            @click="isShowMobileNav = !isShowMobileNav"
+            decoding="async"
+            src="https://framerusercontent.com/images/dG1Azogn9b3q4VAzzfU8jvuvqo.svg"
+            alt=""
+            style="
+              display: block;
+              width: 100%;
+              height: 100%;
+              border-radius: inherit;
+              object-position: center center;
+              object-fit: cover;
+              image-rendering: auto;
+            "
+          />
+        </div>
+
         <div
-          class="flex items-center justify-center bg-[#ff4f00] text-white font-[600] rounded-full hover:bg-[#ff5100d7] px-2 py-2"
+          class="items-center bg-[#ff4f00] text-white rounded-full px-4 py-2 sm:block hidden"
         >
-          <a
-            href="/"
+          <nuxt-link
+            to="/"
             aria-label="Try For Free"
             title="Try For Free"
             class="flex items-center"
@@ -74,28 +91,16 @@
               class="ml-1 w-4 h-4"
               style="object-fit: cover; border-radius: inherit"
             />
-          </a>
+          </nuxt-link>
         </div>
       </div>
     </div>
-  </nav>
+    <mobile-nav v-show="isShowMobileNav"></mobile-nav>
+  </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.showMenu = !this.showMenu;
-    },
-  },
-};
+<script setup>
+const isShowMobileNav = ref(false);
 </script>
 
-<style scoped>
-/* Add your scoped styles here */
-</style>
+<style scoped></style>
