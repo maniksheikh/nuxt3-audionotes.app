@@ -45,8 +45,8 @@
           <br />
           <p class="opacity-80 text-[18px]">a1811 Labs product</p>
         </div>
-        <div class="sm:mt-10 sm:flex mt-10 sm:items-center">
-          <div class="flex gap-20">
+        <div class="sm:mt-10 sm:flex mt-10 justify-center sm:items-center">
+          <div class="flex justify-between">
             <div class="sm:px-10 opacity-75">
               <ul>
                 <li
@@ -91,7 +91,7 @@
               </ul>
             </div>
           </div>
-          <div class="flex gap-20 mt-10">
+          <div class="flex mt-5 justify-between">
             <div class="sm:px-10 opacity-75">
               <ul>
                 <li

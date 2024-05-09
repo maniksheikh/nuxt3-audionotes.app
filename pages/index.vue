@@ -1,7 +1,7 @@
 <template>
   <div class="home-section">
     <div
-      class="justify-center items-center h-[500px] px-4 sm:h-[560px] flex overflow-hidden m-auto sm:auto relative"
+      class="justify-center items-center h-[500px] sm:px-4 flex overflow-hidden m-auto sm:auto relative"
     >
       <div>
         <img
@@ -27,37 +27,34 @@
         />
       </div>
       <div
-        class="absolute top-0 left-0 right-0 bottom-0 px-4 flex flex-col sm:mt-10 justify-center items-center mx-auto text-center"
+        class="absolute top-0 left-0 right-0 bottom-0 sm:w-[788px] sm:m-auto flex flex-col sm:my-16"
       >
-        <section>
-          <div>
-            <h1
-              class="sm:leading-9 leading-5 sm:py-5 text-[32px] sm:text-[54px] text-[#262626] font-semibold"
+        <div class="text-center">
+          <h1
+            class="sm:leading-10 leading-6 py-2 text-[34px] sm:text-[50px] text-[#262626] font-semibold opacity-95"
+          >
+            <span class="opacity-90">Your</span>
+            <span class="font-italic opacity-95 font-normal ml-3 italic"
+              >cluttered</span
             >
-              <span class="opacity-90">Your</span>
-              <span class="font-italic opacity-95 font-normal ml-3 italic"
-                >cluttered</span
-              >
-              <span class="text-[#FF4F00] ml-3 font-semibold opacity-90"
-                >Thoughts</span
-              >
-              <span class="ml-2"><br /><br /></span>
-              <span class="font-italic opacity-95 font-medium ml-3 italic"
-                >clear</span
-              >
-              <span class="text-[#FF4F00] ml-3 opacity-90 font-semibold"
-                >Text Notes</span
-              >
-              <span class="ml-3 opacity-95">using AI</span>
-            </h1>
-            <p
-              class="sm:mt-10 mt-5 leading-6 sm:leading-8 text-[rgba(33, 33, 33, 0.55)] opacity-50 text-[15px] sm:text-[20px]"
+            <span class="text-[#FF4F00] ml-3 font-semibold opacity-90"
+              >Thoughts Into</span
             >
-              Speak or type, Audionotes will transform your notes into <br />
-              searchable clear actionable text notes using AI
-            </p>
-          </div>
-        </section>
+            <span class="font-italic opacity-95 font-medium ml-3 italic"
+              >clear</span
+            >
+            <span class="text-[#FF4F00] ml-3 opacity-90 font-semibold"
+              >Text Notes</span
+            >
+            using AI
+          </h1>
+          <p
+            class="sm:mt-10 mt-5 leading-6 sm:leading-8 text-[rgba(33, 33, 33, 0.55)] opacity-50 text-[15px] sm:text-[20px]"
+          >
+            Speak or type, Audionotes will transform your notes into <br />
+            searchable clear actionable text notes using AI
+          </p>
+        </div>
 
         <div
           class="flex items-center justify-center bg-[#FF4F00] sm:max-w-[150px] w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
@@ -78,107 +75,108 @@
           </nuxt-link>
         </div>
         <br />
-        <section>
-          <div class="mt-6">
-            <div class="flex items-center justify-center max-w-[300px] mx-auto">
-              <span class="bg-black text-white p-2 rounded-md">4.9</span>
-              <div class="ml-4 leading-6">
-                <div class="flex">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 36 36"
-                  >
-                    <path
-                      fill="#ffac33"
-                      d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
-                    />
-                  </svg>
-                  <svg
-                    class="ml-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 36 36"
-                  >
-                    <path
-                      fill="#ffac33"
-                      d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
-                    />
-                  </svg>
-                  <svg
-                    class="ml-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 36 36"
-                  >
-                    <path
-                      fill="#ffac33"
-                      d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
-                    />
-                  </svg>
-                  <svg
-                    class="ml-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 36 36"
-                  >
-                    <path
-                      fill="#ffac33"
-                      d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
-                    />
-                  </svg>
-                  <svg
-                    class="ml-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 36 36"
-                  >
-                    <path
-                      fill="#ffac33"
-                      d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
-                    />
-                  </svg>
-                </div>
-                <span>from 28 testimonials</span>
+        <div class="mt-6">
+          <div class="flex items-center justify-center max-w-[300px] mx-auto">
+            <span class="bg-black text-white p-2 rounded-md">4.9</span>
+            <div class="ml-4 leading-6">
+              <div class="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 36 36"
+                >
+                  <path
+                    fill="#ffac33"
+                    d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
+                  />
+                </svg>
+                <svg
+                  class="ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 36 36"
+                >
+                  <path
+                    fill="#ffac33"
+                    d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
+                  />
+                </svg>
+                <svg
+                  class="ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 36 36"
+                >
+                  <path
+                    fill="#ffac33"
+                    d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
+                  />
+                </svg>
+                <svg
+                  class="ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 36 36"
+                >
+                  <path
+                    fill="#ffac33"
+                    d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
+                  />
+                </svg>
+                <svg
+                  class="ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 36 36"
+                >
+                  <path
+                    fill="#ffac33"
+                    d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.971 1.971 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.978 1.978 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.957 1.957 0 0 1-1.16.379"
+                  />
+                </svg>
               </div>
+              <span>from 28 testimonials</span>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
 
-    <div
-      class="mx-auto max-w-[1190px] max-h-[670px] overflow-hidden rounded-3xl object-cover"
-    >
-      <nuxt-link to="/">
-        <img
-          decoding="async"
-          sizes="1190px"
-          srcset="
-            https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=512   512w,
-            https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=1024 1024w,
-            https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=2048 2048w,
-            https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=4096 4096w,
-            https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png                    4760w
-          "
-          src="https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png"
-          alt=""
-          style="
-            display: block;
-            width: 100%;
-            height: 100%;
-            border-radius: inherit;
-            object-position: center;
-            object-fit: cover;
-            image-rendering: auto;
-          "
-        />
-      </nuxt-link>
+    <!-- testimonial-section  -->
+    <div class="sm:mt-20 sm:w-[1200px] sm:m-auto mx-2">
+      <div
+        class="sm:h-[670px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
+      >
+        <nuxt-link to="/">
+          <img
+            decoding="async"
+            sizes="1190px"
+            srcset="
+              https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=512   512w,
+              https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=1024 1024w,
+              https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=2048 2048w,
+              https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=4096 4096w,
+              https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png                    4760w
+            "
+            src="https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png"
+            alt=""
+            style="
+              display: block;
+              width: 100%;
+              height: 100%;
+              border-radius: inherit;
+              object-position: center;
+              object-fit: cover;
+              image-rendering: auto;
+            "
+          />
+        </nuxt-link>
+      </div>
     </div>
 
     <!-- Brand section  -->
@@ -235,8 +233,8 @@
 
     <!-- Foundeer section  -->
     <div class="founder-section">
-      <div class="sm:mt-32 mt-20 sans-serif max-w-[1300px] mx-auto">
-        <div class="text-center pt-16">
+      <div class="sm:mt-32 mt-20 sans-serif sm:w-[1300px] m-auto">
+        <div class="text-center pt-16 px-4">
           <h4
             class="sm:text-[56px] text-[36px] text-[#262626] opacity-95 font-bold"
           >
@@ -289,7 +287,7 @@
     <!-- Audionotes use -->
     <div class="audionotes-uses">
       <div
-        class="sm:mt-48 mt-40 items-center max-w-[1200px] m-auto text-center"
+        class="sm:mt-48 mt-40 items-center sm:w-[1200px] m-auto text-center px-4"
       >
         <div>
           <h4
@@ -310,7 +308,7 @@
         </div>
       </div>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 max-w-[1100px] mx-auto"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 px-4 max-w-[1100px] mx-auto"
       >
         <div class="w-full mb-8">
           <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
@@ -394,12 +392,12 @@
     </div>
     <!-- Audionotes users section  -->
     <div class="users-section">
-      <div class="mt-32">
+      <div class="sm:mt-32 mt-20">
         <h1
-          class="text-center sm:text-[56px] text-[35px] max-w-[1700px] mx-auto sm:font-semibold font-[600]"
+          class="text-center mx-5 sm:text-[56px] text-[35px] sm:w-[1700px] m-auto sm:font-semibold font-[600]"
         >
           <span class="text-[#FF4F00] font-[700]">Loved by</span>
-          <span class="ml-4 opacity-90">7000+ Happy Users </span> ❤️
+          7000+ Happy Users ❤️
         </h1>
 
         <Vue3Marquee
@@ -565,28 +563,28 @@
       </div>
     </div>
     <!-- Features -->
-    <div class="mt-28 text-center max-w-[1100px] mx-auto">
-      <h2 class="sm:text-[56px] text-[36px] font-[600] text-[#FF4F00]">
+    <div class="mt-28 text-center sm:w-[1100px] m-auto">
+      <h2
+        class="sm:text-[56px] sm:w-[240px] w-[240px] m-auto text-[36px] font-[600] text-[#FF4F00]"
+      >
         Features
       </h2>
     </div>
     <br />
 
-    <div class="max-w-[1100px] mx-auto">
-      <div class="sm:flex items-center justify-between px-5 sm:mt-20 mt-10">
+    <div class="sm:w-[1100px] m-auto">
+      <div class="sm:flex justify-between mt-10 gap-20">
         <h1
-          class="sm:text-[56px] text-[36px] sm:text-left sm:max-w-[400px] max-w-[200px] sm:font-[500] font-[600]"
+          class="sm:text-[56px] sm:w-[35%] w-[90%] m-auto text-[38px] sm:text-left sm:font-[500] font-[600] opacity-80"
         >
-          <span>Record,</span>
-          <span>Upload or</span>
-          <span> Write</span>
+          <span>Record, Upload, </span>
+          <span> Write.</span>
         </h1>
         <p
-          class="sm:text-[34px] mt-5 text-[23px] text-left sm:font-[500] font-[600]"
+          class="sm:text-[34px] sm:w-[58%] m-auto text-[24px] w-[90%] mt-5 text-left sm:font-[500] font-[500]"
         >
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
-          notes, <br />
-          <span class="text-[#FF4F00]">uploading</span> audio files or
+          notes, <span class="text-[#FF4F00]">uploading</span> audio files or
           <span class="text-[#FF4F00]">creating</span> text Audionotes will turn
           your notes into neatly summarized &
           <span class="text-[#FF4F00]">structured text notes </span>
@@ -596,12 +594,12 @@
     </div>
 
     <!-- Card system -->
-    <div class="mt-28 sm:max-w-[1100px] sm:mx-auto">
-      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div class="sm:mt-28 mt-20 sm:w-[1100px] sm:m-auto sm: sm:pb-20">
+      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 m-3 gap-10">
         <div
           v-for="card in cartData"
           :key="card"
-          class="block p-3 w-[350px] h-[420px] m-auto rounded-3xl mb-3 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 sm:w-full w-full m-auto rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -624,14 +622,16 @@
               />
             </nuxt-link>
           </div>
-          <div class="p-6 text-surface dark:text-white">
+          <div class="px-6 py-4 text-surface dark:text-white">
             <div>
               <img class="mb-3 w-[24px] h-[24px]" :src="card.avatar" alt="" />
             </div>
-            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+            <h5
+              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            >
               {{ card.header }}
             </h5>
-            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
+            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
               {{ card.content }}
             </p>
           </div>
@@ -640,34 +640,30 @@
     </div>
 
     <!-- Features -->
-    <div class="mt-32 text-center">
-      <div
-        class="sm:flex mt-28 items-center justify-between max-w-[1100px] px-5 mx-auto"
-      >
+    <div class="sm:mt-32 sm:pb-28">
+      <div class="sm:flex mt-28 justify-between sm:w-[1100px] m-auto gap-20">
         <h1
-          class="sm:text-[56px] text-[34px] text-left max-w-[400px] sm:font-[500] font-[600]"
+          class="sm:text-[54px] text-[36px] mx-3 text-left sm:w-[38%] m-auto sm:font-[500] font-[600]"
         >
-          <span class="opacity-95">Generate</span>
-          <span class="opacity-95 ml-3">Awesome</span>
+          <span class="opacity-95">Generate Awesome</span>
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="sm:text-[32px] text-[22px] mt-6 text-left font-[600] opacity-95"
+          class="sm:text-[32px] mx-3 mt-5 text-[22px] sm:w-[55%] m-auto text-left font-[500] opacity-85"
         >
-          Generate Emails, Social Media Content, <br />
-          Minutes of the Meeting, Action items <br />
-          and even <span class="text-[#705BE1]">use custom prompts</span> to
-          generate high quality content with a <br />
-          single click directly from your notes.
+          Generate Emails, Social Media Content, Minutes of the Meeting, Action
+          items and even
+          <span class="text-[#705BE1]">use custom prompts</span> to generate
+          high quality content with a single click directly from your notes.
         </p>
       </div>
     </div>
 
     <!--Another Card system -->
-    <div class="sm:mt-28 mt-20 w-[1100px] m-auto">
-      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 gap-8">
+    <div class="sm:mt-28 mt-20 sm:w-[1100px] m-auto">
+      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-2">
         <div
-          class="block p-2 w-[335px] h-[440px] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -697,7 +693,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="p-6 text-surface dark:text-white">
+          <div class="px-6 py-4 text-surface dark:text-white">
             <div>
               <img
                 class="mb-3 w-[24px] h-[24px]"
@@ -714,17 +710,18 @@
                 "
               />
             </div>
-            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+            <h5
+              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            >
               Unlimited Content
             </h5>
-            <p class="mb-4 text-[17px] text-gray-500 font-[400]">
-              Generate Social Media Posts, MoMs, <br />
-              Emails & much more
+            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+              Generate Social Media Posts, MoMs, Emails & much more
             </p>
           </div>
         </div>
         <div
-          class="block p-2 sm:w-[335px] sm:h-[420px] w-[335px] h-[410px] rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -754,7 +751,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="px-6 text-surface dark:text-white">
+          <div class="px-6 py-4 text-surface dark:text-white">
             <div>
               <img
                 class="mb-3 w-[24px] h-[24px]"
@@ -771,17 +768,19 @@
                 "
               />
             </div>
-            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+            <h5
+              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            >
               Custom Prompts
             </h5>
-            <p class="sm:mb-4 text-[17px] text-gray-500 font-[400]">
+            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
               Use Custom promots to generate<br />
               content for your use-cases
             </p>
           </div>
         </div>
         <div
-          class="block p-2 sm:w-[335px] sm:h-[440px] w-[335px] h-[415px] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -811,7 +810,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="px-6 text-surface dark:text-white">
+          <div class="px-5 py-4 text-surface dark:text-white">
             <div>
               <img
                 class="mb-3 w-[24px] h-[24px]"
@@ -828,10 +827,12 @@
                 "
               />
             </div>
-            <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
+            <h5
+              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            >
               Set Content Language
             </h5>
-            <p class="sm:mb-4 text-[17px] text-gray-500 font-[400]">
+            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
               Generate Content in 19+ languages <br />
               seamlessly
             </p>
@@ -843,9 +844,11 @@
     <!--Another Features -->
     <div class="sm:mt-32 pb-10">
       <div class="sm:flex mt-28 justify-between sm:w-[1100px] px-5 sm:m-auto">
-        <h1 class="sm:text-[56px] text-[36px] text-left w-[400px] font-[600]">
-          <span class="opacity-90">We</span>
-          <span class="opacity-90 ml-3">Have great</span> <br />
+        <h1
+          class="sm:text-[56px] text-[36px] text-left sm:w-[400px] font-[600]"
+        >
+          <span class="opacity-90">We Have great</span>
+          <br />
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
@@ -862,11 +865,11 @@
     </div>
 
     <!--Social Card system -->
-    <div class="mt-28 w-[1100px] m-auto">
+    <div class="mt-28 sm:w-[1100px] m-auto">
       <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 px-3 gap-8">
         <div v-for="(social, index) in socialData" :key="index" class="mb-4">
           <div
-            class="block w-[350px] h-[400px] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+            class="block w-full sm:w-full h-[400px] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -922,7 +925,7 @@
     </div>
 
     <!-- Another chat cart  -->
-    <div class="sm:mt-28 sm:w-[1100px] sm:m-auto">
+    <div class="sm:mt-28 mt-20 sm:w-[1100px] sm:m-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
         <div
           class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
@@ -1078,10 +1081,10 @@
       </div>
       <div class="main-container">
         <div
-          class="sm:mt-32 mt-20 sm:h-[480px] h-[341px] w-[392px] sm:w-auto relative sm:m-auto flex justify-center items-center overflow-hidden"
+          class="sm:mt-32 mt-16 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
         >
           <div
-            class="relative w-64 sm:mt-52 mt-20 sm:h-[510px] h-[300px] rounded-xl transform -rotate-[21deg]"
+            class="relative sm:w-64 sm:mt-40 mt-32 sm:h-[510px] h-[250px] sm:rounded-2xl transform -rotate-[21deg]"
           >
             <img
               decoding="async"
@@ -1105,7 +1108,7 @@
             />
           </div>
           <div
-            class="relative w-64 sm:mt-52 mt-36 sm:h-[510px] h-[300px] rounded-xl transform rotate-[24deg]"
+            class="relative sm:mt-40 mt-32 sm:h-[530px] h-[250px] ml-3 sm:rounded-2xl transform rotate-[24deg]"
           >
             <img
               decoding="async"
@@ -1129,7 +1132,7 @@
             />
           </div>
           <div
-            class="absolute sm:w-65 w-30 rounded-xl sm:mt-20 mt-14 sm:h-[560px] h-[400px] transform"
+            class="absolute sm:w-66 sm:rounded-2xl rounded-2xl border sm:mt-20 mt-24 sm:h-[560px] h-[311px]"
           >
             <img
               decoding="async"
@@ -1176,10 +1179,10 @@
       </div>
       <div class="main-container">
         <div
-          class="mt-32 h-[480px] relative m-auto flex justify-center items-center overflow-hidden"
+          class="sm:mt-32 mt-16 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
         >
           <div
-            class="relative w-64 mt-40 h-[510px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
+            class="relative sm:w-64 sm:mt-40 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
           >
             <img
               decoding="async"
@@ -1202,7 +1205,7 @@
             />
           </div>
           <div
-            class="relative border border-gray-400 w-64 mt-52 h-[530px] ml-3 rounded-xl rotate-[24deg]"
+            class="relative sm:mt-40 mt-32 sm:h-[530px] h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[24deg]"
           >
             <img
               decoding="async"
@@ -1225,7 +1228,7 @@
             />
           </div>
           <div
-            class="absolute w-66 rounded-xl border mt-20 border-gray-400 h-[560px] transform"
+            class="absolute sm:w-66 sm:rounded-2xl rounded-2xl border border-gray-400 sm:mt-20 mt-24 sm:h-[560px] h-[311px] transform"
           >
             <img
               decoding="async"
@@ -1252,7 +1255,7 @@
     </div>
 
     <!-- Pricing section  -->
-    <div class="w-[1100px] m-auto">
+    <div class="sm:w-[1100px] m-auto">
       <div class="bg-white mt-36">
         <div>
           <pricing-section></pricing-section>
