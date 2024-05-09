@@ -1,10 +1,11 @@
 <template>
-  <div class="home-section">
+  <div class="main-container">
     <div
-      class="justify-center items-center h-[500px] sm:px-4 flex overflow-hidden m-auto sm:auto relative"
+      class="justify-center items-center h-[500px] flex overflow-hidden relative"
     >
       <div>
         <img
+          class="hidden sm:block"
           decoding="async"
           sizes="100vw"
           srcset="
@@ -16,7 +17,6 @@
           src="https://framerusercontent.com/images/6pm8enuwSnGY9Y2MKWDfEfKs.png"
           alt=""
           style="
-            display: block;
             max-width: 100%;
             max-height: 100%;
             border-radius: inherit;
@@ -27,19 +27,20 @@
         />
       </div>
       <div
-        class="absolute top-0 left-0 right-0 bottom-0 sm:w-[788px] sm:m-auto flex flex-col sm:my-16"
+        class="testimonial-content relative sm:absolute top-0 left-0 right-0 bottom-0 sm:w-[788px] w-full sm:mx-auto flex flex-col sm:my-16"
       >
         <div class="text-center">
-          <h1
-            class="sm:leading-10 leading-6 py-2 text-[34px] sm:text-[50px] text-[#262626] font-semibold opacity-95"
+          <h2
+            class="text-[31px] leading-10 sm:text-[50px] text-[#262626] font-semibold opacity-95"
           >
-            <span class="opacity-90">Your</span>
-            <span class="font-italic opacity-95 font-normal ml-3 italic"
+            Your
+            <span class="font-italic opacity-96 font-normal italic"
               >cluttered</span
             >
-            <span class="text-[#FF4F00] ml-3 font-semibold opacity-90"
-              >Thoughts Into</span
+            <span class="text-[#FF4F00] ml-3 font-semibold opacity-90">
+              Thoughts</span
             >
+            into
             <span class="font-italic opacity-95 font-medium ml-3 italic"
               >clear</span
             >
@@ -47,12 +48,12 @@
               >Text Notes</span
             >
             using AI
-          </h1>
+          </h2>
           <p
-            class="sm:mt-10 mt-5 leading-6 sm:leading-8 text-[rgba(33, 33, 33, 0.55)] opacity-50 text-[15px] sm:text-[20px]"
+            class="sm:mt-10 mt-5 leading-5 sm:p-1 px-5 sm:leading-9 text-[#999E9D] sm:w-[550px] m-auto text-[17px] sm:text-[19px] font-[100]"
           >
-            Speak or type, Audionotes will transform your notes into <br />
-            searchable clear actionable text notes using AI
+            Speak or type, Audionotes will transform your notes into searchable
+            clear actionable text notes using AI
           </p>
         </div>
 
@@ -76,7 +77,9 @@
         </div>
         <br />
         <div class="mt-6">
-          <div class="flex items-center justify-center max-w-[300px] mx-auto">
+          <div
+            class="flex items-center justify-center sm:max-w-[300px] w-[300px] mx-auto"
+          >
             <span class="bg-black text-white p-2 rounded-md">4.9</span>
             <div class="ml-4 leading-6">
               <div class="flex">
@@ -180,9 +183,9 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section mt-32 max-w-[1100px] mx-auto text-center">
+    <div class="brand-section mt-32 sm:-w-[1100px] m-auto text-center">
       <h3
-        class="max-w-[1100px] mx-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[650]"
+        class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[650]"
       >
         <span
           class="sm:text-[56px] text-[36px] text-black opacity-80 font-[700]"
@@ -234,7 +237,7 @@
     <!-- Foundeer section  -->
     <div class="founder-section">
       <div class="sm:mt-32 mt-20 sans-serif sm:w-[1300px] m-auto">
-        <div class="text-center pt-16 px-4">
+        <div class="text-center pt-16">
           <h4
             class="sm:text-[56px] text-[36px] text-[#262626] opacity-95 font-bold"
           >
@@ -249,7 +252,7 @@
             productivity!
           </p>
         </div>
-        <div class="flex gap-5 mt-16 p-10 max-w-[1200px] justify-center m-auto">
+        <div class="flex gap-5 mt-16 max-w-[1200px] justify-center m-auto">
           <Vue3Marquee duration="70">
             <div
               v-for="founder in founderData"
@@ -394,7 +397,7 @@
     <div class="users-section">
       <div class="sm:mt-32 mt-20">
         <h1
-          class="text-center mx-5 sm:text-[56px] text-[35px] sm:w-[1700px] m-auto sm:font-semibold font-[600]"
+          class="text-center sm:text-[56px] text-[35px] sm:w-[96%] mx-auto sm:font-semibold font-[600]"
         >
           <span class="text-[#FF4F00] font-[700]">Loved by</span>
           7000+ Happy Users ❤️
@@ -563,25 +566,23 @@
       </div>
     </div>
     <!-- Features -->
-    <div class="mt-28 text-center sm:w-[1100px] m-auto">
+    <div class="features-section sm:mt-28 text-center sm:w-[1100px] m-auto">
       <h2
-        class="sm:text-[56px] sm:w-[240px] w-[240px] m-auto text-[36px] font-[600] text-[#FF4F00]"
+        class="sm:text-[56px] sm:w-[250px] w-[240px] m-auto text-[36px] font-[600] text-[#FF4F00]"
       >
         Features
       </h2>
     </div>
-    <br />
 
-    <div class="sm:w-[1100px] m-auto">
+    <div class="sm:w-[1100px] m-auto sm:mt-28">
       <div class="sm:flex justify-between mt-10 gap-20">
         <h1
-          class="sm:text-[56px] sm:w-[35%] w-[90%] m-auto text-[38px] sm:text-left sm:font-[500] font-[600] opacity-80"
+          class="sm:text-[56px] sm:w-[35%] w-[90%] mx-auto text-[38px] text-[#000000] sm:text-left sm:font-[500] font-[500] opacity-95"
         >
-          <span>Record, Upload, </span>
-          <span> Write.</span>
+          <span>Record, Upload or Write. </span>
         </h1>
         <p
-          class="sm:text-[34px] sm:w-[58%] m-auto text-[24px] w-[90%] mt-5 text-left sm:font-[500] font-[500]"
+          class="sm:text-[34px] sm:w-[55%] mx-auto text-[24px] w-[90%] text-left sm:font-[500] font-[500]"
         >
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <span class="text-[#FF4F00]">uploading</span> audio files or
@@ -594,7 +595,7 @@
     </div>
 
     <!-- Card system -->
-    <div class="sm:mt-28 mt-20 sm:w-[1100px] sm:m-auto sm: sm:pb-20">
+    <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto sm: sm:pb-20">
       <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 m-3 gap-10">
         <div
           v-for="card in cartData"
@@ -640,16 +641,16 @@
     </div>
 
     <!-- Features -->
-    <div class="sm:mt-32 sm:pb-28">
+    <div class="features-section sm:mt-32 sm:pb-28">
       <div class="sm:flex mt-28 justify-between sm:w-[1100px] m-auto gap-20">
         <h1
-          class="sm:text-[54px] text-[36px] mx-3 text-left sm:w-[38%] m-auto sm:font-[500] font-[600]"
+          class="sm:text-[54px] text-[36px] text-[#000000] text-left sm:w-[38%] mx-auto sm:font-[500] font-[600]"
         >
           <span class="opacity-95">Generate Awesome</span>
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="sm:text-[32px] mx-3 mt-5 text-[22px] sm:w-[55%] m-auto text-left font-[500] opacity-85"
+          class="sm:text-[32px] text-[22px] sm:w-[56%] mx-auto text-left font-[500] text-[#1F1F1F]"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -842,17 +843,19 @@
     </div>
 
     <!--Another Features -->
-    <div class="sm:mt-32 pb-10">
-      <div class="sm:flex mt-28 justify-between sm:w-[1100px] px-5 sm:m-auto">
+    <div class="features-section sm:mt-32 pb-20">
+      <div class="sm:flex mt-28 justify-between sm:w-[1100px] sm:m-auto gap-20">
         <h1
-          class="sm:text-[56px] text-[36px] text-left sm:w-[400px] font-[600]"
+          class="sm:text-[56px] text-[36px] text-left sm:w-[35%] mx-auto text-[#1F1F1F] font-[500]"
         >
-          <span class="opacity-90">We Have great</span>
-          <br />
+          <span class="opacity-90"
+            >We <br />
+            Have great</span
+          >
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="sm:text-[33px] text-[24px] mt-3 p-1 text-left sm:font-[500] text-gray"
+          class="sm:text-[31px] sm:w-[57%] mx-auto text-[24px] text-left sm:font-[600] text-[#000000] opacity-85"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -905,17 +908,16 @@
     </div>
 
     <!--Another Features -->
-    <div class="sm:mt-28">
-      <div class="sm:flex mt-24 justify-between sm:w-[1100px] px-5 sm:m-auto">
+    <div class="features-section sm:mt-28">
+      <div class="sm:flex mt-24 justify-between sm:w-[1100px] sm:m-auto gap-20">
         <h1
-          class="sm:text-[56px] text-[38px] text-left sm:w-[440px] sm:m-auto sm:font-[500] font-[600]"
+          class="sm:text-[56px] text-[38px] text-left sm:w-[40%] mx-auto sm:font-[500] text-[#000000] font-[600]"
         >
           <span class="opacity-90">Your very own </span>
-          <span class="text-[#705BE1]">AI</span> <br />
-          <span class="text-[#705BE1]"> Assistant</span>
+          <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
         <p
-          class="sm:text-[32px] text-[24px] text-left mt-5 sm:font-[500] font-[500] text-gray-900"
+          class="sm:text-[32px] text-[24px] sm:w-[50%] mx-auto text-left sm:font-[500] font-[500] text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -925,7 +927,7 @@
     </div>
 
     <!-- Another chat cart  -->
-    <div class="sm:mt-28 mt-20 sm:w-[1100px] sm:m-auto">
+    <div class="features-section sm:mt-28 mt-20 sm:w-[1100px] sm:m-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
         <div
           class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
@@ -1055,7 +1057,7 @@
     <!-- Unique Card  -->
 
     <!-- Mobile App section  -->
-    <div class="mt-32 sm:w-[1100px] sm:m-auto text-center">
+    <div class="features-section sm:mt-32 sm:w-[1100px] sm:m-auto text-center">
       <div class="px-4">
         <h4 class="sm:text-[56px] text-[36px] font-[700]">
           <span class="text-[#262626]">Get the Audionotes </span>
@@ -1158,7 +1160,7 @@
         </div>
       </div>
 
-      <div class="mt-32 sm:w-[1100px] sm:m-auto px-4">
+      <div class="sm:mt-32 sm:w-[1100px] sm:m-auto px-4">
         <h4 class="sm:text-[56px] text-[36px] font-[700]">
           <span class="text-[#262626]">Pin our </span>
           <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
@@ -1266,7 +1268,7 @@
     <!-- Faqs section  -->
     <div id="faq" class="sm:py-20">
       <div class="mt-28 sm:w-[1100px] sm:flex justify-between sm:m-auto">
-        <div class="px-5">
+        <div>
           <h2
             class="sm:text-[56px] text-[30px] font-[700] leading-relaxed sm:leading-loose"
           >
@@ -1300,7 +1302,7 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-col gap-4 mt-10 p-2">
+        <div class="flex flex-col gap-4">
           <div
             v-for="(faq, index) in faqData"
             :key="faq.id"
@@ -1399,7 +1401,10 @@ const toggleQuestion = (index) => {
 </script>
 
 <style>
-.home-section {
+.container {
+  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
+}
+.testimonial-content {
   font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
 }
 .founder-section {
@@ -1409,6 +1414,9 @@ const toggleQuestion = (index) => {
   font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
 }
 .users-section {
+  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
+}
+.features-section {
   font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="sm:pb-32">
     <div class="mt-10 sm:max-w-[1100px] bg-[black] rounded-3xl sm:m-auto">
       <div
-        class="sm:max-w-[1100px] bg-[black] sm:p-16 p-10 text-center rounded-3xl m-auto"
+        class="sm:max-w-[95%] bg-[black] sm:p-16 p-10 text-center rounded-3xl m-auto"
       >
         <h1
           class="sm:text-[52px] text-[46px] sm:font-[600] font-[700] text-white"
@@ -140,7 +140,7 @@
         </div>
       </div>
 
-      <div class="p-5 copy-right-content">
+      <div class="sm:p-5 copy-right-content">
         <p class="text-white text-center opacity-90 justify-center pb-3">
           © Copyright {{ new Date().getFullYear() }} -
           <span class="name">AudioNotes.app</span>
