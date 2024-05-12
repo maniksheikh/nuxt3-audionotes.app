@@ -31,7 +31,7 @@
       >
         <div class="text-center">
           <h2
-            class="text-[31px] leading-10 sm:text-[50px] text-[#262626] font-semibold opacity-95"
+            class="text-[31px] sm:leading-[70px] leading-10 sm:text-[50px] text-[#262626] font-semibold opacity-95"
           >
             Your
             <span class="font-italic opacity-96 font-normal italic"
@@ -150,7 +150,7 @@
       </div>
     </div>
 
-    <!-- testimonial-section  -->
+    <!-- testimonal section -->
     <div class="sm:mt-20 sm:w-[1200px] sm:m-auto mx-2">
       <div
         class="sm:h-[670px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
@@ -158,7 +158,7 @@
         <nuxt-link to="/">
           <img
             decoding="async"
-            sizes="1190px"
+            sizes="100vw"
             srcset="
               https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=512   512w,
               https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png?scale-down-to=1024 1024w,
@@ -168,22 +168,14 @@
             "
             src="https://framerusercontent.com/images/k9PtTmPOmX2W45UUMeNRg7OGE.png"
             alt=""
-            style="
-              display: block;
-              width: 100%;
-              height: 100%;
-              border-radius: inherit;
-              object-position: center;
-              object-fit: cover;
-              image-rendering: auto;
-            "
+            class="w-full h-full object-cover rounded-3xl"
           />
         </nuxt-link>
       </div>
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section mt-32 sm:-w-[1100px] m-auto text-center">
+    <div class="brand-section mt-20 sm:-w-[1100px] m-auto text-center">
       <h3
         class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[650]"
       >
@@ -236,7 +228,7 @@
 
     <!-- Foundeer section  -->
     <div class="founder-section">
-      <div class="sm:mt-32 mt-20 sans-serif sm:w-[1300px] m-auto">
+      <div class="sm:mt-32 mt-21 sans-serif sm:w-[1300px] m-auto">
         <div class="text-center pt-16">
           <h4
             class="sm:text-[56px] text-[36px] text-[#262626] opacity-95 font-bold"
@@ -290,13 +282,14 @@
     <!-- Audionotes use -->
     <div class="audionotes-uses">
       <div
-        class="sm:mt-48 mt-40 items-center sm:w-[1200px] m-auto text-center px-4"
+        class="sm:mt-48 mt-24 items-center sm:w-[1200px] m-auto text-center px-4"
       >
         <div>
           <h4
             class="sm:text-[56px] text-[36px] text-[#FF4F00] font-[650] opacity-95"
           >
             <span
+              style="font-weight: 600 !important"
               class="sm:text-[56px] text-[36px] text-black font-[650] opacity-85"
               >What do I use</span
             >
@@ -313,81 +306,97 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 px-4 max-w-[1100px] mx-auto"
       >
-        <div class="w-full mb-8">
+        <div class="w-full">
           <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
             Journaling
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Just talk anywhere and Audionotes<br />will create a well-structured
             journal<br />entry for you.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             To-do & Task Lists
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Create to-do and task lists using<br />voice and text notes on the
             go.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             Writing
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Ideas can strike you anywhere, just<br />record with Audionotes and
             use the<br />summaries later.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             Message Assistant
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Dictate your messages to Audionotes<br />and it'll just structure
             them for you.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             To-do & Task Lists
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Create to-do and task lists using<br />voice and text notes on the
             go.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             Content Creation
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Generate amazing social media<br />content for Linkedin, Twitter,
             Blogs<br />using voice notes.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             Professional Assistant
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Generate Contracts, Marketing Plans.
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             Email Buddy
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Don't write emails, just speak and<br />Audionotes will do the rest!
           </p>
         </div>
-        <div class="w-full mb-8">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+        <div class="w-full">
+          <h3
+            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+          >
             Summarize Meetings
           </h3>
-          <p class="mt-4 text-[17px] text-gray-600">
+          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
             Record your meetings and summarize<br />them.
           </p>
         </div>
@@ -566,9 +575,12 @@
       </div>
     </div>
     <!-- Features -->
-    <div class="features-section sm:mt-28 text-center sm:w-[1100px] m-auto">
+    <div
+      class="features-section sm:mt-28 mt-20 text-center sm:w-[1100px] m-auto"
+    >
       <h2
-        class="sm:text-[56px] sm:w-[250px] w-[240px] m-auto text-[36px] font-[600] text-[#FF4F00]"
+        style="font-weight: 600 !important"
+        class="sm:text-[56px] sm:w-[250px] w-[240px] m-auto text-[36px] text-[#FF4F00]"
       >
         Features
       </h2>
@@ -577,12 +589,14 @@
     <div class="sm:w-[1100px] m-auto sm:mt-28">
       <div class="sm:flex justify-between mt-10 gap-20">
         <h1
-          class="sm:text-[56px] sm:w-[35%] w-[90%] mx-auto text-[38px] text-[#000000] sm:text-left sm:font-[500] font-[500] opacity-95"
+          style="font-weight: 600 !important"
+          class="sm:text-[56px] sm:w-[35%] w-[90%] mx-auto text-[33px] text-[#000000] sm:text-left opacity-95"
         >
           <span>Record, Upload or Write. </span>
         </h1>
         <p
-          class="sm:text-[34px] sm:w-[55%] mx-auto text-[24px] w-[90%] text-left sm:font-[500] font-[500]"
+          style="font-weight: 600 !important"
+          class="sm:text-[34px] sm:mt-0 mt-5 sm:w-[55%] mx-auto text-[22px] w-[90%] text-left"
         >
           Weather you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <span class="text-[#FF4F00]">uploading</span> audio files or
@@ -642,15 +656,17 @@
 
     <!-- Features -->
     <div class="features-section sm:mt-32 sm:pb-28">
-      <div class="sm:flex mt-28 justify-between sm:w-[1100px] m-auto gap-20">
+      <div class="sm:flex mt-20 justify-between sm:w-[1100px] m-auto gap-20">
         <h1
-          class="sm:text-[54px] text-[36px] text-[#000000] text-left sm:w-[38%] mx-auto sm:font-[500] font-[600]"
+          style="font-weight: 550 !important"
+          class="sm:text-[54px] text-[34px] text-[#000000] opacity-85 text-left sm:w-[38%] w-[350px] m-auto"
         >
           <span class="opacity-95">Generate Awesome</span>
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="sm:text-[32px] text-[22px] sm:w-[56%] mx-auto text-left font-[500] text-[#1F1F1F]"
+          style="font-weight: 550 !important"
+          class="sm:text-[32px] sm:mt-0 mt-5 text-[21px] sm:w-[56%] w-[350px] mx-auto text-left text-[#1F1F1F]"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -661,7 +677,7 @@
     </div>
 
     <!--Another Card system -->
-    <div class="sm:mt-28 mt-20 sm:w-[1100px] m-auto">
+    <div class="sm:mt-28 mt-16 sm:w-[1100px] m-auto">
       <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-2">
         <div
           class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
@@ -844,9 +860,9 @@
 
     <!--Another Features -->
     <div class="features-section sm:mt-32 pb-20">
-      <div class="sm:flex mt-28 justify-between sm:w-[1100px] sm:m-auto gap-20">
+      <div class="sm:flex mt-16 justify-between sm:w-[1100px] sm:m-auto gap-20">
         <h1
-          class="sm:text-[56px] text-[36px] text-left sm:w-[35%] mx-auto text-[#1F1F1F] font-[500]"
+          class="sm:text-[56px] text-[34px] text-left sm:w-[35%] w-[350px] mx-auto text-[#1F1F1F] font-[500]"
         >
           <span class="opacity-90"
             >We <br />
@@ -855,7 +871,7 @@
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="sm:text-[31px] sm:w-[57%] mx-auto text-[24px] text-left sm:font-[600] text-[#000000] opacity-85"
+          class="sm:text-[31px] sm:mt-0 mt-5 sm:w-[57%] w-[350px] mx-auto text-[22px] text-left sm:font-[600] text-[#000000] opacity-85"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -868,7 +884,7 @@
     </div>
 
     <!--Social Card system -->
-    <div class="mt-28 sm:w-[1100px] m-auto">
+    <div class="sm:w-[1100px] m-auto">
       <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 px-3 gap-8">
         <div v-for="(social, index) in socialData" :key="index" class="mb-4">
           <div
@@ -909,15 +925,15 @@
 
     <!--Another Features -->
     <div class="features-section sm:mt-28">
-      <div class="sm:flex mt-24 justify-between sm:w-[1100px] sm:m-auto gap-20">
+      <div class="sm:flex mt-20 justify-between sm:w-[1100px] sm:m-auto gap-20">
         <h1
-          class="sm:text-[56px] text-[38px] text-left sm:w-[40%] mx-auto sm:font-[500] text-[#000000] font-[600]"
+          class="sm:text-[56px] text-[30px] text-left sm:w-[40%] w-[350px] mx-auto sm:font-[500] text-[#000000] font-[600]"
         >
           <span class="opacity-90">Your very own </span>
           <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
         <p
-          class="sm:text-[32px] text-[24px] sm:w-[50%] mx-auto text-left sm:font-[500] font-[500] text-[#000000]"
+          class="sm:text-[32px] sm:mt-0 mt-5 text-[20px] sm:w-[50%] w-[350px] mx-auto text-left sm:font-[500] font-[500] text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -927,7 +943,7 @@
     </div>
 
     <!-- Another chat cart  -->
-    <div class="features-section sm:mt-28 mt-20 sm:w-[1100px] sm:m-auto">
+    <div class="features-section sm:mt-28 mt-8 sm:w-[1100px] sm:m-auto">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
         <div
           class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
@@ -1057,19 +1073,21 @@
     <!-- Unique Card  -->
 
     <!-- Mobile App section  -->
-    <div class="features-section sm:mt-32 sm:w-[1100px] sm:m-auto text-center">
+    <div
+      class="features-section sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto text-center"
+    >
       <div class="px-4">
-        <h4 class="sm:text-[56px] text-[36px] font-[700]">
+        <h4 class="sm:text-[56px] text-[34px] font-[700]">
           <span class="text-[#262626]">Get the Audionotes </span>
           <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
         </h4>
         <div>
-          <p class="mt-5 text-[19px] opacity-50">
+          <p class="mt-5 sm:text-[19px] text-[17px] opacity-50">
             Access audiones on your android or iOS device by downloading our
             lightweight progressive web app (PWA). Please note: As of now,
             Audionotes is not available on the app store or play store.
           </p>
-          <p class="mt-4 text-[19px] opacity-50">
+          <p class="mt-4 sm:text-[19px] text-[17px] opacity-50">
             Please open this link in Safari browser in case you using an iPhone
           </p>
         </div>
@@ -1083,7 +1101,7 @@
       </div>
       <div class="main-container">
         <div
-          class="sm:mt-32 mt-16 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
+          class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
         >
           <div
             class="relative sm:w-64 sm:mt-40 mt-32 sm:h-[510px] h-[250px] sm:rounded-2xl transform -rotate-[21deg]"
@@ -1160,13 +1178,13 @@
         </div>
       </div>
 
-      <div class="sm:mt-32 sm:w-[1100px] sm:m-auto px-4">
-        <h4 class="sm:text-[56px] text-[36px] font-[700]">
+      <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto px-4">
+        <h4 class="sm:text-[56px] text-[34px] font-[700]">
           <span class="text-[#262626]">Pin our </span>
           <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
         </h4>
         <div>
-          <p class="mt-5 p-1 text-[19px] opacity-50">
+          <p class="mt-5 p-1 sm:text-[19px] text-[17px] opacity-50">
             Access audiones on your desktop with Chrome Extension. Please open
             this link in Safari browser in case you using an iPhone
           </p>
@@ -1181,7 +1199,7 @@
       </div>
       <div class="main-container">
         <div
-          class="sm:mt-32 mt-16 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
+          class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
         >
           <div
             class="relative sm:w-64 sm:mt-40 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
@@ -1207,7 +1225,7 @@
             />
           </div>
           <div
-            class="relative sm:mt-40 mt-32 sm:h-[530px] h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[24deg]"
+            class="relative sm:mt-52 mt-32 sm:h-[530px] h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[29deg]"
           >
             <img
               decoding="async"
@@ -1258,7 +1276,7 @@
 
     <!-- Pricing section  -->
     <div class="sm:w-[1100px] m-auto">
-      <div class="bg-white mt-36">
+      <div class="bg-white mt-20">
         <div>
           <pricing-section></pricing-section>
         </div>
@@ -1267,8 +1285,8 @@
 
     <!-- Faqs section  -->
     <div id="faq" class="sm:py-20">
-      <div class="mt-28 sm:w-[1100px] sm:flex justify-between sm:m-auto">
-        <div>
+      <div class="mt-10 sm:w-[1100px] sm:flex justify-between sm:m-auto">
+        <div class="px-5">
           <h2
             class="sm:text-[56px] text-[30px] font-[700] leading-relaxed sm:leading-loose"
           >
@@ -1302,7 +1320,7 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col mt-5 px-3 gap-3">
           <div
             v-for="(faq, index) in faqData"
             :key="faq.id"

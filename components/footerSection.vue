@@ -31,7 +31,7 @@
         </div>
       </div>
       <div
-        class="sm:grid grid-rows-1 grid-flow-col sm:px-10 items-center p-10 gap-10 text-white"
+        class="sm:grid grid-rows-1 grid-flow-col px-10 items-center sm:p-10 gap-10 text-white"
       >
         <div>
           <p class="text-[16px] leading-7 opacity-70">
@@ -42,105 +42,115 @@
               helps you generate content.
             </span>
           </p>
+          <p class="sm:mt-5 mt-5 opacity-80 text-[18px]">a1811 Labs product</p>
           <br />
-          <p class="opacity-80 text-[18px]">a1811 Labs product</p>
         </div>
-        <div class="sm:mt-10 sm:flex mt-10 justify-center sm:items-center">
-          <div class="flex justify-between">
-            <div class="sm:px-10 opacity-75">
-              <ul>
-                <li
-                  class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/" class="nuxt-link"> Home </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="#" class="nuxt-link"> Blog </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/pricing" class="nuxt-link"> Pricing </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="#" class="nuxt-link"> Mobile App </NuxtLink>
-                </li>
-              </ul>
+        <div class="sm:text-left">
+          <div class="sm:flex justify-center">
+            <div class="flex justify-between">
+              <div class="opacity-75">
+                <ul>
+                  <li
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/" class="nuxt-link"> Home </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="#" class="nuxt-link"> Blog </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/pricing" class="nuxt-link">
+                      Pricing
+                    </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="#" class="nuxt-link"> Mobile App </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="sm:px-10 opacity-75">
+                <ul>
+                  <li
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="#" class="nuxt-link"> Features </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/faqs" class="nuxt-link"> FAQS </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/pricing" class="nuxt-link">
+                      Web App
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="sm:px-10 opacity-75">
-              <ul>
-                <li
-                  class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="#" class="nuxt-link"> Features </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/faqs" class="nuxt-link"> FAQS </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/pricing" class="nuxt-link"> Web App </NuxtLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="flex mt-5 justify-between">
-            <div class="sm:px-10 opacity-75">
-              <ul>
-                <li
-                  class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="#" class="nuxt-link">
-                    Terms of service
-                  </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/faqs" class="nuxt-link">
-                    Privacy policy
-                  </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/pricing" class="nuxt-link"> Support </NuxtLink>
-                </li>
-              </ul>
-            </div>
-            <div class="sm:px-5 opacity-75">
-              <ul>
-                <li
-                  class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="#" class="nuxt-link">Podonotes </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/faqs" class="nuxt-link"> Avatarize </NuxtLink>
-                </li>
-                <li
-                  class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
-                >
-                  <NuxtLink to="/pricing" class="nuxt-link">
-                    HeadlinesAI
-                  </NuxtLink>
-                </li>
-              </ul>
+            <div class="flex sm:mt-0 mt-5 justify-between">
+              <div class="opacity-75">
+                <ul>
+                  <li
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="#" class="nuxt-link">
+                      Terms of service
+                    </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/faqs" class="nuxt-link">
+                      Privacy policy
+                    </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/pricing" class="nuxt-link">
+                      Support
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+              <div class="sm:px-10 opacity-75">
+                <ul>
+                  <li
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="#" class="nuxt-link">Podonotes </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/faqs" class="nuxt-link">
+                      Avatarize
+                    </NuxtLink>
+                  </li>
+                  <li
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                  >
+                    <NuxtLink to="/pricing" class="nuxt-link">
+                      HeadlinesAI
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="sm:p-5 copy-right-content">
+      <div class="sm:p-5 py-5 copy-right-content">
         <p class="text-white text-center opacity-90 justify-center pb-3">
           © Copyright {{ new Date().getFullYear() }} -
           <span class="name">AudioNotes.app</span>
