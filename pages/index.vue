@@ -586,10 +586,10 @@
       </h2>
     </div>
 
-    <div class="sm:w-[1100px] m-auto sm:mt-28">
+    <div class="sm:w-[1100px] m-auto sm:mt-20">
       <div class="sm:flex justify-between mt-10 gap-20">
         <h1
-          style="font-weight: 600 !important"
+          style="font-weight: 500 !important"
           class="sm:text-[56px] sm:w-[35%] w-[90%] mx-auto text-[33px] text-[#000000] sm:text-left opacity-95"
         >
           <span>Record, Upload or Write. </span>
@@ -658,14 +658,14 @@
     <div class="features-section sm:mt-32 sm:pb-28">
       <div class="sm:flex mt-20 justify-between sm:w-[1100px] m-auto gap-20">
         <h1
-          style="font-weight: 550 !important"
-          class="sm:text-[54px] text-[34px] text-[#000000] opacity-85 text-left sm:w-[38%] w-[350px] m-auto"
+          style="font-weight: 600 !important"
+          class="sm:text-[54px] text-[34px] text-[#000000] opacity-75 text-left sm:w-[38%] w-[350px] m-auto"
         >
           <span class="opacity-95">Generate Awesome</span>
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          style="font-weight: 550 !important"
+          style="font-weight: 500 !important"
           class="sm:text-[32px] sm:mt-0 mt-5 text-[21px] sm:w-[56%] w-[350px] mx-auto text-left text-[#1F1F1F]"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
@@ -677,7 +677,7 @@
     </div>
 
     <!--Another Card system -->
-    <div class="sm:mt-28 mt-16 sm:w-[1100px] m-auto">
+    <div class="sm:mt-24 mt-16 sm:w-[1100px] m-auto">
       <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-2">
         <div
           class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
