@@ -51,24 +51,24 @@
               <div class="opacity-75">
                 <ul>
                   <li
-                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/" class="nuxt-link"> Home </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="#" class="nuxt-link"> Blog </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/pricing" class="nuxt-link">
                       Pricing
                     </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="#" class="nuxt-link"> Mobile App </NuxtLink>
                   </li>
@@ -77,17 +77,17 @@
               <div class="sm:px-10 opacity-75">
                 <ul>
                   <li
-                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="transition-all font-semibold duration-300 ease-in-outhover:text-gray-300"
                   >
                     <NuxtLink to="#" class="nuxt-link"> Features </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/faqs" class="nuxt-link"> FAQS </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/pricing" class="nuxt-link">
                       Web App
@@ -100,21 +100,21 @@
               <div class="opacity-75">
                 <ul>
                   <li
-                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="#" class="nuxt-link">
                       Terms of service
                     </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/faqs" class="nuxt-link">
                       Privacy policy
                     </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/pricing" class="nuxt-link">
                       Support
@@ -125,19 +125,19 @@
               <div class="sm:px-10 opacity-75">
                 <ul>
                   <li
-                    class="transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="#" class="nuxt-link">Podonotes </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/faqs" class="nuxt-link">
                       Avatarize
                     </NuxtLink>
                   </li>
                   <li
-                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-yellow-400"
+                    class="pt-2 transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
                   >
                     <NuxtLink to="/pricing" class="nuxt-link">
                       HeadlinesAI

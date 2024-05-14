@@ -244,12 +244,14 @@
             productivity!
           </p>
         </div>
-        <div class="flex gap-5 mt-16 max-w-[1200px] justify-center m-auto">
+        <div
+          class="flex gap-5 sm:pb-10 mt-16 max-w-[1200px] justify-center m-auto"
+        >
           <Vue3Marquee duration="70">
             <div
               v-for="founder in founderData"
               :key="founder.id"
-              class="items-center h-[415px] w-[330px] justify-center ml-3 p-2 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
+              class="items-center sm:pb-15 h-[415px] w-[330px] justify-center ml-3 p-2 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
             >
               <a href="#">
                 <img
@@ -269,7 +271,7 @@
                   "
                 />
                 <span
-                  class="text-center text-[20px] font-[600] opacity-80 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
+                  class="text-center justify-center text-[20px] font-[600] opacity-80 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >{{ founder.content }}</span
                 >
               </a>
@@ -1070,8 +1072,6 @@
       </div>
     </div>
 
-    <!-- Unique Card  -->
-
     <!-- Mobile App section  -->
     <div
       class="features-section sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto text-center"
@@ -1152,7 +1152,7 @@
             />
           </div>
           <div
-            class="absolute sm:w-66 sm:rounded-2xl rounded-2xl border sm:mt-20 mt-24 sm:h-[560px] h-[311px]"
+            class="absolute sm:w-66 sm:rounded-2xl rounded-2xl sm:mt-20 mt-24 sm:h-[560px] h-[311px]"
           >
             <img
               decoding="async"
