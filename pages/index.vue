@@ -245,7 +245,7 @@
           </p>
         </div>
         <div
-          class="flex gap-5 sm:pb-10 mt-16 max-w-[1200px] justify-center m-auto"
+          class="flex gap-5 sm:pb-10 mt-16 sm:w-[1200px] justify-center m-auto"
         >
           <Vue3Marquee duration="70">
             <div
@@ -305,132 +305,25 @@
           </p>
         </div>
       </div>
-      <div class="container sm:mt-10 mt-14 sm:w-[1120px] sm:m-auto">
-        <div
-          class="animate-right-to-left sm:flex sm:flex-wrap flex flex-nowrap"
-        >
+      <div class="container sm:mt-10 mt-14 sm:w-[1100px] sm:m-auto">
+        <div class="sm:flex sm:flex-wrap flex flex-nowrap justify-center">
           <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
+            v-for="content in contentData"
+            :key="content.id"
+            class="w-full sm:w-1/3 sm:mb-5 mb-0"
           >
-            <h3
-              class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <div
+              class="animate-right-to-left text-center sm:p-6 p-10 justify-center sm:mx-0 mx-2 sm:h-auto sm:w-[364px] h-[180px] w-[337px] m-auto sm:text-left sm:border-none border border-gray-300 sm:rounded-none rounded-3xl"
             >
-              Journaling
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Just talk anywhere and Audionotes<br />will create a
-              well-structured journal<br />entry for you.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              To-do & Task Lists
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Create to-do and task lists using<br />voice and text notes on the
-              go.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              Writing
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Ideas can strike you anywhere, just<br />record with Audionotes
-              and use the<br />summaries later.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              Message Assistant
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Dictate your messages to Audionotes<br />and it'll just structure
-              them for you.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              To-do & Task Lists
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Create to-do and task lists using<br />voice and text notes on the
-              go.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              Content Creation
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Generate amazing social media<br />content for Linkedin, Twitter,
-              Blogs<br />using voice notes.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              Professional Assistant
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Generate Contracts, Marketing Plans.
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 mb-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              Email Buddy
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Don't write emails, just speak and<br />Audionotes will do the
-              rest!
-            </p>
-          </div>
-
-          <div
-            class="marquee-content w-full sm:w-1/3 text-center sm:text-left sm:p-0 sm:rounded-none p-5 px-4 border sm:border-none border-gray-400 rounded-3xl"
-          >
-            <h3
-              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
-            >
-              Summarize Meetings
-            </h3>
-            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
-              Record your meetings and summarize<br />them.
-            </p>
+              <h3
+                class="text-[20px] sm:text-[20px] text-[#262626] opacity-95 font-[600]"
+              >
+                {{ content.header }}
+              </h3>
+              <p class="mt-1 text-[16px] sm:text-[17px] text-gray-600">
+                {{ content.content }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1427,6 +1320,7 @@ import { Vue3Marquee } from "vue3-marquee";
 import { ref } from "vue";
 
 import cart from "~/static/cart.json";
+import content from "~/static/content.json";
 import founder from "~/static/founder.json";
 import users from "~/static/users.json";
 import user from "~/static/user.json";
@@ -1435,6 +1329,7 @@ import Socialcart from "~/static/socialCart.json";
 import faq from "~/static/faqs.json";
 
 const cartData = reactive(cart);
+const contentData = reactive(content);
 const founderData = reactive(founder);
 const usersData = reactive(users);
 const userData = reactive(user);
