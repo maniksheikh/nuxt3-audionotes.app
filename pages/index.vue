@@ -284,7 +284,7 @@
     <!-- Audionotes use -->
     <div class="audionotes-uses">
       <div
-        class="sm:mt-48 mt-24 items-center sm:w-[1200px] m-auto text-center px-4"
+        class="sm:mt-40 mt-24 items-center sm:w-[1200px] m-auto text-center px-4"
       >
         <div>
           <h4
@@ -305,102 +305,131 @@
           </p>
         </div>
       </div>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-14 px-4 max-w-[1100px] mx-auto"
-      >
-        <div class="w-full">
-          <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
-            Journaling
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Just talk anywhere and Audionotes<br />will create a well-structured
-            journal<br />entry for you.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+      <div class="container mx-auto px-2 mt-14 max-w-[1100px]">
+        <div
+          class="audionots-content sm:flex sm:flex-wrap flex flex-nowrap gap-5 sm:-mx-4"
+        >
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            To-do & Task Lists
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Create to-do and task lists using<br />voice and text notes on the
-            go.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3 class="text-[20px] py-1 text-[#262626] opacity-95 font-[600]">
+              Journaling
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Just talk anywhere and Audionotes<br />will create a
+              well-structured journal<br />entry for you.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            Writing
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Ideas can strike you anywhere, just<br />record with Audionotes and
-            use the<br />summaries later.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              To-do & Task Lists
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Create to-do and task lists using<br />voice and text notes on the
+              go.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            Message Assistant
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Dictate your messages to Audionotes<br />and it'll just structure
-            them for you.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              Writing
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Ideas can strike you anywhere, just<br />record with Audionotes
+              and use the<br />summaries later.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            To-do & Task Lists
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Create to-do and task lists using<br />voice and text notes on the
-            go.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              Message Assistant
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Dictate your messages to Audionotes<br />and it'll just structure
+              them for you.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            Content Creation
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Generate amazing social media<br />content for Linkedin, Twitter,
-            Blogs<br />using voice notes.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              To-do & Task Lists
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Create to-do and task lists using<br />voice and text notes on the
+              go.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            Professional Assistant
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Generate Contracts, Marketing Plans.
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              Content Creation
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Generate amazing social media<br />content for Linkedin, Twitter,
+              Blogs<br />using voice notes.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            Email Buddy
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Don't write emails, just speak and<br />Audionotes will do the rest!
-          </p>
-        </div>
-        <div class="w-full">
-          <h3
-            class="sm:text-[20px] text-[18px] py-1 text-[#262626] opacity-95 font-[600]"
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              Professional Assistant
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Generate Contracts, Marketing Plans.
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
           >
-            Summarize Meetings
-          </h3>
-          <p class="mt-4 sm:text-[17px] text-[16px] text-gray-600">
-            Record your meetings and summarize<br />them.
-          </p>
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              Email Buddy
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Don't write emails, just speak and<br />Audionotes will do the
+              rest!
+            </p>
+          </div>
+
+          <div
+            class="main-content w-full sm:w-1/3 text-center sm:text-left p-5 px-4 mb-8 border sm:border-none border-gray-400 rounded-3xl"
+          >
+            <h3
+              class="text-[18px] sm:text-[20px] py-1 text-[#262626] opacity-95 font-[600]"
+            >
+              Summarize Meetings
+            </h3>
+            <p class="mt-1 sm:mt-4 text-[16px] sm:text-[17px] text-gray-600">
+              Record your meetings and summarize<br />them.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -1429,6 +1458,7 @@ const toggleQuestion = (index) => {
   font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
 }
 .audionotes-uses {
+  box-sizing: border-box;
   font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
 }
 .users-section {
@@ -1437,5 +1467,26 @@ const toggleQuestion = (index) => {
 .features-section {
   font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
 }
+
+/* Mobile responsive  */
+
+/* @media (min-width: 640px) {
+  .audionotes-content > div {
+    max-width: 33.3333%;
+  }
+
+  .audionotes-content h3 {
+    font-size: 20px;
+  }
+  .audionotes-content p {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .audionotes-content > div {
+    padding: 16px;
+  }
+} */
 </style>
 
