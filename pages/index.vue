@@ -535,12 +535,12 @@
     </div>
 
     <!-- Card system -->
-    <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto sm: sm:pb-20">
-      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 m-3 gap-10">
+    <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto">
+      <div class="sm:flex sm:flex-wrap flex flex-nowrap sm:gap-5 gap-0">
         <div
           v-for="card in cartData"
           :key="card"
-          class="block p-2 sm:w-full w-full m-auto rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="animate-right-to-left mx-2 p-2 sm:w-1/4 sm:h-[420px] h-[420px] w-[550px] md:w-1/4 m-auto rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -554,7 +554,7 @@
                 style="
                   display: block;
                   width: 100%;
-                  height: 250px;
+                  height: 100%;
                   border-radius: inherit;
                   object-position: center center;
                   object-fit: cover;
@@ -563,7 +563,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="px-6 py-4 text-surface dark:text-white">
+          <div class="px-3 py-4 text-surface dark:text-white">
             <div>
               <img class="mb-3 w-[24px] h-[24px]" :src="card.avatar" alt="" />
             </div>
@@ -604,9 +604,9 @@
 
     <!--Another Card system -->
     <div class="sm:mt-24 mt-16 sm:w-[1100px] m-auto">
-      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-2">
+      <div class="sm:flex flex flex-nowrap gap-8 mx-2">
         <div
-          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-[450px] sm:w-full h-[450px] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -636,7 +636,7 @@
               />
             </nuxt-link>
           </div>
-          <div class="px-6 py-4 text-surface dark:text-white">
+          <div class="sm:px-6 px-2 py-4 text-surface dark:text-white">
             <div>
               <img
                 class="mb-3 w-[24px] h-[24px]"
@@ -1378,7 +1378,7 @@ const toggleQuestion = (index) => {
 
 @media (max-width: 640px) {
   .animate-right-to-left {
-    animation: moveRightToLeft 30s linear infinite;
+    animation: moveRightToLeft 40s linear infinite;
   }
 }
 </style>
