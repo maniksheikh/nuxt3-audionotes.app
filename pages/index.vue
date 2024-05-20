@@ -172,16 +172,18 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section sm:mt-32 mt-20 sm:w-[1100px] m-auto text-center">
-      <h3
-        class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[600]"
-      >
-        <span
-          class="font-sans sm:text-[56px] text-[36px] text-black opacity-80 font-[600]"
-          >In the</span
+    <div class="brand-section sm:mt-20 mt-20 py-20">
+      <div class="sm:w-[1100px] m-auto text-center">
+        <h3
+          class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[600]"
         >
-        Spotlight
-      </h3>
+          <span
+            class="font-sans sm:text-[56px] text-[36px] text-black opacity-80 font-[600]"
+            >In the</span
+          >
+          Spotlight
+        </h3>
+      </div>
     </div>
     <div>
       <div class="shadow max-w-[1100px] mx-auto">
@@ -189,7 +191,7 @@
           :clone="true"
           :duration="20"
           :direction="'reverse'"
-          class="flex items-center justify-center p-3 mt-10 sm:mt-20 overflow-x-auto whitespace-nowrap"
+          class="flex items-center justify-center p-3 sm:mt-0 mt-10 overflow-x-auto whitespace-nowrap"
         >
           <img
             class="w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-covert"
@@ -511,69 +513,77 @@
         Features
       </h2>
     </div>
-
-    <div class="sm:w-[1100px] m-auto sm:mt-28">
-      <div class="sm:flex justify-between mt-10 gap-20">
-        <h1
-          class="sm:text-[50px] sm:w-[30%] w-[90%] sm:font-[500] mx-auto text-[33px] sm:text-left opacity-95"
-        >
-          <span>Record, Upload or Write. </span>
-        </h1>
-        <p
-          class="sm:text-[31px] sm:mt-0 mt-5 sm:w-[63%] opacity-90 mx-auto sm:font-[500] text-[22px] w-[90%] text-left"
-        >
-          Whether you are <span class="text-[#FF4F00]">capturing </span> voice
-          notes, <span class="text-[#FF4F00]">uploading</span> audio files or
-          <span class="text-[#FF4F00]">creating</span> text Audionotes will turn
-          your notes into neatly summarized &
-          <span class="text-[#FF4F00]">structured text notes </span>
-          tailored to your preferences
-        </p>
+    <div class="sm:mt-20 py-20">
+      <div class="sm:w-[1100px] m-auto">
+        <div class="sm:flex justify-between gap-20">
+          <h1
+            class="sm:text-[50px] sm:w-[30%] w-[90%] sm:font-[500] mx-auto text-[33px] sm:text-left opacity-95"
+          >
+            <span>Record, Upload or Write. </span>
+          </h1>
+          <p
+            class="sm:text-[31px] sm:mt-0 mt-5 sm:w-[63%] opacity-90 mx-auto sm:font-[500] text-[22px] w-[90%] text-left"
+          >
+            Whether you are
+            <span class="text-[#FF4F00]">capturing </span> voice notes,
+            <span class="text-[#FF4F00]">uploading</span> audio files or
+            <span class="text-[#FF4F00]">creating</span> text Audionotes will
+            turn your notes into neatly summarized &
+            <span class="text-[#FF4F00]">structured text notes </span>
+            tailored to your preferences
+          </p>
+        </div>
       </div>
     </div>
 
     <!-- Card system -->
-    <div class="sm:mt-32 mt-20 sm:w-[1300px] sm:m-auto">
-      <div class="sm:w-[1100px] sm:m-auto sm:mb-10">
-        <div class="sm:grid grid-cols-3 sm:gap-10">
-          <div
-            v-for="card in cartData"
-            :key="card"
-            class="animate-right-to-left sm:mx-0 mx-2 p-2 m-auto rounded-3xl mb-5 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
-          >
+    <div class="sm:mt-20 mt-20">
+      <div class="sm:w-[1300px] sm:m-auto">
+        <div class="sm:w-[1100px] sm:m-auto sm:mb-10">
+          <div class="sm:grid grid-cols-3 sm:gap-10">
             <div
-              class="relative overflow-hidden bg-cover bg-no-repeat"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
+              v-for="card in cartData"
+              :key="card"
+              class="animate-right-to-left sm:mx-0 mx-2 p-2 m-auto rounded-3xl mb-5 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
-              <nuxt-link to="#">
-                <img
-                  :src="card.image"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </nuxt-link>
-            </div>
-            <div class="px-3 py-4 text-surface dark:text-white">
-              <div>
-                <img class="mb-3 w-[24px] h-[24px]" :src="card.avatar" alt="" />
-              </div>
-              <h5
-                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+              <div
+                class="relative overflow-hidden bg-cover bg-no-repeat"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
               >
-                {{ card.header }}
-              </h5>
-              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
-                {{ card.content }}
-              </p>
+                <nuxt-link to="#">
+                  <img
+                    :src="card.image"
+                    alt=""
+                    style="
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: inherit;
+                      object-position: center center;
+                      object-fit: cover;
+                      image-rendering: auto;
+                    "
+                  />
+                </nuxt-link>
+              </div>
+              <div class="px-3 py-4 text-surface dark:text-white">
+                <div>
+                  <img
+                    class="mb-3 w-[24px] h-[24px]"
+                    :src="card.avatar"
+                    alt=""
+                  />
+                </div>
+                <h5
+                  class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+                >
+                  {{ card.header }}
+                </h5>
+                <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+                  {{ card.content }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -601,182 +611,184 @@
     </div>
 
     <!--Another Card system -->
-    <div class="sm:mt-32 mt-16 sm:w-[1100px] m-auto">
-      <div class="sm:flex flex flex-nowrap gap-8 sm:mx-0 mx-2">
-        <div
-          class="block p-2 w-[450px] sm:w-full h-[450px] rounded-3xl border sm:mb-0 mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
-        >
+    <div class="sm:mt-20 mt-16">
+      <div class="sm:w-[1100px] m-auto">
+        <div class="sm:flex flex flex-nowrap gap-8 sm:mx-0 mx-2">
           <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
+            class="block p-2 w-[450px] sm:w-full h-[450px] rounded-3xl border sm:mb-0 mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
-            <nuxt-link to="#">
-              <img
-                decoding="async"
-                sizes="336.6667px"
-                srcset="
-                  https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=512   512w,
-                  https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=1024 1024w,
-                  https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png                    1348w
-                "
-                src="https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 100%;
-                  height: 250px;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </nuxt-link>
-          </div>
-          <div class="sm:px-6 px-2 py-4 text-surface dark:text-white">
-            <div>
-              <img
-                class="mb-3 w-[24px] h-[24px]"
-                decoding="async"
-                sizes="24px"
-                src="https://framerusercontent.com/images/gzwYnQuJwdOj2UjqTatq7sPj8.png"
-                alt=""
-                style="
-                  display: block;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </div>
-            <h5
-              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            <div
+              class="relative overflow-hidden bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
             >
-              Unlimited Content
-            </h5>
-            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
-              Generate Social Media Posts, MoMs, Emails & much more
-            </p>
+              <nuxt-link to="#">
+                <img
+                  decoding="async"
+                  sizes="336.6667px"
+                  srcset="
+                    https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 250px;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </nuxt-link>
+            </div>
+            <div class="sm:px-6 px-2 py-4 text-surface dark:text-white">
+              <div>
+                <img
+                  class="mb-3 w-[24px] h-[24px]"
+                  decoding="async"
+                  sizes="24px"
+                  src="https://framerusercontent.com/images/gzwYnQuJwdOj2UjqTatq7sPj8.png"
+                  alt=""
+                  style="
+                    display: block;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <h5
+                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+              >
+                Unlimited Content
+              </h5>
+              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+                Generate Social Media Posts, MoMs, Emails & much more
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl mb-5 border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
-        >
           <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
+            class="block p-2 w-full sm:w-full h-[100%] rounded-3xl mb-5 border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
-            <nuxt-link to="#">
-              <img
-                decoding="async"
-                sizes="336.6667px"
-                srcset="
-                  https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=512   512w,
-                  https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=1024 1024w,
-                  https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png                    1348w
-                "
-                src="https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 100%;
-                  height: 250px;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </nuxt-link>
-          </div>
-          <div class="px-6 py-4 text-surface dark:text-white">
-            <div>
-              <img
-                class="mb-3 w-[24px] h-[24px]"
-                decoding="async"
-                sizes="24px"
-                src="https://framerusercontent.com/images/pxBSrCS0TDVu5JdjUJWevqNeaME.png"
-                alt=""
-                style="
-                  display: block;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </div>
-            <h5
-              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            <div
+              class="relative overflow-hidden bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
             >
-              Custom Prompts
-            </h5>
-            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
-              Use Custom promots to generate<br />
-              content for your use-cases
-            </p>
+              <nuxt-link to="#">
+                <img
+                  decoding="async"
+                  sizes="336.6667px"
+                  srcset="
+                    https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 250px;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </nuxt-link>
+            </div>
+            <div class="px-6 py-4 text-surface dark:text-white">
+              <div>
+                <img
+                  class="mb-3 w-[24px] h-[24px]"
+                  decoding="async"
+                  sizes="24px"
+                  src="https://framerusercontent.com/images/pxBSrCS0TDVu5JdjUJWevqNeaME.png"
+                  alt=""
+                  style="
+                    display: block;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <h5
+                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+              >
+                Custom Prompts
+              </h5>
+              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+                Use Custom promots to generate<br />
+                content for your use-cases
+              </p>
+            </div>
           </div>
-        </div>
-        <div
-          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border border-gray-300 hover:border-red-400 transition duration-300 ease-out hover:ease-in shadow-secondary-1 dark:bg-surface-dark"
-        >
           <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
+            class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border border-gray-300 hover:border-red-400 transition duration-300 ease-out hover:ease-in shadow-secondary-1 dark:bg-surface-dark"
           >
-            <nuxt-link to="#">
-              <img
-                decoding="async"
-                sizes="336.6667px"
-                srcset="
-                  https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=512   512w,
-                  https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=1024 1024w,
-                  https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png                    1348w
-                "
-                src="https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 100%;
-                  height: 250px;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </nuxt-link>
-          </div>
-          <div class="px-5 py-4 text-surface dark:text-white">
-            <div>
-              <img
-                class="mb-3 w-[24px] h-[24px]"
-                decoding="async"
-                sizes="24px"
-                src="https://framerusercontent.com/images/u7F7Be5s5h5WbO3sqGtnVvBfKXo.png"
-                alt=""
-                style="
-                  display: block;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </div>
-            <h5
-              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            <div
+              class="relative overflow-hidden bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
             >
-              Set Content Language
-            </h5>
-            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
-              Generate Content in 19+ languages <br />
-              seamlessly
-            </p>
+              <nuxt-link to="#">
+                <img
+                  decoding="async"
+                  sizes="336.6667px"
+                  srcset="
+                    https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png                    1348w
+                  "
+                  src="https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 250px;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </nuxt-link>
+            </div>
+            <div class="px-5 py-4 text-surface dark:text-white">
+              <div>
+                <img
+                  class="mb-3 w-[24px] h-[24px]"
+                  decoding="async"
+                  sizes="24px"
+                  src="https://framerusercontent.com/images/u7F7Be5s5h5WbO3sqGtnVvBfKXo.png"
+                  alt=""
+                  style="
+                    display: block;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <h5
+                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+              >
+                Set Content Language
+              </h5>
+              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+                Generate Content in 19+ languages <br />
+                seamlessly
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -866,116 +878,261 @@
     </div>
 
     <!-- Another chat cart  -->
-    <div class="features-section sm:mt-28 mt-8 sm:w-[1100px] sm:m-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
-        <div
-          class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
-        >
-          <div class="pt-12 pl-11 text-surface dark:text-white">
-            <div>
-              <img
-                class="w-[48px] h-[48px]"
-                decoding="async"
-                sizes="48px"
-                src="https://framerusercontent.com/images/zlirRD4k7NGvkqeWr2JKc30Aw.png"
-                alt=""
-                style="
-                  display: block;
-
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </div>
-            <h5
-              class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
-            >
-              Chat with your Note
-            </h5>
-            <p class="mb-4 text-[18px] text-gray-200 font-[500]">
-              Contextual search and chat for all your <br />
-              notes. Ask questions, Fins references and <br />
-              do more!
-            </p>
-          </div>
+    <div class="sm:mt-28 mt-8">
+      <div class="sm:w-[1100px] sm:m-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
           <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
+            class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
           >
-            <nuxt-link to="#">
-              <img
-                class="pr-4"
-                decoding="async"
-                sizes="min(428px, 100vw)"
-                srcset="
-                  https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=512   512w,
-                  https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=1024 1024w,
-                  https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png                    1712w
-                "
-                src="https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png"
-                alt=""
-                style="
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </nuxt-link>
+            <div class="pt-12 pl-11 text-surface dark:text-white">
+              <div>
+                <img
+                  class="w-[48px] h-[48px]"
+                  decoding="async"
+                  sizes="48px"
+                  src="https://framerusercontent.com/images/zlirRD4k7NGvkqeWr2JKc30Aw.png"
+                  alt=""
+                  style="
+                    display: block;
+
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <h5
+                class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
+              >
+                Chat with your Note
+              </h5>
+              <p class="mb-4 text-[18px] text-gray-200 font-[500]">
+                Contextual search and chat for all your <br />
+                notes. Ask questions, Fins references and <br />
+                do more!
+              </p>
+            </div>
+            <div
+              class="relative overflow-hidden bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
+            >
+              <nuxt-link to="#">
+                <img
+                  class="pr-4"
+                  decoding="async"
+                  sizes="min(428px, 100vw)"
+                  srcset="
+                    https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png                    1712w
+                  "
+                  src="https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </nuxt-link>
+            </div>
+          </div>
+
+          <div
+            class="block rounded-3xl bg-[#FF4F00] p-1 shadow-secondary-1 dark:bg-surface-dark"
+          >
+            <div class="pt-12 pl-11 text-surface dark:text-white">
+              <div>
+                <img
+                  class="w-[48px] h-[48px]"
+                  decoding="async"
+                  src="https://framerusercontent.com/images/5s0eMlwJRe5Jwd88S6pdVuSEdpc.png"
+                  alt=""
+                  style="
+                    display: block;
+
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </div>
+              <h5
+                class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
+              >
+                Magic Chat & Search
+              </h5>
+              <p class="mb-4 text-[18px] text-gray-200 font-[500]">
+                Audionnotes becomes your AI Assistant with <br />
+                Magic Chat
+              </p>
+            </div>
+            <div
+              class="relative overflow-hidden mb-1 bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
+            >
+              <nuxt-link to="#">
+                <img
+                  decoding="async"
+                  sizes="min(500px, 100vw)"
+                  srcset="
+                    https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=512   512w,
+                    https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=1024 1024w,
+                    https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png                    1712w
+                  "
+                  src="https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </nuxt-link>
+            </div>
           </div>
         </div>
-
-        <div
-          class="block rounded-3xl bg-[#FF4F00] p-1 shadow-secondary-1 dark:bg-surface-dark"
-        >
-          <div class="pt-12 pl-11 text-surface dark:text-white">
-            <div>
+      </div>
+    </div>
+    <!-- Cart generate  -->
+    <div class="mt-32">
+      <div class="w-[1100px] m-auto">
+        <div class="flex justify-between w-full h-full bg-white">
+          <div class="flex w-[40%] flex-col pt-3">
+            <h4 class="text-left text-[56px] font-[600]">
+              Seamlessly share your notes
+            </h4>
+            <div class="flex flex-col mt-5 gap-3">
+              <div
+                v-for="(cartGenerate, index) in CartGenerateData"
+                :key="cartGenerate.id"
+                :class="{
+                  'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[440px] w-[350px]':
+                    selectedQuestion === index,
+                  'p-4 bg-white rounded': selectedQuestion !== index,
+                }"
+              >
+                <div
+                  @click="toggleQuestion(index)"
+                  class="flex items-center justify-between cursor-pointer"
+                >
+                  <h2
+                    class="sm:text-[20px] text-[17px] text-[#000] sm:opacity-95 opacity-95 sm:font-[400] font-[500]"
+                  >
+                    {{ cartGenerate.question }}
+                  </h2>
+                  <button aria-label="faq question" title="faq question">
+                    <img
+                      class="p-2"
+                      v-if="selectedQuestion === index"
+                      decoding="async"
+                      src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
+                      alt=""
+                      style="
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: inherit;
+                        object-position: center;
+                        object-fit: cover;
+                        image-rendering: auto;
+                      "
+                    />
+                    <img
+                      class="p-2"
+                      v-else
+                      decoding="async"
+                      src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
+                      alt=""
+                      style="
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: inherit;
+                        object-position: center;
+                        object-fit: cover;
+                        image-rendering: auto;
+                      "
+                      sizes="18px"
+                    />
+                  </button>
+                </div>
+                <p
+                  v-if="selectedQuestion === index"
+                  class="text-[15px] opacity-80 mt-3 leading-7"
+                >
+                  {{ cartGenerate.answer }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[50%] h-auto">
+            <div class="bg-orange-500 rounded-[35px] p-8 h-full">
               <img
-                class="w-[48px] h-[48px]"
-                decoding="async"
-                src="https://framerusercontent.com/images/5s0eMlwJRe5Jwd88S6pdVuSEdpc.png"
-                alt=""
-                style="
-                  display: block;
-
-                  border-radius: inherit;
-                  object-position: center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
+                src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
+                alt="Feature Image"
+                class="w-full h-full object-cover rounded-2xl"
               />
             </div>
-            <h5
-              class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
-            >
-              Magic Chat & Search
-            </h5>
-            <p class="mb-4 text-[18px] text-gray-200 font-[500]">
-              Audionnotes becomes your AI Assistant with <br />
-              Magic Chat
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile App section  -->
+    <div class="features-section sm:mt-36 mt-20">
+      <div class="sm:w-[1100px] sm:m-auto text-center">
+        <div>
+          <h4 class="sm:text-[56px] text-[34px] font-[600]">
+            Get the Audionotes
+            <span class="text-[#FF4F00]"> Mobile App!</span>
+          </h4>
+          <div>
+            <p class="mt-5 sm:text-[19px] text-[17px] opacity-50">
+              Access audiones on your android or iOS device by downloading our
+              lightweight progressive web app (PWA). Please note: As of now,
+              Audionotes is not available on the app store or play store.
+            </p>
+            <p class="mt-4 sm:text-[19px] text-[17px] opacity-70">
+              Please open this link in Safari browser in case you using an
+              iPhone
             </p>
           </div>
+          <a href="#">
+            <p
+              class="mt-7 justify-center flex sm:w-[370px] sm:px-2 px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+            >
+              Download our Lightweight Mobile App
+            </p>
+          </a>
+        </div>
+        <div class="main-container">
           <div
-            class="relative overflow-hidden mb-1 bg-cover bg-no-repeat"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
+            class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
           >
-            <nuxt-link to="#">
+            <div
+              class="relative sm:w-70 sm:mt-52 mt-32 sm:h-[510px] h-[250px] mr-5 sm:rounded-2xl transform -rotate-[18deg]"
+            >
               <img
                 decoding="async"
-                sizes="min(500px, 100vw)"
+                loading="lazy"
+                sizes="237px"
                 srcset="
-                  https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=512   512w,
-                  https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=1024 1024w,
-                  https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png                    1712w
+                  https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png?scale-down-to=2048 1013w,
+                  https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png                    1209w
                 "
-                src="https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png"
+                src="https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png"
                 alt=""
                 style="
                   display: block;
@@ -987,25 +1144,212 @@
                   image-rendering: auto;
                 "
               />
-            </nuxt-link>
+            </div>
+            <div
+              class="relative sm:mt-52 mt-32 sm:h-[530px] h-[250px] ml-14 sm:rounded-2xl transform rotate-[24deg]"
+            >
+              <img
+                decoding="async"
+                loading="lazy"
+                sizes="237px"
+                srcset="
+                  https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png?scale-down-to=2048 1013w,
+                  https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png                    1209w
+                "
+                src="https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <div
+              class="absolute sm:w-66 sm:rounded-2xl rounded-2xl sm:mt-20 mt-24 sm:h-[560px] h-[311px]"
+            >
+              <img
+                decoding="async"
+                loading="lazy"
+                sizes="263px"
+                srcset="
+                  https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png?scale-down-to=2048 1013w,
+                  https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png                    1208w
+                "
+                src="https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Cart generate  -->
-    <div class="w-[1100px] m-auto mt-32">
-      <div class="flex justify-between w-full h-full bg-white">
-        <div class="flex w-[40%] flex-col pt-3">
-          <h4 class="text-left text-[56px] font-[600]">
-            Seamlessly share your notes
-          </h4>
+    <div class="sm:mt-32 mt-20">
+      <div class="sm:w-[1100px] sm:text-center sm:m-auto">
+        <h4 class="sm:text-[57px] text-[34px] opacity-85 font-[600]">
+          Pin our
+          <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
+        </h4>
+        <div>
+          <p class="mt-5 px-1 sm:text-[19px] text-[17px] opacity-60">
+            Access audiones on your desktop with Chrome Extension. Please open
+            this link in Safari browser in case you using an iPhone
+          </p>
+        </div>
+        <a href="#">
+          <button
+            class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+          >
+            Download Chrome extension
+          </button>
+        </a>
+        <div class="main-container">
+          <div
+            class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
+          >
+            <div
+              class="relative sm:w-70 sm:mr-14 sm:mt-52 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[17deg]"
+            >
+              <img
+                decoding="async"
+                loading="lazy"
+                sizes="237px"
+                srcset="
+                  https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png 475w
+                "
+                src="https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <div
+              class="relative sm:mt-52 mt-32 sm:h-[530px] sm:ml-14 h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[20deg]"
+            >
+              <img
+                decoding="async"
+                loading="lazy"
+                sizes="237px"
+                srcset="
+                  https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png 475w
+                "
+                src="https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+            <div
+              class="absolute sm:w-66 sm:rounded-2xl rounded-2xl border border-gray-400 sm:mt-20 mt-24 sm:h-[560px] h-[311px] transform"
+            >
+              <img
+                decoding="async"
+                loading="lazy"
+                sizes="263px"
+                srcset="
+                  https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png 474w
+                "
+                src="https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing section  -->
+    <div class="py-16 sm:mt-36">
+      <div class="sm:w-[1100px] m-auto">
+        <div class="bg-white">
+          <div>
+            <pricing-section></pricing-section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Faqs section  -->
+    <div class="mt-20">
+      <div id="faq">
+        <div class="sm:w-[1100px] sm:flex justify-between sm:m-auto sm:mb-10">
+          <div class="px-5">
+            <h2
+              class="sm:text-[56px] text-[30px] font-[700] leading-relaxed sm:leading-loose"
+            >
+              <span class="sm:text-[56px] text-[36px] opacity-95"
+                >Need help?</span
+              >
+            </h2>
+            <p
+              class="sm:text-[18px] text-[17px] opacity-70 font-medium leading-8 mt-3"
+            >
+              Don`t worry, we got you. Here are some answers for your questions.
+            </p>
+            <div
+              class="flex sm:w-[180px] w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 sm:px-0 px-2 sm:py-3 py-3"
+            >
+              <a
+                href="/"
+                aria-label="Try For Free"
+                title="Try For Free"
+                class="flex items-center"
+              >
+                <span class="text-center text-[18px] font-[500] items-center"
+                  >Help Center</span
+                >
+                <img
+                  src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
+                  alt=""
+                  class="ml-1 w-4 h-4"
+                  style="object-fit: cover; border-radius: inherit"
+                />
+              </a>
+            </div>
+          </div>
           <div class="flex flex-col mt-5 gap-3">
             <div
-              v-for="(cartGenerate, index) in CartGenerateData"
-              :key="cartGenerate.id"
+              v-for="(faq, index) in faqData"
+              :key="faq.id"
               :class="{
-                'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[440px] w-[350px]':
+                'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[600px] w-[350px]':
                   selectedQuestion === index,
                 'p-4 bg-white rounded': selectedQuestion !== index,
               }"
@@ -1015,9 +1359,9 @@
                 class="flex items-center justify-between cursor-pointer"
               >
                 <h2
-                  class="sm:text-[20px] text-[17px] text-[#000] sm:opacity-95 opacity-95 sm:font-[400] font-[500]"
+                  class="sm:text-[18px] text-[17px] sm:opacity-80 opacity-95 sm:font-[400] font-[500]"
                 >
-                  {{ cartGenerate.question }}
+                  {{ faq.question }}
                 </h2>
                 <button aria-label="faq question" title="faq question">
                   <img
@@ -1059,337 +1403,13 @@
                 v-if="selectedQuestion === index"
                 class="text-[15px] opacity-80 mt-3 leading-7"
               >
-                {{ cartGenerate.answer }}
+                {{ faq.answer }}
               </p>
             </div>
           </div>
         </div>
-        <div class="w-[50%] h-auto">
-          <div class="bg-orange-500 rounded-[35px] p-8 h-full">
-            <img
-              src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
-              alt="Feature Image"
-              class="w-full h-full object-cover rounded-2xl"
-            />
-          </div>
-        </div>
       </div>
     </div>
-
-    <!-- Mobile App section  -->
-    <div
-      class="features-section sm:mt-36 mt-20 sm:w-[1100px] sm:m-auto text-center"
-    >
-      <div>
-        <h4 class="sm:text-[56px] text-[34px] font-[600]">
-          Get the Audionotes
-          <span class="text-[#FF4F00]"> Mobile App!</span>
-        </h4>
-        <div>
-          <p class="mt-5 sm:text-[19px] text-[17px] opacity-50">
-            Access audiones on your android or iOS device by downloading our
-            lightweight progressive web app (PWA). Please note: As of now,
-            Audionotes is not available on the app store or play store.
-          </p>
-          <p class="mt-4 sm:text-[19px] text-[17px] opacity-70">
-            Please open this link in Safari browser in case you using an iPhone
-          </p>
-        </div>
-        <a href="#">
-          <p
-            class="mt-7 justify-center flex sm:w-[370px] sm:px-2 px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
-          >
-            Download our Lightweight Mobile App
-          </p>
-        </a>
-      </div>
-      <div class="main-container">
-        <div
-          class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
-        >
-          <div
-            class="relative sm:w-70 sm:mt-52 mt-32 sm:h-[510px] h-[250px] mr-5 sm:rounded-2xl transform -rotate-[18deg]"
-          >
-            <img
-              decoding="async"
-              loading="lazy"
-              sizes="237px"
-              srcset="
-                https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png?scale-down-to=2048 1013w,
-                https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png                    1209w
-              "
-              src="https://framerusercontent.com/images/FXUPiTunKTCEwauGafH2Bt0mtrQ.png"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
-          </div>
-          <div
-            class="relative sm:mt-52 mt-32 sm:h-[530px] h-[250px] ml-14 sm:rounded-2xl transform rotate-[24deg]"
-          >
-            <img
-              decoding="async"
-              loading="lazy"
-              sizes="237px"
-              srcset="
-                https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png?scale-down-to=2048 1013w,
-                https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png                    1209w
-              "
-              src="https://framerusercontent.com/images/LrhBft5ehj1vEn0dhJBU7KWp4.png"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
-          </div>
-          <div
-            class="absolute sm:w-66 sm:rounded-2xl rounded-2xl sm:mt-20 mt-24 sm:h-[560px] h-[311px]"
-          >
-            <img
-              decoding="async"
-              loading="lazy"
-              sizes="263px"
-              srcset="
-                https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png?scale-down-to=2048 1013w,
-                https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png                    1208w
-              "
-              src="https://framerusercontent.com/images/goiBp3t6uHYrZEaykXF9NmRE1M.png"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto px-4">
-        <h4 class="sm:text-[57px] text-[34px] opacity-85 font-[600]">
-          Pin our
-          <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
-        </h4>
-        <div>
-          <p class="mt-5 p-1 sm:text-[19px] text-[17px] opacity-60">
-            Access audiones on your desktop with Chrome Extension. Please open
-            this link in Safari browser in case you using an iPhone
-          </p>
-        </div>
-        <a href="#">
-          <button
-            class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
-          >
-            Download Chrome extension
-          </button>
-        </a>
-      </div>
-      <div class="main-container">
-        <div
-          class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
-        >
-          <div
-            class="relative sm:w-70 sm:mr-14 sm:mt-52 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[17deg]"
-          >
-            <img
-              decoding="async"
-              loading="lazy"
-              sizes="237px"
-              srcset="
-                https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png 475w
-              "
-              src="https://framerusercontent.com/images/q4XWzoLNhdyOVeIQv1ifL9Bq4w.png"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
-          </div>
-          <div
-            class="relative sm:mt-52 mt-32 sm:h-[530px] sm:ml-14 h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[20deg]"
-          >
-            <img
-              decoding="async"
-              loading="lazy"
-              sizes="237px"
-              srcset="
-                https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png 475w
-              "
-              src="https://framerusercontent.com/images/tij3gFgvvBu3FtJly7gbtQjz1A.png"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
-          </div>
-          <div
-            class="absolute sm:w-66 sm:rounded-2xl rounded-2xl border border-gray-400 sm:mt-20 mt-24 sm:h-[560px] h-[311px] transform"
-          >
-            <img
-              decoding="async"
-              loading="lazy"
-              sizes="263px"
-              srcset="
-                https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png 474w
-              "
-              src="https://framerusercontent.com/images/Y0Dy4D7j62ektg0PPKHFqkoUag.png"
-              alt=""
-              style="
-                display: block;
-                width: 100%;
-                height: 100%;
-                border-radius: inherit;
-                object-position: center;
-                object-fit: cover;
-                image-rendering: auto;
-              "
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pricing section  -->
-    <div class="sm:w-[1100px] m-auto">
-      <div class="bg-white mt-20">
-        <div>
-          <pricing-section></pricing-section>
-        </div>
-      </div>
-    </div>
-
-    <!-- Faqs section  -->
-    <div id="faq" class="sm:py-20">
-      <div class="mt-10 sm:w-[1100px] sm:flex justify-between sm:m-auto">
-        <div class="px-5">
-          <h2
-            class="sm:text-[56px] text-[30px] font-[700] leading-relaxed sm:leading-loose"
-          >
-            <span class="sm:text-[56px] text-[36px] opacity-95"
-              >Need help?</span
-            >
-          </h2>
-          <p
-            class="sm:text-[18px] text-[17px] opacity-70 font-medium leading-8 mt-3"
-          >
-            Don`t worry, we got you. Here are some answers for your questions.
-          </p>
-          <div
-            class="flex sm:w-[190px] w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 px-5 sm:py-4 py-3"
-          >
-            <a
-              href="/"
-              aria-label="Try For Free"
-              title="Try For Free"
-              class="flex items-center"
-            >
-              <span class="text-center text-[18px] font-[500] items-center"
-                >Help Center</span
-              >
-              <img
-                src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
-                alt=""
-                class="ml-1 w-4 h-4"
-                style="object-fit: cover; border-radius: inherit"
-              />
-            </a>
-          </div>
-        </div>
-        <div class="flex flex-col mt-5 px-3 gap-3">
-          <div
-            v-for="(faq, index) in faqData"
-            :key="faq.id"
-            :class="{
-              'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[600px] w-[350px]':
-                selectedQuestion === index,
-              'p-4 bg-white rounded': selectedQuestion !== index,
-            }"
-          >
-            <div
-              @click="toggleQuestion(index)"
-              class="flex items-center justify-between cursor-pointer"
-            >
-              <h2
-                class="sm:text-[18px] text-[17px] sm:opacity-80 opacity-95 sm:font-[400] font-[500]"
-              >
-                {{ faq.question }}
-              </h2>
-              <button aria-label="faq question" title="faq question">
-                <img
-                  class="ml-2"
-                  v-if="selectedQuestion === index"
-                  decoding="async"
-                  src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <img
-                  class="ml-2"
-                  v-else
-                  decoding="async"
-                  src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                  sizes="18px"
-                />
-              </button>
-            </div>
-            <p
-              v-if="selectedQuestion === index"
-              class="text-[15px] opacity-80 mt-3 leading-7"
-            >
-              {{ faq.answer }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Footer section  -->
     <footer></footer>
   </div>

@@ -1,6 +1,6 @@
 <template>
-  <div class="sm:pb-32">
-    <div class="mt-10 sm:max-w-[1100px] bg-[black] rounded-3xl sm:m-auto">
+  <div class="mt-5 sm:pb-32">
+    <div class="sm:max-w-[1100px] bg-[black] rounded-3xl sm:m-auto">
       <div
         class="sm:max-w-[95%] bg-[black] sm:p-16 p-10 text-center rounded-3xl m-auto"
       >
@@ -34,7 +34,7 @@
         class="sm:grid grid-rows-1 grid-flow-col px-10 items-center sm:p-10 gap-10 text-white"
       >
         <div>
-          <p class="text-[16px] leading-7 opacity-70">
+          <p class="text-[15px] leading-7 opacity-70">
             Audionotes(www.audionotes.app) <br />
             <span
               >AudioNotes is an AI-First Note Taking App <br />
