@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Social Sharing",
+    "answer": "Share notes across platforms with social sharing features",
+    "img": "https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png",
+    "bg-color": "bg-orange-500"
+  },
+  {
+    "question": "Publicly Shareable URLs",
+    "answer": "Share notes with your friends using the publily shareable URL feature",
+    "img": "https://framerusercontent.com/images/6YjLIqqtUpvwxB7fjpxBJHVf84.png?scale-down-to=1024",
+    "bg-color": "bg-[#7437F6]"
+  },
+  {
+    "question": "Download your Notes",
+    "answer": "Download your notes & content as CSV",
+    "img": "https://framerusercontent.com/images/5pw9eUsMuALeU848zYHpQHpL8Q.png?scale-down-to=1024",
+    "bg-color": "bg-[#E01D68"
+  }
+]

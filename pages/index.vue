@@ -172,7 +172,7 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section sm:mt-32 mt-20 sm:-w-[1100px] m-auto text-center">
+    <div class="brand-section sm:mt-32 mt-20 sm:w-[1100px] m-auto text-center">
       <h3
         class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[600]"
       >
@@ -184,43 +184,45 @@
       </h3>
     </div>
     <div>
-      <Vue3Marquee
-        :clone="true"
-        :duration="20"
-        :direction="'reverse'"
-        class="marquee-container sm:shadow-2xl flex items-center justify-center p-3 mt-10 sm:mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
-      >
-        <img
-          class="marquee-item w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
-          decoding="async"
-          src="https://framerusercontent.com/images/2pLbhVt1NvmAS3r95r3OkX71K4.png"
-          alt=""
-        />
-        <img
-          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
-          decoding="async"
-          src="https://framerusercontent.com/images/Iiq0hGCkGt1rxiNL51FJvMYGbL4.png"
-          alt=""
-        />
-        <img
-          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
-          decoding="async"
-          src="https://framerusercontent.com/images/0Zqaao5vS2FhWu0tg8U49GrIA.png"
-          alt=""
-        />
-        <img
-          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
-          decoding="async"
-          src="https://framerusercontent.com/images/eiwyEenhZ9SOfO30P4U9OuHToSs.png"
-          alt=""
-        />
-        <img
-          class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
-          decoding="async"
-          src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
-          alt=""
-        />
-      </Vue3Marquee>
+      <div class="shadow max-w-[1100px] mx-auto">
+        <Vue3Marquee
+          :clone="true"
+          :duration="20"
+          :direction="'reverse'"
+          class="flex items-center justify-center p-3 mt-10 sm:mt-20 overflow-x-auto whitespace-nowrap"
+        >
+          <img
+            class="w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-covert"
+            decoding="async"
+            src="https://framerusercontent.com/images/2pLbhVt1NvmAS3r95r3OkX71K4.png"
+            alt=""
+          />
+          <img
+            class="w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
+            decoding="async"
+            src="https://framerusercontent.com/images/Iiq0hGCkGt1rxiNL51FJvMYGbL4.png"
+            alt=""
+          />
+          <img
+            class="w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
+            decoding="async"
+            src="https://framerusercontent.com/images/0Zqaao5vS2FhWu0tg8U49GrIA.png"
+            alt=""
+          />
+          <img
+            class="w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
+            decoding="async"
+            src="https://framerusercontent.com/images/eiwyEenhZ9SOfO30P4U9OuHToSs.png"
+            alt=""
+          />
+          <img
+            class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
+            decoding="async"
+            src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
+            alt=""
+          />
+        </Vue3Marquee>
+      </div>
     </div>
 
     <!-- Foundeer section  -->
@@ -991,6 +993,89 @@
       </div>
     </div>
 
+    <!-- Cart generate  -->
+    <div class="w-[1100px] m-auto mt-32">
+      <div class="flex justify-between w-full h-full bg-white">
+        <div class="flex w-[40%] flex-col pt-3">
+          <h4 class="text-left text-[56px] font-[600]">
+            Seamlessly share your notes
+          </h4>
+          <div class="flex flex-col mt-5 gap-3">
+            <div
+              v-for="(cartGenerate, index) in CartGenerateData"
+              :key="cartGenerate.id"
+              :class="{
+                'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[440px] w-[350px]':
+                  selectedQuestion === index,
+                'p-4 bg-white rounded': selectedQuestion !== index,
+              }"
+            >
+              <div
+                @click="toggleQuestion(index)"
+                class="flex items-center justify-between cursor-pointer"
+              >
+                <h2
+                  class="sm:text-[20px] text-[17px] text-[#000] sm:opacity-95 opacity-95 sm:font-[400] font-[500]"
+                >
+                  {{ cartGenerate.question }}
+                </h2>
+                <button aria-label="faq question" title="faq question">
+                  <img
+                    class="p-2"
+                    v-if="selectedQuestion === index"
+                    decoding="async"
+                    src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
+                    alt=""
+                    style="
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: inherit;
+                      object-position: center;
+                      object-fit: cover;
+                      image-rendering: auto;
+                    "
+                  />
+                  <img
+                    class="p-2"
+                    v-else
+                    decoding="async"
+                    src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
+                    alt=""
+                    style="
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: inherit;
+                      object-position: center;
+                      object-fit: cover;
+                      image-rendering: auto;
+                    "
+                    sizes="18px"
+                  />
+                </button>
+              </div>
+              <p
+                v-if="selectedQuestion === index"
+                class="text-[15px] opacity-80 mt-3 leading-7"
+              >
+                {{ cartGenerate.answer }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[50%] h-auto">
+          <div class="bg-orange-500 rounded-[35px] p-8 h-full">
+            <img
+              src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
+              alt="Feature Image"
+              class="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Mobile App section  -->
     <div
       class="features-section sm:mt-36 mt-20 sm:w-[1100px] sm:m-auto text-center"
@@ -1023,7 +1108,7 @@
           class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
         >
           <div
-            class="relative sm:w-70 sm:mt-52 mt-32 sm:h-[510px] h-[250px] mr-5 sm:rounded-2xl transform -rotate-[19deg]"
+            class="relative sm:w-70 sm:mt-52 mt-32 sm:h-[510px] h-[250px] mr-5 sm:rounded-2xl transform -rotate-[18deg]"
           >
             <img
               decoding="async"
@@ -1121,7 +1206,7 @@
           class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
         >
           <div
-            class="relative sm:w-70 sm:mr-14 sm:mt-52 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[18deg]"
+            class="relative sm:w-70 sm:mr-14 sm:mt-52 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[17deg]"
           >
             <img
               decoding="async"
@@ -1321,6 +1406,7 @@ import users from "~/static/users.json";
 import user from "~/static/user.json";
 
 import Socialcart from "~/static/socialCart.json";
+import CartGenerate from "~/static/cartGenerate.json";
 import faq from "~/static/faqs.json";
 
 const cartData = reactive(cart);
@@ -1329,6 +1415,7 @@ const founderData = reactive(founder);
 const usersData = reactive(users);
 const userData = reactive(user);
 const socialData = reactive(Socialcart);
+const CartGenerateData = reactive(CartGenerate);
 const faqData = reactive(faq);
 const playState = ref("playing");
 
@@ -1343,6 +1430,10 @@ const toggleQuestion = (index) => {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Css Style  */
+.shadow {
+  box-shadow: 55px 0px 55px 0px rgba(255, 255, 255, 0.3);
+}
 /* Mobile responsive  */
 
 @keyframes moveRightToLeft {
