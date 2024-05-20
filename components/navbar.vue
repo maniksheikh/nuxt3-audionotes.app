@@ -28,7 +28,7 @@
         </div>
 
         <div class="hidden sm:block">
-          <ul class="flex space-x-3 text-[#535251] text-md font-semibold">
+          <ul class="flex space-x-3 text-[#535251] text-[15px] font-[500]">
             <li
               class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
             >
@@ -76,7 +76,7 @@
         </div>
 
         <div
-          class="items-center bg-[#ff4f00] text-white rounded-full px-4 py-2 sm:block hidden"
+          class="items-center bg-[#ff4f00] text-white rounded-full px-3 py-2 sm:block hidden"
         >
           <nuxt-link
             to="/"

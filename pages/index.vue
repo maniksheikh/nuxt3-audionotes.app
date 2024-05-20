@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div
-      class="justify-center items-center h-[500px] flex overflow-hidden relative"
+      class="justify-center items-center h-[552px] flex overflow-hidden relative"
     >
       <div>
         <img
@@ -31,26 +31,23 @@
       >
         <div class="text-center">
           <h2
-            class="text-[31px] sm:leading-[70px] leading-10 sm:text-[50px] text-[#262626] font-semibold opacity-95"
+            style="font-weight: 600 !important"
+            class="text-[31px] sm:leading-[70px] leading-10 sm:text-[49px] text-[#262626] opacity-95"
           >
             Your
             <span class="font-italic opacity-96 font-normal italic"
               >cluttered</span
             >
-            <span class="text-[#FF4F00] ml-3 font-semibold opacity-90">
-              Thoughts</span
-            >
+            <span class="text-[#FF4F00] ml-1 font-[500]"> Thoughts</span>
             into
-            <span class="font-italic opacity-95 font-medium ml-3 italic"
+            <span class="font-italic opacity-95 font-[500] ml-3 italic"
               >clear</span
             >
-            <span class="text-[#FF4F00] ml-3 opacity-90 font-semibold"
-              >Text Notes</span
-            >
+            <span class="text-[#FF4F00] ml-3 font-semibold">Text Notes</span>
             using AI
           </h2>
           <p
-            class="sm:mt-10 mt-5 leading-5 sm:p-1 px-5 sm:leading-9 text-[#999E9D] sm:w-[550px] m-auto text-[17px] sm:text-[19px] font-[100]"
+            class="sm:mt-10 mt-5 leading-5 sm:p-1 px-5 sm:leading-9 text-[#858585] sm:w-[550px] m-auto text-[17px] sm:text-[19px]"
           >
             Speak or type, Audionotes will transform your notes into searchable
             clear actionable text notes using AI
@@ -58,7 +55,7 @@
         </div>
 
         <div
-          class="flex items-center justify-center bg-[#FF4F00] sm:max-w-[150px] w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] px-4 py-2"
+          class="flex items-center justify-center bg-[#FF4F00] sm:max-w-[150px] w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-4 py-2"
         >
           <nuxt-link
             to="/"
@@ -75,10 +72,10 @@
             />
           </nuxt-link>
         </div>
-        <br />
-        <div class="mt-6">
+
+        <div class="sm:mt-11 mt-5">
           <div
-            class="flex items-center justify-center sm:max-w-[300px] w-[300px] mx-auto"
+            class="flex items-center justify-center sm:w-[300px] w-[300px] m-auto"
           >
             <span class="bg-black text-white p-2 rounded-md">4.9</span>
             <div class="ml-4 leading-6">
@@ -175,12 +172,12 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section mt-20 sm:-w-[1100px] m-auto text-center">
+    <div class="brand-section sm:mt-32 mt-20 sm:-w-[1100px] m-auto text-center">
       <h3
-        class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[650]"
+        class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[600]"
       >
         <span
-          class="sm:text-[56px] text-[36px] text-black opacity-80 font-[700]"
+          class="font-sans sm:text-[56px] text-[36px] text-black opacity-80 font-[600]"
           >In the</span
         >
         Spotlight
@@ -191,7 +188,7 @@
         :clone="true"
         :duration="20"
         :direction="'reverse'"
-        class="marquee-container flex items-center justify-center p-3 mt-10 sm:mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
+        class="marquee-container sm:shadow-2xl flex items-center justify-center p-3 mt-10 sm:mt-20 max-w-[1100px] mx-auto overflow-x-auto whitespace-nowrap"
       >
         <img
           class="marquee-item w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
@@ -228,16 +225,14 @@
 
     <!-- Foundeer section  -->
     <div class="founder-section">
-      <div class="sm:mt-32 mt-21 sans-serif sm:w-[1300px] m-auto">
-        <div class="text-center pt-16">
-          <h4
-            class="sm:text-[56px] text-[36px] text-[#262626] opacity-95 font-bold"
-          >
+      <div class="sm:mt-36 mt-21 sans-serif sm:w-[1300px] m-auto">
+        <div class="font-sans text-center pt-16">
+          <h4 class="sm:text-[56px] text-[36px] text-[#262626] font-bold">
             <span class="text-[#FF4F00] font-[600]">Audionotes</span> is for
             everyone!
           </h4>
           <p
-            class="mt-5 text-[18px] sm:leading-8 leading-8 font-[400] sm:opacity-60 opacity-70"
+            class="mt-5 text-[18px] sm:leading-8 leading-8 sm:opacity-75 opacity-80"
           >
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
@@ -245,13 +240,13 @@
           </p>
         </div>
         <div
-          class="flex gap-5 sm:pb-10 mt-16 sm:w-[1200px] justify-center m-auto"
+          class="flex sm:gap-7 gap-5 sm:pb-10 mt-16 sm:w-[1150px] justify-center m-auto"
         >
           <Vue3Marquee duration="70">
             <div
               v-for="founder in founderData"
               :key="founder.id"
-              class="items-center sm:pb-15 h-[415px] w-[330px] justify-center ml-3 p-2 border border-gray-300 rounded-3xl relative hover:border-[#FF3600] hover:shadow-md"
+              class="items-center sm:pb-15 sm:h-[400px] h-[415px] w-[330px] justify-center ml-3 sm:p-2 sm:pb-14 border border-gray-300 rounded-[33px] opacity-90 relative transition duration-300 ease-out hover:ease-in hover:border-[#FF3600] hover:shadow-md"
             >
               <a href="#">
                 <img
@@ -271,7 +266,7 @@
                   "
                 />
                 <span
-                  class="text-center justify-center text-[20px] font-[600] opacity-80 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
+                  class="text-center justify-center text-[20px] font-[600] 0 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
                   >{{ founder.content }}</span
                 >
               </a>
@@ -282,17 +277,15 @@
     </div>
 
     <!-- Audionotes use -->
-    <div class="audionotes-uses">
+    <div>
       <div
-        class="sm:mt-28 mt-24 items-center sm:w-[1200px] sm:m-auto text-center px-4"
+        class="font-sans sm:mt-32 mt-24 items-center sm:w-[1200px] sm:m-auto text-center sm:px-0 px-4"
       >
         <div>
-          <h4
-            class="sm:text-[56px] text-[36px] text-[#FF4F00] font-[650] opacity-95"
-          >
+          <h4 class="sm:text-[56px] text-[36px] text-[#FF4F00] font-[600]">
             <span
               style="font-weight: 600 !important"
-              class="sm:text-[56px] text-[36px] text-black font-[650] opacity-85"
+              class="sm:text-[56px] text-[36px] text-[#000]"
               >What do I use</span
             >
             Audionotes for?
@@ -305,22 +298,22 @@
           </p>
         </div>
       </div>
-      <div class="container sm:mt-10 mt-14 sm:w-[1100px] sm:m-auto">
-        <div class="sm:flex sm:flex-wrap flex flex-nowrap justify-center">
+      <div class="container sm:mt-10 mt-14 sm:w-[1150px] sm:m-auto">
+        <div class="grid grid-cols-3 gap-14 sm:mb-10">
           <div
             v-for="content in contentData"
             :key="content.id"
-            class="w-full sm:w-1/3 sm:mb-5 mb-0"
+            class="sm:w-[97.5%] w-1/3 sm:mb-0 mb-0"
           >
             <div
-              class="animate-right-to-left text-center sm:p-6 p-10 justify-center sm:mx-0 mx-2 sm:h-auto sm:w-[364px] h-[180px] w-[337px] m-auto sm:text-left sm:border-none border border-gray-300 sm:rounded-none rounded-3xl"
+              class="animate-right-to-left text-center sm:p-0 p-10 justify-center sm:mx-0 mx-2 sm:h-auto h-[180px] w-[337px] m-auto sm:text-left sm:border-none border border-gray-300 sm:rounded-none rounded-3xl"
             >
               <h3
-                class="text-[20px] sm:text-[20px] text-[#262626] opacity-95 font-[600]"
+                class="text-[20px] sm:py-1 sm:text-[20px] text-[#262626] opacity-95 font-[600]"
               >
                 {{ content.header }}
               </h3>
-              <p class="mt-1 text-[16px] sm:text-[17px] text-gray-600">
+              <p class="sm:mt-2 text-[16px] sm:text-[17px] text-gray-600">
                 {{ content.content }}
               </p>
             </div>
@@ -330,11 +323,11 @@
     </div>
     <!-- Audionotes users section  -->
     <div class="users-section">
-      <div class="sm:mt-32 mt-20">
+      <div class="sm:mt-40 mt-20">
         <h1
-          class="text-center sm:text-[56px] text-[35px] sm:w-[96%] mx-auto sm:font-semibold font-[600]"
+          class="text-center sm:text-[56px] text-[35px] sm:w-[96%] mx-auto sm:font-[600] font-[600]"
         >
-          <span class="text-[#FF4F00] font-[700]">Loved by</span>
+          <span class="text-[#FF4F00] font-[600]">Loved by</span>
           7000+ Happy Users ❤️
         </h1>
 
@@ -351,7 +344,7 @@
             class="mt-20 flex-none px-2"
           >
             <div
-              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
+              class="sm:h-[390px] h-[410px] w-[310px] sm:gap-7 gap-7 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -364,7 +357,9 @@
                   </div>
                   <div class="ml-3">
                     <div class="text-[16px] font-[500]">{{ users.name }}</div>
-                    <div class="text-gray-600">{{ users.email }}</div>
+                    <div class="sm:text-[14px] text-gray-600">
+                      {{ users.email }}
+                    </div>
                   </div>
                   <div class="flex-grow"></div>
                   <div class="flex-none">
@@ -410,7 +405,7 @@
                 </div>
 
                 <div
-                  class="mt-2 text-gray-800 text-[16px] overflow-hidden font-[400]"
+                  class="mt-2 text-gray-800 sm:p-1 sm:text-[15px] overflow-hidden font-[400]"
                 >
                   {{ users.description }}
                 </div>
@@ -430,10 +425,10 @@
           <div
             v-for="user in userData"
             :key="user.id"
-            class="mt-5 flex-none px-2"
+            class="sm:mt-10 flex-none px-2"
           >
             <div
-              class="h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
+              class="sm:h-[390px] h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -446,7 +441,9 @@
                   </div>
                   <div class="ml-3">
                     <div class="text-[16px] font-500">{{ user.name }}</div>
-                    <div class="text-gray-600">{{ user.email }}</div>
+                    <div class="sm:text-[15px] text-gray-600">
+                      {{ user.email }}
+                    </div>
                   </div>
                   <div class="flex-grow"></div>
                   <div class="flex-none">
@@ -491,7 +488,9 @@
                   </div>
                 </div>
 
-                <div class="mt-2 text-gray-800 text-[16px] font-[400]">
+                <div
+                  class="mt-2 text-gray-800 sm:text-[15px] sm:p-1 font-[400]"
+                >
                   {{ user.description }}
                 </div>
               </div>
@@ -505,26 +504,23 @@
       class="features-section sm:mt-28 mt-20 text-center sm:w-[1100px] m-auto"
     >
       <h2
-        style="font-weight: 600 !important"
-        class="sm:text-[56px] sm:w-[250px] w-[240px] m-auto text-[36px] text-[#FF4F00]"
+        class="sm:text-[55px] sm:w-[250px] sm:font-[600] w-[240px] m-auto text-[36px] text-[#FF4F00]"
       >
         Features
       </h2>
     </div>
 
-    <div class="sm:w-[1100px] m-auto sm:mt-20">
+    <div class="sm:w-[1100px] m-auto sm:mt-28">
       <div class="sm:flex justify-between mt-10 gap-20">
         <h1
-          style="font-weight: 500 !important"
-          class="sm:text-[56px] sm:w-[35%] w-[90%] mx-auto text-[33px] text-[#000000] sm:text-left opacity-95"
+          class="sm:text-[50px] sm:w-[30%] w-[90%] sm:font-[500] mx-auto text-[33px] sm:text-left opacity-95"
         >
           <span>Record, Upload or Write. </span>
         </h1>
         <p
-          style="font-weight: 600 !important"
-          class="sm:text-[34px] sm:mt-0 mt-5 sm:w-[55%] mx-auto text-[22px] w-[90%] text-left"
+          class="sm:text-[31px] sm:mt-0 mt-5 sm:w-[63%] opacity-90 mx-auto sm:font-[500] text-[22px] w-[90%] text-left"
         >
-          Weather you are <span class="text-[#FF4F00]">capturing </span> voice
+          Whether you are <span class="text-[#FF4F00]">capturing </span> voice
           notes, <span class="text-[#FF4F00]">uploading</span> audio files or
           <span class="text-[#FF4F00]">creating</span> text Audionotes will turn
           your notes into neatly summarized &
@@ -535,46 +531,48 @@
     </div>
 
     <!-- Card system -->
-    <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto">
-      <div class="sm:flex sm:flex-wrap flex flex-nowrap sm:gap-5 gap-0">
-        <div
-          v-for="card in cartData"
-          :key="card"
-          class="animate-right-to-left mx-2 p-2 sm:w-1/4 sm:h-[420px] h-[420px] w-[550px] md:w-1/4 m-auto rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
-        >
+    <div class="sm:mt-32 mt-20 sm:w-[1300px] sm:m-auto">
+      <div class="sm:w-[1100px] sm:m-auto sm:mb-10">
+        <div class="sm:grid grid-cols-3 sm:gap-10">
           <div
-            class="relative overflow-hidden bg-cover bg-no-repeat"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
+            v-for="card in cartData"
+            :key="card"
+            class="animate-right-to-left sm:mx-0 mx-2 p-2 m-auto rounded-3xl mb-5 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
-            <nuxt-link to="#">
-              <img
-                :src="card.image"
-                alt=""
-                style="
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  border-radius: inherit;
-                  object-position: center center;
-                  object-fit: cover;
-                  image-rendering: auto;
-                "
-              />
-            </nuxt-link>
-          </div>
-          <div class="px-3 py-4 text-surface dark:text-white">
-            <div>
-              <img class="mb-3 w-[24px] h-[24px]" :src="card.avatar" alt="" />
-            </div>
-            <h5
-              class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+            <div
+              class="relative overflow-hidden bg-cover bg-no-repeat"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
             >
-              {{ card.header }}
-            </h5>
-            <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
-              {{ card.content }}
-            </p>
+              <nuxt-link to="#">
+                <img
+                  :src="card.image"
+                  alt=""
+                  style="
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: inherit;
+                    object-position: center center;
+                    object-fit: cover;
+                    image-rendering: auto;
+                  "
+                />
+              </nuxt-link>
+            </div>
+            <div class="px-3 py-4 text-surface dark:text-white">
+              <div>
+                <img class="mb-3 w-[24px] h-[24px]" :src="card.avatar" alt="" />
+              </div>
+              <h5
+                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+              >
+                {{ card.header }}
+              </h5>
+              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+                {{ card.content }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -584,15 +582,13 @@
     <div class="features-section sm:mt-32 sm:pb-28">
       <div class="sm:flex mt-20 justify-between sm:w-[1100px] m-auto gap-20">
         <h1
-          style="font-weight: 600 !important"
-          class="sm:text-[54px] text-[34px] text-[#000000] opacity-75 text-left sm:w-[38%] w-[350px] m-auto"
+          class="sm:text-[50px] text-[34px] sm:font-[600] text-left sm:w-[33%] w-[350px] m-auto"
         >
-          <span class="opacity-95">Generate Awesome</span>
+          Generate Awesome
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          style="font-weight: 500 !important"
-          class="sm:text-[32px] sm:mt-0 mt-5 text-[21px] sm:w-[56%] w-[350px] mx-auto text-left text-[#1F1F1F]"
+          class="sm:text-[31px] sm:mt-0 mt-5 text-[21px] sm:w-[60%] w-[350px] font-[500] mx-auto text-left"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -603,10 +599,10 @@
     </div>
 
     <!--Another Card system -->
-    <div class="sm:mt-24 mt-16 sm:w-[1100px] m-auto">
-      <div class="sm:flex flex flex-nowrap gap-8 mx-2">
+    <div class="sm:mt-32 mt-16 sm:w-[1100px] m-auto">
+      <div class="sm:flex flex flex-nowrap gap-8 sm:mx-0 mx-2">
         <div
-          class="block p-2 w-[450px] sm:w-full h-[450px] rounded-3xl border mb-5 border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-[450px] sm:w-full h-[450px] rounded-3xl border sm:mb-0 mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -664,7 +660,7 @@
           </div>
         </div>
         <div
-          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl mb-5 border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl mb-5 border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -723,7 +719,7 @@
           </div>
         </div>
         <div
-          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+          class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border border-gray-300 hover:border-red-400 transition duration-300 ease-out hover:ease-in shadow-secondary-1 dark:bg-surface-dark"
         >
           <div
             class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -786,18 +782,16 @@
 
     <!--Another Features -->
     <div class="features-section sm:mt-32 pb-20">
-      <div class="sm:flex mt-16 justify-between sm:w-[1100px] sm:m-auto gap-20">
+      <div class="sm:flex mt-16 justify-between sm:w-[1100px] sm:m-auto gap-24">
         <h1
           class="sm:text-[56px] text-[34px] text-left sm:w-[35%] w-[350px] mx-auto text-[#1F1F1F] font-[500]"
         >
-          <span class="opacity-90"
-            >We <br />
-            Have great</span
-          >
+          We <br />
+          Have great
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="sm:text-[31px] sm:mt-0 mt-5 sm:w-[57%] w-[350px] mx-auto text-[22px] text-left sm:font-[600] text-[#000000] opacity-85"
+          class="sm:text-[32px] sm:mt-0 mt-5 sm:w-[57%] w-[350px] mx-auto text-[22px] text-left sm:font-[500] text-[#000000]"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -811,10 +805,12 @@
 
     <!--Social Card system -->
     <div class="sm:w-[1100px] m-auto">
-      <div class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 px-3 gap-8">
+      <div
+        class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:px-0 px-3 gap-8"
+      >
         <div v-for="(social, index) in socialData" :key="index" class="mb-4">
           <div
-            class="block w-full sm:w-full h-[400px] rounded-3xl border border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+            class="block w-full sm:w-full h-[400px] rounded-3xl border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -850,16 +846,15 @@
     </div>
 
     <!--Another Features -->
-    <div class="features-section sm:mt-28">
+    <div class="features-section sm:mt-36">
       <div class="sm:flex mt-20 justify-between sm:w-[1100px] sm:m-auto gap-20">
         <h1
-          class="sm:text-[56px] text-[30px] text-left sm:w-[40%] w-[350px] mx-auto sm:font-[500] text-[#000000] font-[600]"
+          class="sm:text-[50px] text-[30px] text-left sm:w-[40%] w-[350px] opacity-90 mx-auto sm:font-[500] text-[#000000] font-[600]"
         >
-          <span class="opacity-90">Your very own </span>
-          <span class="text-[#705BE1]">AI Assistant</span>
+          Your very own <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
         <p
-          class="sm:text-[32px] sm:mt-0 mt-5 text-[20px] sm:w-[50%] w-[350px] mx-auto text-left sm:font-[500] font-[500] text-[#000000]"
+          class="sm:text-[32px] sm:mt-0 mt-5 text-[20px] sm:w-[60%] w-[350px] mx-auto text-left sm:font-[500] font-[500] text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -998,12 +993,12 @@
 
     <!-- Mobile App section  -->
     <div
-      class="features-section sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto text-center"
+      class="features-section sm:mt-36 mt-20 sm:w-[1100px] sm:m-auto text-center"
     >
-      <div class="px-4">
-        <h4 class="sm:text-[56px] text-[34px] font-[700]">
-          <span class="text-[#262626]">Get the Audionotes </span>
-          <span class="text-[#FF4F00] font-[700]"> Mobile App!</span>
+      <div>
+        <h4 class="sm:text-[56px] text-[34px] font-[600]">
+          Get the Audionotes
+          <span class="text-[#FF4F00]"> Mobile App!</span>
         </h4>
         <div>
           <p class="mt-5 sm:text-[19px] text-[17px] opacity-50">
@@ -1011,13 +1006,13 @@
             lightweight progressive web app (PWA). Please note: As of now,
             Audionotes is not available on the app store or play store.
           </p>
-          <p class="mt-4 sm:text-[19px] text-[17px] opacity-50">
+          <p class="mt-4 sm:text-[19px] text-[17px] opacity-70">
             Please open this link in Safari browser in case you using an iPhone
           </p>
         </div>
         <a href="#">
           <p
-            class="mt-7 justify-center flex sm:w-[370px] px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+            class="mt-7 justify-center flex sm:w-[370px] sm:px-2 px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
           >
             Download our Lightweight Mobile App
           </p>
@@ -1028,7 +1023,7 @@
           class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
         >
           <div
-            class="relative sm:w-64 sm:mt-40 mt-32 sm:h-[510px] h-[250px] sm:rounded-2xl transform -rotate-[21deg]"
+            class="relative sm:w-70 sm:mt-52 mt-32 sm:h-[510px] h-[250px] mr-5 sm:rounded-2xl transform -rotate-[19deg]"
           >
             <img
               decoding="async"
@@ -1052,7 +1047,7 @@
             />
           </div>
           <div
-            class="relative sm:mt-40 mt-32 sm:h-[530px] h-[250px] ml-3 sm:rounded-2xl transform rotate-[24deg]"
+            class="relative sm:mt-52 mt-32 sm:h-[530px] h-[250px] ml-14 sm:rounded-2xl transform rotate-[24deg]"
           >
             <img
               decoding="async"
@@ -1103,22 +1098,22 @@
       </div>
 
       <div class="sm:mt-32 mt-20 sm:w-[1100px] sm:m-auto px-4">
-        <h4 class="sm:text-[56px] text-[34px] font-[700]">
-          <span class="text-[#262626]">Pin our </span>
+        <h4 class="sm:text-[57px] text-[34px] opacity-85 font-[600]">
+          Pin our
           <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
         </h4>
         <div>
-          <p class="mt-5 p-1 sm:text-[19px] text-[17px] opacity-50">
+          <p class="mt-5 p-1 sm:text-[19px] text-[17px] opacity-60">
             Access audiones on your desktop with Chrome Extension. Please open
             this link in Safari browser in case you using an iPhone
           </p>
         </div>
         <a href="#">
-          <p
+          <button
             class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
           >
             Download Chrome extension
-          </p>
+          </button>
         </a>
       </div>
       <div class="main-container">
@@ -1126,7 +1121,7 @@
           class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
         >
           <div
-            class="relative sm:w-64 sm:mt-40 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[21deg]"
+            class="relative sm:w-70 sm:mr-14 sm:mt-52 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[18deg]"
           >
             <img
               decoding="async"
@@ -1149,7 +1144,7 @@
             />
           </div>
           <div
-            class="relative sm:mt-52 mt-32 sm:h-[530px] h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[29deg]"
+            class="relative sm:mt-52 mt-32 sm:h-[530px] sm:ml-14 h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[20deg]"
           >
             <img
               decoding="async"
@@ -1344,26 +1339,9 @@ const toggleQuestion = (index) => {
 };
 </script>
 
+
 <style>
-.container {
-  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
-}
-.testimonial-content {
-  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
-}
-.founder-section {
-  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
-}
-.audionotes-uses {
-  box-sizing: border-box;
-  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
-}
-.users-section {
-  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
-}
-.features-section {
-  font-family: "Epilogue", "Epilogue Placeholder", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Mobile responsive  */
 

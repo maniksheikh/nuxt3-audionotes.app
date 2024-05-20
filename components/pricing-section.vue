@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-xl sm:w-[1100px] m-auto">
-    <div class="sm:flex sm:items-center mx-2">
-      <div class="sm:w-[600px] sm:m-auto w-[350px] m-auto sm:py-4">
+    <div class="sm:flex sm:items-center sm:py-4">
+      <div class="sm:w-[600px] sm:m-auto w-[350px] m-auto">
         <h2
           class="text-[#343434] opacity-95 sm:text-[56px] text-[36px] text-left sm:text-left font-[600] leading-relaxed"
         >
@@ -14,11 +14,11 @@
         </p>
       </div>
       <div
-        class="flex sm:m-auto w-[350px] m-auto ml-1 justify-start sm:items-center mt-10 sm:py-2 py-1 px-3 gap-2 bg-[#F0F0F0] rounded-[50px]"
+        class="flex sm:m-auto w-[350px] m-auto ml-1 justify-start mt-10 sm:py-1 py-1 px-3 gap-2 bg-[#F0F0F0] rounded-[50px]"
       >
         <button
           @click="viewMonthlyPayment"
-          class="text-base sm:py-3 sm:px-6 py-2 px-6 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base sm:py-3 sm:px-3 py-2 px-6 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'monthly',

@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
+    fontFamily: {
+      sans: ['"Epilogue", "Epilogue Placeholder", sans-serif'],
+    },
     screens: {
       sm: "640px",
 
