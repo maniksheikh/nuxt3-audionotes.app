@@ -186,7 +186,9 @@
       </div>
     </div>
     <div>
-      <div class="shadow max-w-[1100px] mx-auto">
+      <div
+        class="marquee-container max-w-[1100px] mx-auto relative overflow-hidden"
+      >
         <Vue3Marquee
           :clone="true"
           :duration="20"
@@ -194,7 +196,7 @@
           class="flex items-center justify-center p-3 sm:mt-0 mt-10 overflow-x-auto whitespace-nowrap"
         >
           <img
-            class="w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-covert"
+            class="w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
             decoding="async"
             src="https://framerusercontent.com/images/2pLbhVt1NvmAS3r95r3OkX71K4.png"
             alt=""
@@ -218,12 +220,14 @@
             alt=""
           />
           <img
-            class="marquee-item w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
+            class="w-48 px-5 py-2 ml-7 cursor-pointer h-auto rounded object-cover"
             decoding="async"
             src="https://framerusercontent.com/images/DoA6m5Ymjrbd9mei33rtBIYNMmk.png"
             alt=""
           />
         </Vue3Marquee>
+        <div class="blur-overlay blur-left"></div>
+        <div class="blur-overlay blur-right"></div>
       </div>
     </div>
 
@@ -244,38 +248,42 @@
           </p>
         </div>
         <div
-          class="flex sm:gap-7 gap-5 sm:pb-10 mt-16 sm:w-[1150px] justify-center m-auto"
+          class="flex sm:gap-7 gap-5 p-10 mt-16 sm:w-[1150px] justify-center m-auto"
         >
-          <Vue3Marquee duration="70">
-            <div
-              v-for="founder in founderData"
-              :key="founder.id"
-              class="items-center sm:pb-15 sm:h-[400px] h-[415px] w-[330px] justify-center ml-3 sm:p-2 sm:pb-14 border border-gray-300 rounded-[33px] opacity-90 relative transition duration-300 ease-out hover:ease-in hover:border-[#FF3600] hover:shadow-md"
-            >
-              <a href="#">
-                <img
-                  class="relative"
-                  decoding="async"
-                  sizes="337px"
-                  :src="founder.image"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-                <span
-                  class="text-center justify-center text-[20px] font-[600] 0 absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
-                  >{{ founder.content }}</span
-                >
-              </a>
-            </div>
-          </Vue3Marquee>
+          <div class="marquee-container relative overflow-hidden">
+            <Vue3Marquee duration="70">
+              <div
+                v-for="founder in founderData"
+                :key="founder.id"
+                class="items-center sm:h-[400px] h-[415px] w-[330px] justify-center ml-3 sm:p-3 border border-gray-300 rounded-[33px] opacity-90 relative transition duration-300 ease-out hover:ease-in hover:border-[#FF3600] hover:shadow-md"
+              >
+                <a href="#">
+                  <img
+                    class="relative"
+                    decoding="async"
+                    sizes="337px"
+                    :src="founder.image"
+                    alt=""
+                    style="
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: inherit;
+                      object-position: center center;
+                      object-fit: cover;
+                      image-rendering: auto;
+                    "
+                  />
+                  <span
+                    class="text-center justify-center text-[20px] font-[600] absolute top-50 left-0 right-0 bottom-1 pb-4 flex flex-col"
+                    >{{ founder.content }}</span
+                  >
+                </a>
+              </div>
+            </Vue3Marquee>
+            <div class="blur-overlay blur-left"></div>
+            <div class="blur-overlay blur-right"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -1014,10 +1022,12 @@
             <h4 class="text-left text-[56px] font-[600]">
               Seamlessly share your notes
             </h4>
-            <div class="flex flex-col mt-5 gap-3">
+            <div
+              v-for="(cartGenerate, index) in CartGenerateData"
+              :key="cartGenerate.id"
+              class="flex flex-col mt-5 gap-3"
+            >
               <div
-                v-for="(cartGenerate, index) in CartGenerateData"
-                :key="cartGenerate.id"
                 :class="{
                   'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[440px] w-[350px]':
                     selectedQuestion === index,
@@ -1029,7 +1039,7 @@
                   class="flex items-center justify-between cursor-pointer"
                 >
                   <h2
-                    class="sm:text-[20px] text-[17px] text-[#000] sm:opacity-95 opacity-95 sm:font-[400] font-[500]"
+                    class="sm:text-[20px] text-[17px] text-[#000] opacity-95 sm:font-[400] font-[500]"
                   >
                     {{ cartGenerate.question }}
                   </h2>
@@ -1451,8 +1461,31 @@ const toggleQuestion = (index) => {
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Css Style  */
-.shadow {
-  box-shadow: 55px 0px 55px 0px rgba(255, 255, 255, 0.3);
+
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 1;
+}
+
+.blur-left {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.blur-right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }
 /* Mobile responsive  */
 
@@ -1467,7 +1500,7 @@ const toggleQuestion = (index) => {
 
 @media (max-width: 640px) {
   .animate-right-to-left {
-    animation: moveRightToLeft 40s linear infinite;
+    animation: moveRightToLeft all linear infinite;
   }
 }
 </style>
