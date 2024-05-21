@@ -1,24 +1,23 @@
 <template>
-  <div class="rounded-xl sm:w-[1100px] m-auto">
-    <div class="sm:flex sm:items-center sm:py-4">
-      <div class="sm:w-[600px] sm:m-auto w-[350px] m-auto">
+  <div class="rounded-xl max-w-[1100px] mx-auto">
+    <div class="flex sm:block items-center sm:items-start py-4 sm:py-2">
+      <div class="w-[600px] m-auto sm:w-[500px] md:w-[350px]">
         <h2
-          class="text-[#343434] opacity-95 sm:text-[56px] text-[36px] text-left sm:text-left font-[600] leading-relaxed"
+          class="text-[#2A2A2A] text-[56px] sm:text-[48px] md:text-[36px] font-[600] leading-relaxed"
         >
           Plans & Pricing
         </h2>
-        <p
-          class="text-black sm:text-left opacity-70 sm:text-[18px] font-[400] leading-6 mt-3"
-        >
+        <p class="text-black opacity-70 text-[18px] font-[400] leading-6 mt-3">
           Save Upto 50% with our Annual Plans:
         </p>
       </div>
+
       <div
-        class="flex sm:m-auto w-[350px] m-auto ml-1 justify-start mt-10 sm:py-1 py-1 px-3 gap-2 bg-[#F0F0F0] rounded-[50px]"
+        class="flex m-auto w-[350px] sm:m-auto ml-1 justify-start mt-10 sm:py-1 py-1 px-3 gap-2 bg-[#F0F0F0] rounded-[50px]"
       >
         <button
           @click="viewMonthlyPayment"
-          class="text-base sm:py-3 sm:px-3 py-2 px-6 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base sm:py-3 sm:px-6 py-2 px-3 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'monthly',

@@ -1,19 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
+  content: ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      sans: ['"Epilogue", "Epilogue Placeholder", sans-serif'],
-    },
     screens: {
-      sm: "640px",
-
-      md: "768px",
-
-      lg: "1024px",
-
-      xl: "1280px",
-
-      "2xl": "1536px",
+      sm: { max: "639px" },
+      md: { max: "767px" },
+      lg: { max: "1023px" },
+      xl: { max: "1279px" },
     },
   },
 };

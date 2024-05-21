@@ -1,16 +1,16 @@
 <template>
-  <div class="mt-5 sm:pb-32">
-    <div class="sm:max-w-[1100px] bg-[black] rounded-3xl sm:m-auto">
+  <div class="mt-5 pb-32 sm:pb-0">
+    <div class="max-w-[1100px] bg-[black] rounded-3xl m-auto">
       <div
-        class="sm:max-w-[95%] bg-[black] sm:p-16 p-10 text-center rounded-3xl m-auto"
+        class="max-w-[95%] bg-[black] p-16 sm:p-10 text-center rounded-3xl m-auto"
       >
         <h1
-          class="sm:text-[52px] text-[46px] sm:font-[600] font-[700] text-white"
+          class="text-[52px] sm:text-[46px] font-[600] sm:font-[700] text-white"
         >
           Unleash the power of Voice notes with AI
         </h1>
         <div
-          class="flex max-w-[215px] justify-center items-center m-auto mt-10 bg-[#ff4f00] text-white rounded-full hover:bg-red-400 px-4 py-4"
+          class="flex max-w-[215px] justify-center items-center m-auto mt-10 bg-[#ff4f00] text-white rounded-full hover:bg-red-400 px-3 py-3"
         >
           <a
             href="/"
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div
-        class="sm:grid grid-rows-1 grid-flow-col px-10 items-center sm:p-10 gap-10 text-white"
+        class="flex sm:block px-10 items-center justify-between p-10 gap-10 text-white"
       >
         <div>
           <p class="text-[15px] leading-7 opacity-70">
@@ -42,13 +42,15 @@
               helps you generate content.
             </span>
           </p>
-          <p class="sm:mt-5 mt-5 opacity-80 text-[18px]">a1811 Labs product</p>
+          <p class="mt-5 sm:mt-5 opacity-80 text-[18px]">a1811 Labs product</p>
           <br />
         </div>
-        <div class="sm:text-left">
-          <div class="sm:flex justify-center">
-            <div class="flex justify-between">
-              <div class="opacity-75">
+        <div class="text-left">
+          <div
+            class="flex justify-center text-[16.5px] sm:text-[15px] sm:justify-between"
+          >
+            <div class="flex sm:block justify-between">
+              <div class="px-7 sm:px-0 opacity-75">
                 <ul>
                   <li
                     class="transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
@@ -74,7 +76,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="sm:px-10 opacity-75">
+              <div class="sm:mt-5 px-7 sm:px-0 opacity-75">
                 <ul>
                   <li
                     class="transition-all font-semibold duration-300 ease-in-outhover:text-gray-300"
@@ -96,8 +98,8 @@
                 </ul>
               </div>
             </div>
-            <div class="flex sm:mt-0 mt-5 justify-between">
-              <div class="opacity-75">
+            <div class="flex sm:block sm:pl-0 justify-between">
+              <div class="px-7 sm:px-0 opacity-75">
                 <ul>
                   <li
                     class="transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"
@@ -122,7 +124,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="sm:px-10 opacity-75">
+              <div class="px-7 sm:px-0 sm:mt-10 opacity-75">
                 <ul>
                   <li
                     class="transition-all font-semibold duration-300 ease-in-out hover:text-gray-300"

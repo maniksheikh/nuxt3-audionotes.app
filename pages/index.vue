@@ -1306,7 +1306,7 @@
     </div>
 
     <!-- Pricing section  -->
-    <div class="py-16 sm:mt-36">
+    <div class="py-16 mt-32">
       <div class="sm:w-[1100px] m-auto">
         <div class="bg-white">
           <div>

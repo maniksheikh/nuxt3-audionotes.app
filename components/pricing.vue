@@ -1,11 +1,11 @@
 <template>
-  <div class="grid bg-white grid-cols-1 sm:grid-cols-3 gap-10 mt-14">
+  <div class="grid grid-cols-3 bg-white sm:grid-cols-1 gap-5 mt-14 py-10 px-10">
     <div
       v-for="plan in plans"
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] border border-gray-200 w-[340px] h-auto rounded-4xl shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[305px] h-auto rounded-4xl shadow-md overflow-hidden"
     >
       <div class="p-4">
         <h2 :style="plan.titleCss" class="text-[20px] font-bold opacity-80">
@@ -43,7 +43,7 @@
                   />
                 </svg>
               </span>
-              <span class="opacity-90">{{ feature }}</span>
+              <span class="">{{ feature }}</span>
             </div>
           </div>
         </div>
@@ -68,38 +68,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-function startPurchase(plan) {
-  if (!store.user) {
-    signInWithGoogle();
-    return;
-  }
-  if (plan.id === "free") {
-    navigateTo("/app");
-    return;
-  }
-
-  eventLog("begin_checkout", {
-    tier: plan.name,
-    uid: store.user.uid,
-    price: plan.price,
-  });
-
-  try {
-    const paymentUrl = `${plan.link}?prefilled_email=${encodeURIComponent(
-      store.userDetails.email
-    )}`;
-    window.location.href = paymentUrl;
-
-    eventLog("checkout_progress", {
-      tier: plan.name,
-      uid: store.user.uid,
-      price: plan.price,
-    });
-  } catch (error) {
-    console.error("Error during payment redirection:", error);
-  }
-}
 </script>
   <style scoped>
 @media screen and (min-width: 700px) and (max-width: 1024px) {
