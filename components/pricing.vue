@@ -7,7 +7,7 @@
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] border border-gray-200 w-[305px] sm:w-[350px] h-auto rounded-4xl shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[320px] sm:w-[350px] h-auto rounded-4xl shadow-md overflow-hidden"
     >
       <div class="p-4">
         <h2 :style="plan.titleCss" class="text-[20px] font-bold opacity-80">

@@ -616,11 +616,11 @@
     </div>
 
     <!--Another Card system -->
-    <div class="sm:mt-20 mt-16">
-      <div class="sm:w-[1100px] m-auto">
-        <div class="sm:flex flex flex-nowrap gap-8 sm:mx-0 mx-2">
+    <div class="mt-20 sm:mt-16">
+      <div class="max-w-[1100px] m-auto">
+        <div class="flex sm:flex flex-wrap sm:flex-nowrap gap-6 mx-0 sm:mx-2">
           <div
-            class="block p-2 w-[450px] sm:w-full h-[450px] rounded-3xl border sm:mb-0 mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+            class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl border mb-0 sm:mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -641,7 +641,7 @@
                   style="
                     display: block;
                     width: 100%;
-                    height: 250px;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center;
                     object-fit: cover;
@@ -650,7 +650,7 @@
                 />
               </nuxt-link>
             </div>
-            <div class="sm:px-6 px-2 py-4 text-surface dark:text-white">
+            <div class="px-6 sm:px-2 py-4 text-surface dark:text-white">
               <div>
                 <img
                   class="mb-3 w-[24px] h-[24px]"
@@ -668,17 +668,17 @@
                 />
               </div>
               <h5
-                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+                class="mb-2 opacity-90 text-[20px] sm:text-[18px] font-[700] leading-tight"
               >
                 Unlimited Content
               </h5>
-              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+              <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
                 Generate Social Media Posts, MoMs, Emails & much more
               </p>
             </div>
           </div>
           <div
-            class="block p-2 w-full sm:w-full h-[100%] rounded-3xl mb-5 border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+            class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl mb-0 sm:mb-5 border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -699,7 +699,7 @@
                   style="
                     display: block;
                     width: 100%;
-                    height: 250px;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center;
                     object-fit: cover;
@@ -726,18 +726,18 @@
                 />
               </div>
               <h5
-                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+                class="mb-2 text-[20px] opacity-90 sm:text-[18px] font-[700] leading-tight"
               >
                 Custom Prompts
               </h5>
-              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+              <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
                 Use Custom promots to generate<br />
                 content for your use-cases
               </p>
             </div>
           </div>
           <div
-            class="block p-2 w-full sm:w-full h-[100%] rounded-3xl border border-gray-300 hover:border-red-400 transition duration-300 ease-out hover:ease-in shadow-secondary-1 dark:bg-surface-dark"
+            class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl border border-gray-300 hover:border-red-400 transition duration-300 ease-out hover:ease-in shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -758,7 +758,7 @@
                   style="
                     display: block;
                     width: 100%;
-                    height: 250px;
+                    height: 100%;
                     border-radius: inherit;
                     object-position: center;
                     object-fit: cover;
@@ -785,11 +785,11 @@
                 />
               </div>
               <h5
-                class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+                class="mb-2 opacity-90 text-[20px] sm:text-[18px] font-[700] leading-tight"
               >
                 Set Content Language
               </h5>
-              <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+              <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
                 Generate Content in 19+ languages <br />
                 seamlessly
               </p>
@@ -800,17 +800,19 @@
     </div>
 
     <!--Another Features -->
-    <div class="features-section sm:mt-32 pb-20">
-      <div class="sm:flex mt-16 justify-between sm:w-[1100px] sm:m-auto gap-24">
+    <div class="features-section mt-32 sm:mt-20 pb-28 sm:pb-20">
+      <div
+        class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24"
+      >
         <h1
-          class="sm:text-[56px] text-[34px] text-left sm:w-[35%] w-[350px] mx-auto text-[#1F1F1F] font-[500]"
+          class="text-[57px] sm:text-[34px] opacity-90 text-left max-w-[35%] sm:w-[350px] m-auto text-[#1F1F1F] font-[600]"
         >
           We <br />
           Have great
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="sm:text-[32px] sm:mt-0 mt-5 sm:w-[57%] w-[350px] mx-auto text-[22px] text-left sm:font-[500] text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 max-w-[57%] sm:w-[350px] mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -823,57 +825,61 @@
     </div>
 
     <!--Social Card system -->
-    <div class="sm:w-[1100px] m-auto">
-      <div
-        class="sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 sm:px-0 px-3 gap-8"
-      >
-        <div v-for="(social, index) in socialData" :key="index" class="mb-4">
-          <div
-            class="block w-full sm:w-full h-[400px] rounded-3xl border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
-          >
+    <div class="mt-10">
+      <div class="max-w-[1100px] m-auto">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 px-0 sm:px-3 gap-10"
+        >
+          <div v-for="(social, index) in socialData" :key="index" class="mb-4">
             <div
-              class="relative overflow-hidden bg-cover bg-no-repeat"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
+              class="block w-full sm:w-full h-[450px] rounded-3xl border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
-              <nuxt-link to="#">
-                <img
-                  :src="social.image"
-                  alt=""
-                  class="block w-full h-64 object-cover rounded-t-3xl"
-                />
-              </nuxt-link>
-            </div>
-            <div class="sm:p-6 px-5 pt-3 text-surface dark:text-white">
-              <div>
-                <img
-                  class="mb-3 w-[24px] h-[24px]"
-                  :src="social.avatar"
-                  alt=""
-                />
+              <div
+                class="relative overflow-hidden bg-cover bg-no-repeat"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+              >
+                <nuxt-link to="#">
+                  <img
+                    :src="social.image"
+                    alt=""
+                    class="block w-full h-64 object-cover rounded-t-3xl"
+                  />
+                </nuxt-link>
               </div>
-              <h5 class="mb-2 opacity-80 text-[22px] font-[700] leading-tight">
-                {{ social.header }}
-              </h5>
-              <p class="mb-4 text-[17px] text-gray-500 font-[400]">
-                {{ social.content }}
-              </p>
+              <div class="px-5 mt-12 pb-3 text-surface dark:text-white">
+                <div>
+                  <img
+                    class="mb-3 w-[24px] h-[24px]"
+                    :src="social.avatar"
+                    alt=""
+                  />
+                </div>
+                <h5
+                  class="mb-3 opacity-80 text-[22px] font-[700] leading-tight"
+                >
+                  {{ social.header }}
+                </h5>
+                <p class="mb-2 text-[17px] text-gray-500 font-[400]">
+                  {{ social.content }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <!--Another Features -->
-    <div class="features-section sm:mt-36">
-      <div class="sm:flex mt-20 justify-between sm:w-[1100px] sm:m-auto gap-20">
+    <div class="features-section mt-32 sm:mt-20">
+      <div class="flex sm:block justify-between max-w-[1100px] m-auto gap-14">
         <h1
-          class="sm:text-[50px] text-[30px] text-left sm:w-[40%] w-[350px] opacity-90 mx-auto sm:font-[500] text-[#000000] font-[600]"
+          class="text-[56px] sm:text-[34px] opacity-90 text-left max-w-[40%] sm:w-[350px] m-0 text-[#1F1F1F] font-[600]"
         >
           Your very own <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
+
         <p
-          class="sm:text-[32px] sm:mt-0 mt-5 text-[20px] sm:w-[60%] w-[350px] mx-auto text-left sm:font-[500] font-[500] text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 max-w-[55%] sm:w-[350px] m-auto sm:text-[22px] text-left font-[500] opacity-90 text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -883,9 +889,9 @@
     </div>
 
     <!-- Another chat cart  -->
-    <div class="sm:mt-28 mt-8">
-      <div class="sm:w-[1100px] sm:m-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-8">
+    <div class="mt-28 sm:mt-8">
+      <div class="max-w-[1100px] m-auto">
+        <div class="grid sm:grid-cols-1 grid-cols-2 md:grid-cols-2 px-5 gap-8">
           <div
             class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
           >
@@ -1011,9 +1017,10 @@
         </div>
       </div>
     </div>
+
     <!-- Cart generate  -->
     <div class="mt-32">
-      <div class="w-[1100px] m-auto">
+      <div class="max-w-[1100px] m-auto">
         <div class="flex justify-between w-full h-full bg-white">
           <div class="flex w-[40%] flex-col pt-3">
             <h4 class="text-left text-[56px] font-[600]">
@@ -1022,13 +1029,13 @@
             <div
               v-for="(cartGenerate, index) in CartGenerateData"
               :key="cartGenerate.id"
-              class="flex flex-col mt-5 gap-3"
+              class="flex flex-col mt-5"
             >
               <div
                 :class="{
-                  'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[440px] w-[350px]':
+                  'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[440px] sm:w-[350px]':
                     selectedQuestion === index,
-                  'p-4 bg-white rounded': selectedQuestion !== index,
+                  'py-4 bg-white rounded': selectedQuestion !== index,
                 }"
               >
                 <div
@@ -1036,7 +1043,7 @@
                   class="flex items-center justify-between cursor-pointer"
                 >
                   <h2
-                    class="sm:text-[20px] text-[17px] text-[#000] opacity-95 sm:font-[400] font-[500]"
+                    class="text-[20px] sm:text-[17px] text-[#000] opacity-95 sm:font-[400] font-[500]"
                   >
                     {{ cartGenerate.question }}
                   </h2>
@@ -1078,7 +1085,7 @@
                 </div>
                 <p
                   v-if="selectedQuestion === index"
-                  class="text-[15px] opacity-80 mt-3 leading-7"
+                  class="text-[16px] opacity-80 mt-3 leading-7"
                 >
                   {{ cartGenerate.answer }}
                 </p>
@@ -1086,7 +1093,7 @@
             </div>
           </div>
           <div class="w-[50%] h-auto">
-            <div class="bg-orange-500 rounded-[35px] p-8 h-full">
+            <div class="bg-orange-500 rounded-[35px] h-full">
               <img
                 src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
                 alt="Feature Image"
@@ -1098,27 +1105,27 @@
       </div>
     </div>
     <!-- Mobile App section  -->
-    <div class="features-section sm:mt-36 mt-20">
-      <div class="sm:w-[1100px] sm:m-auto text-center">
+    <div class="features-section mt-36 sm:mt-20">
+      <div class="max-w-[1100px] m-auto text-center">
         <div>
-          <h4 class="sm:text-[56px] text-[34px] font-[600]">
+          <h4 class="text-[56px] sm:text-[34px] font-[600]">
             Get the Audionotes
             <span class="text-[#FF4F00]"> Mobile App!</span>
           </h4>
           <div>
-            <p class="mt-5 sm:text-[19px] text-[17px] opacity-50">
+            <p class="mt-5 text-[19px] sm:text-[17px] opacity-50">
               Access audiones on your android or iOS device by downloading our
               lightweight progressive web app (PWA). Please note: As of now,
               Audionotes is not available on the app store or play store.
             </p>
-            <p class="mt-4 sm:text-[19px] text-[17px] opacity-70">
+            <p class="mt-4 text-[19px] sm:text-[17px] opacity-70">
               Please open this link in Safari browser in case you using an
               iPhone
             </p>
           </div>
           <a href="#">
             <p
-              class="mt-7 justify-center flex sm:w-[370px] sm:px-2 px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+              class="mt-7 justify-center flex w-[370px] px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
             >
               Download our Lightweight Mobile App
             </p>
@@ -1126,10 +1133,10 @@
         </div>
         <div class="main-container">
           <div
-            class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative sm:m-auto flex justify-center items-center overflow-hidden"
+            class="mt-32 sm:mt-10 h-[480px] sm:h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
           >
             <div
-              class="relative sm:w-70 sm:mt-52 mt-32 sm:h-[510px] h-[250px] mr-5 sm:rounded-2xl transform -rotate-[18deg]"
+              class="relative w-70 mt-52 sm:mt-32 h-[510px] sm:h-[250px] mr-0 sm:mr-5 rounded-2xl transform -rotate-[18deg]"
             >
               <img
                 decoding="async"
@@ -1153,7 +1160,7 @@
               />
             </div>
             <div
-              class="relative sm:mt-52 mt-32 sm:h-[530px] h-[250px] ml-14 sm:rounded-2xl transform rotate-[24deg]"
+              class="relative mt-52 sm:mt-32 h-[530px] sm:h-[250px] ml-14 rounded-2xl transform rotate-[24deg]"
             >
               <img
                 decoding="async"
@@ -1177,7 +1184,7 @@
               />
             </div>
             <div
-              class="absolute sm:w-66 sm:rounded-2xl rounded-2xl sm:mt-20 mt-24 sm:h-[560px] h-[311px]"
+              class="absolute w-66 rounded-2xl sm:rounded-2xl mt-20 sm:mt-24 h-[560px] sm:h-[311px]"
             >
               <img
                 decoding="async"
@@ -1205,14 +1212,14 @@
       </div>
     </div>
 
-    <div class="sm:mt-32 mt-20">
-      <div class="sm:w-[1100px] sm:text-center sm:m-auto">
-        <h4 class="sm:text-[57px] text-[34px] opacity-85 font-[600]">
+    <div class="mt-32 sm:mt-20">
+      <div class="max-w-[1100px] text-center m-auto">
+        <h4 class="text-[57px] sm:text-[34px] opacity-90 font-[600]">
           Pin our
-          <span class="text-[#FF4F00] font-[700]">Chrome Extension</span>
+          <span class="text-[#FF4F00] font-[600]">Chrome Extension</span>
         </h4>
         <div>
-          <p class="mt-5 px-1 sm:text-[19px] text-[17px] opacity-60">
+          <p class="mt-5 px-1 text-[19px] sm:text-[17px] opacity-60">
             Access audiones on your desktop with Chrome Extension. Please open
             this link in Safari browser in case you using an iPhone
           </p>
@@ -1226,10 +1233,10 @@
         </a>
         <div class="main-container">
           <div
-            class="sm:mt-32 mt-10 sm:h-[480px] h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
+            class="mt-28 sm:mt-10 h-[480px] sm:h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
           >
             <div
-              class="relative sm:w-70 sm:mr-14 sm:mt-52 mt-32 sm:h-[510px] h-[250px] border border-gray-400 rounded-xl transform -rotate-[17deg]"
+              class="relative w-70 mr-14 mt-52 sm:mt-32 h-[515px] sm:h-[250px] border border-gray-400 rounded-xl transform -rotate-[17deg]"
             >
               <img
                 decoding="async"
@@ -1252,7 +1259,7 @@
               />
             </div>
             <div
-              class="relative sm:mt-52 mt-32 sm:h-[530px] sm:ml-14 h-[250px] border border-gray-400 ml-3 rounded-xl rotate-[20deg]"
+              class="relative mt-52 sm:mt-32 h-[530px] ml-14 sm:h-[250px] border border-gray-400 sm:ml-3 rounded-xl rotate-[20deg]"
             >
               <img
                 decoding="async"
@@ -1275,7 +1282,7 @@
               />
             </div>
             <div
-              class="absolute sm:w-66 sm:rounded-2xl rounded-2xl border border-gray-400 sm:mt-20 mt-24 sm:h-[560px] h-[311px] transform"
+              class="absolute w-66 rounded-2xl sm:rounded-2xl mt-20 sm:mt-24 h-[560px] sm:h-[311px] border border-gray-400"
             >
               <img
                 decoding="async"
@@ -1304,7 +1311,7 @@
 
     <!-- Pricing section  -->
     <div class="py-16 mt-32">
-      <div class="sm:w-[1100px] m-auto">
+      <div class="maxw-[1100px] m-auto">
         <div class="bg-white">
           <div>
             <pricing-section></pricing-section>
@@ -1319,9 +1326,9 @@
         <div
           class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
         >
-          <div class="w-[400px] sm:w-[350px] m-auto">
+          <div class="w-[400px] sm:w-[350px]">
             <h1
-              class="text-[56px] sm:text-[32px] font-[600] sm:font-[700] leading-tight opacity-80"
+              class="text-[56px] sm:text-[32px] font-[600] leading-tight opacity-80"
             >
               Need help?
             </h1>
