@@ -1,11 +1,13 @@
 <template>
-  <div class="grid grid-cols-3 bg-white sm:grid-cols-1 gap-5 mt-14 py-10 px-10">
+  <div
+    class="grid grid-cols-3 bg-white sm:grid-cols-1 gap-5 mt-14 py-10 px-10 sm:py-0 sm:px-0 sm:mt-5"
+  >
     <div
       v-for="plan in plans"
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] border border-gray-200 w-[305px] h-auto rounded-4xl shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[305px] sm:w-[350px] h-auto rounded-4xl shadow-md overflow-hidden"
     >
       <div class="p-4">
         <h2 :style="plan.titleCss" class="text-[20px] font-bold opacity-80">

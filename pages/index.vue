@@ -1,11 +1,11 @@
 <template>
   <div class="main-container">
     <div
-      class="justify-center items-center h-[552px] flex overflow-hidden relative"
+      class="justify-center items-center h-[582px] flex overflow-hidden relative"
     >
       <div>
         <img
-          class="hidden sm:block"
+          class="sm:hidden block"
           decoding="async"
           sizes="100vw"
           srcset="
@@ -27,18 +27,17 @@
         />
       </div>
       <div
-        class="testimonial-content relative sm:absolute top-0 left-0 right-0 bottom-0 sm:w-[788px] w-full sm:mx-auto flex flex-col sm:my-16"
+        class="testimonial-content absolute top-0 left-0 right-0 bottom-0 max-w-[788px] sm:w-full mx-auto flex flex-col my-20 sm:my-0"
       >
         <div class="text-center">
           <h2
-            style="font-weight: 600 !important"
-            class="text-[31px] sm:leading-[70px] leading-10 sm:text-[49px] text-[#262626] opacity-95"
+            class="text-[50px] sm:text-[31px] leading-[67px] font-[600] sm:leading-10 text-[#262626] opacity-95"
           >
             Your
-            <span class="font-italic opacity-96 font-normal italic"
+            <span class="font-italic opacity-90 font-[500] italic"
               >cluttered</span
             >
-            <span class="text-[#FF4F00] ml-1 font-[500]"> Thoughts</span>
+            <span class="text-[#FF4F00] font-[500]"> Thoughts</span>
             into
             <span class="font-italic opacity-95 font-[500] ml-3 italic"
               >clear</span
@@ -47,7 +46,7 @@
             using AI
           </h2>
           <p
-            class="sm:mt-10 mt-5 leading-5 sm:p-1 px-5 sm:leading-9 text-[#858585] sm:w-[550px] m-auto text-[17px] sm:text-[19px]"
+            class="mt-10 sm:mt-5 sm:p-1 px-5 leading-9 sm:leading-5 text-[#858585] max-w-[550px] mx-auto sm:text-[17px] text-[20px]"
           >
             Speak or type, Audionotes will transform your notes into searchable
             clear actionable text notes using AI
@@ -55,7 +54,7 @@
         </div>
 
         <div
-          class="flex items-center justify-center bg-[#FF4F00] sm:max-w-[150px] w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-4 py-2"
+          class="flex items-center justify-center bg-[#FF4F00] max-w-[155px] sm:w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
         >
           <nuxt-link
             to="/"
@@ -73,7 +72,7 @@
           </nuxt-link>
         </div>
 
-        <div class="sm:mt-11 mt-5">
+        <div class="mt-12 sm:mt-5">
           <div
             class="flex items-center justify-center sm:w-[300px] w-[300px] m-auto"
           >
@@ -148,9 +147,9 @@
     </div>
 
     <!-- testimonal section -->
-    <div class="sm:mt-20 sm:w-[1200px] sm:m-auto mx-2">
+    <div class="mt-20 sm:mt-10 max-w-[1200px] mx-auto sm:mx-2">
       <div
-        class="sm:h-[670px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
+        class="h-[670px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
       >
         <nuxt-link to="/">
           <img
@@ -172,13 +171,13 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section sm:mt-20 mt-20 py-20">
-      <div class="sm:w-[1100px] m-auto text-center">
+    <div class="brand-section sm:mt-10 mt-20 py-14 sm:py-0">
+      <div class="max-w-[1100px] mx-auto text-center">
         <h3
-          class="sm:w-[1100px] m-auto text-[#FF4F00] sm:text-[56px] text-[32px] font-[600]"
+          class="w-[1100px] mx-auto leading-tight text-[#FF4F00] text-[56px] sm:text-[32px] font-[600]"
         >
           <span
-            class="font-sans sm:text-[56px] text-[36px] text-black opacity-80 font-[600]"
+            class="font-sans text-[56px] sm:text-[36px] text-black opacity-95 font-[600]"
             >In the</span
           >
           Spotlight
@@ -193,7 +192,7 @@
           :clone="true"
           :duration="20"
           :direction="'reverse'"
-          class="flex items-center justify-center p-3 sm:mt-0 mt-10 overflow-x-auto whitespace-nowrap"
+          class="flex items-center justify-center p-3 mt-0 sm:mt-10 overflow-x-auto whitespace-nowrap"
         >
           <img
             class="w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
@@ -233,14 +232,14 @@
 
     <!-- Foundeer section  -->
     <div class="founder-section">
-      <div class="sm:mt-36 mt-21 sans-serif sm:w-[1300px] m-auto">
+      <div class="mt-36 sm:mt-21 sans-serif max-w-[1300px] mx-auto">
         <div class="font-sans text-center pt-16">
-          <h4 class="sm:text-[56px] text-[36px] text-[#262626] font-bold">
+          <h4 class="text-[57px] sm:text-[36px] text-[#262626] font-[600]">
             <span class="text-[#FF4F00] font-[600]">Audionotes</span> is for
             everyone!
           </h4>
           <p
-            class="mt-5 text-[18px] sm:leading-8 leading-8 sm:opacity-75 opacity-80"
+            class="mt-5 text-[19px] sm:leading-8 leading-8 opacity-75 sm:opacity-80"
           >
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
@@ -248,14 +247,14 @@
           </p>
         </div>
         <div
-          class="flex sm:gap-7 gap-5 p-10 mt-16 sm:w-[1150px] justify-center m-auto"
+          class="flex gap-7 sm:gap-5 p-10 mt-16 max-w-[1150px] justify-center mx-auto"
         >
           <div class="marquee-container relative overflow-hidden">
             <Vue3Marquee duration="70">
               <div
                 v-for="founder in founderData"
                 :key="founder.id"
-                class="items-center sm:h-[400px] h-[415px] w-[330px] justify-center ml-3 sm:p-3 border border-gray-300 rounded-[33px] opacity-90 relative transition duration-300 ease-out hover:ease-in hover:border-[#FF3600] hover:shadow-md"
+                class="items-center h-[400px] sm:h-[415px] w-[330px] justify-center ml-3 p-3 border border-gray-300 rounded-[33px] opacity-90 relative transition duration-300 ease-out hover:ease-in hover:border-[#FF3600] hover:shadow-md"
               >
                 <a href="#">
                   <img
@@ -289,15 +288,13 @@
     </div>
 
     <!-- Audionotes use -->
-    <div>
-      <div
-        class="font-sans sm:mt-32 mt-24 items-center sm:w-[1200px] sm:m-auto text-center sm:px-0 px-4"
-      >
+    <div class="font-sans sm:mt-32 mt-24">
+      <div class="items-center max-w-[1200px] m-auto text-center px-0 sm:px-4">
         <div>
-          <h4 class="sm:text-[56px] text-[36px] text-[#FF4F00] font-[600]">
+          <h4 class="text-[56px] sm:text-[36px] text-[#FF4F00] font-[600]">
             <span
               style="font-weight: 600 !important"
-              class="sm:text-[56px] text-[36px] text-[#000]"
+              class="text-[56px] sm:text-[36px] text-[#000] opacity-90"
               >What do I use</span
             >
             Audionotes for?
@@ -310,22 +307,22 @@
           </p>
         </div>
       </div>
-      <div class="container sm:mt-10 mt-14 sm:w-[1150px] sm:m-auto">
-        <div class="grid grid-cols-3 gap-14 sm:mb-10">
+      <div class="container mt-10 sm:mt-14 max-w-[1150px] m-auto">
+        <div class="grid grid-cols-3 gap-14 sm:gap-5 mb-10 sm:mb-0">
           <div
             v-for="content in contentData"
             :key="content.id"
-            class="sm:w-[97.5%] w-1/3 sm:mb-0 mb-0"
+            class="w-[97.5%] sm:w-1/3 sm:mb-0 mb-0"
           >
             <div
-              class="animate-right-to-left text-center sm:p-0 p-10 justify-center sm:mx-0 mx-2 sm:h-auto h-[180px] w-[337px] m-auto sm:text-left sm:border-none border border-gray-300 sm:rounded-none rounded-3xl"
+              class="animate-right-to-left sm:text-center text-left p-0 sm:p-10 justify-center mx-0 sm:mx-2 h-auto sm:h-[180px] max-w-[337px] m-auto border-none sm:border border-gray-300 rounded-none sm:rounded-3xl"
             >
               <h3
-                class="text-[20px] sm:py-1 sm:text-[20px] text-[#262626] opacity-95 font-[600]"
+                class="sm:text-[20px] py-1 text-[20px] text-[#262626] opacity-95 font-[600]"
               >
                 {{ content.header }}
               </h3>
-              <p class="sm:mt-2 text-[16px] sm:text-[17px] text-gray-600">
+              <p class="mt-2 sm:text-[16px] text-[17px] text-gray-600">
                 {{ content.content }}
               </p>
             </div>
@@ -335,9 +332,9 @@
     </div>
     <!-- Audionotes users section  -->
     <div class="users-section">
-      <div class="sm:mt-40 mt-20">
+      <div class="mt-40 sm:mt-20">
         <h1
-          class="text-center sm:text-[56px] text-[35px] sm:w-[96%] mx-auto sm:font-[600] font-[600]"
+          class="text-center text-[56px] sm:text-[35px] max-w-[96%] m-auto font-[600] sm:font-[600]"
         >
           <span class="text-[#FF4F00] font-[600]">Loved by</span>
           7000+ Happy Users ❤️
@@ -356,7 +353,7 @@
             class="mt-20 flex-none px-2"
           >
             <div
-              class="sm:h-[390px] h-[410px] w-[310px] sm:gap-7 gap-7 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
+              class="h-[390px] sm:h-[410px] w-[310px] gap-7 sm:gap-7 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden m-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -369,7 +366,7 @@
                   </div>
                   <div class="ml-3">
                     <div class="text-[16px] font-[500]">{{ users.name }}</div>
-                    <div class="sm:text-[14px] text-gray-600">
+                    <div class="text-[14px] text-gray-600">
                       {{ users.email }}
                     </div>
                   </div>
@@ -417,7 +414,7 @@
                 </div>
 
                 <div
-                  class="mt-2 text-gray-800 sm:p-1 sm:text-[15px] overflow-hidden font-[400]"
+                  class="mt-2 text-gray-800 p-1 text-[15px] overflow-hidden font-[400]"
                 >
                   {{ users.description }}
                 </div>
@@ -437,10 +434,10 @@
           <div
             v-for="user in userData"
             :key="user.id"
-            class="sm:mt-10 flex-none px-2"
+            class="mt-10 flex-none px-2"
           >
             <div
-              class="sm:h-[390px] h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
+              class="h-[390px] sm:h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -453,7 +450,7 @@
                   </div>
                   <div class="ml-3">
                     <div class="text-[16px] font-500">{{ user.name }}</div>
-                    <div class="sm:text-[15px] text-gray-600">
+                    <div class="text-[15px] text-gray-600">
                       {{ user.email }}
                     </div>
                   </div>
@@ -500,9 +497,7 @@
                   </div>
                 </div>
 
-                <div
-                  class="mt-2 text-gray-800 sm:text-[15px] sm:p-1 font-[400]"
-                >
+                <div class="mt-2 text-gray-800 text-[15px] p-1 font-[400]">
                   {{ user.description }}
                 </div>
               </div>
@@ -513,24 +508,24 @@
     </div>
     <!-- Features -->
     <div
-      class="features-section sm:mt-28 mt-20 text-center sm:w-[1100px] m-auto"
+      class="features-section mt-28 sm:mt-20 text-center max-w-[1100px] m-auto"
     >
       <h2
-        class="sm:text-[55px] sm:w-[250px] sm:font-[600] w-[240px] m-auto text-[36px] text-[#FF4F00]"
+        class="text-[56px] max-w-[250px] font-[600] sm:w-[240px] m-auto sm:text-[36px] text-[#FF4F00]"
       >
         Features
       </h2>
     </div>
-    <div class="sm:mt-20 py-20">
-      <div class="sm:w-[1100px] m-auto">
-        <div class="sm:flex justify-between gap-20">
+    <div class="mt-20 py-16">
+      <div class="max-w-[1100px] m-auto">
+        <div class="flex sm:block justify-between gap-20">
           <h1
-            class="sm:text-[50px] sm:w-[30%] w-[90%] sm:font-[500] mx-auto text-[33px] sm:text-left opacity-95"
+            class="text-[52px] w-[30%] sm:w-[90%] font-[500] m-auto sm:text-[33px] sm:text-left opacity-95"
           >
             <span>Record, Upload or Write. </span>
           </h1>
           <p
-            class="sm:text-[31px] sm:mt-0 mt-5 sm:w-[63%] opacity-90 mx-auto sm:font-[500] text-[22px] w-[90%] text-left"
+            class="text-[31px] mt-0 sm:mt-5 w-[63%] opacity-90 m-auto font-[500] sm:text-[22px] sm:w-[90%] text-left"
           >
             Whether you are
             <span class="text-[#FF4F00]">capturing </span> voice notes,
@@ -546,13 +541,13 @@
 
     <!-- Card system -->
     <div class="sm:mt-20 mt-20">
-      <div class="sm:w-[1300px] sm:m-auto">
-        <div class="sm:w-[1100px] sm:m-auto sm:mb-10">
-          <div class="sm:grid grid-cols-3 sm:gap-10">
+      <div class="max-w-[1300px] m-auto">
+        <div class="w-[1100px] m-auto mb-10 sm:mb-0">
+          <div class="grid grid-cols-3 gap-10">
             <div
               v-for="card in cartData"
               :key="card"
-              class="animate-right-to-left sm:mx-0 mx-2 p-2 m-auto rounded-3xl mb-5 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="animate-right-to-left mx-0 sm:mx-2 p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -584,11 +579,11 @@
                   />
                 </div>
                 <h5
-                  class="mb-2 opacity-80 sm:text-[22px] text-[18px] font-[700] leading-tight"
+                  class="mb-2 opacity-80 text-[22px] sm:text-[18px] font-[700] leading-tight"
                 >
                   {{ card.header }}
                 </h5>
-                <p class="sm:text-[17px] text-[16px] text-gray-500 font-[400]">
+                <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
                   {{ card.content }}
                 </p>
               </div>
@@ -599,16 +594,18 @@
     </div>
 
     <!-- Features -->
-    <div class="features-section sm:mt-32 sm:pb-28">
-      <div class="sm:flex mt-20 justify-between sm:w-[1100px] m-auto gap-20">
+    <div class="features-section mt-32 sm:mt-10 pb-28 sm:mb-0">
+      <div
+        class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20"
+      >
         <h1
-          class="sm:text-[50px] text-[34px] sm:font-[600] text-left sm:w-[33%] w-[350px] m-auto"
+          class="text-[50px] sm:text-[34px] font-[600] text-left max-w-[33%] sm:w-[350px] m-auto"
         >
           Generate Awesome
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="sm:text-[31px] sm:mt-0 mt-5 text-[21px] sm:w-[60%] w-[350px] font-[500] mx-auto text-left"
+          class="text-[31px] mt-0 sm:mt-5 sm:text-[21px] max-w-[60%] sm:w-[350px] font-[500] mx-auto text-left"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -1317,24 +1314,24 @@
     </div>
 
     <!-- Faqs section  -->
-    <div class="mt-20">
+    <div class="mt-20 sm:mt-10">
       <div id="faq">
-        <div class="sm:w-[1100px] sm:flex justify-between sm:m-auto sm:mb-10">
-          <div class="px-5">
-            <h2
-              class="sm:text-[56px] text-[30px] font-[700] leading-relaxed sm:leading-loose"
+        <div
+          class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
+        >
+          <div class="w-[400px] sm:w-[350px] m-auto">
+            <h1
+              class="text-[56px] sm:text-[32px] font-[600] sm:font-[700] leading-tight opacity-80"
             >
-              <span class="sm:text-[56px] text-[36px] opacity-95"
-                >Need help?</span
-              >
-            </h2>
+              Need help?
+            </h1>
             <p
-              class="sm:text-[18px] text-[17px] opacity-70 font-medium leading-8 mt-3"
+              class="text-[18px] sm:text-[17px] opacity-70 font-medium leading-8 mt-3"
             >
               Don`t worry, we got you. Here are some answers for your questions.
             </p>
             <div
-              class="flex sm:w-[180px] w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 sm:px-0 px-2 sm:py-3 py-3"
+              class="flex w-[180px] sm:w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 sm:px-0 px-2 sm:py-3 py-3"
             >
               <a
                 href="/"
@@ -1354,12 +1351,12 @@
               </a>
             </div>
           </div>
-          <div class="flex flex-col mt-5 gap-3">
+          <div class="flex flex-col sm:mt-5 gap-3 px-0 sm:px-2">
             <div
               v-for="(faq, index) in faqData"
               :key="faq.id"
               :class="{
-                'bg-white p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded sm:w-[600px] w-[350px]':
+                'bg-white p-4 sm:p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[600px] sm:w-[355px]':
                   selectedQuestion === index,
                 'p-4 bg-white rounded': selectedQuestion !== index,
               }"
@@ -1369,13 +1366,13 @@
                 class="flex items-center justify-between cursor-pointer"
               >
                 <h2
-                  class="sm:text-[18px] text-[17px] sm:opacity-80 opacity-95 sm:font-[400] font-[500]"
+                  class="text-[18px] sm:text-[17px] sm:opacity-80 opacity-95 font-[400] sm:font-[500]"
                 >
                   {{ faq.question }}
                 </h2>
                 <button aria-label="faq question" title="faq question">
                   <img
-                    class="p-2"
+                    class="p-2 sm:p-1"
                     v-if="selectedQuestion === index"
                     decoding="async"
                     src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
@@ -1391,7 +1388,7 @@
                     "
                   />
                   <img
-                    class="p-2"
+                    class="p-2 sm:p-1"
                     v-else
                     decoding="async"
                     src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
@@ -1411,7 +1408,7 @@
               </div>
               <p
                 v-if="selectedQuestion === index"
-                class="text-[15px] opacity-80 mt-3 leading-7"
+                class="text-[16px] sm:text-[15px] opacity-80 mt-3 leading-7"
               >
                 {{ faq.answer }}
               </p>
@@ -1461,7 +1458,6 @@ const toggleQuestion = (index) => {
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Css Style  */
-
 .blur-overlay {
   position: absolute;
   top: 0;
