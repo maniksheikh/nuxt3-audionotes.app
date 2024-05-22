@@ -46,7 +46,7 @@
             using AI
           </h2>
           <p
-            class="mt-10 sm:mt-5 sm:p-1 px-5 leading-9 sm:leading-6 text-[#B5B5B5] max-w-[550px] mx-auto sm:text-[19px] text-[20px]"
+            class="mt-10 sm:mt-5 sm:p-1 px-5 leading-9 sm:leading-6 text-[#9c9797] max-w-[550px] mx-auto sm:text-[19px] text-[20px]"
           >
             Speak or type, Audionotes will transform your notes into searchable
             clear actionable text notes using AI
@@ -250,7 +250,7 @@
           </p>
         </div>
         <div
-          class="flex gap-7 sm:gap-5 p-10 mt-16 max-w-[1150px] justify-center mx-auto"
+          class="flex gap-7 sm:gap-5 p-10 mt-16 max-w-[1150px] justify-center m-auto"
         >
           <div class="marquee-container relative overflow-hidden">
             <Vue3Marquee duration="70">
@@ -298,7 +298,7 @@
             class="text-[56px] sm:text-[36px] text-[#FF4F00] sm:font-[700] font-[600]"
           >
             <span
-              class="text-[56px] sm:text-[36px] text-[#000] opacity-95 sm:opacity-90"
+              class="text-[56px] sm:text-[36px] text-[#000] opacity-90 sm:opacity-90"
               >What do I use</span
             >
             Audionotes for?
@@ -311,20 +311,27 @@
           </p>
         </div>
       </div>
-      <div class="mt-10 sm:mt-14 check m-auto sm:p-2 w-[500px]">
+      <div class="mt-16 sm:mt-14 check m-auto sm:p-2 w-[1100px]">
         <div
-          class="grid grid-cols-3 sm:flex sm:grid-cols-1 gap-5 mb-10 sm:mb-0"
+          class="grid grid-cols-3 sm:flex sm:grid-cols-1 gap-10 mb-0 sm:mb-0"
         >
-          <div v-for="content in contentData" :key="content.id">
+          <div
+            v-for="content in contentData"
+            :key="content.id"
+            class="w-[330px] sm:w-[337px] sm:h-[190px]"
+          >
             <div
-              class="animate-right-to-left sm:text-center text-left p-0 sm:p-10 justify-center mx-0 sm:mx-2 h-auto max-w-[337px] sm:w-[337px] sm:h-[190px] w-auto sm:border border-gray-300 rounded-none sm:rounded-3xl"
+              :class="[
+                screenSize <= 640 ? 'animate-right-to-left' : '',
+                'sm:text-center text-left p-0 sm:p-10 leading-8 justify-center mx-0 sm:mx-2 sm:border border-gray-300 rounded-none sm:rounded-3xl',
+              ]"
             >
               <h3
-                class="sm:text-[20px] py-1 text-[21px] text-[#262626] font-[600]"
+                class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]"
               >
                 {{ content.header }}
               </h3>
-              <p class="mt-2 sm:text-[16px] text-[17px] text-gray-600">
+              <p class="mt-2 sm:text-[16px] text-[18px] text-gray-600">
                 {{ content.content }}
               </p>
             </div>
@@ -601,7 +608,7 @@
         class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20"
       >
         <h1
-          class="text-[50px] sm:text-[34px] font-[600] sm:font-[700] text-left w-[33%] sm:w-[350px] m-auto"
+          class="text-[50px] sm:text-[34px] font-[600] sm:font-[700] opacity-90 text-left w-[33%] sm:w-[350px] m-auto"
         >
           Generate Awesome
           <span class="text-[#FF4F00]"> Content</span>
@@ -617,11 +624,13 @@
       </div>
     </div>
 
-    <!--Another Card system -->
+    <!--Another Custom Card system -->
     <div class="mt-20 sm:mt-16">
       <div class="max-w-[1100px] m-auto">
         <div class="flex sm:flex flex-wrap sm:flex-nowrap gap-6 mx-0 sm:mx-2">
           <div
+            v-for="customCart in customCartData"
+            :key="customCart.id"
             class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl border mb-0 sm:mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
@@ -633,12 +642,7 @@
                 <img
                   decoding="async"
                   sizes="336.6667px"
-                  srcset="
-                    https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/0ePKhLj0ywEwu1gz5UC8p0dNVo.png"
+                  :src="customCart.image"
                   alt=""
                   style="
                     display: block;
@@ -658,7 +662,7 @@
                   class="mb-3 w-[24px] h-[24px]"
                   decoding="async"
                   sizes="24px"
-                  src="https://framerusercontent.com/images/gzwYnQuJwdOj2UjqTatq7sPj8.png"
+                  :src="customCart.avatar"
                   alt=""
                   style="
                     display: block;
@@ -672,128 +676,10 @@
               <h5
                 class="mb-2 opacity-90 text-[20px] sm:text-[18px] font-[700] leading-tight"
               >
-                Unlimited Content
+                {{ customCart.header }}
               </h5>
               <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
-                Generate Social Media Posts, MoMs, Emails & much more
-              </p>
-            </div>
-          </div>
-          <div
-            class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl mb-0 sm:mb-5 border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
-          >
-            <div
-              class="relative overflow-hidden bg-cover bg-no-repeat"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
-            >
-              <nuxt-link to="#">
-                <img
-                  decoding="async"
-                  sizes="336.6667px"
-                  srcset="
-                    https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/v6ISEZuovP4kOKdNptrht9HsMMA.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </nuxt-link>
-            </div>
-            <div class="px-6 py-4 text-surface dark:text-white">
-              <div>
-                <img
-                  class="mb-3 w-[24px] h-[24px]"
-                  decoding="async"
-                  sizes="24px"
-                  src="https://framerusercontent.com/images/pxBSrCS0TDVu5JdjUJWevqNeaME.png"
-                  alt=""
-                  style="
-                    display: block;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <h5
-                class="mb-2 text-[20px] opacity-90 sm:text-[18px] font-[700] leading-tight"
-              >
-                Custom Prompts
-              </h5>
-              <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
-                Use Custom promots to generate<br />
-                content for your use-cases
-              </p>
-            </div>
-          </div>
-          <div
-            class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl border border-gray-300 hover:border-red-400 transition duration-300 ease-out hover:ease-in shadow-secondary-1 dark:bg-surface-dark"
-          >
-            <div
-              class="relative overflow-hidden bg-cover bg-no-repeat"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
-            >
-              <nuxt-link to="#">
-                <img
-                  decoding="async"
-                  sizes="336.6667px"
-                  srcset="
-                    https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png                    1348w
-                  "
-                  src="https://framerusercontent.com/images/fTToQFwEru9G7MwUMw5r8pS70Q.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </nuxt-link>
-            </div>
-            <div class="px-5 py-4 text-surface dark:text-white">
-              <div>
-                <img
-                  class="mb-3 w-[24px] h-[24px]"
-                  decoding="async"
-                  sizes="24px"
-                  src="https://framerusercontent.com/images/u7F7Be5s5h5WbO3sqGtnVvBfKXo.png"
-                  alt=""
-                  style="
-                    display: block;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <h5
-                class="mb-2 opacity-90 text-[20px] sm:text-[18px] font-[700] leading-tight"
-              >
-                Set Content Language
-              </h5>
-              <p class="text-[17px] sm:text-[16px] text-gray-500 font-[400]">
-                Generate Content in 19+ languages <br />
-                seamlessly
+                {{ customCart.content }}
               </p>
             </div>
           </div>
@@ -875,13 +761,12 @@
     <div class="features-section mt-32 sm:mt-28">
       <div class="flex sm:block justify-between max-w-[1100px] m-auto gap-14">
         <h1
-          class="sm:px-3 text-[56px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-95 text-left w-[40%] sm:w-[350px] m-0 text-[#1F1F1F] font-[600]"
+          class="sm:px-3 text-[56px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-95 text-left w-[42%] sm:w-[350px] m-0 text-[#1F1F1F] font-[600]"
         >
           Your very own <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
-
         <p
-          class="text-[32px] mt-0 sm:mt-5 w-[55%] sm:w-[350px] m-auto sm:text-[22px] text-left font-[500] opacity-90 text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 w-[53%] sm:w-[350px] m-auto sm:text-[22px] text-left font-[500] opacity-90 text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -893,17 +778,21 @@
     <!-- Another chat cart  -->
     <div class="mt-28 sm:mt-8">
       <div class="max-w-[1100px] m-auto">
-        <div class="grid sm:grid-cols-1 grid-cols-2 md:grid-cols-2 px-5 gap-8">
+        <div class="grid sm:grid-cols-1 grid-cols-2 md:grid-cols-2 px-6 gap-10">
           <div
-            class="block rounded-3xl border bg-[#355BE1] border-gray-300 dark:bg-surface-dark"
+            v-for="chatSection in chatSectionData"
+            :key="chatSection.id"
+            :class="chatSection.class"
+            :style="chatSection.bg"
+            class="block w-[500px] h-[508px] rounded-3xl border border-gray-300 dark:bg-surface-dark"
           >
-            <div class="pt-12 pl-11 text-surface dark:text-white">
+            <div class="pt-10 pl-11 text-surface dark:text-white">
               <div>
                 <img
                   class="w-[48px] h-[48px]"
                   decoding="async"
                   sizes="48px"
-                  src="https://framerusercontent.com/images/zlirRD4k7NGvkqeWr2JKc30Aw.png"
+                  :src="chatSection.avatar"
                   alt=""
                   style="
                     display: block;
@@ -915,17 +804,37 @@
                   "
                 />
               </div>
-              <h5
-                class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
-              >
-                Chat with your Note
-              </h5>
-              <p class="mb-4 text-[18px] text-gray-200 font-[500]">
-                Contextual search and chat for all your <br />
-                notes. Ask questions, Fins references and <br />
-                do more!
-              </p>
+              <div class="w-[320px]">
+                <h5
+                  class="mb-3 mt-4 font-bold text-white text-[24px] leading-tight"
+                >
+                  {{ chatSection.header }}
+                </h5>
+                <p class="mb-4 text-[18px] text-gray-200 font-[500]">
+                  {{ chatSection.content }}
+                </p>
+              </div>
             </div>
+
+            <div class="flex justify-between px-7">
+              <div class="hidden sm:block">
+                <img
+                  width="40"
+                  height="40"
+                  src="https://framerusercontent.com/images/6tTbkXggWgQCAJ4DO2QEdXXmgM.svg"
+                  alt="Back Arrow"
+                />
+              </div>
+              <div class="hidden sm:block">
+                <img
+                  width="40"
+                  height="40"
+                  src="https://framerusercontent.com/images/11KSGbIZoRSg4pjdnUoif6MKHI.svg"
+                  alt="Next Arrow"
+                />
+              </div>
+            </div>
+
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
               data-twe-ripple-init
@@ -936,72 +845,7 @@
                   class="pr-4"
                   decoding="async"
                   sizes="min(428px, 100vw)"
-                  srcset="
-                    https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png                    1712w
-                  "
-                  src="https://framerusercontent.com/images/gshGkTZ2ydTHvaO8OBy38Fvdd2w.png"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </nuxt-link>
-            </div>
-          </div>
-
-          <div
-            class="block rounded-3xl bg-[#FF4F00] p-1 shadow-secondary-1 dark:bg-surface-dark"
-          >
-            <div class="pt-12 pl-11 text-surface dark:text-white">
-              <div>
-                <img
-                  class="w-[48px] h-[48px]"
-                  decoding="async"
-                  src="https://framerusercontent.com/images/5s0eMlwJRe5Jwd88S6pdVuSEdpc.png"
-                  alt=""
-                  style="
-                    display: block;
-
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </div>
-              <h5
-                class="mb-2 mt-4 font-bold text-white text-[23px] leading-tight"
-              >
-                Magic Chat & Search
-              </h5>
-              <p class="mb-4 text-[18px] text-gray-200 font-[500]">
-                Audionnotes becomes your AI Assistant with <br />
-                Magic Chat
-              </p>
-            </div>
-            <div
-              class="relative overflow-hidden mb-1 bg-cover bg-no-repeat"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
-            >
-              <nuxt-link to="#">
-                <img
-                  decoding="async"
-                  sizes="min(500px, 100vw)"
-                  srcset="
-                    https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=512   512w,
-                    https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png?scale-down-to=1024 1024w,
-                    https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png                    1712w
-                  "
-                  src="https://framerusercontent.com/images/jr9CmVSoTGjD4uST4gO2eshBM.png"
+                  :src="chatSection.image"
                   alt=""
                   style="
                     display: block;
@@ -1023,10 +867,14 @@
     <!-- Cart generate  -->
     <div class="mt-32">
       <div class="max-w-[1100px] m-auto">
-        <div class="flex sm:block justify-between w-full h-full bg-white">
-          <div class="flex w-[40%] sm:w-[95%] flex-col pt-3 m-auto">
+        <div
+          class="flex gap-40 sm:block justify-between w-full h-full bg-white sm:px-3"
+        >
+          <div
+            class="flex w-[430px] sm:h-auto sm:w-[100%] flex-col pt-3 gap-3 sm:gap-0"
+          >
             <h4
-              class="text-left text-[56px] sm:text-[34px] sm:font-[700] font-[600] sm:px-3"
+              class="text-left text-[56px] leading-[74px] sm:text-[34px] sm:font-[700] font-[600] sm:px-3"
             >
               Seamlessly share your notes
             </h4>
@@ -1037,7 +885,7 @@
             >
               <div
                 :class="{
-                  'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[440px] sm:w-[350px]':
+                  'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[430px] sm:w-[350px]':
                     selectedQuestion === index,
                   'py-4 bg-white rounded': selectedQuestion !== index,
                 }"
@@ -1096,7 +944,8 @@
               </div>
             </div>
           </div>
-          <div class="sm:mt-5 w-[50%] sm:w-[95%] m-auto h-auto">
+
+          <div class="sm:mt-5 w-[520px] sm:w-[100%] sm:h-auto m-auto">
             <div class="bg-orange-500 rounded-[35px] h-full">
               <img
                 src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
@@ -1221,7 +1070,7 @@
     <div class="mt-32 sm:mt-20 sm:px-2">
       <div class="max-w-[1100px] text-center m-auto">
         <h4
-          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-90 font-[600]"
+          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-90 font-[700]"
         >
           Pin our
           <span class="text-[#FF4F00] font-[600]">Chrome Extension</span>
@@ -1334,7 +1183,7 @@
         <div
           class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
         >
-          <div class="w-[400px] sm:w-[350px] m-auto">
+          <div class="w-[400px] sm:w-[350px]">
             <h1
               class="text-[56px] sm:text-[32px] font-[600] sm:font-[700] leading-tight opacity-80"
             >
@@ -1446,7 +1295,8 @@ import content from "~/static/content.json";
 import founder from "~/static/founder.json";
 import users from "~/static/users.json";
 import user from "~/static/user.json";
-
+import customCart from "~/static/customCart.json";
+import chatSection from "~/static/chatSection.json";
 import Socialcart from "~/static/socialCart.json";
 import CartGenerate from "~/static/cartGenerate.json";
 import faq from "~/static/faqs.json";
@@ -1456,6 +1306,8 @@ const contentData = reactive(content);
 const founderData = reactive(founder);
 const usersData = reactive(users);
 const userData = reactive(user);
+const customCartData = reactive(customCart);
+const chatSectionData = reactive(chatSection);
 const socialData = reactive(Socialcart);
 const CartGenerateData = reactive(CartGenerate);
 const faqData = reactive(faq);
@@ -1500,19 +1352,19 @@ const toggleQuestion = (index) => {
 }
 /* Mobile responsive  */
 
-@keyframes moveRightToLeft {
-  0% {
+@keyframes right-to-left {
+  from {
     transform: translateX(100%);
+    opacity: 0;
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-@media (max-width: 640px) {
-  .animate-right-to-left {
-    animation: moveRightToLeft 30s linear infinite;
-  }
+.animate-right-to-left {
+  animation: right-to-left 0.5s ease-out;
 }
 </style>
 
