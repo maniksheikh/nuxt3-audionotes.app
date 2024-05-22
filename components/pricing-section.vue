@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-xl max-w-[1100px] m-auto">
     <div class="flex sm:block py-4 sm:py-2">
-      <div class="w-[520px] m-auto sm:w-[350px] md:w-[350px]">
+      <div class="w-[520px] m-auto sm:w-[352px] md:w-[350px]">
         <h2
           class="text-[#2A2A2A] text-[56px] sm:text-[48px] md:text-[36px] font-[700] leading-relaxed"
         >

@@ -27,11 +27,11 @@
         />
       </div>
       <div
-        class="testimonial-content absolute top-0 left-0 right-0 bottom-0 max-w-[788px] sm:w-full mx-auto flex flex-col my-20 sm:my-0"
+        class="testimonial-content sm:px-2 absolute top-0 left-0 right-0 bottom-0 max-w-[788px] sm:w-full mx-auto flex flex-col my-20 sm:my-10"
       >
         <div class="text-center">
           <h2
-            class="text-[50px] sm:text-[31px] leading-[67px] font-[600] sm:leading-10 text-[#262626] opacity-95"
+            class="text-[50px] sm:text-[32px] leading-[67px] font-[600] sm:font-[700] sm:leading-10 text-[#262626] opacity-95 sm:opacity-95"
           >
             Your
             <span class="font-italic opacity-90 font-[500] italic"
@@ -46,33 +46,32 @@
             using AI
           </h2>
           <p
-            class="mt-10 sm:mt-5 sm:p-1 px-5 leading-9 sm:leading-5 text-[#858585] max-w-[550px] mx-auto sm:text-[17px] text-[20px]"
+            class="mt-10 sm:mt-5 sm:p-1 px-5 leading-9 sm:leading-6 text-[#B5B5B5] max-w-[550px] mx-auto sm:text-[19px] text-[20px]"
           >
             Speak or type, Audionotes will transform your notes into searchable
             clear actionable text notes using AI
           </p>
-        </div>
-
-        <div
-          class="flex items-center justify-center bg-[#FF4F00] max-w-[155px] sm:w-[300px] mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
-        >
-          <nuxt-link
-            to="/"
-            aria-label="Try For Free"
-            title="Try For Free"
-            class="flex items-center"
+          <div
+            class="flex items-center justify-center bg-[#FF4F00] w-[155px] sm:w-full mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
           >
-            <span>Try For Free</span>
-            <img
-              src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
-              alt=""
-              class="ml-1 w-4 h-4"
-              style="object-fit: cover; border-radius: inherit"
-            />
-          </nuxt-link>
+            <nuxt-link
+              to="/"
+              aria-label="Try For Free"
+              title="Try For Free"
+              class="flex items-center"
+            >
+              <span>Try For Free</span>
+              <img
+                src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
+                alt=""
+                class="ml-1 w-4 h-4"
+                style="object-fit: cover; border-radius: inherit"
+              />
+            </nuxt-link>
+          </div>
         </div>
 
-        <div class="mt-12 sm:mt-5">
+        <div class="mt-12 sm:mt-12">
           <div
             class="flex items-center justify-center sm:w-[300px] w-[300px] m-auto"
           >
@@ -147,9 +146,9 @@
     </div>
 
     <!-- testimonal section -->
-    <div class="mt-20 sm:mt-10 max-w-[1200px] mx-auto sm:mx-2">
+    <div class="mt-20 sm:mt-0 max-w-[1200px] mx-auto sm:mx-2">
       <div
-        class="h-[670px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
+        class="h-[670px] sm:h-[225px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
       >
         <nuxt-link to="/">
           <img
@@ -171,13 +170,13 @@
     </div>
 
     <!-- Brand section  -->
-    <div class="brand-section sm:mt-10 mt-20 py-14 sm:py-0">
-      <div class="max-w-[1100px] mx-auto text-center">
+    <div class="brand-section sm:mt-14 mt-20 py-14 sm:py-0">
+      <div class="max-w-[1100px] m-auto text-center">
         <h3
-          class="w-[1100px] mx-auto leading-tight text-[#FF4F00] text-[56px] sm:text-[32px] font-[600]"
+          class="w-[1100px] sm:w-[250px] m-auto leading-tight sm:font-[700] text-[#FF4F00] text-[56px] sm:text-[32px] font-[600]"
         >
           <span
-            class="font-sans text-[56px] sm:text-[36px] text-black opacity-95 font-[600]"
+            class="text-[56px] sm:text-[36px] text-black opacity-95 sm:font-[700] sm:opacity-80 font-[600]"
             >In the</span
           >
           Spotlight
@@ -192,7 +191,7 @@
           :clone="true"
           :duration="20"
           :direction="'reverse'"
-          class="flex items-center justify-center p-3 mt-0 sm:mt-10 overflow-x-auto whitespace-nowrap"
+          class="flex items-center justify-center p-3 mt-5 sm:mt-10 overflow-x-auto whitespace-nowrap"
         >
           <img
             class="w-44 h-auto px-5 py-2 ml-7 cursor-pointer rounded object-cover"
@@ -231,12 +230,16 @@
     </div>
 
     <!-- Foundeer section  -->
-    <div class="founder-section">
-      <div class="mt-36 sm:mt-21 sans-serif max-w-[1300px] mx-auto">
-        <div class="font-sans text-center pt-16">
-          <h4 class="text-[57px] sm:text-[36px] text-[#262626] font-[600]">
-            <span class="text-[#FF4F00] font-[600]">Audionotes</span> is for
-            everyone!
+    <div class="founder-section sm:px-2">
+      <div class="mt-36 sm:mt-18 sans-serif max-w-[1300px] mx-auto">
+        <div class="font-sans text-center pt-16 sm:pt-0">
+          <h4
+            class="text-[57px] sm:text-[36px] text-[#262626] sm:font-[700] font-[600]"
+          >
+            <span class="text-[#FF4F00] font-[600] sm:font-[700]"
+              >Audionotes</span
+            >
+            is for everyone!
           </h4>
           <p
             class="mt-5 text-[19px] sm:leading-8 leading-8 opacity-75 sm:opacity-80"
@@ -288,17 +291,18 @@
     </div>
 
     <!-- Audionotes use -->
-    <div class="font-sans sm:mt-32 mt-24">
+    <div class="sm:mt-32 mt-24">
       <div class="items-center max-w-[1200px] m-auto text-center px-0 sm:px-4">
         <div>
-          <h4 class="text-[56px] sm:text-[36px] text-[#FF4F00] font-[600]">
+          <h1
+            class="text-[56px] sm:text-[36px] text-[#FF4F00] sm:font-[700] font-[600]"
+          >
             <span
-              style="font-weight: 600 !important"
-              class="text-[56px] sm:text-[36px] text-[#000] opacity-90"
+              class="text-[56px] sm:text-[36px] text-[#000] opacity-95 sm:opacity-90"
               >What do I use</span
             >
             Audionotes for?
-          </h4>
+          </h1>
         </div>
         <div class="mt-5">
           <p class="text-[18px] px-3 opacity-70">
@@ -307,18 +311,16 @@
           </p>
         </div>
       </div>
-      <div class="container mt-10 sm:mt-14 max-w-[1150px] m-auto">
-        <div class="grid grid-cols-3 gap-14 sm:gap-5 mb-10 sm:mb-0">
-          <div
-            v-for="content in contentData"
-            :key="content.id"
-            class="w-[97.5%] sm:w-1/3 sm:mb-0 mb-0"
-          >
+      <div class="mt-10 sm:mt-14 check m-auto sm:p-2 w-[500px]">
+        <div
+          class="grid grid-cols-3 sm:flex sm:grid-cols-1 gap-5 mb-10 sm:mb-0"
+        >
+          <div v-for="content in contentData" :key="content.id">
             <div
-              class="animate-right-to-left sm:text-center text-left p-0 sm:p-10 justify-center mx-0 sm:mx-2 h-auto sm:h-[180px] max-w-[337px] m-auto border-none sm:border border-gray-300 rounded-none sm:rounded-3xl"
+              class="animate-right-to-left sm:text-center text-left p-0 sm:p-10 justify-center mx-0 sm:mx-2 h-auto max-w-[337px] sm:w-[337px] sm:h-[190px] w-auto sm:border border-gray-300 rounded-none sm:rounded-3xl"
             >
               <h3
-                class="sm:text-[20px] py-1 text-[20px] text-[#262626] opacity-95 font-[600]"
+                class="sm:text-[20px] py-1 text-[21px] text-[#262626] font-[600]"
               >
                 {{ content.header }}
               </h3>
@@ -353,7 +355,7 @@
             class="mt-20 flex-none px-2"
           >
             <div
-              class="h-[390px] sm:h-[410px] w-[310px] gap-7 sm:gap-7 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden m-auto"
+              class="h-[385px] sm:h-[410px] w-[304px] gap-7 sm:gap-7 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden m-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -516,11 +518,11 @@
         Features
       </h2>
     </div>
-    <div class="mt-20 py-16">
+    <div class="mt-20 sm:mt-0 py-16">
       <div class="max-w-[1100px] m-auto">
         <div class="flex sm:block justify-between gap-20">
           <h1
-            class="text-[52px] w-[30%] sm:w-[90%] font-[500] m-auto sm:text-[33px] sm:text-left opacity-95"
+            class="text-[52px] w-[30%] sm:w-[90%] font-[600] sm:font-[700] m-auto sm:text-[34px] sm:text-left opacity-95"
           >
             <span>Record, Upload or Write. </span>
           </h1>
@@ -542,12 +544,12 @@
     <!-- Card system -->
     <div class="sm:mt-20 mt-20">
       <div class="max-w-[1300px] m-auto">
-        <div class="w-[1100px] m-auto mb-10 sm:mb-0">
-          <div class="grid grid-cols-3 gap-10">
+        <div class="w-[1100px] m-auto">
+          <div class="grid grid-cols-3 sm:flex gap-10 sm:gap-5">
             <div
               v-for="card in cartData"
               :key="card"
-              class="animate-right-to-left mx-0 sm:mx-2 p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="animate-right-to-left w-[336px] sm:w-[337px] sm:h-[452px] mx-0 sm:mx-2 p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -570,7 +572,7 @@
                   />
                 </nuxt-link>
               </div>
-              <div class="px-3 py-4 text-surface dark:text-white">
+              <div class="px-3 p-5 text-surface dark:text-white">
                 <div>
                   <img
                     class="mb-3 w-[24px] h-[24px]"
@@ -599,13 +601,13 @@
         class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20"
       >
         <h1
-          class="text-[50px] sm:text-[34px] font-[600] text-left max-w-[33%] sm:w-[350px] m-auto"
+          class="text-[50px] sm:text-[34px] font-[600] sm:font-[700] text-left w-[33%] sm:w-[350px] m-auto"
         >
           Generate Awesome
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="text-[31px] mt-0 sm:mt-5 sm:text-[21px] max-w-[60%] sm:w-[350px] font-[500] mx-auto text-left"
+          class="text-[31px] mt-0 sm:mt-5 sm:text-[21px] w-[60%] sm:w-[350px] font-[500] mx-auto text-left"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -805,14 +807,14 @@
         class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24"
       >
         <h1
-          class="text-[57px] sm:text-[34px] opacity-90 text-left max-w-[35%] sm:w-[350px] m-auto text-[#1F1F1F] font-[600]"
+          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] text-left w-[35%] sm:w-[350px] m-auto text-[#1F1F1F] font-[600]"
         >
           We <br />
           Have great
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="text-[32px] mt-0 sm:mt-5 max-w-[57%] sm:w-[350px] mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 w-[57%] sm:w-[350px] mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -870,16 +872,16 @@
       </div>
     </div>
     <!--Another Features -->
-    <div class="features-section mt-32 sm:mt-20">
+    <div class="features-section mt-32 sm:mt-28">
       <div class="flex sm:block justify-between max-w-[1100px] m-auto gap-14">
         <h1
-          class="text-[56px] sm:text-[34px] opacity-90 text-left max-w-[40%] sm:w-[350px] m-0 text-[#1F1F1F] font-[600]"
+          class="sm:px-3 text-[56px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-95 text-left w-[40%] sm:w-[350px] m-0 text-[#1F1F1F] font-[600]"
         >
           Your very own <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
 
         <p
-          class="text-[32px] mt-0 sm:mt-5 max-w-[55%] sm:w-[350px] m-auto sm:text-[22px] text-left font-[500] opacity-90 text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 w-[55%] sm:w-[350px] m-auto sm:text-[22px] text-left font-[500] opacity-90 text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -1021,9 +1023,11 @@
     <!-- Cart generate  -->
     <div class="mt-32">
       <div class="max-w-[1100px] m-auto">
-        <div class="flex justify-between w-full h-full bg-white">
-          <div class="flex w-[40%] flex-col pt-3">
-            <h4 class="text-left text-[56px] font-[600]">
+        <div class="flex sm:block justify-between w-full h-full bg-white">
+          <div class="flex w-[40%] sm:w-[95%] flex-col pt-3 m-auto">
+            <h4
+              class="text-left text-[56px] sm:text-[34px] sm:font-[700] font-[600] sm:px-3"
+            >
               Seamlessly share your notes
             </h4>
             <div
@@ -1092,7 +1096,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[50%] h-auto">
+          <div class="sm:mt-5 w-[50%] sm:w-[95%] m-auto h-auto">
             <div class="bg-orange-500 rounded-[35px] h-full">
               <img
                 src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
@@ -1106,9 +1110,11 @@
     </div>
     <!-- Mobile App section  -->
     <div class="features-section mt-36 sm:mt-20">
-      <div class="max-w-[1100px] m-auto text-center">
+      <div class="max-w-[1100px] m-auto text-center sm:px-2">
         <div>
-          <h4 class="text-[56px] sm:text-[34px] font-[600]">
+          <h4
+            class="text-[56px] sm:text-[34px] font-[600] sm:font-[700] sm:opacity-80"
+          >
             Get the Audionotes
             <span class="text-[#FF4F00]"> Mobile App!</span>
           </h4>
@@ -1125,7 +1131,7 @@
           </div>
           <a href="#">
             <p
-              class="mt-7 justify-center flex w-[370px] px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+              class="mt-7 justify-center flex w-[370px] sm:w-[100%] px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
             >
               Download our Lightweight Mobile App
             </p>
@@ -1212,9 +1218,11 @@
       </div>
     </div>
 
-    <div class="mt-32 sm:mt-20">
+    <div class="mt-32 sm:mt-20 sm:px-2">
       <div class="max-w-[1100px] text-center m-auto">
-        <h4 class="text-[57px] sm:text-[34px] opacity-90 font-[600]">
+        <h4
+          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-90 font-[600]"
+        >
           Pin our
           <span class="text-[#FF4F00] font-[600]">Chrome Extension</span>
         </h4>
@@ -1226,7 +1234,7 @@
         </div>
         <a href="#">
           <button
-            class="mt-6 w-[290px] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+            class="mt-6 w-[290px] sm:w-[100%] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
           >
             Download Chrome extension
           </button>
@@ -1310,7 +1318,7 @@
     </div>
 
     <!-- Pricing section  -->
-    <div class="py-16 mt-32">
+    <div class="py-16 mt-32 sm:mt-0 sm:px-2">
       <div class="maxw-[1100px] m-auto">
         <div class="bg-white">
           <div>
@@ -1321,14 +1329,14 @@
     </div>
 
     <!-- Faqs section  -->
-    <div class="mt-20 sm:mt-10">
+    <div class="mt-20 sm:mt-0">
       <div id="faq">
         <div
           class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
         >
-          <div class="w-[400px] sm:w-[350px]">
+          <div class="w-[400px] sm:w-[350px] m-auto">
             <h1
-              class="text-[56px] sm:text-[32px] font-[600] leading-tight opacity-80"
+              class="text-[56px] sm:text-[32px] font-[600] sm:font-[700] leading-tight opacity-80"
             >
               Need help?
             </h1>
@@ -1503,7 +1511,7 @@ const toggleQuestion = (index) => {
 
 @media (max-width: 640px) {
   .animate-right-to-left {
-    animation: moveRightToLeft all linear infinite;
+    animation: moveRightToLeft 30s linear infinite;
   }
 }
 </style>

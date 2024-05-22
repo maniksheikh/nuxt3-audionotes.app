@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-5 pb-32 sm:pb-0">
-    <div class="max-w-[1100px] bg-[black] rounded-3xl m-auto">
+  <div class="mt-5 pb-32 sm:pb-0 sm:px-2">
+    <div class="max-w-[1100px] bg-[black] rounded-3xl sm:rounded-none m-auto">
       <div
         class="max-w-[95%] bg-[black] p-16 sm:p-10 text-center rounded-3xl m-auto"
       >
