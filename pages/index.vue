@@ -52,7 +52,7 @@
             clear actionable text notes using AI
           </p>
           <div
-            class="flex items-center justify-center bg-[#FF4F00] w-[155px] sm:w-full mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
+            class="flex items-center justify-center bg-[#FF4F00] w-[160px] sm:w-full mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
           >
             <nuxt-link
               to="/"
@@ -146,9 +146,9 @@
     </div>
 
     <!-- testimonal section -->
-    <div class="mt-20 sm:mt-0 max-w-[1200px] mx-auto sm:mx-2">
+    <div class="mt-20 sm:mt-0 max-w-[1200px] m-auto sm:mx-2">
       <div
-        class="h-[670px] sm:h-[225px] w-full sm:w-full overflow-hidden rounded-3xl object-cover"
+        class="h-[670px] sm:h-full w-full sm:w-full overflow-hidden rounded-3xl object-cover"
       >
         <nuxt-link to="/">
           <img
@@ -173,7 +173,7 @@
     <div class="brand-section sm:mt-14 mt-20 py-14 sm:py-0">
       <div class="max-w-[1100px] m-auto text-center">
         <h3
-          class="w-[1100px] sm:w-[250px] m-auto leading-tight sm:font-[700] text-[#FF4F00] text-[56px] sm:text-[32px] font-[600]"
+          class="w-[1100px] sm:w-[300px] m-auto leading-tight sm:font-[700] text-[#FF4F00] text-[56px] sm:text-[32px] font-[600]"
         >
           <span
             class="text-[56px] sm:text-[36px] text-black opacity-95 sm:font-[700] sm:opacity-80 font-[600]"
@@ -231,7 +231,7 @@
 
     <!-- Foundeer section  -->
     <div class="founder-section sm:px-2">
-      <div class="mt-36 sm:mt-18 sans-serif max-w-[1300px] mx-auto">
+      <div class="mt-36 sm:mt-16 sans-serif max-w-[1300px] mx-auto">
         <div class="font-sans text-center pt-16 sm:pt-0">
           <h4
             class="text-[57px] sm:text-[36px] text-[#262626] sm:font-[700] font-[600]"
@@ -291,7 +291,7 @@
     </div>
 
     <!-- Audionotes use -->
-    <div class="sm:mt-32 mt-24">
+    <div class="sm:mt-28 mt-24">
       <div class="items-center max-w-[1200px] m-auto text-center px-0 sm:px-4">
         <div>
           <h1
@@ -321,10 +321,7 @@
             class="w-[330px] sm:w-[337px] sm:h-[190px]"
           >
             <div
-              :class="[
-                screenSize <= 640 ? 'animate-right-to-left' : '',
-                'sm:text-center text-left p-0 sm:p-10 leading-8 justify-center mx-0 sm:mx-2 sm:border border-gray-300 rounded-none sm:rounded-3xl',
-              ]"
+              class="animate-right-to-left' sm:text-center text-left p-0 sm:p-10 leading-8 justify-center mx-0 sm:mx-2 sm:border border-gray-300 rounded-none sm:rounded-3xl', ]"
             >
               <h3
                 class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]"
@@ -1179,11 +1176,11 @@
 
     <!-- Faqs section  -->
     <div class="mt-20 sm:mt-0">
-      <div id="faq">
+      <div id="faq" class="sm:px-2">
         <div
           class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
         >
-          <div class="w-[400px] sm:w-[350px]">
+          <div class="w-[400px] sm:w-[360px]">
             <h1
               class="text-[56px] sm:text-[32px] font-[600] sm:font-[700] leading-tight opacity-80"
             >

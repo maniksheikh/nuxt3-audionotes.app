@@ -75,8 +75,8 @@
           />
         </div>
 
-        <div
-          class="items-center bg-[#ff4f00] text-white rounded-full px-3 py-2 block sm:hidden"
+        <button
+          class="items-center bg-[#ff4f00] text-white text-[15px] rounded-full px-3 py-2 block sm:hidden"
         >
           <nuxt-link
             to="/"
@@ -92,7 +92,7 @@
               style="object-fit: cover; border-radius: inherit"
             />
           </nuxt-link>
-        </div>
+        </button>
       </div>
     </div>
     <mobile-nav v-show="isShowMobileNav"></mobile-nav>

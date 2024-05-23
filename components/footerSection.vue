@@ -2,11 +2,9 @@
   <div class="mt-5 pb-32 sm:pb-0 sm:px-2">
     <div class="max-w-[1100px] bg-[black] rounded-3xl sm:rounded-none m-auto">
       <div
-        class="max-w-[95%] bg-[black] p-16 sm:p-10 text-center rounded-3xl m-auto"
+        class="max-w-[95%] bg-[black] p-16 sm:p-5 sm:mt-10 text-center rounded-3xl m-auto"
       >
-        <h1
-          class="text-[52px] sm:text-[46px] font-[600] sm:font-[700] text-white"
-        >
+        <h1 class="text-[52px] sm:text-[40px] font-[600] text-white">
           Unleash the power of Voice notes with AI
         </h1>
         <div
