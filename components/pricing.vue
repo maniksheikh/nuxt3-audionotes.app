@@ -7,7 +7,7 @@
       :key="plan.id"
       :class="plan.class"
       :style="plan.css"
-      class="bg-[#FFFFFF] border border-gray-200 w-[320px] sm:w-[358px] h-auto rounded-4xl shadow-md overflow-hidden"
+      class="bg-[#FFFFFF] border border-gray-200 w-[320px] sm:w-full h-auto rounded-4xl shadow-md overflow-hidden"
     >
       <div class="p-4">
         <h2 :style="plan.titleCss" class="text-[20px] font-bold opacity-80">
@@ -45,7 +45,7 @@
                   />
                 </svg>
               </span>
-              <span class="">{{ feature }}</span>
+              <span class="text-[15px]">{{ feature }}</span>
             </div>
           </div>
         </div>

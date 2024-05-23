@@ -250,7 +250,7 @@
           </p>
         </div>
         <div
-          class="flex gap-7 sm:gap-5 p-10 mt-16 max-w-[1150px] justify-center m-auto"
+          class="flex gap-7 sm:gap-5 p-10 sm:p-0 mt-16 max-w-[1150px] justify-center m-auto"
         >
           <div class="marquee-container relative overflow-hidden">
             <Vue3Marquee duration="70">
@@ -298,7 +298,7 @@
             class="text-[56px] sm:text-[36px] text-[#FF4F00] sm:font-[700] font-[600]"
           >
             <span
-              class="text-[56px] sm:text-[36px] text-[#000] opacity-90 sm:opacity-90"
+              class="text-[56px] sm:text-[36px] text-[#000] opacity-90 sm:opacity-80"
               >What do I use</span
             >
             Audionotes for?
@@ -311,26 +311,24 @@
           </p>
         </div>
       </div>
-      <div class="mt-16 sm:mt-14 check m-auto sm:p-2 w-[1100px]">
+      <div class="mt-16 sm:mt-14 m-auto sm:p-0 w-[1100px] sm:w-full">
         <div
-          class="grid grid-cols-3 sm:flex sm:grid-cols-1 gap-10 mb-0 sm:mb-0"
+          class="grid grid-cols-3 sm:grid-cols-1 gap-10 sm:gap-5 mb-0 sm:mb-0 sm:px-3"
         >
-          <div
-            v-for="content in contentData"
-            :key="content.id"
-            class="w-[330px] sm:w-[337px] sm:h-[190px]"
-          >
-            <div
-              class="animate-right-to-left' sm:text-center text-left p-0 sm:p-10 leading-8 justify-center mx-0 sm:mx-2 sm:border border-gray-300 rounded-none sm:rounded-3xl', ]"
-            >
-              <h3
-                class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]"
+          <div v-for="content in contentData" :key="content.id">
+            <div class="w-[340px] sm:w-[350px] sm:h-[210px] sm:opacity-90">
+              <div
+                class="sm:text-center text-left p-0 sm:py-8 sm:px-0 leading-8 justify-center mx-0 sm:mx-0 sm:border border-gray-300 rounded-none sm:rounded-3xl"
               >
-                {{ content.header }}
-              </h3>
-              <p class="mt-2 sm:text-[16px] text-[18px] text-gray-600">
-                {{ content.content }}
-              </p>
+                <h3
+                  class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]"
+                >
+                  {{ content.header }}
+                </h3>
+                <p class="mt-2 sm:text-[16px] text-[18px] text-gray-600">
+                  {{ content.content }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -517,16 +515,16 @@
       class="features-section mt-28 sm:mt-20 text-center max-w-[1100px] m-auto"
     >
       <h2
-        class="text-[56px] max-w-[250px] font-[600] sm:w-[240px] m-auto sm:text-[36px] text-[#FF4F00]"
+        class="text-[56px] w-[250px] font-[600] sm:w-[240px] m-auto sm:text-[38px] text-[#FF4F00]"
       >
         Features
       </h2>
     </div>
-    <div class="mt-20 sm:mt-0 py-16">
+    <div class="mt-18 sm:mt-0 py-16">
       <div class="max-w-[1100px] m-auto">
         <div class="flex sm:block justify-between gap-20">
           <h1
-            class="text-[52px] w-[30%] sm:w-[90%] font-[600] sm:font-[700] m-auto sm:text-[34px] sm:text-left opacity-95"
+            class="text-[52px] w-[30%] sm:w-[90%] font-[600] m-auto sm:text-[34px] sm:text-left opacity-95"
           >
             <span>Record, Upload or Write. </span>
           </h1>
@@ -546,14 +544,14 @@
     </div>
 
     <!-- Card system -->
-    <div class="sm:mt-20 mt-20">
+    <div class="sm:mt-14 mt-20">
       <div class="max-w-[1300px] m-auto">
-        <div class="w-[1100px] m-auto">
-          <div class="grid grid-cols-3 sm:flex gap-10 sm:gap-5">
+        <div class="w-[1100px] m-auto sm:w-[100%]">
+          <div class="grid grid-cols-3 sm:grid-cols-1 gap-10 sm:gap-5 sm:px-3">
             <div
               v-for="card in cartData"
               :key="card"
-              class="animate-right-to-left w-[336px] sm:w-[337px] sm:h-[452px] mx-0 sm:mx-2 p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="animate-right-to-left w-full sm:w-[95%] sm:h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -576,7 +574,7 @@
                   />
                 </nuxt-link>
               </div>
-              <div class="px-3 p-5 text-surface dark:text-white">
+              <div class="px-3 p-5 sm:p-2 text-surface dark:text-white">
                 <div>
                   <img
                     class="mb-3 w-[24px] h-[24px]"
@@ -585,7 +583,7 @@
                   />
                 </div>
                 <h5
-                  class="mb-2 opacity-80 text-[22px] sm:text-[18px] font-[700] leading-tight"
+                  class="mb-2 text-[22px] sm:text-[18px] font-[600] leading-tight"
                 >
                   {{ card.header }}
                 </h5>
@@ -602,16 +600,16 @@
     <!-- Features -->
     <div class="features-section mt-32 sm:mt-10 pb-28 sm:mb-0">
       <div
-        class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20"
+        class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20 sm:px-3"
       >
         <h1
-          class="text-[50px] sm:text-[34px] font-[600] sm:font-[700] opacity-90 text-left w-[33%] sm:w-[350px] m-auto"
+          class="text-[50px] sm:text-[34px] font-[600] opacity-90 text-left w-[33%] sm:w-full m-auto"
         >
           Generate Awesome
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="text-[31px] mt-0 sm:mt-5 sm:text-[21px] w-[60%] sm:w-[350px] font-[500] mx-auto text-left"
+          class="text-[31px] mt-0 sm:mt-5 sm:text-[21px] w-[60%] sm:w-full font-[500] mx-auto text-left"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -622,13 +620,13 @@
     </div>
 
     <!--Another Custom Card system -->
-    <div class="mt-20 sm:mt-16">
+    <div class="mt-20 sm:mt-0">
       <div class="max-w-[1100px] m-auto">
-        <div class="flex sm:flex flex-wrap sm:flex-nowrap gap-6 mx-0 sm:mx-2">
+        <div class="grid grid-cols-3 sm:grid-cols-1 gap-6 mx-0 sm:mx-2">
           <div
             v-for="customCart in customCartData"
             :key="customCart.id"
-            class="block p-2 w-[350px] sm:w-full h-[475px] rounded-3xl border mb-0 sm:mb-5 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+            class="p-2 w-full sm:w-full h-[460px] sm:h-auto rounded-3xl border mb-0 sm:mb-0 transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
           >
             <div
               class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -653,7 +651,7 @@
                 />
               </nuxt-link>
             </div>
-            <div class="px-6 sm:px-2 py-4 text-surface dark:text-white">
+            <div class="px-5 sm:px-2 py-2 text-surface dark:text-white">
               <div>
                 <img
                   class="mb-3 w-[24px] h-[24px]"
@@ -687,17 +685,17 @@
     <!--Another Features -->
     <div class="features-section mt-32 sm:mt-20 pb-28 sm:pb-20">
       <div
-        class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24"
+        class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24 sm:px-3"
       >
         <h1
-          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] text-left w-[35%] sm:w-[350px] m-auto text-[#1F1F1F] font-[600]"
+          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] text-left w-[35%] sm:w-full m-auto text-[#1F1F1F] font-[600]"
         >
           We <br />
           Have great
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="text-[32px] mt-0 sm:mt-5 w-[57%] sm:w-[350px] mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 w-[57%] sm:w-full mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -710,14 +708,14 @@
     </div>
 
     <!--Social Card system -->
-    <div class="mt-10">
+    <div class="mt-10 sm:mt-0">
       <div class="max-w-[1100px] m-auto">
         <div
-          class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 px-0 sm:px-3 gap-10"
+          class="grid grid-cols-2 sm:grid-cols-1 px-0 sm:px-3 gap-10 sm:gap-5"
         >
           <div v-for="(social, index) in socialData" :key="index" class="mb-4">
             <div
-              class="block w-full sm:w-full h-[450px] rounded-3xl border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="block w-full sm:w-full h-[450px] sm:h-auto rounded-3xl border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -732,7 +730,7 @@
                   />
                 </nuxt-link>
               </div>
-              <div class="px-5 mt-12 pb-3 text-surface dark:text-white">
+              <div class="px-5 mt-12 sm:mt-5 pb-3 text-surface dark:text-white">
                 <div>
                   <img
                     class="mb-3 w-[24px] h-[24px]"
@@ -745,7 +743,7 @@
                 >
                   {{ social.header }}
                 </h5>
-                <p class="mb-2 text-[17px] text-gray-500 font-[400]">
+                <p class="mb-2 sm:mb-0 text-[17px] text-gray-500 font-[400]">
                   {{ social.content }}
                 </p>
               </div>
@@ -755,15 +753,17 @@
       </div>
     </div>
     <!--Another Features -->
-    <div class="features-section mt-32 sm:mt-28">
-      <div class="flex sm:block justify-between max-w-[1100px] m-auto gap-14">
+    <div class="features-section mt-32 sm:mt-24">
+      <div
+        class="flex sm:block justify-between max-w-[1100px] m-auto gap-14 sm:px-3"
+      >
         <h1
-          class="sm:px-3 text-[56px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-95 text-left w-[42%] sm:w-[350px] m-0 text-[#1F1F1F] font-[600]"
+          class="sm:px-3 text-[56px] sm:text-[34px] opacity-90 sm:opacity-100 text-left w-[42%] sm:w-full m-0 text-[#1F1F1F] font-[600]"
         >
           Your very own <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
         <p
-          class="text-[32px] mt-0 sm:mt-5 w-[53%] sm:w-[350px] m-auto sm:text-[22px] text-left font-[500] opacity-90 text-[#000000]"
+          class="text-[32px] mt-0 sm:mt-5 w-[53%] sm:w-full m-auto sm:text-[22px] text-left font-[500] opacity-90 sm:opacity-100 text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -773,18 +773,20 @@
     </div>
 
     <!-- Another chat cart  -->
-    <div class="mt-28 sm:mt-8">
+    <div class="mt-28 sm:mt-16">
       <div class="max-w-[1100px] m-auto">
-        <div class="grid sm:grid-cols-1 grid-cols-2 md:grid-cols-2 px-6 gap-10">
+        <div class="grid grid-cols-2 sm:grid-cols-1 px-6 sm:px-4 gap-10">
           <div
             v-for="chatSection in chatSectionData"
             :key="chatSection.id"
             :class="chatSection.class"
             :style="chatSection.bg"
-            class="block w-[500px] h-[508px] rounded-3xl border border-gray-300 dark:bg-surface-dark"
+            class="block w-[500px] h-[512px] sm:w-full sm:p-12 rounded-3xl border border-gray-300 dark:bg-surface-dark"
           >
-            <div class="pt-10 pl-11 text-surface dark:text-white">
-              <div>
+            <div
+              class="pt-10 pl-12 sm:pl-0 sm:items-center sm:justify-center text-surface dark:text-white"
+            >
+              <div class="w-[48px]">
                 <img
                   class="w-[48px] h-[48px]"
                   decoding="async"
@@ -801,20 +803,22 @@
                   "
                 />
               </div>
-              <div class="w-[320px]">
+              <div class="w-[320px] sm:w-full sm:h-auto">
                 <h5
-                  class="mb-3 mt-4 font-bold text-white text-[24px] leading-tight"
+                  class="mb-3 mt-4 sm:w-[250px] font-bold text-white text-[23px] sm:text-[22px] leading-tight"
                 >
                   {{ chatSection.header }}
                 </h5>
-                <p class="mb-4 text-[18px] text-gray-200 font-[500]">
+                <p
+                  class="sm:w-[280px] mb-4 text-[18px] sm:text-[18px] text-white font-[500]"
+                >
                   {{ chatSection.content }}
                 </p>
               </div>
             </div>
 
-            <div class="flex justify-between px-7">
-              <div class="hidden sm:block">
+            <div class="flex justify-between px-7 sm:px-0">
+              <div class="hidden sm:block sm:rounded-full">
                 <img
                   width="40"
                   height="40"
@@ -822,7 +826,7 @@
                   alt="Back Arrow"
                 />
               </div>
-              <div class="hidden sm:block">
+              <div class="hidden sm:block sm:rounded-full">
                 <img
                   width="40"
                   height="40"
@@ -865,13 +869,13 @@
     <div class="mt-32">
       <div class="max-w-[1100px] m-auto">
         <div
-          class="flex gap-40 sm:block justify-between w-full h-full bg-white sm:px-3"
+          class="flex gap-40 flex-col-1 sm:block justify-between w-full h-full bg-white sm:px-3"
         >
           <div
             class="flex w-[430px] sm:h-auto sm:w-[100%] flex-col pt-3 gap-3 sm:gap-0"
           >
             <h4
-              class="text-left text-[56px] leading-[74px] sm:text-[34px] sm:font-[700] font-[600] sm:px-3"
+              class="text-left text-[56px] leading-[74px] sm:text-[36px] font-[600] sm:px-3"
             >
               Seamlessly share your notes
             </h4>
@@ -882,7 +886,7 @@
             >
               <div
                 :class="{
-                  'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[430px] sm:w-[350px]':
+                  'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[430px] sm:w-full':
                     selectedQuestion === index,
                   'py-4 bg-white rounded': selectedQuestion !== index,
                 }"
@@ -1176,13 +1180,13 @@
 
     <!-- Faqs section  -->
     <div class="mt-20 sm:mt-0">
-      <div id="faq" class="sm:px-2">
+      <div id="faq" class="sm:px-3">
         <div
           class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
         >
-          <div class="w-[400px] sm:w-[360px]">
+          <div class="w-[400px] sm:w-full">
             <h1
-              class="text-[56px] sm:text-[32px] font-[600] sm:font-[700] leading-tight opacity-80"
+              class="text-[56px] sm:text-[34px] font-[600] leading-tight opacity-80"
             >
               Need help?
             </h1>
@@ -1217,7 +1221,7 @@
               v-for="(faq, index) in faqData"
               :key="faq.id"
               :class="{
-                'bg-white p-4 sm:p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[600px] sm:w-[355px]':
+                'bg-white p-4 sm:p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[600px] sm:w-full':
                   selectedQuestion === index,
                 'p-4 bg-white rounded': selectedQuestion !== index,
               }"
@@ -1285,7 +1289,7 @@
 
 <script setup>
 import { Vue3Marquee } from "vue3-marquee";
-import { ref } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
 import cart from "~/static/cart.json";
 import content from "~/static/content.json";
@@ -1310,8 +1314,22 @@ const CartGenerateData = reactive(CartGenerate);
 const faqData = reactive(faq);
 const playState = ref("playing");
 
-const selectedQuestion = ref(null);
+const shouldAnimate = ref(false);
 
+const updateAnimationState = () => {
+  shouldAnimate.value = window.innerWidth <= 624;
+};
+
+onMounted(() => {
+  updateAnimationState();
+  window.addEventListener("resize", updateAnimationState);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", updateAnimationState);
+});
+
+const selectedQuestion = ref(null);
 const toggleQuestion = (index) => {
   selectedQuestion.value = selectedQuestion.value === index ? null : index;
 };
@@ -1361,7 +1379,7 @@ const toggleQuestion = (index) => {
 }
 
 .animate-right-to-left {
-  animation: right-to-left 0.5s ease-out;
+  animation: right-to-left 20s ease-out;
 }
 </style>
 
