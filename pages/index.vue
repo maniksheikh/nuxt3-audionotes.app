@@ -1182,7 +1182,7 @@
     <div class="mt-20 sm:mt-0">
       <div id="faq" class="sm:px-3">
         <div
-          class="max-w-[1100px] flex sm:block justify-between m-auto mb-10 sm:mb-10"
+          class="max-w-[1100px] flex gap-10 sm:block justify-between m-auto mb-10 sm:mb-10"
         >
           <div class="w-[400px] sm:w-full">
             <h1
@@ -1195,7 +1195,7 @@
             >
               Don`t worry, we got you. Here are some answers for your questions.
             </p>
-            <div
+            <button
               class="flex w-[180px] sm:w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 sm:px-0 px-2 sm:py-3 py-3"
             >
               <a
@@ -1214,14 +1214,14 @@
                   style="object-fit: cover; border-radius: inherit"
                 />
               </a>
-            </div>
+            </button>
           </div>
-          <div class="flex flex-col sm:mt-5 gap-3 px-0 sm:px-2">
+          <div class="flex flex-col sm:mt-5 gap-4 px-0 sm:px-2">
             <div
               v-for="(faq, index) in faqData"
               :key="faq.id"
               :class="{
-                'bg-white p-4 sm:p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[600px] sm:w-full':
+                'bg-white p-4 sm:p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[650px] sm:w-full':
                   selectedQuestion === index,
                 'p-4 bg-white rounded': selectedQuestion !== index,
               }"
