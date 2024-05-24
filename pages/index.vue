@@ -51,7 +51,7 @@
             Speak or type, Audionotes will transform your notes into searchable
             clear actionable text notes using AI
           </p>
-          <div
+          <button
             class="flex items-center justify-center bg-[#FF4F00] w-[160px] sm:w-full mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
           >
             <nuxt-link
@@ -68,7 +68,7 @@
                 style="object-fit: cover; border-radius: inherit"
               />
             </nuxt-link>
-          </div>
+          </button>
         </div>
 
         <div class="mt-12 sm:mt-12">
@@ -316,7 +316,7 @@
           class="grid grid-cols-3 sm:grid-cols-1 gap-10 sm:gap-5 mb-0 sm:mb-0 sm:px-3"
         >
           <div v-for="content in contentData" :key="content.id">
-            <div class="w-[340px] sm:w-[350px] sm:h-[210px] sm:opacity-90">
+            <div class="w-[340px] sm:w-[350px] sm:h-[100%] sm:opacity-90">
               <div
                 class="sm:text-center text-left p-0 sm:py-8 sm:px-0 leading-8 justify-center mx-0 sm:mx-0 sm:border border-gray-300 rounded-none sm:rounded-3xl"
               >
@@ -544,14 +544,14 @@
     </div>
 
     <!-- Card system -->
-    <div class="sm:mt-14 mt-20">
+    <div class="sm:mt-10 mt-20">
       <div class="max-w-[1300px] m-auto">
         <div class="w-[1100px] m-auto sm:w-[100%]">
           <div class="grid grid-cols-3 sm:grid-cols-1 gap-10 sm:gap-5 sm:px-3">
             <div
               v-for="card in cartData"
               :key="card"
-              class="animate-right-to-left w-full sm:w-[95%] sm:h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="animate-right-to-left w-full sm:w-[100%] sm:h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -979,13 +979,11 @@
               iPhone
             </p>
           </div>
-          <a href="#">
-            <p
-              class="mt-7 justify-center flex w-[370px] sm:w-[100%] px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
-            >
-              Download our Lightweight Mobile App
-            </p>
-          </a>
+          <button
+            class="mt-7 justify-center flex w-[370px] sm:w-[100%] px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+          >
+            Download our Lightweight Mobile App
+          </button>
         </div>
         <div class="main-container">
           <div
@@ -1082,13 +1080,13 @@
             this link in Safari browser in case you using an iPhone
           </p>
         </div>
-        <a href="#">
-          <button
-            class="mt-6 w-[290px] sm:w-[100%] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
-          >
-            Download Chrome extension
-          </button>
-        </a>
+
+        <button
+          class="mt-6 w-[290px] sm:w-[100%] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+        >
+          Download Chrome extension
+        </button>
+
         <div class="main-container">
           <div
             class="mt-28 sm:mt-10 h-[480px] sm:h-[321px] relative m-auto flex justify-center items-center overflow-hidden"
@@ -1196,7 +1194,7 @@
               Don`t worry, we got you. Here are some answers for your questions.
             </p>
             <button
-              class="flex w-[180px] sm:w-[190px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 sm:px-0 px-2 sm:py-3 py-3"
+              class="flex w-[180px] sm:w-[160px] justify-center mt-7 bg-[#ff4f00] text-white rounded-full hover:bg-red-500 sm:px-0 px-2 sm:py-3 py-3"
             >
               <a
                 href="/"
@@ -1204,7 +1202,8 @@
                 title="Try For Free"
                 class="flex items-center"
               >
-                <span class="text-center text-[18px] font-[500] items-center"
+                <span
+                  class="text-center text-[18px] sm:text-[17px] font-[500] items-center"
                   >Help Center</span
                 >
                 <img
@@ -1216,7 +1215,7 @@
               </a>
             </button>
           </div>
-          <div class="flex flex-col sm:mt-5 gap-4 px-0 sm:px-2">
+          <div class="flex flex-col sm:mt-5 gap-4">
             <div
               v-for="(faq, index) in faqData"
               :key="faq.id"

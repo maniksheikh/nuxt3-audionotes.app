@@ -20,8 +20,8 @@
       </li>
     </ul>
 
-    <div
-      class="flex justify-center text-center bg-[#ff4f00] w-[135px] m-auto text-white rounded-full px-4 py-2"
+    <button
+      class="flex justify-center text-center bg-[#ff4f00] w-[135px] sm:w-[170px] m-auto text-white rounded-full px-4 py-2 sm:py-3"
     >
       <nuxt-link
         to="/"
@@ -37,7 +37,7 @@
           style="object-fit: cover; border-radius: inherit"
         />
       </nuxt-link>
-    </div>
+    </button>
   </div>
 </template>
   

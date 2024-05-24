@@ -4,29 +4,23 @@
       <div
         class="bg-[black] p-14 sm:p-5 sm:mt-10 text-center rounded-3xl m-auto"
       >
-        <h1 class="text-[50px] sm:text-[40px] font-[600] text-white">
+        <h1 class="text-[50px] sm:text-[36px] font-[600] text-white">
           Unleash the power of Voice notes with AI
         </h1>
-        <div
+        <button
           class="flex max-w-[215px] justify-center items-center m-auto mt-10 bg-[#ff4f00] text-white rounded-full hover:bg-red-400 px-3 py-3"
         >
-          <a
-            href="/"
-            aria-label="Try For Free"
-            title="Try For Free"
-            class="flex items-center"
+          <span
+            class="text-center text-[18px] sm:text-[16px] font-[500] sm:font-[400] items-center"
+            >Get Started Now</span
           >
-            <span class="text-center text-[18px] font-[500] items-center"
-              >Get Started Now</span
-            >
-            <img
-              src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
-              alt=""
-              class="ml-1 w-4 h-4"
-              style="object-fit: cover; border-radius: inherit"
-            />
-          </a>
-        </div>
+          <img
+            src="https://framerusercontent.com/images/QDgxMHJz2vKvFSMvhZpA6xplIBM.svg"
+            alt=""
+            class="ml-1 w-4 h-4"
+            style="object-fit: cover; border-radius: inherit"
+          />
+        </button>
       </div>
       <div
         class="flex sm:block px-10 items-center justify-between p-10 gap-10 text-white"

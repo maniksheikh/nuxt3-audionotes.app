@@ -17,7 +17,7 @@
       >
         <button
           @click="viewMonthlyPayment"
-          class="text-base sm:py-3 sm:px-6 py- px-4 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base sm:text-[15px] sm:py-3 sm:px-6 py- px-4 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'monthly',
@@ -29,7 +29,7 @@
         </button>
         <button
           @click="viewAnnualPayment"
-          class="text-base sm:py-3 sm:px-6 py-2 px-3 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base sm:text-[15px] sm:py-3 sm:px-6 py-2 px-3 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'annual',
@@ -41,7 +41,7 @@
         </button>
         <button
           @click="viewLifetimePayment"
-          class="text-base sm:py-3 sm:px-6 py-2 px-3 text-[#464343] opacity-80 rounded-[50px] font-bold"
+          class="text-base sm:text-[15px] sm:py-3 sm:px-6 py-2 px-3 text-[#464343] opacity-80 rounded-[50px] font-bold"
           :class="{
             'bg-gradient-to-br to-[white] from-[white] text-black':
               planType === 'lifetime',

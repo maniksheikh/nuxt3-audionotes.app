@@ -15,7 +15,7 @@
         </h2>
 
         <div class="flex items-center">
-          <p class="text-[#48404E] font-bold text-[54px]">
+          <p class="text-[#48404E] font-bold text-[54px] sm:text-[34px]">
             <span :style="plan.titleCss">${{ plan.price }}</span>
           </p>
           <p class="text-[18px] opacity-90 mt-6 ml-2">
@@ -28,7 +28,7 @@
             <div
               v-for="(feature, index) in plan.features"
               :key="index"
-              class="flex gap-2 items-center text-[#666666] mb-2 text-[16px] font-[500]"
+              class="flex gap-2 items-center text-[#666666] mb-2 text-[16px] font-[500] sm:font-[400]"
             >
               <span>
                 <svg
