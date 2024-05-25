@@ -27,11 +27,11 @@
         />
       </div>
       <div
-        class="testimonial-content sm:px-2 absolute top-0 left-0 right-0 bottom-0 max-w-[788px] sm:w-full mx-auto flex flex-col my-20 sm:my-10"
+        class="testimonial-content sm:px-4 absolute top-0 left-0 right-0 bottom-0 max-w-[788px] sm:w-full mx-auto flex flex-col my-20 sm:my-10"
       >
         <div class="text-center">
           <h2
-            class="text-[50px] sm:text-[32px] leading-[67px] font-[600] sm:font-[700] sm:leading-10 text-[#262626] opacity-95 sm:opacity-95"
+            class="text-[50px] sm:text-[34px] leading-[67px] font-[600] sm:leading-10 text-[#262626] opacity-95"
           >
             Your
             <span class="font-italic opacity-90 font-[500] italic"
@@ -46,13 +46,13 @@
             using AI
           </h2>
           <p
-            class="mt-10 sm:mt-5 sm:p-1 px-5 leading-9 sm:leading-6 text-[#9c9797] max-w-[550px] mx-auto sm:text-[19px] text-[20px]"
+            class="mt-10 sm:mt-6 sm:p-1 px-5 leading-9 sm:leading-6 text-[#9c9797] max-w-[550px] sm:w-full m-auto sm:text-[18px] text-[20px]"
           >
             Speak or type, Audionotes will transform your notes into searchable
             clear actionable text notes using AI
           </p>
           <button
-            class="flex items-center justify-center bg-[#FF4F00] w-[160px] sm:w-full mx-auto mt-10 text-white rounded-full hover:bg-[#ff5100d7] sm:px-2 px-6 py-3"
+            class="flex items-center justify-center bg-[#FF4F00] sm:w-full mx-auto mt-10 text-white text-[15px] rounded-full hover:bg-[#ff5100d7] px-3.5 py-2.5"
           >
             <nuxt-link
               to="/"
@@ -146,7 +146,7 @@
     </div>
 
     <!-- testimonal section -->
-    <div class="mt-20 sm:mt-0 max-w-[1200px] m-auto sm:mx-2">
+    <div class="mt-20 sm:mt-0 max-w-[1200px] m-auto sm:mx-3">
       <div
         class="h-[670px] sm:h-full w-full sm:w-full overflow-hidden rounded-3xl object-cover"
       >
@@ -230,7 +230,7 @@
     </div>
 
     <!-- Foundeer section  -->
-    <div class="founder-section sm:px-2">
+    <div class="founder-section sm:px-3">
       <div class="mt-36 sm:mt-16 sans-serif max-w-[1300px] mx-auto">
         <div class="font-sans text-center pt-16 sm:pt-0">
           <h4
@@ -805,12 +805,12 @@
               </div>
               <div class="w-[320px] sm:w-full sm:h-auto">
                 <h5
-                  class="mb-3 mt-4 sm:w-[250px] font-bold text-white text-[23px] sm:text-[22px] leading-tight"
+                  class="mb-3 mt-4 font-bold text-white text-[23px] sm:text-[22px] leading-tight"
                 >
                   {{ chatSection.header }}
                 </h5>
                 <p
-                  class="sm:w-[280px] mb-4 text-[18px] sm:text-[18px] text-white font-[500]"
+                  class="sm:w-full mb-4 text-[18px] sm:text-[18px] text-white font-[500]"
                 >
                   {{ chatSection.content }}
                 </p>
@@ -866,7 +866,7 @@
     </div>
 
     <!-- Cart generate  -->
-    <div class="mt-32">
+    <div class="mt-32 sm:mt-24">
       <div class="max-w-[1100px] m-auto">
         <div
           class="flex gap-40 flex-col-1 sm:block justify-between w-full h-full bg-white sm:px-3"
@@ -960,7 +960,7 @@
     </div>
     <!-- Mobile App section  -->
     <div class="features-section mt-36 sm:mt-20">
-      <div class="max-w-[1100px] m-auto text-center sm:px-2">
+      <div class="max-w-[1100px] m-auto text-center sm:px-3">
         <div>
           <h4
             class="text-[56px] sm:text-[34px] font-[600] sm:font-[700] sm:opacity-80"
@@ -969,7 +969,7 @@
             <span class="text-[#FF4F00]"> Mobile App!</span>
           </h4>
           <div>
-            <p class="mt-5 text-[19px] sm:text-[17px] opacity-50">
+            <p class="mt-5 text-[19px] sm:text-[17px] opacity-50 sm:opacity-80">
               Access audiones on your android or iOS device by downloading our
               lightweight progressive web app (PWA). Please note: As of now,
               Audionotes is not available on the app store or play store.
@@ -980,7 +980,7 @@
             </p>
           </div>
           <button
-            class="mt-7 justify-center flex w-[370px] sm:w-[100%] px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] font-[600] rounded-full text-white"
+            class="mt-7 justify-center flex sm:w-full px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] sm:text-[16px] font-[600] rounded-full text-white"
           >
             Download our Lightweight Mobile App
           </button>
@@ -1066,7 +1066,7 @@
       </div>
     </div>
 
-    <div class="mt-32 sm:mt-20 sm:px-2">
+    <div class="mt-32 sm:mt-20 sm:px-3">
       <div class="max-w-[1100px] text-center m-auto">
         <h4
           class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] sm:opacity-90 font-[700]"
@@ -1082,7 +1082,7 @@
         </div>
 
         <button
-          class="mt-6 w-[290px] sm:w-[100%] m-auto bg-[#FF4F00] py-3 text-[17px] font-[600] rounded-3xl text-white"
+          class="mt-6 sm:w-full m-auto bg-[#FF4F00] py-3 text-[17px] sm:text-[16px] font-[600] rounded-3xl text-white"
         >
           Download Chrome extension
         </button>
@@ -1167,7 +1167,7 @@
 
     <!-- Pricing section  -->
     <div class="py-16 mt-32 sm:mt-0 sm:px-2">
-      <div class="maxw-[1100px] m-auto">
+      <div class="max-w-[1100px] m-auto">
         <div class="bg-white">
           <div>
             <pricing-section></pricing-section>

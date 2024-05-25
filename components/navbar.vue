@@ -76,7 +76,7 @@
         </div>
 
         <button
-          class="items-center bg-[#ff4f00] text-white text-[15px] rounded-full px-3 py-2 block sm:hidden"
+          class="items-center bg-[#ff4f00] text-white text-[15px] rounded-full px-3.5 py-2.5 block sm:hidden"
         >
           <nuxt-link
             to="/"

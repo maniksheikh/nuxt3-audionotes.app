@@ -21,7 +21,7 @@
     </ul>
 
     <button
-      class="flex justify-center text-center bg-[#ff4f00] w-[135px] sm:w-[170px] m-auto text-white rounded-full px-4 py-2 sm:py-3"
+      class="flex justify-center text-center bg-[#ff4f00] m-auto text-white text-[15px] rounded-full px-3.5 py-2.5"
     >
       <nuxt-link
         to="/"
