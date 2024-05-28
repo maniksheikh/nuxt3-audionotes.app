@@ -551,7 +551,7 @@
             <div
               v-for="card in cartData"
               :key="card"
-              class="animate-right-to-left w-full sm:w-[100%] sm:h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="w-full sm:w-[100%] sm:h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -688,7 +688,7 @@
         class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24 sm:px-3"
       >
         <h1
-          class="text-[57px] sm:text-[34px] opacity-90 sm:font-[700] text-left w-[35%] sm:w-full m-auto text-[#1F1F1F] font-[600]"
+          class="text-[57px] sm:text-[34px] opacity-90 text-left w-[35%] sm:w-full m-auto text-[#1F1F1F] font-[600]"
         >
           We <br />
           Have great
@@ -713,7 +713,7 @@
         <div
           class="grid grid-cols-2 sm:grid-cols-1 px-0 sm:px-3 gap-10 sm:gap-5"
         >
-          <div v-for="(social, index) in socialData" :key="index" class="mb-4">
+          <div v-for="(social, index) in socialData" :key="index">
             <div
               class="block w-full sm:w-full h-[450px] sm:h-auto rounded-3xl border border-gray-300 transition duration-300 ease-out hover:ease-in hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
@@ -865,23 +865,22 @@
       </div>
     </div>
 
-    <!-- Cart generate  -->
+    <!-- Cart Generate -->
     <div class="mt-32 sm:mt-24">
-      <div class="max-w-[1100px] m-auto">
-        <div
-          class="flex gap-40 flex-col-1 sm:block justify-between w-full h-full bg-white sm:px-3"
-        >
+      <div class="max-w-[1100px] m-auto sm:px-3">
+        <div class="flex gap-40 sm:block justify-between h-full">
           <div
-            class="flex w-[430px] sm:h-auto sm:w-[100%] flex-col pt-3 gap-3 sm:gap-0"
+            class="flex w-[430px] sm:h-auto sm:w-[100%] flex-col pt-3 sm:pt-0 gap-3 sm:gap-0"
           >
-            <h4
-              class="text-left text-[56px] leading-[74px] sm:text-[36px] font-[600] sm:px-3"
+            <h2
+              class="text-left text-[56px] sm:text-[36px] leading-[74px] sm:leading-relaxed font-[600]"
             >
               Seamlessly share your notes
-            </h4>
+            </h2>
+
             <div
-              v-for="(cartGenerate, index) in CartGenerateData"
-              :key="cartGenerate.id"
+              v-for="(generate, index) in generates"
+              :key="generate.id"
               class="flex flex-col mt-5"
             >
               <div
@@ -891,69 +890,90 @@
                   'py-4 bg-white rounded': selectedQuestion !== index,
                 }"
               >
-                <div
-                  @click="toggleQuestion(index)"
-                  class="flex items-center justify-between cursor-pointer"
-                >
-                  <h2
-                    class="text-[20px] sm:text-[17px] text-[#000] opacity-95 sm:font-[400] font-[500]"
+                <div @click="toggleQuestion(index)">
+                  <div
+                    v-for="buttonIndex in generate.output.slice(0, 2)"
+                    :key="buttonIndex"
+                    class="flex items-center justify-between cursor-pointer"
+                    :class="{ selected: isSelected(index, buttonIndex) }"
+                    @click="selectButton(index, buttonIndex)"
                   >
-                    {{ cartGenerate.question }}
-                  </h2>
-                  <button aria-label="faq question" title="faq question">
-                    <img
-                      class="p-2"
-                      v-if="selectedQuestion === index"
-                      decoding="async"
-                      src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
-                      alt=""
-                      style="
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: inherit;
-                        object-position: center;
-                        object-fit: cover;
-                        image-rendering: auto;
-                      "
-                    />
-                    <img
-                      class="p-2"
-                      v-else
-                      decoding="async"
-                      src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
-                      alt=""
-                      style="
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: inherit;
-                        object-position: center;
-                        object-fit: cover;
-                        image-rendering: auto;
-                      "
-                      sizes="18px"
-                    />
-                  </button>
+                    <h2
+                      class="text-[20px] sm:text-[17px] text-[#000] opacity-95 sm:font-[400] font-[500]"
+                    >
+                      {{ generate.question }}
+                    </h2>
+                    <button aria-label="faq question" title="faq question">
+                      <img
+                        class="p-2"
+                        v-if="selectedQuestion === index"
+                        decoding="async"
+                        src="https://framerusercontent.com/images/1TNXJ0xGTIseQoEl8FpolMTl6fM.svg"
+                        alt=""
+                        style="
+                          display: block;
+                          width: 100%;
+                          height: 100%;
+                          border-radius: inherit;
+                          object-position: center;
+                          object-fit: cover;
+                          image-rendering: auto;
+                        "
+                      />
+                      <img
+                        class="p-2"
+                        v-else
+                        decoding="async"
+                        src="https://framerusercontent.com/images/FFB4asQBLQBOqKryN8RZqqFVj3w.svg"
+                        alt=""
+                        style="
+                          display: block;
+                          width: 100%;
+                          height: 100%;
+                          border-radius: inherit;
+                          object-position: center;
+                          object-fit: cover;
+                          image-rendering: auto;
+                        "
+                        sizes="18px"
+                      />
+                    </button>
+                  </div>
+                  <p
+                    v-if="selectedQuestion === index"
+                    class="text-[16px] opacity-80 mt-3 leading-7"
+                  >
+                    {{ generate.answer }}
+                  </p>
                 </div>
-                <p
-                  v-if="selectedQuestion === index"
-                  class="text-[16px] opacity-80 mt-3 leading-7"
-                >
-                  {{ cartGenerate.answer }}
-                </p>
               </div>
             </div>
           </div>
-
-          <div class="sm:mt-5 w-[520px] sm:w-[100%] sm:h-auto m-auto">
-            <div class="bg-orange-500 rounded-[35px] h-full">
-              <img
-                src="https://framerusercontent.com/images/iJwtVxcvr2opW4YFKHTHF16oqHI.png"
-                alt="Feature Image"
-                class="w-full h-full object-cover rounded-2xl"
-              />
-            </div>
+          <div
+            class="sm:mt-5 mt-0 w-[530px] h-full sm:w-[100%] bg-[#FF4F00] rounded-[35px] sm:h-auto m-auto"
+          >
+            <img
+              decoding="async"
+              sizes="520px"
+              srcset="
+                https://framerusercontent.com/images/5pw9eUsMuALeU848zYHpQHpL8Q.png?scale-down-to=512   512w,
+                https://framerusercontent.com/images/5pw9eUsMuALeU848zYHpQHpL8Q.png?scale-down-to=1024 1024w,
+                https://framerusercontent.com/images/5pw9eUsMuALeU848zYHpQHpL8Q.png?scale-down-to=2048 2048w,
+                https://framerusercontent.com/images/5pw9eUsMuALeU848zYHpQHpL8Q.png                    2080w
+              "
+              src="https://framerusercontent.com/images/5pw9eUsMuALeU848zYHpQHpL8Q.png"
+              alt=""
+              style="
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                object-position: center;
+                object-fit: cover;
+                image-rendering: auto;
+              "
+              class=""
+            />
           </div>
         </div>
       </div>
@@ -980,7 +1000,7 @@
             </p>
           </div>
           <button
-            class="mt-7 justify-center flex sm:w-full px-2 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] sm:text-[16px] font-[600] rounded-full text-white"
+            class="mt-7 justify-center flex sm:w-full px-5 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] sm:text-[16px] font-[600] rounded-full text-white"
           >
             Download our Lightweight Mobile App
           </button>
@@ -1082,7 +1102,7 @@
         </div>
 
         <button
-          class="mt-6 sm:w-full m-auto bg-[#FF4F00] py-3 text-[17px] sm:text-[16px] font-[600] rounded-3xl text-white"
+          class="mt-7 justify-center flex sm:w-full px-5 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] sm:text-[16px] font-[600] rounded-full text-white"
         >
           Download Chrome extension
         </button>
@@ -1309,29 +1329,65 @@ const userData = reactive(user);
 const customCartData = reactive(customCart);
 const chatSectionData = reactive(chatSection);
 const socialData = reactive(Socialcart);
-const CartGenerateData = reactive(CartGenerate);
+const generates = reactive(CartGenerate);
 const faqData = reactive(faq);
 const playState = ref("playing");
 
-const shouldAnimate = ref(false);
+const selectedQuestion = ref(1);
 
-const updateAnimationState = () => {
-  shouldAnimate.value = window.innerWidth <= 624;
-};
-
-onMounted(() => {
-  updateAnimationState();
-  window.addEventListener("resize", updateAnimationState);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener("resize", updateAnimationState);
-});
-
-const selectedQuestion = ref(null);
 const toggleQuestion = (index) => {
   selectedQuestion.value = selectedQuestion.value === index ? null : index;
 };
+
+const selectedButton = ref({ genIndex: 0, outIndex: 0 });
+const modalImage = ref("");
+const isShowingModal = ref(false);
+let intervalId = null;
+
+// Methods
+const showModal = (image) => {
+  modalImage.value = image;
+  isShowingModal.value = true;
+};
+
+const startStyleLoop = () => {
+  intervalId = setInterval(() => {
+    const nextButtonIndex =
+      (selectedButton.value.outIndex + 1) % getTotalButtonCount();
+    selectButtonByIndex(selectedButton.value.genIndex, nextButtonIndex);
+  }, 3000);
+};
+
+const selectButton = (genIndex, buttonIndex) => {
+  selectButtonByIndex(genIndex, buttonIndex);
+};
+
+const selectButtonByIndex = (genIndex, buttonIndex) => {
+  selectedButton.value = { genIndex, outIndex: buttonIndex };
+};
+
+const isSelected = (genIndex, buttonIndex) => {
+  return (
+    selectedButton.value.genIndex === genIndex &&
+    selectedButton.value.outIndex === buttonIndex
+  );
+};
+
+const getTotalButtonCount = () => {
+  return generates.value.reduce(
+    (count, generate) => count + (generate.output ? generate.output.length : 0),
+    0
+  );
+};
+
+// Lifecycle hooks
+onMounted(() => {
+  startStyleLoop();
+});
+
+onBeforeUnmount(() => {
+  clearInterval(intervalId);
+});
 </script>
 
 
