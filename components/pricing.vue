@@ -15,10 +15,12 @@
         </h2>
 
         <div class="flex items-center">
-          <p class="font-[600] text-[52px] sm:text-[34px]">
-            <span :style="plan.titleCss">${{ plan.price }}</span>
+          <p class="font-[600] text-[50px] sm:text-[34px]">
+            <span :style="plan.titleCss">{{
+              plan.price === 0 ? "Free" : `$${plan.price}`
+            }}</span>
           </p>
-          <p class="text-[18px] opacity-90 mt-6 ml-2">
+          <p v-if="plan.billingCycle" class="text-[18px] opacity-90 mt-6 ml-2">
             {{ plan.billingCycle }}
           </p>
         </div>

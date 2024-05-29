@@ -3,7 +3,7 @@
     {
       "id": "free",
       "name": "Free",
-      "price": "Free",
+      "price": 0,
       "features": [
         "10 Mins of Voice Notes Free",
         "Upto 5 Mins/Voice Note",
