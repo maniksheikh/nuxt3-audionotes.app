@@ -82,9 +82,10 @@ definePageMeta({
 });
 
 import faqs from "~/static/faqs.json";
-const selectedQuestion = ref(0);
 
 const faqData = reactive(faqs);
+
+const selectedQuestion = ref(null);
 
 const toggleQuestion = (index) => {
   selectedQuestion.value = selectedQuestion.value === index ? null : index;

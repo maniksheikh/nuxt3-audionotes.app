@@ -887,14 +887,14 @@
                 :class="{
                   'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[430px] sm:w-full':
                     selectedQuestion === index,
-                  'py-4 bg-white rounded': selectedQuestion !== index,
+                  'py-0 bg-white rounded': selectedQuestion !== index,
                 }"
               >
                 <div @click="toggleQuestion(index)">
                   <div
                     v-for="buttonIndex in generate.output.slice(0, 2)"
                     :key="buttonIndex"
-                    class="flex items-center justify-between cursor-pointer"
+                    class="flex items-center pl-3 justify-between cursor-pointer"
                     :class="{ selected: isSelected(index, buttonIndex) }"
                     @click="selectButton(index, buttonIndex)"
                   >
@@ -941,7 +941,7 @@
                   </div>
                   <p
                     v-if="selectedQuestion === index"
-                    class="text-[16px] opacity-80 mt-3 leading-7"
+                    class="text-[16px] opacity-80 pl-3 mt-3 leading-7"
                   >
                     {{ generate.answer }}
                   </p>
@@ -1333,7 +1333,7 @@ const generates = reactive(CartGenerate);
 const faqData = reactive(faq);
 const playState = ref("playing");
 
-const selectedQuestion = ref(1);
+const selectedQuestion = ref(null);
 
 const toggleQuestion = (index) => {
   selectedQuestion.value = selectedQuestion.value === index ? null : index;
