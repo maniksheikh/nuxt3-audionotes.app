@@ -314,14 +314,14 @@
           </p>
         </div>
       </div>
-      <div class="mt-16 sm:mt-14 m-auto sm:p-0 w-[1100px] sm:w-full">
+      <div class="mt-16 sm:mt-14 sm:p-0 w-[1100px] m-auto">
         <div
-          class="grid grid-cols-3 sm:grid-cols-1 gap-10 sm:gap-5 mb-0 sm:mb-0 sm:px-3"
+          class="animate-right-to-left grid grid-cols-3 sm:flex gap-10 sm:gap-5 sm:px-2"
         >
           <div v-for="content in contentData" :key="content.id">
-            <div class="w-full h-auto sm:opacity-90">
+            <div class="w-full h-auto sm:m-auto sm:opacity-90">
               <div
-                class="sm:text-center text-left p-0 sm:py-8 sm:px-2 leading-8 justify-center mx-0 sm:mx-0 sm:border border-gray-300 rounded-none sm:rounded-3xl"
+                class="sm:w-[337px] h-auto sm:h-[200px] sm:text-center text-left p-0 sm:py-6 sm:px-2 leading-8 justify-center sm:border border-gray-300 rounded-none sm:rounded-3xl"
               >
                 <h3
                   class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]"
@@ -1422,19 +1422,18 @@ onBeforeUnmount(() => {
 }
 /* Mobile responsive  */
 
-@keyframes right-to-left {
-  from {
+@keyframes moveRightToLeft {
+  0% {
     transform: translateX(100%);
-    opacity: 0;
   }
-  to {
-    transform: translateX(0);
-    opacity: 1;
+  100% {
+    transform: translateX(-100%);
   }
 }
-
-.animate-right-to-left {
-  animation: right-to-left 20s ease-out;
+@media (max-width: 640px) {
+  .animate-right-to-left {
+    animation: moveRightToLeft 40s linear infinite;
+  }
 }
 </style>
 
