@@ -1,7 +1,7 @@
 <template>
   <div class="pb-5 hidden sm:block">
     <ul
-      class="block text-[#535251] text-[18px] px-3 p-3 text-center font-[600]"
+      class="block text-[#535251] text-[14px] px-3 p-3 text-center font-[600]"
     >
       <li class="p-2 py-1 hover:rounded-md font-semibold">
         <nuxt-link to="#">Use Cases</nuxt-link>
@@ -21,7 +21,7 @@
     </ul>
 
     <button
-      class="flex justify-center text-center bg-[#ff4f00] m-auto text-white text-[15px] rounded-full px-3.5 py-2.5"
+      class="flex justify-center text-center bg-[#ff4f00] m-auto text-white text-[14px] rounded-full px-4 py-2.5"
     >
       <nuxt-link
         to="/"

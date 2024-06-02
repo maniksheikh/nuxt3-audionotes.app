@@ -1,7 +1,7 @@
 <template>
   <div class="main-container">
     <div
-      class="justify-center items-center h-[582px] flex overflow-hidden relative"
+      class="justify-center items-center h-[584px] flex overflow-hidden relative"
     >
       <div>
         <img
@@ -75,8 +75,11 @@
           <div
             class="flex items-center justify-center sm:w-[300px] w-[300px] m-auto"
           >
-            <span class="bg-black text-white p-2 rounded-md">4.9</span>
-            <div class="ml-4 leading-6">
+            <span
+              class="bg-black text-white text-center p-2 pt-3 text-[15px] rounded-md"
+              >4.9</span
+            >
+            <div class="ml-4 leading-8">
               <div class="flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +141,7 @@
                   />
                 </svg>
               </div>
-              <span>from 28 testimonials</span>
+              <span class="mt-4 text-[14px]">from 28 testimonials</span>
             </div>
           </div>
         </div>
@@ -242,7 +245,7 @@
             is for everyone!
           </h4>
           <p
-            class="mt-5 text-[19px] sm:leading-8 leading-8 opacity-75 sm:opacity-80"
+            class="mt-5 text-[18px] sm:leading-8 leading-8 text-[#666666] opacity-90"
           >
             Audionotes is loved by 7000+ users! <br />
             Select a persona below to find out how Audionotes can help you boost
@@ -316,9 +319,9 @@
           class="grid grid-cols-3 sm:grid-cols-1 gap-10 sm:gap-5 mb-0 sm:mb-0 sm:px-3"
         >
           <div v-for="content in contentData" :key="content.id">
-            <div class="w-[340px] sm:w-[350px] sm:h-[100%] sm:opacity-90">
+            <div class="w-full h-auto sm:opacity-90">
               <div
-                class="sm:text-center text-left p-0 sm:py-8 sm:px-0 leading-8 justify-center mx-0 sm:mx-0 sm:border border-gray-300 rounded-none sm:rounded-3xl"
+                class="sm:text-center text-left p-0 sm:py-8 sm:px-2 leading-8 justify-center mx-0 sm:mx-0 sm:border border-gray-300 rounded-none sm:rounded-3xl"
               >
                 <h3
                   class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]"
@@ -357,7 +360,7 @@
             class="mt-20 flex-none px-2"
           >
             <div
-              class="h-[385px] sm:h-[410px] w-[304px] gap-7 sm:gap-7 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden m-auto"
+              class="h-[385px] sm:h-[410px] w-[304px] gap-7 sm:gap-7 bg-white border border-gray-200 rounded-2xl overflow-hidden m-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -441,7 +444,7 @@
             class="mt-10 flex-none px-2"
           >
             <div
-              class="h-[390px] sm:h-[410px] w-[310px] gap-5 bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden mx-auto"
+              class="h-[390px] sm:h-[410px] w-[310px] gap-5 bg-white border border-gray-200 rounded-2xl overflow-hidden mx-auto"
             >
               <div class="p-4">
                 <div class="flex items-center">
@@ -529,7 +532,7 @@
             <span>Record, Upload or Write. </span>
           </h1>
           <p
-            class="text-[31px] mt-0 sm:mt-5 w-[63%] opacity-90 m-auto font-[500] sm:text-[22px] sm:w-[90%] text-left"
+            class="text-[30px] mt-0 sm:mt-5 w-[63%] opacity-90 m-auto font-[500] sm:text-[22px] sm:w-[90%] text-left"
           >
             Whether you are
             <span class="text-[#FF4F00]">capturing </span> voice notes,
@@ -551,7 +554,7 @@
             <div
               v-for="card in cartData"
               :key="card"
-              class="w-full sm:w-[100%] sm:h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
+              class="w-full h-auto p-2 m-auto rounded-3xl mb-5 sm:mb-0 border transition duration-300 ease-out hover:ease-in border-gray-300 hover:border-red-400 shadow-secondary-1 dark:bg-surface-dark"
             >
               <div
                 class="relative overflow-hidden bg-cover bg-no-repeat"
@@ -609,7 +612,7 @@
           <span class="text-[#FF4F00]"> Content</span>
         </h1>
         <p
-          class="text-[31px] mt-0 sm:mt-5 sm:text-[21px] w-[60%] sm:w-full font-[500] mx-auto text-left"
+          class="text-[30px] mt-0 sm:mt-5 sm:text-[21px] w-[60%] sm:w-full font-[500] mx-auto text-left"
         >
           Generate Emails, Social Media Content, Minutes of the Meeting, Action
           items and even
@@ -688,14 +691,14 @@
         class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24 sm:px-3"
       >
         <h1
-          class="text-[57px] sm:text-[34px] opacity-90 text-left w-[35%] sm:w-full m-auto text-[#1F1F1F] font-[600]"
+          class="text-[56px] sm:text-[34px] opacity-90 text-left w-[35%] sm:w-full m-auto text-[#1F1F1F] font-[600]"
         >
           We <br />
           Have great
           <span class="text-[#FF4F00]"> Integrations</span>
         </h1>
         <p
-          class="text-[32px] mt-0 sm:mt-5 w-[57%] sm:w-full mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
+          class="text-[31px] mt-0 sm:mt-5 w-[57%] sm:w-full mx-auto sm:text-[22px] text-left sm:font-[600] text-[#000000]"
         >
           Connect Audionotes with <span class="text-[#705BE1]">Zapier</span> to
           create custom automations and workflows, connect with
@@ -758,12 +761,12 @@
         class="flex sm:block justify-between max-w-[1100px] m-auto gap-14 sm:px-3"
       >
         <h1
-          class="sm:px-3 text-[56px] sm:text-[34px] opacity-90 sm:opacity-100 text-left w-[42%] sm:w-full m-0 text-[#1F1F1F] font-[600]"
+          class="text-[56px] sm:text-[34px] opacity-90 sm:opacity-100 text-left w-[42%] sm:w-full m-0 text-[#1F1F1F] font-[600]"
         >
           Your very own <span class="text-[#705BE1]">AI Assistant</span>
         </h1>
         <p
-          class="text-[32px] mt-0 sm:mt-5 w-[53%] sm:w-full m-auto sm:text-[22px] text-left font-[500] opacity-90 sm:opacity-100 text-[#000000]"
+          class="text-[31px] mt-0 sm:mt-5 w-[53%] sm:w-full m-auto sm:text-[22px] text-left font-[500] opacity-90 sm:opacity-100 text-[#000000]"
         >
           With <span class="text-[#FF4F00]">Magic Chat</span>, use contextual
           search and QnA to use Audionotes as an assistant to glance through all
@@ -774,17 +777,19 @@
 
     <!-- Another chat cart  -->
     <div class="mt-28 sm:mt-16">
-      <div class="max-w-[1100px] m-auto">
-        <div class="grid grid-cols-2 sm:grid-cols-1 px-6 sm:px-4 gap-10">
+      <div class="max-w-[1300px] h-full m-auto">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-1 sm:px-4 gap-10 w-[1100px] h-full sm:w-full m-auto"
+        >
           <div
             v-for="chatSection in chatSectionData"
             :key="chatSection.id"
             :class="chatSection.class"
             :style="chatSection.bg"
-            class="block w-[500px] h-[512px] sm:w-full sm:p-12 rounded-3xl border border-gray-300 dark:bg-surface-dark"
+            class="relative block sm:w-[344px] h-[512px] sm:h-[440px] sm:p-5 rounded-[32px] border border-gray-300"
           >
             <div
-              class="pt-10 pl-12 sm:pl-0 sm:items-center sm:justify-center text-surface dark:text-white"
+              class="pt-10 sm:pt-5 pl-16 sm:pl-0 sm:items-center sm:justify-center"
             >
               <div class="w-[48px]">
                 <img
@@ -805,12 +810,12 @@
               </div>
               <div class="w-[320px] sm:w-full sm:h-auto">
                 <h5
-                  class="mb-3 mt-4 font-bold text-white text-[23px] sm:text-[22px] leading-tight"
+                  class="mb-3 mt-4 font-bold text-white text-[23px] sm:text-[21px] leading-tight"
                 >
                   {{ chatSection.header }}
                 </h5>
                 <p
-                  class="sm:w-full mb-4 text-[18px] sm:text-[18px] text-white font-[500]"
+                  class="sm:w-full mb-4 text-[18px] sm:text-[16px] text-white font-[500]"
                 >
                   {{ chatSection.content }}
                 </p>
@@ -837,28 +842,23 @@
             </div>
 
             <div
-              class="relative overflow-hidden bg-cover bg-no-repeat"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
+              class="absolute left-0 bottom-0 overflow-hidden bg-cover bg-no-repeat"
             >
-              <nuxt-link to="#">
-                <img
-                  class="pr-4"
-                  decoding="async"
-                  sizes="min(428px, 100vw)"
-                  :src="chatSection.image"
-                  alt=""
-                  style="
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: inherit;
-                    object-position: center;
-                    object-fit: cover;
-                    image-rendering: auto;
-                  "
-                />
-              </nuxt-link>
+              <img
+                decoding="async"
+                sizes="min(428px, 100vw)"
+                :src="chatSection.image"
+                alt=""
+                style="
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: inherit;
+                  object-position: center;
+                  object-fit: cover;
+                  image-rendering: auto;
+                "
+              />
             </div>
           </div>
         </div>
@@ -885,9 +885,9 @@
             >
               <div
                 :class="{
-                  'bg-white py-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[430px] sm:w-full':
+                  'bg-white py-4 border-bottom rounded w-[430px] sm:w-full':
                     selectedQuestion === index,
-                  'py-0 bg-white rounded': selectedQuestion !== index,
+                  'py-0 ': selectedQuestion !== index,
                 }"
               >
                 <div @click="toggleQuestion(index)">
@@ -899,7 +899,7 @@
                     @click="selectButton(index, buttonIndex)"
                   >
                     <h2
-                      class="text-[20px] sm:text-[17px] text-[#000] opacity-95 sm:font-[400] font-[500]"
+                      class="text-[20px] sm:text-[17px] text-[#000] sm:font-[400] font-[500]"
                     >
                       {{ generate.question }}
                     </h2>
@@ -994,13 +994,13 @@
               lightweight progressive web app (PWA). Please note: As of now,
               Audionotes is not available on the app store or play store.
             </p>
-            <p class="mt-4 text-[19px] sm:text-[17px] opacity-70">
+            <p class="mt-4 text-[19px] sm:text-[17px] opacity-50">
               Please open this link in Safari browser in case you using an
               iPhone
             </p>
           </div>
           <button
-            class="mt-7 justify-center flex sm:w-full px-5 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] sm:text-[16px] font-[600] rounded-full text-white"
+            class="mt-7 justify-center flex sm:w-full px-5 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[16px] sm:text-[15px] font-[500] rounded-full text-white"
           >
             Download our Lightweight Mobile App
           </button>
@@ -1102,7 +1102,7 @@
         </div>
 
         <button
-          class="mt-7 justify-center flex sm:w-full px-5 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[17px] sm:text-[16px] font-[600] rounded-full text-white"
+          class="mt-7 justify-center flex sm:w-full px-5 sm:px-4 m-auto bg-[#FF4F00] py-4 text-[16px] sm:text-[15px] font-[500] rounded-full text-white"
         >
           Download Chrome extension
         </button>
@@ -1223,7 +1223,7 @@
                 class="flex items-center"
               >
                 <span
-                  class="text-center text-[18px] sm:text-[17px] font-[500] items-center"
+                  class="text-center text-[17px] sm:text-[16px] font-[500] items-center"
                   >Help Center</span
                 >
                 <img
@@ -1240,9 +1240,9 @@
               v-for="(faq, index) in faqData"
               :key="faq.id"
               :class="{
-                'bg-white p-4 sm:p-4 shadow-[0px_0px_16px_0px_rgba(0,0,0,0.06)] rounded w-[650px] sm:w-full':
+                'bg-white p-4 sm:p-4  rounded w-[650px] sm:w-full':
                   selectedQuestion === index,
-                'p-4 bg-white rounded': selectedQuestion !== index,
+                'p-4  rounded': selectedQuestion !== index,
               }"
             >
               <div
@@ -1250,7 +1250,7 @@
                 class="flex items-center justify-between cursor-pointer"
               >
                 <h2
-                  class="text-[18px] sm:text-[17px] sm:opacity-80 opacity-95 font-[400] sm:font-[500]"
+                  class="text-[17px] sm:text-[16px] sm:opacity-80 font-[500] sm:font-[400]"
                 >
                   {{ faq.question }}
                 </h2>
@@ -1292,7 +1292,7 @@
               </div>
               <p
                 v-if="selectedQuestion === index"
-                class="text-[16px] sm:text-[15px] opacity-80 mt-3 leading-7"
+                class="text-[15px] sm:text-[15px] opacity-50 mt-3 leading-7"
               >
                 {{ faq.answer }}
               </p>

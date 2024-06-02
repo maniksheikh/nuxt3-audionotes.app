@@ -28,7 +28,7 @@
         </div>
 
         <div class="block sm:hidden">
-          <ul class="flex space-x-3 text-[#535251] text-[15px] font-[500]">
+          <ul class="flex space-x-3 text-[#535251] text-[14px] font-[500]">
             <li
               class="border border-transparent hover:bg-[#F5F1EB] hover:border-[#D9D2C5] p-2 py-1 hover:rounded-md font-semibold"
             >

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20 pb-32 sm:pb-0 sm:px-2">
+  <div class="mt-20 pb-32 sm:pb-0">
     <div class="max-w-[1100px] bg-[black] rounded-3xl sm:rounded-none m-auto">
       <div
         class="bg-[black] p-14 sm:p-5 sm:mt-10 text-center rounded-3xl m-auto"
@@ -23,7 +23,7 @@
         </button>
       </div>
       <div
-        class="flex sm:block px-10 items-center justify-between p-10 gap-10 text-white"
+        class="flex sm:block px-10 sm:px-5 items-center justify-between p-10 gap-10 text-white"
       >
         <div>
           <p class="text-[15px] leading-7 opacity-70">
@@ -144,7 +144,7 @@
         </div>
       </div>
 
-      <div class="sm:p-5 py-5 copy-right-content">
+      <div class="sm:p-0 py-5 copy-right-content">
         <p class="text-white text-center opacity-90 justify-center pb-3">
           © Copyright {{ new Date().getFullYear() }} -
           <span class="name">AudioNotes.app</span>
