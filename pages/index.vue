@@ -19,7 +19,7 @@
       <div
         class="testimonial-content sm:px-4 absolute top-0 left-0 right-0 bottom-0 max-w-[788px] sm:w-full mx-auto flex flex-col my-20 sm:my-10">
         <div class="text-center">
-          <h2 class="text-[50px] sm:text-[34px] leading-[67px] font-[600] sm:leading-10 text-[#262626] opacity-95">
+          <h2 class="text-[50px] sm:text-[34px] leading-[67px] font-[600] sm:leading-[48px] text-[#262626] opacity-95">
             Your
             <span class="font-italic opacity-90 font-[500] italic">cluttered</span>
             <span class="text-[#FF4F00] font-[500]"> Thoughts</span>
@@ -181,12 +181,12 @@
           </p>
         </div>
       </div>
-      <div class="mt-16 sm:mt-14 sm:p-0 w-[1100px] m-auto">
+      <div class="mt-16 sm:mt-14 sm:p-0 w-[1100px] sm:w-[100%] m-auto">
         <div class="grid grid-cols-3 sm:block sm:gap-5 sm:px-2">
           <div v-for="content in contentData" :key="content.id">
             <div class="sm:opacity-90 p-4 sm:p-0">
               <div
-                class="sm:w-[337px] w-[100%] h-auto sm:h-[200px] sm:text-center text-left p-0 sm:py-6 sm:px-2 leading-8 justify-center sm:border border-gray-300 rounded-none sm:rounded-3xl mb-4 sm:mb-4">
+                class="w-[337px] sm:m-auto sm:w-[100%] h-auto sm:h-[200px] sm:text-center text-left p-0 sm:py-6 sm:px-2 leading-8 justify-center sm:border border-gray-300 rounded-none sm:rounded-3xl mb-4 sm:mb-4">
                 <h3 class="sm:text-[20px] py-1 text-[22px] text-[#262626] font-[600]">
                   {{ content.header }}
                 </h3>
@@ -362,7 +362,7 @@
 
     <!-- Features -->
     <div class="features-section mt-32 sm:mt-10 pb-28 sm:mb-0">
-      <div class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20 sm:px-3">
+      <div class="flex sm:block mt-20 justify-between max-w-[1100px] m-auto gap-20 sm:px-4">
         <h1 class="text-[50px] sm:text-[34px] font-[600] opacity-90 text-left w-[33%] sm:w-full m-auto">
           Generate Awesome
           <span class="text-[#FF4F00]"> Content</span>
@@ -420,7 +420,7 @@
 
     <!--Another Features -->
     <div class="features-section mt-32 sm:mt-20 pb-28 sm:pb-20">
-      <div class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24 sm:px-3">
+      <div class="flex sm:block mt-16 justify-between max-w-[1100px] m-auto gap-24 sm:px-5">
         <h1 class="text-[56px] sm:text-[34px] opacity-90 text-left w-[35%] sm:w-full m-auto text-[#1F1F1F] font-[600]">
           We <br />
           Have great
@@ -469,7 +469,7 @@
     </div>
     <!--Another Features -->
     <div class="features-section mt-32 sm:mt-24">
-      <div class="flex sm:block justify-between max-w-[1100px] m-auto gap-14 sm:px-3">
+      <div class="flex sm:block justify-between max-w-[1100px] m-auto gap-14 sm:px-4">
         <h1
           class="text-[56px] sm:text-[34px] opacity-90 sm:opacity-100 text-left w-[42%] sm:w-full m-0 text-[#1F1F1F] font-[600]">
           Your very own <span class="text-[#705BE1]">AI Assistant</span>
@@ -486,10 +486,10 @@
     <!-- Another chat cart  -->
     <div class="mt-28 sm:mt-16">
       <div class="max-w-[1300px] h-full m-auto">
-        <div class="grid grid-cols-2 sm:grid-cols-1 sm:px-4 gap-10 w-[1100px] h-full sm:w-full m-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-1 sm:px-4 gap-10 w-[1100px] h-full sm:w-[100%] m-auto">
           <div v-for="chatSection in chatSectionData" :key="chatSection.id" :class="chatSection.class"
             :style="chatSection.bg"
-            class="relative block sm:w-[344px] h-[512px] sm:h-[440px] sm:p-5 rounded-[32px] border border-gray-300">
+            class="relative block sm:w-[344px] h-[512px] sm:h-[440px] sm:p-5 rounded-[20px] border border-gray-300">
             <div class="pt-10 sm:pt-5 pl-16 sm:pl-0 sm:items-center sm:justify-center">
               <div class="w-[48px]">
                 <img class="w-[48px] h-[48px]" decoding="async" sizes="48px" :src="chatSection.avatar" alt="" style="
@@ -522,7 +522,7 @@
               </div>
             </div>
 
-            <div class="absolute left-0 bottom-0 overflow-hidden bg-cover bg-no-repeat">
+            <div class="absolute right-2 bottom-0 overflow-hidden bg-cover bg-no-repeat">
               <img decoding="async" sizes="min(428px, 100vw)" :src="chatSection.image" alt="" style="
                   display: block;
                   width: 100%;
