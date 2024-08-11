@@ -538,6 +538,47 @@
       </div>
     </div>
 
+    <!-- Slider section -->
+    <div class="mt-28 sm:mt-16">
+      <div id="controls-carousel" class="relative max-w-[1100px] h-full sm:w-[9%] m-auto">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[450px] overflow-hidden rounded-lg md:h-96">
+          <div v-for="(image, index) in images" :key="index" class="absolute inset-0 duration-700 ease-in-out"
+            :class="{ 'opacity-0': currentSlide !== index, 'opacity-100': currentSlide === index }">
+            <img :src="image" class="block w-full h-full object-cover" alt="Slide Image" />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          @click="prevSlide">
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black"
+              viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          @click="nextSlide">
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="black"
+              viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+
     <!-- Cart Generate -->
     <div class="mt-32 sm:mt-24">
       <div class="max-w-[1100px] m-auto sm:px-3">
@@ -911,6 +952,24 @@ onMounted(() => {
 onBeforeUnmount(() => {
   clearInterval(intervalId);
 });
+
+const images = ref([
+  'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'https://images.pexels.com/photos/1449455/pexels-photo-1449455.jpeg?auto=compress&cs=tinysrgb&w=600',
+  'https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=600'
+]);
+
+const currentSlide = ref(0);
+
+const prevSlide = () => {
+  currentSlide.value = (currentSlide.value - 1 + images.value.length) % images.value.length;
+};
+
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % images.value.length;
+};
 </script>
 
 
@@ -938,5 +997,16 @@ onBeforeUnmount(() => {
   background: linear-gradient(to left,
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0));
+}
+
+
+/* This will slider smooth transitions */
+[aria-hidden="true"] {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+[aria-hidden="false"] {
+  opacity: 1;
 }
 </style>
